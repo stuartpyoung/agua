@@ -1,0 +1,275 @@
+.adminUsersDragSource  {
+	position: absolute !important;
+	top: 40px !important;
+	left: 450px !important;
+
+	margin-top: 5px !important;
+	width: 120px !important;	
+	height: 260px !important;
+	min-height: 100px !important;
+
+	/*color: #339;*/
+	color: darkred;
+	font-weight: bold;
+	font-family: Verdana;
+	font-size: 20px;
+	border-color: #333;
+}
+
+.adminUsersDropTarget {
+	position: absolute;
+	top: 90px;
+	left: 10px;
+
+	width: 350px;
+	height: 300px;
+	min-height: 100px;
+}
+
+.adminUsersTrash {
+	position: absolute;
+	top: 330px;
+	left: 450px;
+
+	margin-top: 5px;
+	width: 120px;	
+	height: 60px;
+}
+
+.adminUsersTrashIcon {
+	height: 100%;
+	width: 100%;
+	background-image: url(../../../plugins/admin/images/trash-60.png);
+	background-repeat: no-repeat;
+	position: relative;
+	left: 30px;
+}
+
+
+
+
+
+.admin .users .dijitFileInputText {
+	color: #F00;
+}
+
+
+
+/* center title bar */
+
+.draggableItem {
+	list-style: none;
+	/*padding-left: 18px;*/
+	top: 16px;
+	/*position: relative;*/
+	/*background-position: 10px 10px;*/
+	text-align: left;
+	text-indent: 28px;
+	/*background-image: url("../../../plugins/workflow/images/cog-blue-20.png");*/
+	/*background-image: url("../../../plugins/workflow/images/blue-orb-20.png");*/
+	background-repeat: no-repeat;
+}
+
+.dojoxDialogTitle {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: Verdana;
+}
+
+
+/* center title bar */
+/*.dojoxDialogTitleBar {*/
+/*	text-align: center;*/
+/*}*/
+
+
+.adminUsersUserManagerButton {
+	font-size: 10px;
+	font-family: Verdana;
+	font-weight: bold;
+}
+
+.adminUsersFloatingPane {
+	padding: 10px;
+}
+
+.adminUsersButtonSpan {
+	width: 36px;
+	height: 36px;
+	background-color: #FFF;
+}
+
+.adminUsersButtonOpenTitle {
+	color: #339;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Verdana;
+	display: inline;
+	position: relative;
+	top: -30px;
+	left: 5px;
+}
+
+.adminUsersButtonOpenContainer {
+	position: absolute;
+	left: 490px;
+	top: 0px;
+	color: #339;
+	width: 400px;
+}
+.adminUsersButtonOpen {
+	background-image: url(../../../plugins/admin/images/users-24.png);
+	background-repeat: no-repeat;
+	width: 36px;
+	height: 36px;
+}
+
+.adminUsersButtonAdd {
+	background-image: url(../../../plugins/admin/images/users-add-24.png);
+	background-repeat: no-repeat;
+	width: 36px;
+	height: 36px;
+}
+
+/* title of floatingPane */
+.dijitTitleNode {
+	font-size: 24px;
+	position: relative;
+	top: -4px;
+}
+
+.adminUsersPaneTitle {
+	font-family: Verdana;
+	text-align: center;
+}
+
+body {
+	padding: 0.5em;
+	background: #ededed;
+}
+
+/* NEED overflow: auto SO THAT SCROLLBOX WILL APPEAR IF SOURCES OVERFLOW DND SOURCE BOX */
+.container {
+	display: block;
+	overflow:auto;
+}
+
+/*.container { */
+/*display:block;*/
+/*width:100px;*/
+/*height:100px;*/
+/*overflow:auto*/
+
+.clear {
+	clear: both;
+}
+
+
+.container .adminUsersDropColumn1 {
+	width: 100px;
+	text-align: center;
+}
+
+.container .adminUsersDropColumn2 {
+	width: 100px;
+	text-align: center;
+}
+
+.adminUsersGroupCombo, .adminUsersGroupCombo_popup li
+{
+	text-indent: 30px;
+	height: auto;
+	width: 250px;
+	color: #000;
+}
+.adminUsersGroupCombo
+{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.adminUsersGroupCombo_popup li
+{
+	color: #000;
+}
+
+.adminDeleteButton { 	
+	background-color: #FFFFFF;
+	color: #222222;
+	font-weight: normal;
+	font-style: normal; 
+	font-size: 20px;
+	font-family: Times New Roman;
+}
+
+
+
+.firstLabel, .adminHeader {
+	text-align:	center;
+	font-weight: bolder;
+	font-size: 18px;
+	font-family: Times New Roman;
+}
+
+.adminUsersComboBoxTitle
+{
+	position: absolute;
+	left: 25px;
+	top: 50px;
+	font-size: 25px;
+	font-weight: bolder;	
+}
+
+.adminUsersTable {
+	padding: 20px;
+	z-index: 999;
+	position: absolute;
+	left: 30px;
+	top: 120px;
+	text-align:	center;
+	font-weight: bolder;
+	font-style: italic; 
+}
+
+.adminUsersTableRow {
+	z-index: 1000;
+	text-align:	center;
+	font-weight: normal;
+	font-style: normal;
+	width: 600px;
+}
+
+.adminUsersTableData {
+	text-align:	center;
+	font-weight: normal;
+	font-style: normal;
+	color: #040404;
+	font-family: Arial;
+	font-size: 18px;
+	width: 150px;
+}
+
+.adminUsersTableWideColumn {
+	min-width: 100px;
+	width: 200px;
+	max-width: 350px;	
+}
+
+.adminUsersTableNarrowColumn {
+	min-width: 50px;
+	width: 120px;
+	max-width: 200px;	
+}
+
+.adminUsersTableInput {
+	width: 100%;
+	padding: 5px;
+}
+
+.adminUsersTableHeader {
+	font-family: Verdana;
+	font-size: 20px;
+	text-align: center;
+	background-color: #DDF;
+}

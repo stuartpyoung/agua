@@ -1,0 +1,463 @@
+/* WHOLE FILE UPLOAD BOX */
+
+
+.fileUpload .dijitFakeInput {
+	height: 20px;
+	width: 150px;
+}
+
+.fileUpload .dijitFileInputReal {
+	height: 25px;
+}
+
+.fileUpload .dijitInline .dijitFileInputButton {
+	width: 40px;
+	visibility: hidden;
+}
+
+.digitFileInput .fileUpload {
+	width: 400px;
+	height: 30px;
+}
+
+
+.fileUpload .digitFileInput {
+	width: 400px;	
+}
+
+/* INPUT TEXT BOX */
+.fileUpload .dijitFileInputVisible {
+	width: 100px;
+}
+
+.fileUpload .dijitFileInputReal {
+	z-index:999;
+	opacity: 0.0;
+	-moz-opacity: 0.0;
+	/*filter: alpha(opacity=00);*/
+	/*font-size:18px;	*/
+	position:absolute;
+	z-index:2;
+	opacity:0;
+	/*filter:alpha(opacity:0);*/
+	cursor:pointer;
+	height: 70px;
+}
+
+.dijitFileInput {
+	position:relative;
+	height: 3.7em;
+	/*padding:2px;*/
+}
+
+.dijitFileInputRealBlind {
+	right:0;
+}
+
+.dijitFileInputReal:hover { cursor:pointer; } 
+
+.dijitFileInputButton,
+.dijitFileInputText {
+	border:1px solid #333;
+	padding:2px 12px 2px 12px; 
+	cursor:pointer;
+}
+
+.dijitFileInputButton {
+	z-index:3;
+	position: relative;
+	/*top: 30px;*/
+	/*left: -245px;*/
+	/*visibility:hidden;*/
+}
+
+/* BROWSE BUTTON */
+.fileUpload .dijitFileInputText {
+	/*background: rgb(96,96,96) !important;*/
+	font-family : Verdana !important;
+	font-size: 15px !important;
+	width: auto;
+	background-color: white !important;
+	color: black !important;
+
+    /*color: #FFFFFF;*/
+    /*background-color: #666666;*/
+    /*border-style: solid;*/
+    /*border-top-color: #333333;*/
+    /*border-left-color: #555555;*/
+    /*border-right-color: #BBBBBB;*/
+    /*border-bottom-color: #DDDDDD;*/
+
+	border: 3px inset #CCD !important;
+	-moz-border-radius: 5px;
+	height: 20px;
+	vertical-align: middle;
+	-webkit-border-radius: 5px; 
+	color: black !important;
+	background-image: url();
+}
+
+
+/* CANCEL BUTTON */
+.fileUpload .dijitFileInputButton {
+	z-index: 1001;
+	font-family : Verdana !important;
+	font-size: 15px !important;
+	width: auto;
+	background-color: white !important;
+	color: black !important;
+	border: 3px inset #CCD !important;
+	-moz-border-radius: 5px;
+	height: 20px;
+	vertical-align: middle;
+	-webkit-border-radius: 5px; 
+	color: black !important;
+	background-image: url();
+}
+
+.fileUpload .dijitButtonNode {
+	font-family : Verdana !important;
+	font-size: 15px !important;
+	width: auto;
+	background-color: white !important;
+	color: black !important;
+	border: 3px inset #CCD !important;
+	-moz-border-radius: 5px;
+	height: 20px;
+	vertical-align: middle;
+	-webkit-border-radius: 5px; 
+	color: black !important;
+	background-image: url();
+	width: 300px;
+}
+
+.fileUploadCancelButtonHover .dijitButtonNode {
+	background-color: #DDD;
+	/*color: green !important;*/
+	border: 6px inset #FAA;
+	/*border: 2px inset #FAA;*/
+}
+
+.fileUploadCancelButtonFocused .dijitButtonNode {
+	/*border: 6px inset #AAA;*/
+
+	/*border: 6px outset #FFA;*/
+	/*border: yellow inset 2px;*/
+}
+
+.fileUploadCancelButtonActive .dijitButtonNode {
+	background-color: white !important;
+	color: black !important;
+	/*border: 2px solid black !important;*/
+	/*border: 6px outset #FFA;*/
+
+	padding: 2px !important;
+	border: 4px inset #FFA;
+}
+
+
+/*.fileUploadCancelButtonSpan {*/
+/*	background-color: #0FF;*/
+/*	color: #F00;*/
+/*	padding: 10px !important;*/
+/*	padding-top: 10px !important;*/
+/*	padding-bottom: 10px !important;*/
+/*	border: 2px inset #AAA;*/
+/*}*/
+
+
+
+/*.fileUploadMessage {*/
+/*	font-family: Verdana;*/
+/*	font-size: 18px;*/
+/*	color: #333;*/
+/*	width: auto;*/
+/*	text-align: left;*/
+/*}*/
+/**/
+/*.fileUploadStatusIcon {*/
+/*	background-image: url("../../../plugins/project/images/loading.gif");*/
+/*	background-repeat: no-repeat;*/
+/*	min-width: 28px;*/
+/*	width: 28px;*/
+/*	height: 28px;*/
+/*	position: relative;*/
+/*}*/
+/**/
+/*.fileUploadConfirmTable*/
+/*{*/
+/*	font-family: Verdana;*/
+/*	background-color: #38C;*/
+/*	width: auto;*/
+/*}*/
+/**/
+/*.fileUploadConfirmTableIntro,*/
+/*.fileUploadConfirmTableHeader,*/
+/*.fileUploadConfirmTableItem,*/
+/*.fileUploadConfirmTableValue {*/
+/*	background-color: #FFF;*/
+/*	border: 2px solid #EEE;*/
+/*	padding: 5px;*/
+/*}*/
+/**/
+/*.fileUploadConfirmTableIntro {*/
+/*	font-size: 20px;	*/
+/*}*/
+/**/
+/*.fileUploadConfirmTableHeader {*/
+/*	font-size: 24px;		*/
+/*}*/
+/**/
+/*.fileUploadConfirmTableItem {*/
+/*	font-size: 14px;		*/
+/*	color: #111;*/
+/*	text-align: right;*/
+/*}*/
+/**/
+/*.fileUploadConfirmTableValue {*/
+/*	text-align: left;*/
+/*	font-size: 16px;		*/
+/*	color: #333;*/
+/*}*/
+/**/
+/*.fileUploadConfirmationDialogueTitle {*/
+/*	color: #F44;*/
+/*	font-size: 28px;*/
+/*	text-align: center;*/
+/*    /*margin-left: 20px;*/*/
+/*}*/
+/*.fileUploadConfirmationDialogue {*/
+/*	background-color: #EEE;*/
+/*	font-size: 18px;*/
+/*	text-align: center;*/
+/*    margin-left: 20px;*/
+/*    position: relative;*/
+/*    top: 30%;*/
+/*    text-align: center;*/
+/*    vertical-align: center;			*/
+/*}*/
+/**/
+/*.fileUploadConfirmationButton {*/
+/*	background-color: #FFF;*/
+/*    /*color: #88CC88;*/*/
+/*    color: #333;*/
+/*    font-weight: bolder;*/
+/*    font-size: 20px;*/
+/*    vertical-align: center;			*/
+/*}*/
+/*.fileUploadYesButton {*/
+/*    /*color: #88CC88;*/*/
+/*    color: #F88;*/
+/*}*/
+/*.fileUploadNoButton {*/
+/*    color: #333;*/
+/*}*/
+/**/
+/**/
+/*.dojoxDialogWrapper {*/
+/*	background: white;*/
+/*}*/
+/**/
+/*.fileUpload {*/
+/*	background: white;*/
+/*	/*opacity: 0.3 !important;	*/*/
+/*}*/
+/**/
+/*/*.dojoxDialogTitle {*/*/
+/*/*	text-align: center;*/*/
+/*/*	font-size: 24px;*/*/
+/*/*	font-weight: bold;*/*/
+/*/*	font-family: Verdana;*/*/
+/*/*	color: #CCC;*/*/
+/*/*	background-color: #FFF;*/*/
+/*/*}*/*/
+/**/
+/*.fileManagerUnderlay {*/
+/*	z-index: 999;*/
+/*    background: black;*/
+/*}*/
+
+/*.dijitDialog {*/
+/*	background: black;*/
+/*	z-index: 999;*/
+/*	height: auto;*/
+/*}*/
+
+.fileUploadTitle {
+	background: black;
+	opacity: 0.7 !important;
+	color: #F00;
+}
+
+.fileUploadButtonSpan {
+	width: 200px;
+	height: 40px;
+	background-color: #FFF;
+	font-size: 10px;
+}
+
+.fileUploadBrowseIcon {
+	background-image: url(../../../plugins/project/images/browse-brightblue-32.png);
+	background-repeat: no-repeat;
+	width: 36px;
+	height: 36px;
+}
+
+
+.dijitFakeInput {
+	/*visibility: hidden;*/
+	/*display: none;*/
+}
+
+.dijitFakeInput #titleNode {
+	left: 20px;
+}
+
+
+/*.dijitProgressOverlay {*/
+/*    width: 50px;*/
+/*    opacity: 0.5;*/
+/*    display: block;*/
+/*}*/
+/**/
+/*.dijitFileInput {*/
+/*    font-family: Verdana;*/
+/*    font-size: 12px;*/
+/*    */
+/*}*/
+
+/* tundra */
+.tundra .dijitProgressOverlay {
+	border:1px solid #84a3d1;
+	background-color:#cad2de;
+	width: auto;
+	/*opacity: 0;*/
+	height: 0px;
+}
+.tundra .dijitFakeInput input {
+	font-size: inherit;
+	background:#fff 
+		url("dijit/themes/tundra/images/validationInputBg.png") 
+		repeat-x top left;
+	border:1px solid #9b9b9b;
+	line-height: normal;
+	padding: 0.2em 0.3em;
+}
+.tundra .dijitFileInputButton, 
+.tundra .dijitFileInputText {
+        border:1px solid #9b9b9b;
+        padding:2px 12px 2px 12px; /* .3em .4em .2em .4em; */
+        background:#e9e9e9 
+            url("dijit/themes/tundra/images/buttonEnabled.png") 
+            repeat-x top;
+}
+/* Soria */
+.soria .dijitProgressOverlay {
+        border:1px solid #333;
+        background-color:#cad2de; 
+		width: auto;
+	height: 0px;
+}
+.soria .dijitFakeInput input {
+        border:1px solid #333;
+        background:#fff 
+            url("dijit/themes/soria/images/gradientInverseTopBg.png") 
+            repeat-x top left;
+        line-height:normal;
+        background-position:0 -30px; 
+        padding:0.2em 0.3em;
+}
+.soria .dijitFileInputButton,
+.soria .dijitFileInputText {
+        border:1px solid #333;
+        padding:2px 12px 2px 12px;
+        background:#b7cdee 
+            url('dijit/themes/soria/images/gradientTopBg.png') repeat-x; 
+}
+
+
+
+/**/
+/*.dijitFakeInput { position:absolute; top:0; left:0; z-index:1; white-space: nowrap; }*/
+/**/
+/*.dijitProgressOverlay {*/
+/*	display:none;*/
+/*	width:250px;*/
+/*	height:1em;*/
+/*	position:absolute;*/
+/*	top:0; left:0;*/
+/*	border:1px solid #333;*/
+/*	background:#cad2de url('../../../dijit/themes/tundra/images/dijitProgressBarAnim.gif') repeat-x top left;*/
+/*	padding:2px;	*/
+/*}*/
+/**/
+/*/* tundra */*/
+/*.tundra .dijitProgressOverlay {*/
+/*	border:1px solid #84a3d1;*/
+/*	background-color:#cad2de;*/
+/*}*/
+/*.tundra .dijitFakeInput input {*/
+/*	/*font-size: inherit;*/*/
+/*	padding: 0;*/
+/*	background:#fff url("../../../dijit/themes/tundra/images/validationInputBg.png") repeat-x top left;*/
+/*	border:1px solid #9b9b9b;*/
+/*	line-height: normal;*/
+/*}*/
+/*.tundra .dijitFileInputButton, */
+/*.tundra .dijitFileInputText {*/
+/*	border:1px solid #9b9b9b;*/
+/*	padding:0px 12px 0px 12px; /* .3em .4em .2em .4em; */*/
+/*	background:#e9e9e9 url("../../../dijit/themes/tundra/images/buttonEnabled.png") repeat-x top;*/
+/*}*/
+/**/
+/*/* Soria */*/
+/*.soria .dijitProgressOverlay {*/
+/*	border:1px solid #8BA0BD;*/
+/*	background-color:#cad2de; */
+/*}*/
+/*.soria .dijitFakeInput input {*/
+/*	border:1px solid #8BA0BD;*/
+/*	background:#fff url("../../../dijit/themes/soria/images/validationInputBg.png") repeat-x top left;*/
+/*	line-height:normal;*/
+/*	background-position:0 -30px; */
+/*	padding:0.2em 0.3em;*/
+/*}*/
+/*.soria .dijitFileInputButton,*/
+/*.soria .dijitFileInputText {*/
+/*	border:1px solid #8BA0BD;*/
+/*	padding:2px 12px 2px 12px;*/
+/*	background:#b7cdee url('../../../dijit/themes/soria/images/buttonEnabled.png') repeat-x; */
+/*}*/
+/**/
+/*/* Nihilo */*/
+/*.nihilo .dijitProgressOverlay {*/
+/*	border:1px solid #DEDEDE;*/
+/*	background-color:#cad2de; */
+/*	width: auto;*/
+/*}*/
+/*.nihilo .dijitFakeInput input {*/
+/*	border:1px solid #DEDEDE;*/
+/*	background:#fff url("../../../dijit/themes/nihilo/images/validationInputBg.png") repeat-x top left;*/
+/*	line-height:normal;*/
+/*	background-position:0 -30px; */
+/*	padding:0.2em 0.3em;*/
+/*}*/
+/*.nihilo .dijitFileInputButton,*/
+/*.nihilo .dijitFileInputText {*/
+/*	border:1px solid #DEDEDE;*/
+/*	padding:2px 12px 2px 12px;*/
+/*	background:#b7cdee url('../../../dijit/themes/nihilo/images/buttonEnabled.png') repeat-x; */
+/*}*/
+/**/
+/*.table {*/
+/*	background-color: black;*/
+/*	font-size: 20px;*/
+/*}*/
+/**/
+/*.tr {*/
+/*	background-color: grey;*/
+/*}*/
+/**/
+/*.td {*/
+/*	background-color: white;*/
+/*}*/

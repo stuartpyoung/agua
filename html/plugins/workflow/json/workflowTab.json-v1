@@ -1,0 +1,29 @@
+{
+    data:
+    {
+        widgetType: "SplitContainer",
+        params: {id: "rootWidget", orientation: "horizontal"},
+        style: "border: 3px solid grey; width: 95%; height: 400px;",
+        children: [
+            {
+                widgetType: "ContentPane",
+                params: {id: paneId + "leftPane", sizeShare:  10},
+                style: "background: #EEEEFF;",
+                innerHTML: ""
+            },
+            {
+                widgetType: "ContentPane",
+                params: {id: paneId + "middlePane", sizeShare:  15},
+                style: "background: #EEEEFF;",
+                innerHTML: ""
+            },
+            {
+                widgetType: "ContentPane",
+                params: {id: paneId + "rightPane", sizeShare:  60},
+                style: "background: #EEEEFF;",
+                innerHTML: ""
+
+            }
+        ]
+    }
+}

@@ -1,0 +1,41 @@
+<div dojoattachpoint="containerNode" style="position: relative; top: 25px;">
+
+	<span id="one" style="position: absolute; top: -20px; left: 5px;" class="dijitFileInputText">
+		<span class='adminHeader'> Users </span>
+		Add, Remove & Administer Users	
+		</span>
+
+	<span dojoType="dijit.Tooltip" connectId="one" style="display:none;">
+		<span style="color: blue;">rich formatting</span>
+		<span style="color: red; font-size: x-large;"><i>!</i></span>
+	</span>
+
+	<div class="templateLoading" style="position: relative; top: -60px; left: 250px;">
+		<img id="${loading}"
+			style="display: none;"
+			src="../plugins/report/images/loading.gif"
+			width="15" height="15" />
+	</div>
+
+	<!-- GROUP COMBOBOX -->
+	<div class="formAnswer" style="position: absolute; top: 30px; left: 20px;">
+
+		<label class="firstLabel"> Group </label>
+
+		<select id="${usersComboContainer}"
+				dojoType="dijit.form.ComboBox"
+				class="adminUsersGroupCombo"
+				autocomplete="true"
+				hasDownArrow="true"
+				disabled="false"
+		>
+		</select>
+	</div>
+
+	<style type="text/css">
+		/*@import "dojo.1.2.2/dojo/reusers/dnd.css";*/
+		@import "dojo.1.2.2/dojo/tests/dnd/dndDefault.css";
+
+	</style>
+
+</div> <!-- dojoattachpoint="containerNode" -->

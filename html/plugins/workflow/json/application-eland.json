@@ -1,0 +1,27 @@
+{
+    data :
+    [
+        ['name', 'eland.pl'],
+        ['description', 'Wrapper to run Eland as a standalone application (independent of GA Pipeline)'],
+        ['application', 'bin/nextgen/eland.pl'],
+        ['inputfiles', ''],
+        ['outputfiles', 'pipeline/outputdir/intfiles/*.int.txt.gz, pipeline/outputdir/seqfiles/*.seq.txt '],
+        ['arguments', '{
+            '--inputfile' :   '/full/path/to/inputfile (must be fasta format)'
+            '--refdir' :   '/full/path/to/directory/containing/reference_sequences.2bpb, .idx and .vld files'
+            '--outputfile' :   '/full/path/to/outputfile'
+            '--multi' :   'Run Eland with '--multi' option (Boolean)'
+
+
+        }']
+        ['stderrfile', 'pipeline/outputdir/bustard.stderr'],
+        ['stdoutfile', 'pipeline/outputdir/bustard.stdout'],
+        ['started', '0000-00-00 00:00:00'],
+        ['completed', '0000-00-00 00:00:00'],
+        [
+            [ '-d', 'funnybase11'],
+            [ '-e', 151],
+            [ '-p', '1-5']
+        ]
+    ]
+}

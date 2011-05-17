@@ -1,0 +1,32 @@
+{
+    identifier: 'name',
+    label: 'name',
+    items: [
+        {
+            name:  'bioinfo',
+            type:  'group',
+            children: [
+                    {
+                    _reference: 'Project1',
+                    _reference: 'skhuri',
+                    _reference: 'syoung'
+                    }
+            ],
+        {   name: 'Project1', type: 'project' },
+        {   name: 'skhuri', type: 'user' },
+        {   name: 'syoung', type: 'user' },
+        {
+            name:  'nextgen',
+            type:  'group',
+            children: [
+                    {
+                    _reference: 'Project2',
+                    _reference: 'dhedges',
+                    _reference: 'syoung'
+                    }
+            ],
+        {   name: 'Project2', type: 'project' },
+        {   name: 'dhedges', type: 'user' }
+
+    ]
+}

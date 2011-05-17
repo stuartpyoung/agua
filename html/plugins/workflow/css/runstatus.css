@@ -1,0 +1,236 @@
+/* RUN STATUS */
+
+/* SET BACKGROUND COLOR AND FONT */
+.runstatus .runstatus {
+	font-family: Verdana;
+	background-color: #FFF;
+}
+
+/* CONTROL PADDING INSIDE THE TITLE PANES */
+.runstatus .dijitTitlePaneContentInner {
+	padding: 0px;
+}
+
+/* NB: THIS DOESN'T WORK BECAUSE THE CONTENT
+PANE IS NOT YET INSIDE THE runstatus CCS SPACE */
+.runstatus .dijitTitlePaneContentInner {
+	padding:0 !important;
+}
+
+.runstatus .dijitContentPane {
+	padding : 0 !important;
+	margin: 0 0 0 !important;
+}
+
+/*.runstatus .dijitSplitContainer-dijitContentPane {*/
+/*	padding: 0 !important;*/
+/*	margin: 0 !important;*/
+/*	background-color: #FFF !important;*/
+/*}*/
+
+.runstatus .dijitTitlePaneContentOuter {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:#FFFFFF none repeat scroll 0 0;
+	border-color:#FFF;
+	/*border-style:solid;*/
+	border-width:2px;
+	padding : 0 !important;
+	margin: 0 0 0 !important;
+}
+
+/* SET TAB PANE WRAPPER MIN HEIGHT SO ALL TITLE PANES ARE VISIBLE */
+.dijitTabPaneWrapper .dijitTabContainerTop-container .runstatus {
+	height: auto !important;
+	min-height: 120px !important;
+}
+
+/*.dijitContentPane .dijitTabPane .dijitTabContainerTop-dijitContentPane table {*/
+/*	height: auto !important;*/
+/*	min-height: 120px !important;*/
+/*}*/
+
+/* TITLE PANE TITLE */
+.runstatus .status {
+	/*min-height: 20px !important;*/
+}
+
+/* TITLE PANE TITLE */
+.runstatus .dijitTitlePaneTextNode {
+	color: #484 !important;
+	font-weight: bolder;
+	font-size: 16px;
+}
+
+/* TITLE PANE HEIGHT */
+.runstatus .dijitTitlePaneContentInner{
+	/*height: auto !important;*/
+	/*min-height: 30px !important;*/
+	/*margin-bottom: 20px;*/
+}
+
+.runstatus .dijitTitlePaneTitle .dijitTitlePaneFocused .dijitClosed {
+	/*min-height: 20px !important;*/
+	/*margin-bottom: 20px;*/
+}
+
+.runstatus .dijitTitlePaneTitle, .runstatus .dijitTitlePaneTitle .dijitClosed  {
+	min-height: 20px !important;	
+}
+
+/* STATUS ROWS CONTAINER */
+.runstatus {
+
+	/*min-height: 40px !important;	*/
+
+	height: auto !important;
+	font-family: Verdana;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border: 2px solid #CCCCCC;
+	cursor: default;
+	/*padding: 0 0 !important;*/
+	/*padding:1em 0.5em;*/
+	/*margin: 0 0 !important;*/
+	width: 465px !important;
+
+	text-align: left !important;
+	font-size: 12px;
+	border-color: #333;
+
+	/* NEEDED SO THAT SCROLLBAR WILL SHOW */
+	/*display: block !important;*/
+	overflow:auto !important;
+}
+
+/* ALL BUTTONS */
+.runstatus .play,
+.runstatus .pause,
+.runstatus .stop,
+.runstatus .timerStopped,
+.runstatus .timerStarted {
+	background-color: #FFF;
+	border: 2px solid #EEE;
+	border-bottom-color: #DDD;	
+	border-left-color: #DDD;	
+	vertical-align: middle;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url();
+	width: 32px;
+	height: 32px;
+}
+
+.runstatus .play:hover,
+.runstatus .pause:hover,
+.runstatus .stop:hover,
+/*.runstatus .timerStopped:hover,*/
+.runstatus .timerStopped:hover {
+	background-color: #FF0;
+}
+
+.runstatus .play:active,
+.runstatus .pause:active,
+.runstatus .stop:active,
+/*.runstatus .timerStopped:active,*/
+.runstatus .timerStopped:active {
+	background-color: #0F0;
+}
+
+/* TOGGLE TIMER */
+.runstatus .timerStopped {
+	background-image: url(../../../../plugins/workflow/images/loading-clock.gif);
+}
+.runstatus .timerStarted {
+	background-image: url(../../../../plugins/workflow/images/loading-circles.gif);
+}
+
+/* PLAY, PAUSE AND STOP */
+.runstatus .play {
+	background-image: url(../../../../plugins/workflow/images/play-28.png);	
+}
+.runstatus .pause {
+	background-image: url(../../../../plugins/workflow/images/pause-28.png);	
+}
+.runstatus .stop {
+	background-image: url(../../../../plugins/workflow/images/stop-28.png);	
+}
+
+.runstatus .play:hover {
+	background-image: url(../../../../plugins/workflow/images/play-wide-green-28.png);	
+}
+.runstatus .pause:hover {
+	background-image: url(../../../../plugins/workflow/images/pause-orange-28.png);	
+}
+.runstatus .stop:hover {
+	background-image: url(../../../../plugins/workflow/images/stop-red-28.png);	
+}
+
+/* DATETIME */
+.runstatus .notifier {
+	width: 240px;
+	background-color: #000;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
+
+/* STAGE STATUS */
+.runstatus .stageTable {
+	position: relative;
+	/*left: 5px;*/
+	background-color: #DDD;
+	/*margin: 0px !important;*/
+	/*padding: 1px !important;*/
+}
+
+.runstatus .stageHeader {
+	background-color: #EEE;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	color: #000;
+}
+
+.runstatus .stageRow {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 16px;
+	background-color: #FFF;
+}
+
+.runstatus .stageRow .key {
+	width: 100px;
+	font-weight: bolder;	
+	color: #000;
+}
+
+.runstatus .stageRow .value {
+	width: 250px;
+	font-weight: bold;	
+	color: #444;
+}
+/* CLUSTER STATUS */
+.runstatus .clusterStatus pre,
+.runstatus .queueStatus pre {
+	background-color: #FFFFFF !important;
+	padding: 0px !important;
+	font-size: 10px !important;
+	height: auto !important;
+	max-height: auto !important;
+}
+.runstatus .clusterStatusContainer {
+	height: auto !important;
+}

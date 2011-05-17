@@ -1,0 +1,99 @@
+/*@import "../../../dojo-1.5.0/dojo/resources/dojo.css";*/
+/*@import "../../../dojo-1.5.0/dijit/themes/tundra/tundra.css";*/
+/*@import "../../../dojo-1.5.0/dijit/themes/dijit.css";*/
+/*@import "../../../dojo-1.5.0/dijit/tests/css/dijitTests.css"; */
+
+
+/* main classes for dojox.widget.Toaster */
+/*@import "../../../dojo-1.5.0/dojox/widget/Toaster/Toaster.css";*/
+
+.dijitToasterContent {
+	padding:1em;
+	padding-top:0.25em;
+	background:#73c74a;
+}
+
+.dijitToasterMessage{ 
+	color:#fff;
+}
+
+.dijitToasterWarning{ }
+.dijitToasterError,
+.dijitToasterFatal{
+	font-weight:bold;
+	color:#fff;
+}
+
+.dijitToasterWarning .dijitToasterContent{
+	padding:1em;
+	padding-top:0.25em;
+	background:#d4d943;
+} 
+
+.dijitToasterError .dijitToasterContent{
+	padding:1em;
+	padding-top:0.25em;
+	/*background:#c46600;*/
+	background:#FF9988;
+}
+
+/* imported from dijit.css */
+
+.dijitToasterClip {
+	position: absolute;
+	z-index: 5000;
+	overflow: hidden;
+}
+
+.dijitToasterContainer {
+	display: block;
+	position: absolute;
+	width: 17.5em;
+	margin: 0px;
+	font:0.75em Tahoma, Helvetica, Verdana, Arial;
+}
+
+
+.toaster {
+    font-size: 24px !important;
+    opacity: 0.6 !important;
+	background-color: #FFAA88 !important;
+	font-weight: bolder !important;
+	font-family: Verdana !important;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+}
+
+.dijitToasterContent {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt !important;
+	-moz-border-radius-bottomright:8pt !important;
+	-moz-border-radius-topleft:8pt !important;
+	-moz-border-radius-topright:8pt !important	;
+	border: 4px solid #BBB !important;
+	border-bottom-color: #444 !important;	
+	border-left-color: #444 !important;	
+	cursor: default;
+	margin: 2px 2px !important;
+	text-align: left !important;
+	border-color: #AAA !important;
+}
+
+.dijitToasterWarning .dijitToasterContent{
+	/*background:#d4d943;*/
+	background: #FFC !important;
+} 
+
+.dijitToasterError .dijitToasterContent{
+	/*background: #F44 !important;*/
+	/*color: #000 !important;*/
+}
+
+

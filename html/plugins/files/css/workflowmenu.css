@@ -1,0 +1,48 @@
+.workflowmenu {
+    font-family: Verdana;
+	text-indent: 4px;
+	font-size: 16px;
+	color: darkred;
+	font-weight: bold;
+}
+
+.workflowmenu .title {
+    color: #822;
+    font-weight: bolder;
+    background-color: #EEE;
+    text-align: left;
+	text-indent: 5px;
+}
+
+.workflowmenu .newProject {
+	background-image: url("../../../plugins/files/images/newproject-20.png");
+	background-repeat: no-repeat;
+}
+.workflowmenu .newWorkflow {
+	background-image: url("../../../plugins/files/images/newworkflow-20.png");
+	background-repeat: no-repeat;
+}
+.workflowmenu .deleteWorkflow {	
+	background-image: url("../../../plugins/files/images/deleteworkflow-20.png");
+	background-repeat: no-repeat;
+}
+.workflowmenu .deleteProject {
+	background-image: url("../../../plugins/files/images/deleteproject-20.png");
+	background-repeat: no-repeat;
+}
+.workflowmenu .copyWorkflow {
+	background-image: url("../../../plugins/files/images/copyworkflow-20.png");
+	background-repeat: no-repeat;
+}
+.projectmenu .copyProject {
+	background-image: url("../../../plugins/files/images/copyproject-20.png");
+	background-repeat: no-repeat;
+}
+.workflowmenu .renameWorkflow {
+	background-image: url("../../../plugins/files/images/renameworkflow-20.png");
+	background-repeat: no-repeat;
+}
+.workflowmenu .openWorkflow {
+	background-image: url("../../../plugins/files/images/workflow-20.png");
+	background-repeat: no-repeat;
+}

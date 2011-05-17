@@ -1,0 +1,74 @@
+dojo.provide( "plugins.admin.UserRow");
+
+
+dojo.declare( "plugins.admin.UserRow",
+	[ dijit._Widget, dijit._Templated ],
+{
+	//Path to the template of this widget. 
+	templatePath: dojo.moduleUrl("plugins", "admin/templates/userrow.html"),
+
+	// Calls dijit._Templated.widgetsInTemplate
+	widgetsInTemplate : true,
+
+	// PARENT plugins.admin.Sources WIDGET
+	parentWidget : null,
+
+	constructor : function(args)
+	{
+
+		this.parentWidget = args.parentWidget;
+		//this.inherited(arguments);
+	},
+
+	postCreate : function()
+	{
+
+		this.startup();
+	},
+
+	startup : function ()
+	{
+
+		this.inherited(arguments);
+
+		var userRowObject = this;
+		dojo.connect( this.name, "onclick", function(event) {
+			userRowObject.toggle();
+			event.stopPropagation(); //Stop Event Bubbling 			
+		});
+
+		// ADD 'EDIT' ONCLICK
+		var userRowObject = this;
+		dojo.connect(this.description, "onclick", function(event)
+			{
+
+				userRowObject.parentWidget.editUserRow(userRowObject, event.target);
+				event.stopPropagation(); //Stop Event Bubbling 			
+			}
+		);
+
+		// ADD 'EDIT' ONCLICK
+		var userRowObject = this;
+		dojo.connect(this.location, "onclick", function(event)
+			{
+
+				userRowObject.parentWidget.editUserRow(userRowObject, event.target);
+				event.stopPropagation(); //Stop Event Bubbling 			
+			}
+		);
+	},
+
+	toggle : function ()
+	{
+
+		if ( this.firstname.style.display == 'block' ) this.firstname.style.display='none';
+		else this.firstname.style.display = 'block';
+		if ( this.lastname.style.display == 'block' ) this.lastname.style.display='none';
+		else this.lastname.style.display = 'block';
+		if ( this.description.style.display == 'block' ) this.description.style.display='none';
+		else this.description.style.display = 'block';
+		if ( this.email.style.display == 'block' ) this.email.style.display='none';
+		else this.email.style.display = 'block';
+	}
+});
+

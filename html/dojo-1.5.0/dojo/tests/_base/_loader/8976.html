@@ -1,0 +1,25 @@
+<html>
+<head>
+        <script type="text/javascript" src="../../../dojo.js"
+                djConfig="parseOnLoad: false, isDebug: true"></script>
+</head>
+<body>
+<h1>Testcase for #8976</h1>
+
+<script>
+var count = 0;
+function wait(count){
+	dojo.addOnLoad(function(){
+		try{
+			var i = dijit.layout.TabController.constructor;
+		}catch(e){ alert("failed: " + e) }
+	});
+}
+function load(count){
+	dojo.require("dijit.dijit");
+	dojo.require("dijit.dijit-all");
+}
+</script>
+<input type=button onmousedown="load(count++);return true" onmouseup="wait(count++);return true" value="click this button to load and wait">
+</body>
+</html>

@@ -1,0 +1,10 @@
+admin	admin	Project1	Workflow0	1	TOPHAT	1	aligner	apps/expression/TOPHAT.pl	/usr/bin/perl	PBS	\N	\N	\N	\N	\N	\N	\N	\N	\N			
+jgilbert	admin	Project1	Workflow1	2	filterSnp	1	report	apps/snp/filterSnp.pl	perl		\N	\N	\N	2010-03-25 13:31:44	\N	\N	\N	\N	running	filter1	raw filter	Notes for raw filter
+jgilbert	admin	Project1	Workflow1	2	filterSnp	2	report	apps/snp/filterSnp.pl	perl		\N	\N	\N	2010-03-25 13:31:45	\N	\N	\N	\N	running	filter2	refined filter	Notes for refined filter
+jgilbert	admin	Project1	Workflow1	2	TOPHAT	3	aligner	apps/expression/TOPHAT.pl	/usr/bin/perl	PBS	\N	\N	\N	\N	\N	\N	\N	\N	\N			
+ntsinoremas	admin	Project1	Workflow1	2	TOPHAT	1	aligner	apps/expression/TOPHAT.pl	/usr/bin/perl	PBS	\N	\N	\N	2010-03-25 13:31:44	\N	\N	\N	\N	running			
+syoung	admin	Project1	Workflow1	1	TOPHAT	1	aligner	apps/expression/TOPHAT.pl	/usr/bin/perl		\N	\N	\N	\N	2011-04-09 11:28:02	\N	\N	\N	completed	\N	\N	\N
+syoung	admin	Project1	Workflow2	2	ELAND	1	alignment	apps/clusterELAND.pl	perl		\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+syoung	admin	Project1	Workflow2	2	TOPHAT	2	aligner	apps/expression/TOPHAT.pl	/usr/bin/perl		\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+syoung	admin	Project1	Workflow2	2	ELAND	3	alignment	apps/clusterELAND.pl	perl		\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+whulme	admin	Project2	Workflow1	1	TOPHAT	1	aligner	apps/expression/TOPHAT.pl	/usr/bin/perl	PBS	\N	\N	\N	\N	\N	\N	\N	\N	\N			\N

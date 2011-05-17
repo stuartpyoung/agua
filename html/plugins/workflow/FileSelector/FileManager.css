@@ -1,0 +1,41 @@
+@import url("RollingList.css");
+
+/* ALIGN FILES TO TOP */
+.dojoxFileSelectorPane, dojoxRollingListPane {
+	vertical-align: top;
+}
+
+.fileManagerTitle {
+	text-align: center;
+	font-size: 25px;
+	color: #666;
+	/*background-color: #BBB;*/
+	/*background-image: url("http://localhost:8080/Bioptic0.2.5/html/plugins/project/FileDrag/images/directory-closed.png");*/
+	height: 30px;
+}
+
+.soria .dojoxDialogTitle {
+	/*background-color: #BBB;*/
+	/*text-align: center;*/
+	/*font-size: 25px;*/
+	/*color: #F00;*/
+	/*color: #666;*/
+}
+
+.soria .dojoxDialogPaneContent {
+	background-color: #EEF;
+	/*text-align: center;*/
+	/*font-size: 25px;*/
+	/*color: #F00;*/
+	/*color: #666;*/
+}
+
+.soria .browseButton {
+	background-color: #EEF;
+	/*text-align: center;*/
+	/*font-size: 25px;*/
+	/*color: #F00;*/
+	/*color: #666;*/
+	background-image: url("../../../plugins/project/FileDrag/images/directory-closed.png");
+}
+

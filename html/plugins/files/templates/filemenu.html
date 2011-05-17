@@ -1,0 +1,88 @@
+<div dojoAttachPoint="containerNode">
+
+<div
+    dojoAttachPoint="menu"
+    class="filemenu"
+    dojoType="plugins.menu.Menu">
+
+<!--    <div dojoType="dijit.MenuItem"
+        label="File Options"
+        dojoAttachPoint="titleNode"
+        class="title"
+        disabled="false">
+    </div>
+-->
+    <div
+        dojoAttachPoint="newFolderNode"
+        dojoType="dijit.MenuItem"
+        dojoAttachEvent="onClick:newFolder"
+        class="newFolder"
+        >
+        <U>N</U>ew Folder
+    </div>
+
+    <div dojoType="dijit.MenuSeparator">
+    </div>
+
+    <div
+        dojoAttachPoint="renameNode"
+        dojoType="dijit.MenuItem"
+        dojoAttachEvent="onClick:rename"
+        class="rename"
+        >
+        Rena<U>m</U>e
+
+    </div>
+
+    <div dojoType="dijit.MenuSeparator">
+    </div>
+
+    <div
+        dojoAttachPoint="deleteNode"
+        dojoType="dijit.MenuItem"
+        dojoAttachEvent="onClick:deleteNode"
+        class="delete"
+        >
+        De<U>l</U>ete
+    </div>
+
+    <div dojoType="dijit.MenuSeparator">
+    </div>
+
+    <div
+        dojoAttachPoint="openWorkflowNode"
+        dojoType="dijit.MenuItem"
+        dojoAttachEvent="onClick:openWorkflow"
+        class="openWorkflow"
+        >        
+        <U>O</U>pen Workflow
+    </div>
+
+    <div dojoType="dijit.MenuSeparator">
+    </div>
+
+    <div
+        dojoAttachPoint="uploadNode"
+        dojoType="dijit.MenuItem"
+        class="upload"
+        dojoAttachEvent="onClick:"
+        style="height: 20px !important;"
+        >
+        <U>U</U>pload file
+        <div class="fileInputMask"></div>
+
+    </div>
+
+    <div dojoType="dijit.MenuSeparator">
+    </div>
+
+    <div
+        dojoAttachPoint="downloadNode"
+        dojoType="dijit.MenuItem"
+        class="download"
+        dojoAttachEvent="onClick:download"    
+        >
+        Do<U>w</U>nload file
+    </div>
+
+</div>

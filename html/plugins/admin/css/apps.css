@@ -1,0 +1,280 @@
+@import "../../../dojo-1.5.0/dojo/tests/dnd/dndDefault.css";
+
+/* DOES THIS HELP AUTOSIZING? */
+.apps {
+	height: auto !important;
+	font-family: Verdana;
+}
+
+.apps .label {
+	text-align:	center !important;
+	font-weight: bolder;
+	font-size: 14px;
+	font-style: oblique;
+	color: darkblue;
+	height: 20px;
+	vertical-align: bottom !important;
+	/*background-color: #FF4;*/
+	background-color: #EEE;
+}
+
+
+/* NB: THIS IS NEEDED FOR THE BUTTON CSS BELOW TO WORK! */
+.apps table textarea {
+	font-family: Verdana;
+}
+.apps .addAppButton {
+	height: 20px !important;
+	width: 115px !important;
+	/*margin-left: auto;*/
+	margin-right: 0px;
+
+	text-align: center;
+	vertical-align: middle;
+	-moz-user-select: none;
+	font-size: 14px;
+	font-family: Verdana;
+	font-weight: bolder;
+	color: #224;
+	background-color: #EEF;
+
+	border: 4px solid #BBB;
+	border-bottom-color: #888;	
+	border-left-color: #888;
+}
+
+.apps .addAppButton:hover {
+	border-color: #999;
+	border-bottom-color: #555;	
+	border-left-color: #555;
+	background-color : #FF8;
+}
+
+.apps .addAppButton:active {
+	border-color: #999;
+	border-bottom-color: #555;	
+	border-left-color: #555;
+	background-color : #8F8;
+}
+
+.apps .newName,
+.apps .newType,
+.apps .newLocation,
+.apps .newLocalonly,
+.apps .newExecutor,
+.apps .newVersion,
+.apps .newDescription,
+.apps .newNotes
+{
+	height: 20px !important;
+	font-size: 14px;
+	color: #444;
+	text-align: left !important;
+	vertical-align: middle !important;
+	font-style: oblique;
+	font-weight: bolder !important;
+	padding-top: 0px;
+}
+
+/* NEW SUBMIT CHECKBOX AND TITLE */
+.apps .newLocalonlyCheckbox {
+	float: right;
+}
+
+.apps .newLocalonly {
+	padding-left: 15px !important;
+}
+
+.apps .newName {
+	height: 20px !important;	
+}
+
+.apps .invalid ,
+.apps .newDescription .dijitTextArea .invalid,
+.apps .newNotes .dijitTextArea .invalid
+{
+	border: 2px solid #F00 !important;
+}
+
+/* APPS COMBO */
+
+.apps .appsCombo,
+.apps .dijitMenu li,
+.apps .dijitMenuItem li
+{
+	text-indent: 10px;
+}
+
+.apps .appsCombo {
+	text-indent: 10px;
+	height: auto;
+	width: 150px;
+	color: #000;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* HIDE VALIDATION ICON AT RIGHT OF COMBO SCROLLBOX */
+.apps .appsCombo .dijitValidationIcon {
+	/*visibility: hidden !important;*/
+	display: none !important;
+	/*width: 0px !important;*/
+}
+
+/* NOTE: THIS IS NECESSARY FOR THE NEXT RULE TO WORK!!! */
+.apps .appsCombo .dijitReset .dijitMenu li,
+.apps .appsCombo .dijitReset .dijitMenuItem li
+{
+	/*color: #0FF !important;*/
+}
+.apps .dijitMenu li,
+.apps .dijitMenuItem li
+{
+	color: #224 !important;
+	height: 25px;
+}
+
+
+/* NOTE: THIS DOESN'T WORK!!! */
+.apps .appsCombo .dijitReset .dijitInputField
+{
+	/*color: #0FF !important;*/
+	text-align: center !important;
+}
+
+
+
+/* DRAG SOURCE */
+
+.apps .dragSource .notes .default
+{
+	color: #555;
+}
+
+.apps .editAppRow {
+	width: 100%;
+	height: 20px;
+}
+
+
+.apps .dragSource,
+.apps .dragSource:hover
+{
+	-moz-background-clip:			border !important;
+	-moz-background-inline-policy:	continuous !important;
+	-moz-background-origin:			padding !important;
+	-moz-border-radius-bottomleft:	8pt !important;
+	-moz-border-radius-bottomright:	8pt !important;
+	-moz-border-radius-topleft:		8pt !important;
+	-moz-border-radius-topright:	8pt !important;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border:3px solid #CCCCCC;
+	cursor:default;
+	/*padding:1em 0.5em;*/
+
+	/* HEIGHT AND WIDTH ARE SET IN HTML */
+	/*margin-top: 5px;*/
+	/*width: 120px;	*/
+	/*height: 300px;*/
+	/*min-height: 100px;*/
+
+	text-align: left !important;
+	/*color: #339;*/
+	/*color: darkred;*/
+	/*font-weight: bold;*/
+
+	font-size: 12px;
+	border-color: #333;
+
+	/* NEEDED SO THAT SCROLLBAR WILL SHOW */
+	display: block !important;
+	overflow:auto !important;
+}
+
+.apps .dragSource .dojoDndItemAnchor {
+	background-color: #CCFFCC !important;
+}
+
+.apps .dragSource .name {
+	font-size: 14px;
+	color: darkred;
+	font-weight: bolder;
+	text-align: left !important;
+	background-image: url(../../../plugins/admin/images/app-18.png);
+	text-indent: 22px;
+	background-repeat: no-repeat;
+	height: 18px;
+}
+
+.apps .dragSource .type {
+	text-align: right;
+	width: 40px;
+	font-size: 12px;
+	color: blue;
+	font-weight: bold;
+}
+
+.apps .dragSource .executor,
+.apps .dragSource .location,
+.apps .dragSource .submit,
+.apps .dragSource .version
+{
+	color: #222;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: left !important;
+	background: #EFEFEF;
+}	
+
+.apps .dragSource .description {
+	color: #222;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left !important;
+	background: #EFEFEF;
+}
+
+.apps .dragSource .notes {
+	color: #000;
+	font-weight: normal;
+	font-size: 12px;
+	font-style: italic;
+	text-align: left !important;
+	background: #EFEFEF;
+}
+
+.apps .trash {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border:3px solid #CCCCCC;
+	cursor:default;
+	padding:1em 0.5em;
+
+	margin-top: 5px;
+	width: 150px;	
+	height: 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.apps .trashIcon {
+	height: 100%;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+
+	background-image: url(../../../plugins/admin/images/trash-60.png);
+	background-repeat: no-repeat;
+}
+

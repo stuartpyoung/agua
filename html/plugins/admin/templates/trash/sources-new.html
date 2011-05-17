@@ -1,0 +1,140 @@
+<div dojoattachpoint="containerNode">
+
+	<!-- SOURCES TAB -->
+	<div
+		dojoAttachPoint="sourcesTab"
+		class="sources"
+		dojoType="dijit.layout.ContentPane"
+		title="Sources"
+		style="height: 700px; width: 420px !important; position: absolute; top: 23px !important; border: 1px solid #243C5F;"
+		>
+
+		<table>
+			<tr>
+				<td colspan="2" class="dijitFileInputText">
+					<span class='adminHeader'> Sources </span>
+					Add, Remove & Administer Sources	
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table>
+						<tr>
+							<td class="firstLabel"> Group </td>
+						</tr>
+						<tr>
+							<td>
+								<div dojoAttachPoint="groupCombo"
+										dojoType="dijit.form.ComboBox"
+										class="groupCombo"
+										autocomplete="true"
+										hasDownArrow="true"
+										disabled="false"
+										style="width: 150px;"
+								>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div
+									dojoAttachPoint="dragSourceContainer"
+									class="container dragSource"
+									style="height: 300px; width: 150px;"
+
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td>
+								<div
+									dojoAttachPoint="dropTargetContainer"
+									class="container adminSourcesDropTarget"
+									style="height: 300px; width: 150px;"
+									>
+								</div>
+							</td>
+						<tr>
+						</tr>
+							<td align="center">
+								<div
+									dojoAttachPoint="trashContainer"
+									class="trash"
+									style="height: 60px; width: 150px;" 
+									>
+									<div
+										dojoAttachPoint="trashIcon"
+										class="trashIcon"
+										style="height: 60px; width: 60px;"
+										>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+	</div>
+	<!-- END SOURCES TAB -->
+
+
+
+	<!--<div id="adminSourcesDragSourceContainer" style="position: absolute; top: 40px; left: 450px; margin: 5px; height: 300px;">-->
+	<!--	-->
+	<!--	<h3>Sources</h3>-->
+	<!--	-->
+	<!--	<div dojoType="dojo.dnd.Source"-->
+	<!--		id="adminSourcesDragSource"-->
+	<!--		jsId="c3"-->
+	<!--		copyOnly="true"-->
+	<!--		selfAccept="false"-->
+	<!--		class="container adminSourcesDragSource">-->
+	<!--		-->
+	<!--		<script type="dojo/method" event="creator" args="item, hint">-->
+	<!--			// this is custom creator, which changes the avatar representation-->
+	<!--			var node = dojo.doc.createElement("div"), s = String(item);-->
+	<!--			node.id = dojo.dnd.getUniqueId();-->
+	<!--			node.className = "dojoDndItem";-->
+	<!--			node.innerHTML = (hint != "avatar" || s.indexOf("Item") < 0) ?-->
+	<!--				s : "<table> <tr><td><strong style='color: darkred'>Special</strong></td></tr><tr><td> " + s + "</td></tr></table>";-->
+	<!--			return {node: node, data: item, type: ["text"]};-->
+	<!--		</script>-->
+	<!---->
+	<!---->
+	<!--		<div class="dojoDndItem">Item <strong>Alpha</strong></div>-->
+	<!--		<div class="dojoDndItem">Item <strong>Beta</strong></div>-->
+	<!---->
+	<!--		<div class="dojoDndItem">Item <strong>Gamma</strong></div>-->
+	<!--		<div class="dojoDndItem">Item <strong>Delta</strong></div>-->
+	<!--	</div>-->
+	<!--</div>-->
+	<!---->
+	<!---->
+	<!---->
+	<!---->
+	<!--	-->
+	<!--<div style="position: absolute; top: 90px; left: 10px; height: 300px; margin: 5px;">-->
+	<!---->
+	<!--	<div dojoType="dojo.dnd.Source"-->
+	<!--		 id="adminSourcesDropTarget"-->
+	<!--		jsId="c4"-->
+	<!--		 copyOnly="true" selfAccept="false"-->
+	<!--		 class="container adminSourcesDropTarget">-->
+	<!---->
+	<!--		<div class="dojoDndItem"><table><tr> <td></td> <td  class="adminHeaderRow adminSourcesDropColumn1"> Name </td> <td  class="adminHeaderRow adminSourcesDropColumn2">Description</td> </tr></table> </div>-->
+	<!--		<div class="dojoDndItem">Item 2</div>-->
+	<!--		<div class="dojoDndItem">Item 3</div>-->
+	<!--	</div>-->
+	<!--</div>-->
+
+
+
+
+
+</div> <!-- dojoattachpoint="containerNode" -->

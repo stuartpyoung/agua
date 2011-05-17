@@ -1,0 +1,240 @@
+<div dojoattachpoint="containerNode">
+
+	<!-- APPS TAB -->
+	<div
+		dojoAttachPoint="appsTab"
+		class="apps"
+		dojoType="dijit.layout.ContentPane"
+		title="Apps"
+		style="height: 700px !important; width: 390px !important; padding: 0 !important;"
+		>
+
+		<table width="100%">
+			<tr valign="top" width="100%">
+				<td colspan="2" class="tabTitle" align="center">
+					<!--<div class="tabTitleIcon">-->
+						Apps
+					<!--</div>-->
+				</td>
+			</tr>
+
+			<tr valign="top" width="95%">
+				<td width="100%">
+					<!--<div class="label"> New App </div>-->
+					<table width="100%">
+						<tr width="100%">
+
+							<td colspan="3" height="32px">
+
+								<table cellspacing="0" cellpadding="0" border="0" style="padding: 0; margin: 0;">
+
+									<tr>
+
+										<td 
+											style="padding-right: 10px;" >
+											<textarea
+												dojoAttachPoint="newName"
+												class="newName"
+												style="width:100%; font-weight: bolder;"
+												cols="30"
+												rows="1"
+												title="Name of application"
+												>Name</textarea>
+										</td>
+
+										<td height="20px"
+											width="120px"
+											align="right">
+
+											<div
+												dojoAttachPoint="addAppButton"
+												dojoAttachEvent="onclick:newApp"
+												class="addAppButton"
+											>
+											New App
+											</div>
+										</td>
+
+									</tr>
+								</table>
+							</td>
+
+						</tr>
+
+						<tr class="headerRow" width="100%" height="8px">
+							<td width="33%">Type</td>
+							<td width="33%">Executor</td>
+							<td width="33%">Version</td>
+						</tr>
+
+						<tr width="100%">
+							<td width="33%">
+								<textarea
+									dojoAttachPoint="newType"
+									class="newType"
+									style="width: 100%; font-weight: bolder; font-family: Verdana;";
+									cols="40"
+									rows="1"
+									title="Type (e.g., 'pipeline', 'converter', 'utility')"
+									>Type</textarea>
+							</td>
+
+							<td width="34%"
+								style="padding-left: 4px; padding-right: 4px;" >
+								<textarea
+									dojoAttachPoint="newExecutor"
+									class="newExecutor"
+									style="width: 100%; font-weight: bolder; font-family: Verdana;";
+									cols="40"
+									rows="1"
+									title="Executor (e.g., '/usr/bin/perl')"
+									>Executor</textarea>
+							</td>
+							<td width="33%">
+								<textarea
+									dojoAttachPoint="newVersion"
+									class="newVersion"
+									style="width: 100%; font-weight: bolder; font-family: Verdana;";
+									cols="40"
+									rows="1"
+									title="Version of the software package (e.g., '0.9.1')"
+									>Version</textarea>
+							</td>
+						</tr>
+
+						<tr class="headerRow" width="100%" height="8px">
+							<td width="67%" colspan="2">Location</td>
+							<td width="33%">&nbsp;</td>
+						</tr>
+
+						<tr width="100%">
+							<td colspan="2">
+								<textarea
+									dojoAttachPoint="newLocation"
+									class="newLocation"
+									style="width: 100%; font-weight: bolder; font-family: Verdana;";
+									cols="40"
+									rows="1"
+									title="Absolute path (e.g., '/home/myname/myapp.pl') or path relative to Agua base folder (e.g., 'bin/apps/myScript.pl')"
+									>Location</textarea>
+							</td>
+
+
+							<td colspan="1"
+								title="Select so that application will only run locally (e.g., a herder that submits jobs to the cluster))"
+							>
+								<span
+									dojoAttachPoint="newLocalonly"
+									class="newLocalonly">
+									Local Only
+								</span>
+
+								<span
+									dojoAttachPoint="newLocalonly"
+									dojoType="dijit.form.CheckBox"
+									checked="false"
+									class="newLocalonlyCheckbox"
+								></span>
+							</td>
+						</tr>
+
+						<tr class="headerRow" width="100%" height="8px">
+							<td colspan="3">Description</td>
+						</tr>
+
+						<tr>
+							<td colspan="3">
+								<textarea
+									dojoAttachPoint="newDescription"
+									class="newDescription"
+									style="width:100%; font-weight: bolder; font-family: Verdana;";
+									cols="40"
+									rows="1"
+									title="A brief description of the application"
+								>Description</textarea>
+							</td>
+						</tr>
+
+						<tr class="headerRow" width="100%" height="8px">
+							<td colspan="3">Notes</td>
+						</tr>
+
+						<tr>
+							<td colspan="3">
+								<textarea
+									dojoAttachPoint="newNotes"
+									class="newNotes"
+									value="Notes"
+									style="width:100%; font-weight: bolder; font-family: Verdana;";
+									cols="40"
+									rows="1"
+									title="Notes on the application (e.g., version, constraints)"
+								>Notes</textarea>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+			<tr valign="top" width="95%">
+				<td width="95%">
+					<div class="label"> Application List Order </div>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+					<div
+						dojoAttachPoint="appsCombo"
+						dojoAttachEvent="onChange:setDragSource"
+						dojoType="plugins.core.ComboBox"
+						class="appsCombo"
+						popupClass="sources appsCombo dijitReset dijitMenu"
+						autocomplete="true"
+						hasDownArrow="true"
+						disabled="false"
+						style="width: 250px;"
+					>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<div
+						dojoAttachPoint="dragSource"
+						class="dragSource"
+						style="height: 350px; width: 97%;"
+					>
+					</div>
+				</td>
+			</tr>
+
+			<tr align="center">
+				<td align="center">
+
+					<!-- TRASH CONTAINER -->
+					<div
+						dojoAttachPoint="trashContainer"
+						class="trash"
+						style="height: 60px; width: 150px; align: center;" 
+						>
+						<div
+							dojoAttachPoint="trashIcon"
+							class="trashIcon"
+							style="height: 60px; width: 60px;"
+							>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+
+
+	</div>
+	<!-- END SOURCES TAB -->
+
+</div> 
+
+

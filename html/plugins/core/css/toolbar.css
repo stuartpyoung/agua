@@ -1,0 +1,42 @@
+.dijitReset .dijitInline .dijitIcon .dijitEditorIcon .dijitEditorIconCopy {
+	background-image: url(http://localhost/agua/0.5/plugins/view/images/view-18.png) !important; 
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+	background-position: 0px !important;
+
+}
+
+.tundra .dijitEditorIcon  {
+	width: 20px;
+}
+.tundra .dijitEditorIcon .dijitEditorIconView {
+	background-image: url(http://localhost/agua/0.5/plugins/view/images/view-18.png) !important; 
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+	background-position: 0px !important;
+}
+/**/
+/*.dijitReset .dijitStretch .dijitButtonContents {*/
+/*	width: 60px !important;	*/
+/*	background-position: 0px !important;*/
+/*}*/
+/**/
+/*.dijitEditorIconCopy {*/
+/*	background-position: 0px 100% !important;*/
+/*}*/
+/*.dijitEditorIconOpen {*/
+/*	background-position: 0px 100% !important;*/
+/*}*/
+/*.dijitEditorIconPaste {*/
+/*	background-position: 0px 50% !important;*/
+/*}*/
+/**/
+/*/*.dijitReset .dijitInline .dijitButtonNode {*/*/
+/*/*	width: 60px !important;	*/*/
+/*/*}*/*/
+/**/
+/**/

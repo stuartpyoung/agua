@@ -1,0 +1,35 @@
+#### html
+find BASE/html -exec chown www-data:root {} \;;
+find BASE/html -type d -exec chmod 0775 {} \;;
+find BASE/html -type f -exec chmod 0664 {} \;
+##### cgi-bin
+find BASE/cgi-bin -exec chown www-data:www-data {} \;;
+find BASE/cgi-bin -type d -exec chmod 0775 {} \;;
+find BASE/cgi-bin -type f -exec chmod 0664 {} \;
+find BASE/cgi-bin -type f -name '*cgi' -exec chmod 0775 {} \;
+find BASE/cgi-bin -type f -name '*pl' -exec chmod 0775 {} \;
+#### SET SUID SCRIPTS
+find BASE/cgi-bin -type f -name agua -exec chown root:root {} \;;
+find BASE/cgi-bin -type f -name init.cgi -exec chown root:root {} \;;
+find BASE/cgi-bin -type f -name workflow.cgi -exec chown root:root {} \;;
+find BASE/cgi-bin -type f -name agua -exec chmod 5775 {} \;
+find BASE/cgi-bin -type f -name init.cgi -exec chmod 5775 {} \;
+find BASE/cgi-bin -type f -name workflow.cgi -exec chmod 5775 {} \;
+#### lib
+find BASE/lib -type d -exec chmod 0775 {} \;;
+find BASE/lib -type f -exec chmod 0644 {} \;
+#### conf
+find BASE/conf -type d -exec chmod 0775 {} \;;
+find BASE/conf -type f -exec chmod 0644 {} \;
+#### bin
+find BASE/bin -type d -exec chmod 0775 {} \;;
+find BASE/bin -type f -exec chmod 0644 {} \;
+find BASE/bin -type f -name '*pl' -exec chmod 0775 {} \;
+#### t
+find BASE/t -type d -exec chmod 0775 {} \;;
+find BASE/t -type f -exec chmod 0644 {} \;
+find BASE/t -type f -name '*.t' -exec chmod 0775 {} \;
+#### conf
+chown -R www-data:www-data BASE/conf
+find BASE/conf -type f -exec chmod 0600 {} \;;
+chmod 0700 BASE/conf

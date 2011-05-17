@@ -1,0 +1,364 @@
+.dijitTitlePaneFocused
+{
+	background-color:  #9F9;
+}
+
+.dijitTitlePaneTitle 
+{
+	background-color:  #9C9;
+}
+
+
+.dijitTitlePaneTextNode
+{
+	font-family: Verdana;
+	font-size: 20px;
+}
+
+.adminApplicationPaneFocusNode .dijitTitleNode {
+	font-family: Verdana;
+	font-size: 24px;
+}
+
+.adminApplicationPaneFocusNode {
+	font-family: Verdana;
+	font-size: 28px;
+}
+
+/*dijitContentPane dojoxFloatingPaneFg*/
+.dojoxFloatingPane {
+	z-index: 999;
+}
+
+
+/* move minimise button left out from behind close button */
+.dojoxFloatingMinimizeIcon {
+	position: relative;
+	left: -20px;
+	width: 13px;
+	height: 13px;
+}
+
+.deleteConfirmationDialogueTitle {
+	color: #F44;
+	font-size: 28px;
+	text-align: center;
+    /*margin-left: 20px;*/
+}
+.deleteConfirmationDialogue {
+	background-color: #EEE;
+	font-size: 18px;
+	text-align: center;
+    margin-left: 20px;
+    position: relative;
+    top: 30%;
+    text-align: center;
+    vertical-align: center;			
+}
+
+.deleteConfirmationButton {
+	background-color: #FFF;
+    /*color: #88CC88;*/
+    color: #333; 
+    font-weight: bolder;
+    font-size: 20px;
+    vertical-align: center;			
+}
+.deleteYesButton {
+    /*color: #88CC88;*/
+    color: #F88;
+}
+.deleteNoButton {
+    color: #333;
+}
+
+
+
+
+/* Gives three initial lines and will expand up to 12 lines (with the inherited line height of 1.5 em) */
+.dijitTextarea{
+	min-height:5.5em !important;
+	max-height:22em !important;
+	overflow-y: auto !important;
+}
+
+#adminAppsTable {
+	top: 40px;
+}
+
+.adminApplicationDetailsColumn {
+	width: auto;
+}
+.loadingImage {
+	position:absolute; top:0; left:0;
+	width:100%; height:100%; 
+	z-index:999; 
+	background:#fff url('../../../dojo-1.5.0/dojox/image/resources/images/loading.gif') no-repeat center center;
+	margin:0; padding:0;
+	display: none;
+/*../plugins/report/images/loading.gif*/
+}
+
+.adminApplicationButtonSpan {
+	width: 36px;
+	height: 36px;
+	background-color: #FFF;
+
+	/*display: none;*/
+}
+
+
+.adminApplicationCloseButton {
+	background-image: url(../../../plugins/admin/images/cross-red.gif);
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	left: 5px;
+	/*text-indent: 10px;*/
+	margin-left: 5px;
+}
+
+
+
+.adminApplicationInput {
+	width: 95%;
+	height: 30px;
+	vertical-align: middle;
+}
+
+.adminApplicationButton {
+	text-indent: 0px;
+}
+.adminApplicationEditButton .dijitButtonNode {
+	/*background: rgb(96,96,96) !important;*/
+	color: black !important;
+	padding: 10px !important;
+	font-size: 	normal !important;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+	border: 12px inset #AAA;
+}
+
+.adminApplicationEditButtonHover .dijitButtonNode {
+	background-color: #DDD;
+	color: green !important;
+	border: 2px inset #FAA;
+}
+
+.adminApplicationEditButtonFocused .dijitButtonNode {
+	border: yellow inset 2px;
+}
+
+.adminApplicationEditButtonActive .dijitButtonNode {
+	background-color: white !important;
+	color: black !important;
+	border: 2px solid black !important;
+}
+
+.adminApplicationTableRowEdit {
+	text-indent: 0px;
+	background-color: #000,
+	background-image: url(../../../plugins/admin/images/eye.png);
+
+}
+
+.adminApplicationTableRowValue {
+	font-family: Verdana;
+	font-size: 13px;
+	background-color: #FFF;
+	color: #333;
+	text-align: left;
+	text-indent: 5px;
+}
+
+.adminApplicationTableRowTitle {
+	font-family: Verdana;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 13px;
+	background-color: #FFF;
+	color: #111;
+	text-align: center;
+}
+
+.adminApplicationTableRowTitle {
+	font-family: Verdana;
+	font-weight: bolder;
+	font-size: 16px;
+}
+
+.adminApplicationArgumentsTable {	
+	text-align:	left;
+	font-weight: bolder;
+	font-style: italic;
+	background-color: #ACF;	
+	color: #000;
+	width: 100%;
+}
+.adminApplicationTable {
+	/*position: absolute;*/
+	/*left: 30px;*/
+	/*top: 70px;*/
+	text-align:	left;
+	font-weight: bold;
+	font-style: italic;
+	/*background-color: #CEF;*/
+	background-color: #ACF;	
+}
+
+.adminApplicationTableRow {
+	text-indent: 4px;
+	text-align:	center;
+	font-weight: normal;
+	font-style: normal;
+	width: auto;
+	text-align: left;
+	/*border: 5px solid black;*/
+	/*border-width: 2px;*/
+	background-color: #FFF;
+	color: #333;
+	margin: 1px;
+}
+
+
+.adminAppsViewButtonSpan {
+	width: 30px;
+	height: 30px;
+	background-color: #FFF;
+
+	/*display: none;*/
+}
+
+
+.adminAppsViewButton {
+	background-image: url(../../../plugins/admin/images/eye.png);
+	/*background-image: url("../../../plugins/admin/images/admin.png");*/
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+
+}
+
+.adminAppsTitle {
+	color: #333;
+	/*font-family: Verdana;*/
+	font-size: 20px;
+	font-weight: bolder;
+	/*font-style: italic;*/
+	text-align: left;
+}
+
+.adminAppsDescription {
+	color: #333;
+	/*font-family: Verdana;*/
+	font-size: 15px;
+	font-weight: normal;
+	font-style: italic;
+	text-align: left;
+}
+
+.adminAppsDescriptionColumn {
+	width: 150px;
+	text-align: left;
+}
+
+
+.adminAppsNameColumn {
+	color: #333;
+	width: 50px;
+	font-family: Verdana;
+	font-weight: bolder;
+	font-size: 16px;
+	text-align: left;
+	text-indent: 4px;
+}
+
+
+.adminAppsTableColumn {
+	color: #333;
+	width: 50px;
+	font-family: Arial;
+	font-weight: bolder;
+	text-align: left;
+	text-indent: 4px;
+}
+
+
+.adminAppsTableNarrowColumn {
+	color: #333;
+	width: 50px;
+	font-family: Arial;
+	font-weight: bolder;
+	text-align: left;
+	text-indent: 4px;
+}
+
+.adminAppsDeleteButton { 	
+	background-color: #FFFFFF;
+	color: #222222;
+	font-weight: normal;
+	font-style: normal; 
+	font-size: 20px;
+	font-family: Times New Roman;
+}
+
+
+*.adminAppsCombo
+{
+	border: 1px dotted red;
+}
+
+
+#adminAppsComboContainer ul li {
+	text-align: center;
+	color: #FF0000;
+}
+
+
+.adminAppsTable {
+	position: absolute;
+	left: 0px;
+	top: 70px;
+	text-align:	center;
+	font-weight: bolder;
+	font-style: italic;
+	background-color: #ACF;
+}
+
+.adminAppsTableRow {
+	text-align:	center;
+	font-weight: normal;
+	font-style: normal;
+	width: auto;
+	/*border: 5px solid black;*/
+	/*border-width: 2px;*/
+	background-color: #FFF;
+}
+
+
+.adminAppsTableData {
+	text-align:	center;
+	font-weight: normal;
+	font-style: normal;
+	color: #040404;
+	font-family: Arial;
+	font-size: 18px;
+	width: 150px;
+}
+
+.adminAppsInput {
+	width: 150px;
+
+}
+
+.adminAppsEditButton {
+	width: 60px;
+	color: #FF00FF;
+}
+
+.adminAppsDeleteButton {
+	width: 75px;
+	color: #333;
+	font-size: 10px;
+	font-family: Verdana;
+}

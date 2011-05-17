@@ -1,0 +1,17 @@
+# IGNORE THESE FILES AND DIRS
+005
+006
+006-workflow-base-safe
+#006-workflow-base
+*.zip
+# EXCEPT THE LATEST BUILD FILES
+!006-workflow-base/dojo/workflow-base.js
+!006-workflow-base/dojo/workflow-base.js.uncompressed.js
+!006-workflow-base/dojo/dojo/dojo.js
+!006-workflow-base/dojo/dojo/dojo.js.uncompressed.js
+!006.agua.build.txt
+!006.workflow-base.build.txt
+# AND THE ANNOYING LOCALE FILES
+!006-workflow-base/dojo/dojo/nls/_en-gb.js
+!006-workflow-base/dojo/dojo/nls/_en-us.js
+!006-workflow-base/dojo/dijit/nls/en-us.js

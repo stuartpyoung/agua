@@ -1,0 +1,151 @@
+/* REQUIRED ARGUMENTS */
+.workflow .required .options .name, .workflow .required .optionsValue {
+	background-color: #FDD;
+}
+
+.workflow .satisfied .options .name, .workflow .satisfied .optionsValue {
+	background-color: #DFD;
+}
+
+
+/* FILE STATUS */
+.workflow .filePresent .options .name, .workflow .filePresent .optionsValue {
+	color: #000;
+}
+
+.workflow .fileMissing .options .name, .workflow .fileMissing .optionsValue {
+	color: #444;
+}
+
+
+.workflow .infopane  .dijitTitlePaneContentInner {
+	margin: 0;
+	padding: 0;
+}
+
+.workflowSaveOptionValue {
+	color: #000;
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+.workflow .infopane Value .workflowEditOptionValue {
+	font-size: 16px;
+}
+
+
+
+
+
+.workflow .infopane Table {
+	font-family: Verdana;
+	background-color: #FFF;
+	width: 400px;
+}
+
+.workflow .infopane Header {
+	height: 28px;
+	text-align: center;
+	font-family: Verdana;
+	color: #333;
+	font-weight: bold;
+	width: 100%;
+}
+
+.workflow .infopane Row img {
+	background-color: #CCF;
+	vertical-align: middle;
+}
+
+.workflow .editOptionsValue .dijitTextBox {
+
+	width: auto;
+}
+
+.workflow .infopane .name,
+.workflow .infopane .value,
+.workflow .infopane .browse,
+.workflow .infopane  .upload,
+.workflow .infopane .download {
+	background-color: #FFF;
+	border: 2px solid #EEE;
+	border-bottom-color: #DDD;	
+	border-left-color: #DDD;	
+	vertical-align: middle;
+}
+
+.workflow .infopane .name:hover,
+.workflow .infopane .value:hover,
+.workflow .infopane .browse:hover,
+.workflow .infopane .upload:hover,
+.workflow .infopane .download: hover {
+	color: #F00;
+	border: 2px solid #FFD;
+	border-bottom-color: #EEC;	
+	border-left-color: #EEC;
+	background-color : #0F0;
+}
+
+.workflow .infopane .name {
+	width: 50px;
+	height: 28px;
+	text-align: left;
+}
+
+
+/* NEEDED TO MAKE IMAGES ALIGN TO VERTICAL CENTER?? */
+.html {
+	height: 100%;
+}
+
+.workflow .infopane .value {
+	width: auto;
+	min-width : 100px;
+	max-width : 200px;
+	height: 28px;
+	text-align: left;
+}
+
+.workflow .infopane .browse,
+.workflow .infopane .upload {
+	min-width: 28px;
+}
+
+.workflow .infopane .browse {
+	float: inherit;
+	background-image: url("../../../plugins/workflow/images/browse-orange-28.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 28px;
+	height: 28px;
+}
+
+.workflow .options .download td:hover{
+	background: none;
+}
+
+.workflow .infopane PaneContainer {
+	width: auto;
+}
+
+.workflow .filePresent .options.download  {
+	background-image: url("../../../plugins/workflow/images/download-28.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 28px;
+	height: 28px;
+}
+
+.workflow .fileMissing .options.download {
+	background: none;
+}
+
+.workflow .infopane  .upload {
+	background-image: url("../../../plugins/workflow/images/upload-28.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 28px;
+	height: 28px;
+}
+
+

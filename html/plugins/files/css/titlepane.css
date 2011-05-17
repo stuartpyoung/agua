@@ -1,0 +1,306 @@
+
+
+/* TITLE PANE */
+.project .dijitClosed .dijitTitlePaneTextNode {
+	height: auto !important;
+}
+
+.project .dijitClosed .dijitTitlePaneTextNode {
+	color: #448 !important;	
+	font-size: 12px !important;
+	font-family: Verdana;
+	font-weight: bold !important;
+}
+
+.project .dijitOpen .dijitTitlePaneTextNode {
+	/*color: #008 !important;	*/
+	/*font-size: 16px !important;*/
+	/*font-family: Verdana;*/
+	/*font-weight: bolder !important;*/
+}
+
+.project .dijitTitlePaneContentInner {
+	padding:0.05em;
+	margin : 0px;
+}
+
+.project .dijitTitlePaneTitle .dijitOpen .dijitTitlePaneTextNode {
+	/*color: #F00 !important;*/
+	color: #0F0 !important;
+}
+.project .dijitTitlePaneFocused .dijitTitlePaneTextNode {
+	text-decoration:none;
+
+}
+.project .filesTitlePane .dijitTitlePaneTextNode {
+	vertical-align: top !important;
+	color: #008 !important;	
+	font-size: 16px !important;
+	font-family: Verdana;
+	font-weight: bolder !important;
+	position: relative !important;
+	/*top: 5px !important;*/
+}
+
+.soria .filesTitlePane .dijitTitlePaneTitle {
+	background: #cccccc;
+	/*background:#fff url("images/titleBar.png") repeat-x top left;*/
+	border:1px solid #bfbfbf;
+	padding:3px 4px;
+	cursor: pointer;
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #6d6d6d;
+}
+
+
+/* TITLE PANE ARROWS */
+.soria .filesTitlePane .dijitClosed .dijitArrowNode {
+	background: url('images/spriteRoundedIconsSmall.png') no-repeat -30px top;
+}
+.dj_ie6 .soria .filesTitlePane .dijitClosed .dijitArrowNode {
+	background:url('images/spriteRoundedIconsSmall.gif') no-repeat -30px top;
+}
+.soria .filesTitlePane .dijitOpen .dijitArrowNode {
+	background:url('images/spriteRoundedIconsSmall.png') no-repeat -15px top;
+}
+.dj_ie6 .soria .filesTitlePane .dijitOpen .dijitArrowNode {
+	background:url('images/spriteRoundedIconsSmall.gif') no-repeat -15px top;
+}
+.soria .filesTitlePane .dijitArrowNodeInner {
+	display:none;
+}
+.dijit_a11y .filesTitlePane .dijitArrowNodeInner {
+	display:inline !important;
+	font-family:monospace;
+	cursor: pointer;
+	padding-bottom:.2em;
+}
+
+.dijit_a11y .filesTitlePane .dijitArrowNode {
+	display:none;
+}
+
+.soria .dijitTitlePaneContentOuter {
+	background: #ffffff;
+	border:1px solid #bfbfbf;
+	border-top: 0px solid #3d3d3d;	/* w/out this, an <h1> on the top line causes a gap between the .content and .label */
+}
+.soria .dijitTitlePaneContentInner {
+	padding:10px;
+}
+/* force hasLayout to ensure borders etc, show up */
+.dj_ie6 .soria .dijitTitlePaneContentOuter,
+.dj_ie6 .soria .filesTitlePane .dijitTitlePaneTitle {
+	/*zoom: 1;*/
+}
+
+.soria .dijitTitlePaneTextNode {
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+
+/* REMOVE PADDING INSIDE TITLE PANE */
+.project .dijitTitlePaneContentInner {
+	padding: 0px !important;
+}
+
+.project .filesTitlePane .dijitTitlePaneTitle {
+
+	/*padding: 1px 1px !important;*/
+	background-color: #EAF0F2 !important;
+	/*background: #cccccc;*/
+	/*background:#fff url("images/titleBar.png") repeat-x top left;*/
+	border:1px solid #bfbfbf;
+	padding:3px 4px;
+	cursor: pointer;
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #6d6d6d;
+}
+
+/* EXPAND-FOLD ARROW */
+.project .dijitArrowNode {
+	/*width: 26px !important;*/
+	/*height: 26px !important;*/
+}
+
+.project .filesArrowNode,
+.project .largeFilesArrowNode,
+.project .largerFilesArrowNode {
+	width: 24px !important;
+	height: 24px !important;
+	background-image: url('../../../plugins/files/images/expand-14.png');
+	background-repeat: no-repeat !important;	
+	background-position: center !important;
+
+	-moz-border-radius-bottomleft: 4pt;
+	-moz-border-radius-bottomright: 4pt;
+	-moz-border-radius-topleft: 4pt;
+	-moz-border-radius-topright: 4pt;
+
+	border: 2px solid;
+	border-color: transparent !important;
+	vertical-align: middle !important;
+}
+
+.project .largeFilesArrowNode {
+	background-image: url("../../../plugins/files/images/expand-18.png");
+}
+
+.project .largerFilesArrowNode {
+	background-image: url("../../../plugins/files/images/expand-22.png");
+}
+
+.project .filesArrowNode:hover {
+	background-color: #FFF;
+	border: 2px solid #EEE;
+	border-bottom-color: #DDD;	
+	border-left-color: #DDD;	
+	vertical-align: middle;
+}
+
+.project .dijitOpen .filesArrowNode {
+	background-image: url('../../../plugins/files/images/fold-14.png');
+}
+
+.project .dijitOpen .largeFilesArrowNode {
+	background-image: url("../../../plugins/files/images/fold-18.png");
+}
+
+.project .dijitOpen .largerFilesArrowNode {
+	background-image: url("../../../plugins/files/images/fold-22.png");
+}
+
+.project .dijitClosed .filesArrowNode {
+	background-image: url('../../../plugins/files/images/expand-14.png');
+}
+
+.project .dijitClosed .largeFilesArrowNode {
+	background-image: url("../../../plugins/files/images/expand-18.png");
+}
+
+.project .dijitClosed .largerFilesArrowNode {
+	background-image: url("../../../plugins/files/images/expand-22.png");
+}
+
+/* TITLE PANE TITLE */
+.project .dijitTitlePaneTitle * {
+	vertical-align: bottom !important;
+}
+
+.project .header,
+.project .largeHeader,
+.project .largerHeader {
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	/*-moz-background-origin: padding;*/
+	-moz-border-radius-bottomleft: 4pt;
+	-moz-border-radius-bottomright: 4pt;
+	-moz-border-radius-topleft: 4pt;
+	-moz-border-radius-topright: 4pt;
+
+	display: inline;
+	width: 600px !important;
+	height: 20px !important;
+
+	vertical-align: top !important;
+	background:#FFFFFF none repeat scroll 0 0;
+	border: 1px solid #CCCCCC;
+	border-color: #333;
+
+	font-family: Verdana;
+	text-align: left !important;
+	font-size: 14px;
+	/*margin-top: 2px;*/
+	text-indent: 5px;
+
+	overflow: hidden !important;
+	padding: 5px !important;
+
+}
+
+.project .largeHeader {
+	font-size: 18px;	
+}
+.project .largerHeader {
+	font-size: 18px;	
+}
+
+.project .header .owner,
+.project .largeHeader .owner,
+.project .largerHeader .owner {
+	text-align: left;
+	color: darkred;
+	width: 80px !important;
+	font-family: Verdana;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:4pt;
+	-moz-border-radius-topleft:4pt;
+}
+.project .header .name,
+.project .largeHeader .name,
+.project .largerHeader .name {
+	width: auto !important;
+	color: darkblue;
+	padding-right: 5px !important;
+	padding-left: 5px !important;
+}
+
+.project .header .type,
+.project .largeHeader .type,
+.project .largerHeader .type {
+	color: darkgreen;
+}
+
+.project .header .description,
+.project .largeHeader .description,
+.project .largerHeader .description {
+	color: darkgreen;
+}
+
+/* FILE PANE */
+
+/* REFRESH */
+.project .refreshTitlePane {
+
+	-moz-border-radius-bottomleft: 4pt;
+	-moz-border-radius-bottomright: 4pt;
+	-moz-border-radius-topleft: 4pt;
+	-moz-border-radius-topright: 4pt;
+
+	display: inline !important;
+	border: 2px solid;
+	border-color: transparent !important;
+	/*border-bottom-color: #DDD;	*/
+	/*border-left-color: #DDD;	*/
+	vertical-align: middle;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 24px !important;
+	height: 24px !important;
+	background-image: url("../../../plugins/files/images/refresh-14.png");
+	z-index: 9999;
+}
+
+.project .largeRefreshTitlePane {
+	background-image: url("../../../plugins/files/images/refresh-18.png");
+}
+
+.project .largerRefreshTitlePane {
+	background-image: url("../../../plugins/files/images/refresh-22.png");
+}
+
+
+/* REFRESH */
+.project .refreshTitlePane:hover {
+	background-color: #FFF;
+	border: 2px solid #EEE;
+	border-bottom-color: #DDD;	
+	border-left-color: #DDD;	
+	vertical-align: middle;
+}
+

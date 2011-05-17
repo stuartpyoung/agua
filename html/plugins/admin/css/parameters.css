@@ -1,0 +1,438 @@
+@import "../../../dojo-1.5.0/dojo/tests/dnd/dndDefault.css";
+
+/* DOES THIS HELP AUTOSIZING? */
+.parameters {
+	height: auto !important;
+	font-family: Verdana;
+}
+
+/*.parameters .tabTitle {*/
+/*	background-color: #FF4;*/
+/*	vertical-align: middle;*/
+/*	font-size: 20px;*/
+/*	font-weight: bold;*/
+/*	color: darkred;*/
+/*}*/
+
+/*.parameters .tabTitle .tabTitleIcon {*/
+/*	background-image: url(../../../plugins/admin/images/parameter-24.png);*/
+/*	text-indent: 28px;*/
+/*	background-repeat: no-repeat;*/
+/*	width: 150px;*/
+/*	text-align: center !important;*/
+/*	vertical-align: middle;*/
+/*}*/
+
+.parameters textarea {
+	overflow: auto !important;
+}
+
+.apps .headerRow,
+.parameters .headerRow {
+	height: 8px !important;
+	font-size: 8px !important;
+	color: darkblue !important;
+	text-align: center !important;
+	padding: 0px !important;
+}
+.parameters .unlocked,
+.parameters .locked {
+	background-image: url(../../../plugins/admin/images/locked-24-darkred.png);
+	background-repeat: no-repeat;
+	width: 30px;
+	text-align: center !important;
+	vertical-align: middle;
+}
+.parameters .unlocked {
+	background-image: url(../../../plugins/admin/images/unlocked-24-green2.png);
+}
+.parameters .parameterrow .unlocked,
+.parameters .parameterrow .locked {
+	background-image: url(../../../plugins/admin/images/locked-20-darkred.png);
+	background-repeat: no-repeat;
+	width: 30px;
+	text-align: center !important;
+	vertical-align: middle;
+}
+.parameters .parameterrow .unlocked {
+	background-image: url(../../../plugins/admin/images/unlocked-20-green.png);
+}
+.parameters .label {
+	text-align:	center !important;
+	font-weight: bolder;
+	font-size: 18px;
+	color: darkblue;
+	font-style: oblique;
+	height: 20px;
+	vertical-align: bottom !important;
+	/*background-color: #FF4;*/
+	background-color: #EEE;
+}
+.parameters .label .paramOrder,
+.parameters .label .paramFilter {
+	line-height: 20px !important;
+	height: 40px !important;	
+}
+
+/* NB: THIS IS NEEDED FOR THE BUTTON CSS BELOW TO WORK! */
+.parameters table textarea {
+	font-family: Verdana;
+}
+.parameters .addParameterButton {
+	height: 20px !important;
+	width: 115px !important;
+	/*margin-left: auto;*/
+	margin-right: 0px;
+
+	text-align: center;
+	vertical-align: middle;
+	-moz-user-select: none;
+	font-size: 14px;
+	font-family: Verdana;
+	font-weight: bolder;
+	color: #224;
+	background-color: #FEFEFE;
+
+	border: 4px solid #BBB;
+	border-bottom-color: #888;	
+	border-left-color: #888;
+}
+
+.parameters .addParameterButton:hover {
+	border-color: #999;
+	border-bottom-color: #555;	
+	border-left-color: #555;
+	background-color : #FFF;
+	/*background-color : #FF8;*/
+}
+
+.parameters .addParameterButton:active {
+	border-color: #999;
+	border-bottom-color: #555;	
+	border-left-color: #555;
+	background-color : #8F8;
+}
+
+.parameters .inputs .name,
+.parameters .inputs .type,
+.parameters .inputs .ordinal,
+.parameters .inputs .value,
+.parameters .inputs .argument,
+.parameters .inputs .category,
+.parameters .inputs .description,
+.parameters .inputs .discretion,
+.parameters .inputs .paramtype,
+.parameters .inputs .format,
+.parameters .inputs .args,
+.parameters .inputs .params,
+.parameters .inputs .paramFunction
+{
+	height: 20px !important;
+	font-size: 14px;
+	color: #222;
+	text-align: left !important;
+	vertical-align: middle !important;
+	font-style: oblique;
+	font-weight: bolder !important;
+	padding-top: 0px;
+	/*background-color: #FFF;*/
+	/*background-color: #F2F2F2;*/
+}
+
+.parameters .inputs .name {
+	height: 24px !important;
+	width: 170px !important;
+}
+
+.parameters .inputs .type,
+.parameters .inputs .ordinal,
+.parameters .inputs .discretion,
+.parameters .inputs .paramtype {
+	font-size: 13px;
+	height: 24px !important;
+	width: 103px !important;
+	padding-top: 0px;
+	position: relative;
+	left: 4px;
+	background-color: #FFF !important;
+}
+
+.parameters .inputs .format,
+.parameters .inputs .args,
+.parameters .inputs .params,
+.parameters .inputs .paramFunction {
+	/*background-color: #EEE;*/
+	color: #555;
+}
+
+
+.parameters .invalid ,
+.parameters .inputs .description .dijitTextArea .invalid,
+.parameters .inputs .discretion .dijitTextArea .invalid
+{
+	border: 2px solid #F00 !important;
+}
+
+.parameters .inputs .default {
+	font-style: normal !important;
+	font-weight: normal;
+	font-size: 12px !important;
+	background-color: #DDD !important;
+}
+.parameters .inputs .default:hover {
+	background-color: #DDD !important;
+}
+
+/* APPS COMBO */
+.parameters .appsCombo,
+.parameters .appNamesCombo,
+.parameters .paramOrderCombo,
+.parameters .paramFilterCombo,
+.parameters .dijitMenu li,
+.parameters .dijitMenuItem li
+{
+	text-indent: 10px;
+	background-color: #FFF;
+}
+
+/* COMBO BOX SELECTED FIELD */
+/*.parameters .appsCombo .dijitReset .dijitInputField,*/
+/*.parameters .appNamesCombo .dijitReset .dijitInputField {*/
+/*	background-color: #FFD;*/
+/*}*/
+
+.parameters .appsCombo,
+.parameters .appNamesCombo,
+.parameters .paramOrderCombo,
+.parameters .paramFilterCombo {
+	height: auto;
+	width: 165px !important;
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center !important;
+	margin-left: auto;
+	margin-right: auto;
+	/*background-color: #FFC;*/
+}
+
+.parameters .appNamesCombo {
+	color: darkred;
+	text-align: center !important;
+}
+
+/* HIDE VALIDATION ICON AT RIGHT OF COMBO SCROLLBOX */
+.parameters .appsCombo .dijitValidationIcon,
+.parameters .appNamesCombo .dijitValidationIcon,
+.parameters .paramOrderCombo .dijitValidationIcon,
+.parameters .paramFilterCombo .dijitValidationIcon {
+	display: none !important;
+}
+
+.parameters .appsCombo,
+.parameters .appNamesCombo,
+.parameters .paramOrderCombo,
+.parameters .paramFilterCombo {
+	font-size: 14px;
+	background-color: #FFF !important;
+	text-indent: 0px;
+	width: 165px !important;
+	display: table-cell;
+	text-align: center;
+	width: 100%;
+	font-weight: bold;
+	font-family: Verdana;
+}
+
+.parameters .appsCombo .option,
+.parameters .appNamesCombo .option,
+.parameters .paramOrderCombo .option,
+.parameters .paramFilterCombo .option {
+	/*background-color: #FFC !important;*/
+}
+
+/* NOTE: THIS IS NECESSARY FOR THE NEXT RULE TO WORK!!! */
+.parameters .appsCombo .dijitReset .dijitMenu li,
+.parameters .appsCombo .dijitReset .dijitMenuItem li,
+.parameters .appNamesCombo .dijitReset .dijitMenu li,
+.parameters .appNamesCombo .dijitReset .dijitMenuItem li,
+.parameters .paramOrderCombo .dijitReset .dijitMenu li,
+.parameters .paramFilterCombo .dijitReset .dijitMenuItem li
+{
+	/*color: #0FF !important;*/
+}
+
+.parameters .appNamesCombo .dijitReset .dijitMenu li,
+.parameters .appNamesCombo .dijitReset .dijitMenuItem li {
+	color: darkred;	
+}
+
+.parameters .dijitMenu li,
+.parameters .dijitMenuItem li
+{
+	color: #224 !important;
+	height: 25px;
+	background-color: #FFD;
+}
+
+.parameters .appNamesCombo .dijitMenu li,
+.parameters .appNamesCombo .dijitMenuItem li
+{
+	color: darkred !important;	
+}
+
+.parameters .dijitMenu li:hover,
+.parameters .dijitMenuItem li:hover
+{
+	background-color: #DDD;
+}
+
+/* DRAG SOURCE */
+.parameters .dragSource .paramtype .default,
+.parameters .dragSource .discretion .default
+{
+	color: #555;
+	font-style: italic;	
+}
+
+.parameters .editParameterRow {
+	width: 100%;
+	height: 20px;
+}
+
+.parameters .dragSource
+{
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border:3px solid #CCCCCC;
+	cursor:default;
+	padding:1em 0.5em;
+
+	/*margin-top: 5px;*/
+	width: 120px;	
+	height: 260px;
+	min-height: 100px;
+
+	text-align: left !important;
+	font-size: 12px;
+	border-color: #333;
+
+	/* NEEDED SO THAT SCROLLBAR WILL SHOW */
+	display: block !important;
+	overflow:auto !important;
+}
+
+.parameters .dragSource .dojoDndItemAnchor {
+	background-color: #CCFFCC !important;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+}
+
+.parameters .dragSource .name {
+	font-size: 14px;
+	color: darkred;
+	font-weight: bolder;
+	text-align: left !important;
+
+	background-image: url(../../../plugins/admin/images/parameter-18.png);
+	text-indent: 22px;
+	background-repeat: no-repeat;
+	height: 18px;
+}
+
+.parameters .dragSource .type,
+.parameters .dragSource .ordinal,
+.parameters .dragSource .paramtype {
+	width: 40px;
+	font-size: 11px;
+	text-align: center !important;
+	background-color: #FFF;
+}
+
+.parameters .dragSource .type,
+.parameters .dragSource .ordinal {
+	color: darkblue;
+}
+
+.parameters .dragSource .paramtype {
+	color: darkred;
+}
+
+.parameters .dragSource .category,
+.parameters .dragSource .value,
+.parameters .dragSource .argument {
+	color: #222;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: left !important;
+	background: #FFF;
+}	
+
+.parameters .dragSource .description {
+	color: #222;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left !important;
+	background: #FFF;
+}
+
+.parameters .dragSource .discretion {	
+	color: blue;
+	font-weight: bold;
+	font-size: 12px;
+	background: none;
+}
+
+.parameters .dragSource .format,
+.parameters .dragSource .args,
+.parameters .dragSource .params,
+.parameters .dragSource .paramFunction {
+	color: #222;
+	font-weight: normal;
+	font-size: 10px;
+	background-color: #EFEFEF;
+}
+/* TRASH CAN */
+.parameters .trash {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border:3px solid #CCCCCC;
+	cursor:default;
+	padding:1em 0.5em;
+
+	margin-top: 5px;
+	width: 150px;	
+	height: 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.parameters .trashIcon {
+	height: 100%;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+
+	background-image: url(../../../plugins/admin/images/trash-60.png);
+	background-repeat: no-repeat;
+}
+

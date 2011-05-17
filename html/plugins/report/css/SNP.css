@@ -1,0 +1,418 @@
+/* GENERAL NO PADDING */
+.report .SNP {
+    border:  0px !important;
+    padding:  0px !important;
+}
+
+/* GENERAL FONT */
+.report .SNP {
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Verdana;
+}
+
+/* TABLES */
+.report .SNP table {
+	width: 300px;
+    vertical-align: middle;
+	text-align: center;
+}
+.report .SNP .controls tr {
+	width: 100%;
+    vertical-align: middle;
+}
+.report .SNP .controls td {
+	height: 25px !important;
+	font-size: 13px;
+}
+
+.report .SNP .controls .rowName {
+	padding-left: 3px;
+}
+
+/* FILE INPUT */
+.fileInput {
+	text-align: left;
+	font-weight: bold;
+	width: 220px;
+	height: 20px;
+	vertical-align: middle;
+	font-size: 15px !important;
+}
+
+
+/* END-OF-ROW RESULTS */
+.report .SNP .result {
+	text-align: center !important;
+	color: #00A;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+
+/* CENTER VARIANT INPUT TEXT */
+.report .SNP .variantInput {
+	text-align: center;
+	font-size: 10px;
+}
+
+/* ROWS CHANGE BG-COLOR ON HOVER */
+.report .SNP .controls table tr:hover,
+.report .SNP .controls table tr:hover {
+    background-color: #CCC;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+}
+
+.report .SNP .fileIcon {
+	background-image: url("../../../plugins/report/images/SNP/file-28.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 28px;
+	min-height: 28px;
+	width: 28px;
+	height: 28px;
+}
+
+.report .SNP .reportIcon {
+	background-image: url("../../../plugins/report/images/SNP/report-28.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 28px;
+	min-height: 28px;
+	width: 28px;
+	height: 28px;
+}
+
+.report .SNP .workflowIcon {
+	background-image: url("../../../plugins/report/images/SNP/workflow-28.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 28px;
+	min-height: 28px;
+	width: 28px;
+	height: 28px;
+}
+
+.report .SNP .projectIcon {
+	background-image: url("../../../plugins/report/images/SNP/project-28.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 28px !important;
+	min-height: 28px !important;
+	width: 28px !important;
+	height: 28px !important;
+}
+
+.report .SNP .saveReportButton {
+	background-color: #FFF;
+	border: 2px solid #EEE;
+	border-bottom-color: #DDD;	
+	border-left-color: #DDD;	
+	vertical-align: middle;
+	/*float: inherit;*/
+	background-image: url("../../../plugins/report/images/SNP/save-24.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 28px;
+	height: 28px;
+}
+
+.report .SNP .deleteReportButton {
+	background-color: #FFF;
+	border: 2px solid #EEE;
+	border-bottom-color: #DDD;	
+	border-left-color: #DDD;	
+	vertical-align: middle;
+	/*float: inherit;*/
+	background-image: url("../../../plugins/report/images/SNP/delete-24.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	min-width: 28px;
+	min-height: 28px;
+	width: 28px;
+	height: 28px;
+}
+
+.report .SNP .okButton {
+	background-color: #FFF;
+	border: 2px solid #EEE;
+	border-bottom-color: #DDD;	
+	border-left-color: #DDD;	
+	vertical-align: middle;
+	background-image: url("../../../plugins/report/images/SNP/OK-34.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	min-width: 68px !important;
+	min-height: 34px !important;
+	max-width: 68px !important;
+	max-height: 34px !important;
+	width: 68px !important;
+	height: 34px !important;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 5px;
+}
+
+.report .SNP .saveReportButton:hover,
+.report .SNP .fileUpload:hover,
+.report .SNP .fileBrowse:hover,
+.report .SNP .deleteReportButton:hover,
+.report .SNP .okButton:hover {
+	border-bottom-color: #BBB;	
+	border-left-color: #BBB;
+	background-color : #FF8;
+}
+
+.report .SNP .saveReportButton:active,
+.report .SNP .fileUpload:active,
+.report .SNP .fileBrowse:active,
+.report .SNP .deleteReportButton:active,
+.report .SNP .okButton:active {
+	border-bottom-color: #BBB;	
+	border-left-color: #BBB;
+	background-color : #8F8;
+}
+
+.report .SNP .completed {
+	background-image: url("../../../plugins/report/images/SNP/completed-18.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 35px;
+	min-height: 35px;
+	width: 35px;
+	height: 35px;
+}
+
+.report .SNP .loading {
+	background-image: url("../../../plugins/report/images/SNP/loading-32.gif") !important;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 35px;
+	min-height: 35px;
+	width: 35px;
+	height: 35px;
+}
+
+.report .SNP .exonic,
+.report .SNP .dbSNP {
+	/*color: #000;*/
+}
+
+
+
+/* VARIANT SLIDER */
+/* NO PADDING FOR SLIDER */
+.report .SNP .controls .slider td {
+	padding-left: 0;
+	height: auto !important;
+}
+.SNP .slider table {
+	width: 80px !important;
+	padding: 0px !important;
+	padding-left: 0px !important;
+}
+.report .SNP .variantInput {
+	padding-left: 0;
+	font-size: 16px;
+	color: #000;
+	background-color: #FFF;
+	width: 30px !important;
+	font-size: 12px;
+}
+
+
+/* DEPTH SPINNER */
+.report .SNP .dijitSpinnerButtonContainer {
+	height: 20px !important;
+}
+
+
+.report .SNP .fileBrowse, .report .SNP .fileUpload {
+	background-color: #FFF;
+	border: 2px solid #EEE;
+	border-bottom-color: #DDD;	
+	border-left-color: #DDD;	
+	vertical-align: middle;
+}
+
+.report .SNP .fileBrowse td:hover, .report .SNP .fileUpload td:hover {
+	background-image: url();
+	color: #F00;
+	border: 2px solid #FFD;
+	border-bottom-color: #EEC;	
+	border-left-color: #EEC;
+	background-color : #0F0;
+}
+
+.report .SNP .fileBrowse, .report .SNP .fileUpload {
+	min-width: 28px;
+}
+
+.report .SNP .fileBrowse {
+	float: inherit;
+	background-image: url("../../../plugins/report/images/SNP/browse-28.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 28px;
+	height: 28px;
+}
+
+.report .SNP .fileUpload {
+	background-image: url("../../../plugins/report/images/SNP/upload-28.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 28px;
+	height: 28px;
+}
+
+/* EXPOSE FILE UPLOAD ONCLICK ELEMENT */
+.report .SNP .dijitFileInput {
+	position: relative;
+	top: -2px;
+	left: -3px;
+	height: 32px !important;
+	width: 32px !important;
+	z-index: 10;
+	border: 0px;
+	/*visibility: hidden !important;*/
+	opacity: 0;
+}
+.report .SNP .dijitFileInputReal {
+	background-color: #00F !important;
+	height: 30px !important;
+	width: 30px !important;
+	z-index: 11;
+}
+
+
+/* REMOVE BLANK AT RIGHT OF COMBO INPUT */
+.report .SNP .dijitReset .dijitValidationIcon {
+	visibility: hidden;
+	display: none;
+}
+
+.report .SNP .projectCombo,
+.report .SNP .workflowCombo,
+.report .SNP .reportCombo {
+    font-family: sans-serif;
+    font-size: 18px;
+    width: 180px;
+	text-indent: 2px;
+	/*color: #F00;*/
+    /*size: 250px;*/
+    /*max-width: 30px;*/
+    /*line-height: 50px !important;*/
+}
+
+
+/* NOTE: THIS IS NECESSARY FOR THE NEXT RULE TO WORK!!! */
+.report .SNP .projectCombo .dijitReset .dijitMenu li,
+.report .SNP .projectCombo .dijitReset .dijitMenuItem li,
+.report .SNP .workflowCombo .dijitReset .dijitMenu li,
+.report .SNP .workflowCombo .dijitReset .dijitMenuItem li,
+.report .SNP .reportCombo .dijitReset .dijitMenu li,
+.report .SNP .reportCombo .dijitReset .dijitMenuItem li,
+.report .SNP .speciesCombo .dijitReset .dijitMenu li,
+.report .SNP .speciesCombo .dijitReset .dijitMenuItem li,
+.report .SNP .chromosomeCombo .dijitReset .dijitMenu li,
+.report .SNP .chromosomeCombo .dijitReset .dijitMenuItem li,
+.report .SNP .senseCombo .dijitReset .dijitMenu li,
+.report .SNP .senseCombo .dijitReset .dijitMenuItem li,
+.report .SNP .exonicCombo .dijitReset .dijitMenu li,
+.report .SNP .exonicCombo .dijitReset .dijitMenuItem li,
+.report .SNP .dbsnpCombo .dijitReset .dijitMenu li,
+.report .SNP .dbsnpCombo .dijitReset .dijitMenuItem li
+{
+/*color: #0FF !important;*/
+
+}
+.report .SNP .dijitMenu li,
+.report .SNP .dijitMenuItem li
+{
+	color: #224 !important;
+	height: 25px;
+	font-size: 16px;
+}
+
+/*.report .SNP .speciesCombo .dijitMenu li,*/
+/*.report .SNP .speciesCombo .dijitMenuItem li,*/
+/*.report .SNP .chromosomeCombo .dijitReset .dijitMenu li,*/
+/*.report .SNP .chromosomeCombo .dijitReset .dijitMenuItem li,*/
+/*.report .SNP .senseCombo .dijitReset .dijitMenu li,*/
+/*.report .SNP .senseCombo .dijitReset .dijitMenuItem li,*/
+/*.report .SNP .exonicCombo .dijitReset .dijitMenu li,*/
+/*.report .SNP .exonicCombo .dijitReset .dijitMenuItem li,*/
+/*.report .SNP .dbsnpCombo .dijitReset .dijitMenu li,*/
+/*.report .SNP .dbsnpCombo .dijitReset .dijitMenuItem li*/
+/*{*/
+/*	font-size: 12px !important;*/
+/*}*/
+
+
+
+
+
+.dijitSplitContainer-dijitContentPane,
+.soria .dijitBorderContainer-dijitContentPane {
+    padding:  0px !important;    
+}
+
+
+.dijitSplitContainer-dijitContentPane {
+    border:  0px !important;
+}
+
+.dijitContentPane .dijitSplitPane .report {
+    padding: 0px !important;
+}
+
+/*.reportNotes .richTextEditable {*/
+/*    position: relative;*/
+/*    top: 10px;*/
+/*}*/
+
+
+.report .SNP .dijitTitlePaneContentInner {
+    padding: 0px !important;
+    /*position: relative;*/
+    /*top: 0px;*/
+}
+
+
+
+/* NOTES */
+
+.notes hideNode {
+    position: relative;
+    top: 10px;
+}
+
+
+
+.reportNotesTitlePane {
+    width: 300px !important;    
+    font-size: 14px;
+}
+
+.dijitTitlePaneTitle .dijitClosed,
+.dijitTitlePaneTitle .dijitOpen {
+    color: #222;
+    font-size: 14px;
+    font-family: Verdana;
+    width: 400px !important;
+}
+
+.notes hideNode {
+    position: relative;
+    top: 10px;
+}
+
+
+
+

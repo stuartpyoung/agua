@@ -1,0 +1,15 @@
+syoung	Demo data	Demo input and output data files	/nethome/bioinfo/data/sequence/demo
+syoung	Human cDNA	Human cDNA from EMBL and NCBI for MAQ (human-cd	/nethome/bioinfo/data/sequence/cdna
+syoung	Human chromosomes (36.1)	Human chromosomes in FASTA format (human-fa), MAQ binary format (human-bfa) and ELAND binary format (human-sq), generated from single-chromosome FASTA files (Build 36.1)	/nethome/bioinfo/data/sequence/chromosomes
+syoung	Human genome (36.1)	FASTA format whole genome file (human-fa) and MAQ format file (human-bfa) (Build 36.1)	/nethome/bioinfo/data/sequence/genomes
+syoung	MAQ human chromosomes (36.1)	Human chromosomes in FASTA format (human-fa), MAQ binary format (human-bfa) and ELAND binary format (human-sq), generated from single-chromosome FASTA files (Build 36.1)	/nethome/bioinfo/data/sequence/chromosomes
+syoung	Solexa archive	Archive of all solexa NGS runs	/q/solexa1
+dmotti	dummy	test	test notes
+dmotti	test2	test	test notes
+jhahn	source1	source 1	/nethome/data
+jgilbert	source1	/nethome/gilbert	all
+jgilbert	source2	test source	/nethome/gilbert
+dmotti	New	new	/nethome/bioinfo/data/sequence
+dmotti	Sequences	Raw sequences	/nethome/dmotti/base/sequences
+jlhaner	Sequences	Solexa sequences	/nethome/jlhaner/base/pipeline/sequences
+syoung	Bixby	Bixby Solexa sequences	/nethome/bioinfo/data/sequence/labs/bixby

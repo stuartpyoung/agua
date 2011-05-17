@@ -1,0 +1,126 @@
+<html>
+	<head>
+		<title>OO/mixin</title>
+		<style type="text/css">
+			@import "../../../dojo/resources/dojo.css";
+		</style>
+		<script type="text/javascript" src="../../../dojo/dojo.js" djConfig="isDebug:true"></script>
+		<script type="text/javascript">
+			dojo.require("dojox.lang.oo.mixin");
+			dojo.require("dojox.lang.oo.general");
+			dojo.require("dojox.lang.oo.aop");
+
+			var oo = dojox.lang.oo, oog = oo.general, ooa = oo.aop;
+
+			var test = function(){
+				// test chaining of constructor() and destroy()
+
+				var a = {
+				},
+				b = {
+				},
+				c = {
+				};
+
+				var t = oo.mixin({}, a);
+				t.init();
+				t.abc(42);
+				t.destroy();
+
+				var t = oo.mixin({}, a, b);
+				t.init();
+				t.abc(42);
+				t.destroy();
+
+				var t = oo.mixin({}, a, b, c);
+				t.init();
+				t.abc(42);
+				t.destroy();
+
+				var t = oo.mixin({}, a, oo.filter(b, {abc: ""}));
+				t.init();
+				t.abc(42);
+				t.destroy();
+
+				var t = oo.mixin({}, a, oo.filter(b, {abc: "def", destroy: ""}));
+				t.init();
+				t.abc(42);
+				t.def(42);
+				t.destroy();
+
+				var t = oo.mixin({}, a,
+							oo.filter(oog.after(b),  {init: "", destroy: ""}),
+							oo.filter(oog.before(c), {init: "", destroy: ""})
+						);
+				t.init();
+				t.abc(42);
+				t.destroy();
+
+				var t = oo.mixin({}, a, {
+				});
+				t.init();
+				t.abc(42);
+				t.destroy();
+
+				var t = oo.mixin({}, a, {
+				});
+				t.init();
+				t.abc(42);
+				t.def(42);
+				t.destroy();
+
+				var t = oo.mixin({}, a, {
+					abc: oog.augment(oog.after(
+					))
+				});
+				t.init();
+				t.abc(42);
+				t.destroy();
+
+				var t = oo.mixin({}, a, {
+					abc: oog.override(oog.after(
+					))
+				});
+				t.init();
+				t.abc(42);
+				t.destroy();
+
+				var t = oo.mixin({}, a, oog.after({
+				}));
+				t.init();
+				t.abc(42);
+				t.def(42);
+				t.destroy();
+
+				var t = oo.mixin({}, a,
+					{
+						abc: ooa.around(function(f, args){
+							var ret = f.apply(this, args);
+							return ret;
+						})
+					},
+					{
+						abc: ooa.before(function(){
+						})
+					},
+					{
+						abc: ooa.afterReturning(function(ret){
+						})
+					},
+					{
+						abc: ooa.after(function(){
+						})
+					}
+				);
+				t.init();
+				t.abc(42);
+				t.destroy();
+			};
+			//dojo.addOnLoad(test);
+		</script>
+	</head>
+	<body>
+		<p>This test is meant to run with Firebug. Open the console to see the output.</p>
+		<p><button onclick="test()">Start</button></p>
+	</body>
+</html>

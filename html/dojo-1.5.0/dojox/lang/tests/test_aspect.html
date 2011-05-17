@@ -1,0 +1,376 @@
+<html>
+	<head>
+		<title>aspects</title>
+		<style type="text/css">
+			@import "../../../dojo/resources/dojo.css";
+		</style>
+		<script type="text/javascript" src="../../../dojo/dojo.js" djConfig="isDebug:true"></script>
+		<script type="text/javascript" src="../aspect.js"></script>
+		<script type="text/javascript" src="../aspect/cflow.js"></script>
+		<script type="text/javascript" src="../aspect/tracer.js"></script>
+		<script type="text/javascript" src="../aspect/timer.js"></script>
+		<script type="text/javascript" src="../aspect/profiler.js"></script>
+		<script type="text/javascript" src="../aspect/counter.js"></script>
+		<script type="text/javascript" src="../aspect/memoizer.js"></script>
+		<script type="text/javascript" src="../aspect/memoizerGuard.js"></script>
+		<script type="text/javascript">
+			dojo.require("dojox.lang.aspect");
+			dojo.require("dojox.lang.aspect.cflow");
+			dojo.require("dojox.lang.aspect.tracer");
+			dojo.require("dojox.lang.aspect.timer");
+			dojo.require("dojox.lang.aspect.profiler");
+			dojo.require("dojox.lang.aspect.counter");
+			dojo.require("dojox.lang.aspect.memoizer");
+			dojo.require("dojox.lang.aspect.memoizerGuard");
+			dojo.require("dojo.string");
+			dojo.require("dojox.lang.functional.listcomp");
+
+			var test = function(){
+				// This is a test class, don't program like this!
+				var Rect = function(){
+					this.x = this.y = this.width = this.height = 0;
+				};
+				dojo.extend(Rect, {
+					// getters
+					getX: function(){ return this.x; },
+					getY: function(){ return this.y; },
+					getWidth: function(){ return this.width; },
+					getHeight: function(){ return this.height; },
+					// setters
+					setX: function(val){ this.x = val; },
+					setY: function(val){ this.y = val; },
+					setWidth: function(val){ this.width = val; },
+					setHeight: function(val){ this.height = val; },
+					// special methods
+					getPerimeter: function(){ return 2 * (this.width + this.height); },
+					getArea: function(){ return this.width * this.height; },
+					getCorner: function(){ return {x: this.x + this.width, y: this.y + this.height}; },
+					move: function(x, y){ this.x = x; this.y = y; },
+					makeSquare: function(l){ this.width = this.height = l; },
+					scale: function(s){ this.width *= s; this.height *= s; },
+					pointInside: function(x, y){
+						return	this.x <= x && x < (this.x + this.width) &&
+								this.y <= y && y < (this.y + this.height);
+					},
+					assertSquare: function(){
+						if(this.getHeight() != this.getWidth()){
+							throw new Error("NOT A SQUARE!");
+						}
+					}
+				});
+
+				var aop = dojox.lang.aspect, df = dojox.lang.functional;
+
+				// our simple advices
+				var TraceArguments = {
+					before: function(/*arguments*/){
+						var joinPoint = aop.getContext().joinPoint,
+							args = Array.prototype.join.call(arguments, ", ");
+					}
+				};
+				var TraceReturns = {
+					afterReturning: function(retVal){
+						var joinPoint = aop.getContext().joinPoint;
+					},
+					afterThrowing: function(excp){
+						var joinPoint = aop.getContext().joinPoint;
+					}
+				};
+
+				var rect1 = new Rect;
+				rect1.move(100, 100);
+				rect1.makeSquare(200);
+				rect1.pointInside(150, 250);
+
+				var rect2 = new Rect;
+				aop.advise(rect2, /^get/, TraceReturns);
+				aop.advise(rect2, [/^set/, "move", "makeSquare"], TraceArguments);
+				aop.advise(rect2, "pointInside", [TraceReturns, TraceArguments]);
+				rect2.move(100, 100);
+				rect2.makeSquare(200);
+				rect2.pointInside(150, 250);
+
+				var h1 = aop.advise(Rect, /^get/, TraceReturns);
+				var h2 = aop.advise(Rect, [/^set/, "move", "makeSquare"], TraceArguments);
+				var h3 = aop.advise(Rect, "pointInside", [TraceReturns, TraceArguments]);
+				rect1.move(100, 100);
+				rect1.makeSquare(200);
+				rect1.pointInside(150, 250);
+
+				aop.unadvise(h1);
+				aop.unadvise(h2);
+				rect1.move(100, 100);
+				rect1.makeSquare(200);
+				rect1.pointInside(150, 250);
+
+				rect2.move(100, 100);
+				rect2.makeSquare(200);
+				rect2.pointInside(150, 250);
+
+				aop.advise(rect2, /^assert/, TraceReturns);
+				try{
+					rect2.assertSquare();
+					rect2.width = 300; // triggering exception
+					rect2.assertSquare();
+				}catch(e){
+					// squelch
+				}
+
+				// more complex dynamic tracing advice
+				var Trace = function(context){
+					this.name = context.joinPoint.targetName;
+				};
+				dojo.extend(Trace, {
+					before: function(/*arguments*/){
+						this.args = Array.prototype.join.call(arguments, ", ");
+					},
+					afterReturning: function(retVal){
+						var buf = "-- " + this.name + "(" + this.args + ")";
+						if(typeof retVal == "undefined"){
+							// procedure without a return value
+						}else{
+							// function with returned value
+						}
+					},
+					afterThrowing: function(excp){
+					}
+				});
+
+				// remove tracing for pointInside
+				aop.unadvise(h3);
+
+				var rect3 = new Rect;
+				aop.advise(rect3, /^\S/, Trace);
+				rect3.move(100, 100);
+				rect3.makeSquare(200);
+				rect3.pointInside(150, 250);
+				rect3.assertSquare();
+
+				var TraceAll = function(context, id){
+					this.name = context.joinPoint.targetName;
+					this.prefix = dojo.string.pad("", context.depth * 2, "--", true) + "-- #" + (id || 1);
+				};
+				dojo.extend(TraceAll, {
+					before: function(/*arguments*/){
+						var args = Array.prototype.join.call(arguments, ", ");
+					},
+					around: function(/*arguments*/){
+						var args = Array.prototype.join.call(arguments, ", ");
+						var retVal = aop.proceed.apply(null, arguments);
+						return retVal;	// should return a value, if the target returns a value
+					},
+					afterReturning: function(retVal){
+					},
+					afterThrowing: function(excp){
+					},
+					after: function(){
+					}
+				});
+
+				var rect4 = new Rect;
+				aop.advise(rect4, /^\S/, [
+					function(context){ return new TraceAll(context, 1); },
+					function(context){ return new TraceAll(context, 2); }
+				]);
+				rect4.move(100, 100);
+				rect4.makeSquare(200);
+				rect4.pointInside(150, 250);
+				try{
+					rect4.assertSquare();
+					rect4.width = 300; // triggering exception
+					rect4.assertSquare();
+				}catch(e){
+					// squelch
+				}
+
+				var TraceTopLevel = function(context){
+					this.name = context.joinPoint.targetName;
+				};
+				dojo.extend(TraceTopLevel, {
+					before: function(/*arguments*/){
+						var args = Array.prototype.join.call(arguments, ", ");
+					},
+					afterReturning: function(retVal){
+					},
+					afterThrowing: function(excp){
+					}
+				});
+
+				var rect5 = new Rect;
+				aop.advise(rect5, /^\S/,
+					function(context){
+						return aop.cflow(context.instance) ? 	// the advised object
+							{} :								// do nothing
+							new TraceTopLevel(context);			// log top level
+					}
+				);
+				rect5.move(100, 100);
+				rect5.makeSquare(200);
+				rect5.pointInside(150, 250);
+				try{
+					rect5.assertSquare();
+					rect5.width = 300; // triggering exception
+					rect5.assertSquare();
+				}catch(e){
+					// squelch
+				}
+
+				var log = function(){
+					// log the rect1pointInside state
+					var dispatcher = "native";
+					if(rect1.pointInside.target){
+						if(rect1.pointInside.advices){
+							dispatcher = "dojox.lang.aspect";
+						}else if(rect1.pointInside._listeners){
+							dispatcher = "dojo.connect";
+						}
+					}
+				};
+
+				log();
+				rect1.pointInside(150, 250);
+				h1 = dojo.connect(rect1, "pointInside", function(){
+					var args = Array.prototype.join.call(arguments, ", ");
+				});
+				log();
+				rect1.pointInside(150, 250);
+				h2 = aop.advise(rect1, "pointInside", TraceAll);
+				log();
+				rect1.pointInside(150, 250);
+				dojo.disconnect(h1);
+				log();
+				rect1.pointInside(150, 250);
+				aop.unadvise(h2);
+				log();
+				rect1.pointInside(150, 250);
+				h2 = aop.advise(rect1, "pointInside", TraceAll);
+				log();
+				rect1.pointInside(150, 250);
+				h1 = dojo.connect(rect1, "pointInside", function(){
+					var args = Array.prototype.join.call(arguments, ", ");
+				});
+				log();
+				rect1.pointInside(150, 250);
+				aop.unadvise(h2);
+				log();
+				rect1.pointInside(150, 250);
+				dojo.disconnect(h1);
+				log();
+				rect1.pointInside(150, 250);
+
+				h1 = aop.advise(rect1, /^\S/, aop.tracer(true));
+				rect1.move(100, 100);
+				rect1.makeSquare(200);
+				rect1.pointInside(150, 250);
+				try{
+					rect1.assertSquare();
+					rect1.width = 300; // triggering exception
+					rect1.assertSquare();
+				}catch(e){
+					// squelch
+				}
+				aop.unadvise(h1);
+
+				var counter = aop.counter();
+				h1 = aop.advise(rect1, /^get/, counter);
+				rect1.move(100, 100);
+				rect1.makeSquare(200);
+				rect1.pointInside(150, 250);
+				try{
+					rect1.assertSquare();
+					rect1.width = 300; // triggering exception
+					rect1.assertSquare();
+				}catch(e){
+					// squelch
+				}
+				aop.unadvise(h1);
+
+				h1 = aop.advise(rect1, /^\S/, aop.timer());
+				rect1.move(100, 100);
+				rect1.makeSquare(200);
+				rect1.pointInside(150, 250);
+				try{
+					rect1.assertSquare();
+					rect1.width = 300; // triggering exception
+					rect1.assertSquare();
+				}catch(e){
+					// squelch
+				}
+				aop.unadvise(h1);
+
+				/*
+				h1 = aop.advise(rect1, /^\S/, aop.profiler("Profile1"));
+				rect1.move(100, 100);
+				rect1.makeSquare(200);
+				rect1.pointInside(150, 250);
+				try{
+					rect1.assertSquare();
+					rect1.width = 300; // triggering exception
+					rect1.assertSquare();
+				}catch(e){
+					// squelch
+				}
+				aop.unadvise(h1);
+				*/
+
+				var Fibonacci = function(order){
+					if(arguments.length == 1){
+						this.setOrder(order);
+					}else{
+						this.offset = 2;
+					}
+				}
+				dojo.extend(Fibonacci, {
+					setOrder: function(order){
+						this.offset = order + 1;
+					},
+					getOrder: function(){
+						return this.offset - 1;
+					},
+					calculate: function(n){
+						if(n < 0){ return 0; }
+						if(n == 0){ return 1; }
+						return this.calculate(n - 1) + this.calculate(n - this.offset);
+					},
+					calculateN: function(n, o){
+						if(n < 0){ return 0; }
+						if(n == 0){ return 1; }
+						return this.calculateN(n - 1, o) + this.calculateN(n - 1 - o, o);
+					}
+				});
+				var args = df.listcomp("i for(i = 0; i < 15; ++i)");
+
+				var fib = new Fibonacci;
+				h1 = aop.advise(fib, /^calculate/, aop.timer("fib"));
+
+				fib.setOrder(0);
+				fib.setOrder(1);
+				fib.setOrder(2);
+				fib.setOrder(3);
+
+				h2 = aop.advise(fib, "calculate", aop.memoizer());
+				h3 = aop.advise(fib, /^set/, aop.memoizerGuard("calculate"));
+				fib.setOrder(0);
+				fib.setOrder(1);
+				fib.setOrder(2);
+				fib.setOrder(3);
+				aop.unadvise(h3);
+				aop.unadvise(h2);
+
+
+				h2 = aop.advise(fib, "calculateN", aop.memoizer(function(a, b){ return a + "/" + b; }));
+				h3 = aop.advise(fib, /^set/, aop.memoizerGuard("calculate"));
+				aop.unadvise(h3);
+				aop.unadvise(h2);
+
+				aop.unadvise(h1);
+
+			};
+			//dojo.addOnLoad(test);
+		</script>
+	</head>
+	<body>
+		<p>This test is meant to run with Firebug. Open the console to see the output.</p>
+		<p><button onclick="test()">Start</button></p>
+	</body>
+</html>

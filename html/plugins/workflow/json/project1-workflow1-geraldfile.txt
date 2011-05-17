@@ -1,0 +1,7 @@
+1234567:ANALYSIS eland_extended
+1234567:SEQUENCE_FORMAT --fastq
+5:ELAND_GENOME /nethome/bioinfo/data/sequence/controls/phiX-sq
+123467:ELAND_GENOME /nethome/bioinfo/data/sequence/chromosomes/human-sq
+1234567:USE_BASES nY*n
+ELAND_MULTIPLE_INSTANCES 8
+

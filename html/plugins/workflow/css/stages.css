@@ -1,0 +1,456 @@
+/* GENERAL */
+.stages {
+	font-family: Verdana;
+}
+/* COMBOBOX AND INPUT-RELATED STYLES */
+.tundra .dijitInputContainer input, .tundra .dijitTextBox {
+    margin: 0 !important;
+    text-align: center !important;
+}
+.stage .dijitInputContainer {
+    float: none !important;
+    overflow: hidden;
+    padding-bottom: 0px !important;
+    padding-left: 3px;
+    padding-right: 3px;
+    position: relative;
+    top: 2px;
+}
+/* CLUSTER NODES */
+.stages .headerRow {
+	height: 8px !important;
+	font-size: 8px !important;
+	color: darkblue !important;
+	text-align: center !important;
+	padding: 0px !important;
+}
+
+/* REMOVE MARGINS */
+.stages .tundra .dijitInputContainer input,
+.stages .tundra .dijitTextBox {
+    margin: 0 0 !important;
+}
+/* DROP TARGET */
+.stages .dropTarget li:hover {
+	background-color: #BCF;
+}
+.stages .copyWorkflow {
+	background-image: url("../../../plugins/files/images/copyworkflow-20.png");
+	background-repeat: no-repeat;
+}
+.stages .minNodes,
+.stages .maxNodes {
+    background: url() !important;
+	/*height: 25px !important;*/
+}
+.stages .clusterCheckbox {
+	border: 2px dotted #00f;
+	border: none;
+	padding: 1em;
+}
+
+.stages .clusterCombo {
+	width: 150px !important;
+	height: 25px !important;
+	font-size: 16px !important;
+}
+
+.stages .clusterCombo .enabled .dijitTextBox .dijitComboBox {
+    background: url() !important;
+	color: #224 !important;
+	height: 25px !important;
+	font-size: 20px !important;
+}
+
+.stages .enabled {
+    background: url() !important;
+	color: #224 !important;
+	height: 25px !important;
+	font-size: 20px !important;
+}
+
+
+.stages .clusterCombo .enabled .dijitReset .dijitInputField .dijitInputContainer {
+    background: url() !important;	
+}
+
+.stages .minNodes,
+.stages .maxNodes {
+	width: 30px !important;
+	font-size: 14px;
+	font-weight: 900;
+	text-align: center !important;
+}
+
+
+/* COMBO BOXES */
+/* REMOVE BLANK AT RIGHT OF COMBO INPUT */
+.workflow .stages .dijitReset .dijitValidationIcon {
+	visibility: hidden;
+	display: none;
+}
+
+/*.workflow .stages .clusterCombo,*/
+.workflow .stages .projectCombo,
+.workflow .stages .workflowCombo,
+.workflow .stages .reportCombo,
+.workflow .stages .usernameCombo {
+    background: url() !important;
+    font-family: sans-serif;
+    font-size: 18px;
+    width: 150px;
+	/*text-indent: 2px;*/
+}
+
+/* NOTE: THIS IS NECESSARY FOR THE NEXT RULE TO WORK!!! */
+.stages .clusterCombo .dijitReset .dijitMenu li,
+.stages .clusterCombo .dijitReset .dijitMenuItem li,
+.stages .projectCombo .dijitReset .dijitMenu li,
+.stages .projectCombo .dijitReset .dijitMenuItem li,
+.stages .workflowCombo .dijitReset .dijitMenu li,
+.stages .workflowCombo .dijitReset .dijitMenuItem li,
+.stages .reportCombo .dijitReset .dijitMenu li,
+.stages .reportCombo .dijitReset .dijitMenuItem li,
+.stages .usernameCombo .dijitReset .dijitMenu li,
+.stages .usernameCombo .dijitReset .dijitMenuItem li
+{
+/*color: #0FF !important;*/
+}
+.stages .dijitMenu li,
+.stages .dijitMenuItem li
+{
+	color: #224 !important;
+	height: 14px;
+	font-size: 18px;
+	top: -6px !important;
+}
+
+workflow .dijitContainer .dijitLayoutContainer .dijitTabPane .dijitTabContainerTop-dijitLayoutContainer {
+	border: solid 1px #CCC !important;
+}
+
+.stages .dropTarget {
+
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+
+	min-height: 300px;
+	height: auto;
+	width: 240px;
+	list-style: none;
+	position: relative;
+	top: 0px !important;
+	left: 0px;
+	margin-left: 0px;
+
+	background: #FFFFFF none repeat scroll 0 0;
+	border: 3px solid #CCCCCC !important;
+	cursor: default;
+	padding:1em 0.5em;
+
+	text-align: left;
+	font-size: 14px;
+	font-family: Verdana;
+
+	/* NEEDED SO THAT SCROLLBAR WILL SHOW */
+	display: block !important;
+	overflow:auto !important;
+}
+
+.stages .dropTarget .dndNode {
+	height: 30px !important;
+	background-color: #F00;
+	z-index: 101 !important;
+	position: relative;
+	top: 0px;
+}
+
+.stages .dropTarget .dndNode .appRow {
+	position: relative;
+	top: -10px;
+	background-color: #0F0;
+	z-index: 100 !important;
+	height: 0px;
+}
+
+.stages .dropTarget .name {
+	font-weight: bolder;
+	color: #222;
+	font-size: 14px;
+	text-align: left !important;
+
+	background-image: url(../../../plugins/workflow/images/app-18.png);
+	text-indent: 22px;
+	background-repeat: no-repeat;
+	height: 18px;
+}
+
+.stages .dropTarget .dojoDndItemAnchor .satisfied,
+.stages .dropTarget .satisfied .dojoDndItemAnchor {
+	background-color: #CCFFCC !important;
+}
+
+.stages .dropTarget .satisfied {
+	background-color: #CFC;
+}
+.stages .dropTarget .satisfied:hover {
+	background-color: #8F8 !important;
+}
+.stages .dropTarget .satisfied:active {
+	background-color: #8FF !important;
+}
+
+.stages .dropTarget .unsatisfied {
+	background-color: #FCC;
+}
+.stages .dropTarget .unsatisfied:hover {
+	background-color: #F88;
+}
+.stages .dropTarget .unsatisfied:active {
+	background-color: #FF8;
+}
+
+/* RUN STATUS */
+.stages .stagerow {
+	min-height: 24px !important;
+}
+
+.stages .waiting .stagerow .name {
+	background-color: #CCC;
+	background-image: url("../../../plugins/workflow/images/workflow-static-20.png");
+	background-repeat: no-repeat;
+}
+
+.stages .running .stagerow {
+	background-color: #FFC !important;
+}
+
+.stages .running .stagerow .name {
+	/*background-color: #FFC !important;*/
+	background-image: url("../../../plugins/workflow/images/workflow-running-20.gif") !important;
+	background-repeat: no-repeat;
+}
+
+.stages .completed .stagerow .name {
+	background-color: #DFD;
+	background-image: url("../../../plugins/workflow/images/workflow-completed-20.png");
+	background-repeat: no-repeat;
+}
+
+/* TITLES */
+.workflow .stages .clusterTitle,
+.workflow .stages .projectTitle,
+.workflow .stages .workflowTitle,
+.workflow .stages .reportTitle,
+.workflow .stages .fileTitle,
+.workflow .stages .workflowTitle {
+	text-align: center;
+	font-size: 12px;
+	font-weight: bolder;
+	font-family: Verdana;
+	/*font-style: oblique;*/
+	height: 13px;
+	vertical-align: bottom;
+	background: #DDEEFF;
+	color: darkred;
+}
+
+.workflow .stages .message {
+	color: #444;
+	font-family: Verdana;
+	font-size: 12px;
+	font-style: italic;
+	text-align: center;
+	padding-right: 35px;
+}
+
+
+/* ICONS */
+.workflow .stages .clusterIcon,
+.workflow .stages .fileIcon,
+.workflow .stages .reportIcon,
+.workflow .stages .workflowIcon,
+.workflow .stages .workflowIcon,
+.workflow .stages .projectIcon {
+	background-repeat: no-repeat;
+	background-position: center center !important;
+	min-width: 35px;
+	min-height: 35px;
+	width: 35px;
+	height: 35px;
+}
+
+.workflow .stages .clusterIcon {
+	background-image: url("../../../plugins/workflow/images/cluster-28.png");
+}
+.workflow .stages .fileIcon {
+	background-image: url("../../../plugins/workflow/images/file-28.png");
+}
+.workflow .stages .reportIcon {
+	background-image: url("../../../plugins/workflow/images/report-28.png");
+}
+.workflow .stages .workflowIcon {
+	background-image: url("../../../plugins/workflow/images/workflow-28.png");
+}
+.workflow .stages .workflowIcon {
+	background-image: url("../../../plugins/workflow/images/workflow-28.png");
+}
+.workflow .stages .projectIcon {
+	background-image: url("../../../plugins/workflow/images/project-28.png");
+}
+
+
+/* BUTTONS */
+
+.stages .copyWorkflowButton,
+.stages .copyProjectButton,
+.workflow .stages .deleteProjectButton,
+.workflow .stages .deleteWorkflowButton,
+.workflow .stages .downloadHistoryButton,
+.workflow .stages .refreshHistoryButton,
+.workflow .stages .okButton {
+	background-color: #FFF;
+	border: 2px solid #EEE;
+	border-bottom-color: #DDD;	
+	border-left-color: #DDD;	
+	vertical-align: middle;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 28px;
+	height: 28px;
+}
+
+.workflow .stages .copyWorkflowButton {
+	background-image: url("../../../plugins/workflow/images/copyworkflow-20.png");
+}
+.workflow .stages .copyProjectButton {
+	background-image: url("../../../plugins/workflow/images/copyproject-20.png");
+}
+.workflow .stages .deleteProjectButton {
+	background-image: url("../../../plugins/workflow/images/delete-24.png");
+}
+.workflow .stages .deleteWorkflowButton {
+	background-image: url("../../../plugins/workflow/images/delete-24.png");
+}
+.workflow .stages .downloadHistoryButton {
+	background-image: url("../../../plugins/workflow/images/download-24.png");
+}
+.workflow .stages .refreshHistoryButton {
+	background-image: url("../../../plugins/workflow/images/refresh-24.png");
+}
+.workflow .stages .okButton {
+	background-image: url("../../../plugins/workflow/images/OK-34.png");
+}
+
+
+
+/* DISABLED RUN BUTTON */
+.workflow .stages .runButtonDisabled,
+.workflow .stages .runButtonEnabled {
+	width: 70px;
+	height: 35px;
+
+	background-image: url("../../../plugins/workflow/images/run-32.png");
+	background-position: 10px;
+	background-repeat: no-repeat;
+	background-color: #DDD;
+	border: 3px solid #BBB;
+	border-bottom-color: #888;	
+	border-left-color: #888;	
+	opacity: 0.6;
+
+	color: #999 !important;
+	font-weight: bold;
+	font-family: Verdana;
+	font-size: 24px;
+	text-align: left;
+	text-indent: 45px;
+
+	position: relative;
+	top: 7px;
+	margin-top: 10px;
+	margin-left: 5px;
+	height: 50px;
+	width: 190px !important;
+}
+
+
+/* ENABLED RUN BUTTON */
+.workflow .stages .runButtonEnabled {
+	background-color: #FFF !important;
+	color: #111 !important;
+	font-weight: bolder !important;
+	opacity: 1.0 !important;
+}
+.workflow .stages .runButtonEnabled:hover,
+.workflow .stages .runButtonEnabled:active {
+	background-color: #FF0 !important;
+	border: 3px solid #DDD;
+	border-bottom-color: #BBB;	
+	border-left-color: #BBB;	
+}
+.workflow .stages .runButtonEnabled:active{
+	background-color: #0F0 !important;
+}
+
+/* ENABLED RUN BUTTON */
+.workflow .stages .runButton .enabled,
+.workflow .stages .runButton .enabled:hover,
+.workflow .stages .runButton .enabled:active{
+	color: #111 !important;
+	font-weight: bolder;
+	background-color: #FFF !important;
+	opacity: 1.0;
+}
+
+.workflow .stages .runButton .enabled:hover,
+.workflow .stages .deleteProjectButton:hover,
+.workflow .stages .deleteWorkflowButton:hover,
+.workflow .stages .downloadHistoryButton:hover,
+.workflow .stages .refreshHistoryButton:hover,
+.workflow .stages .okButton:hover {
+	border-bottom-color: #BBB;	
+	border-left-color: #BBB;
+	background-color : #FF8;
+}
+
+.workflow .stages .runButton .enabled:active,
+.workflow .stages .deleteProjectButton:active,
+.workflow .stages .deleteWorkflowButton:active,
+.workflow .stages .downloadHistoryButton:active,
+.workflow .stages .refreshHistoryButton:active,
+.workflow .stages .okButton:active {
+	border-bottom-color: #BBB;	
+	border-left-color: #BBB;
+	background-color : #8F8;
+}
+
+
+
+
+/* LOADING STATUS */
+.workflow .stages .loaded {
+	background-image: url("../../../plugins/workflow/images/completed-18.png") !important;
+	background-repeat: no-repeat !important;
+	background-position: center;
+	min-width: 35px;
+	min-height: 35px;
+	width: 35px;
+	height: 35px;
+}
+
+.workflow .stages .loading {
+	background-image: url("../../../plugins/workflow/images/loading-32.gif") !important;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 35px;
+	min-height: 35px;
+	width: 35px;
+	height: 35px;
+}
+

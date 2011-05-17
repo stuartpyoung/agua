@@ -1,0 +1,108 @@
+<div dojoattachpoint="containerNode">
+
+    <div
+        dojoAttachPoint="statusTab"
+        dojoType="dijit.layout.ContentPane"
+        parseOnLoad="false"
+		overflow="auto"
+		title="Status"
+		class="runstatus"
+		style="position: relative; top: 0px !important; height: 100%; max-height: auto !important; width: 465px !important; padding: 0 !important; background: #FFF;"
+        >
+
+		<table width="100%">
+			<tr>
+				<td
+					dojoAttachPoint="statusTitle"
+					class="tabTitle"
+					align="center">Status</td>
+			</tr>
+
+			<tr>
+				<td>
+					<table>
+						<tr>
+							<td
+								dojoAttachPoint="toggle"
+								dojoAttachEvent="onclick:toggleTimer"
+								class="timerStopped"
+								title="Click to start or stop run status polling">
+							</td>
+							<td
+								dojoAttachPoint="stop"
+								class="stop">
+							</td>
+							<td
+								dojoAttachPoint="pause"
+								class="pause">
+							</td>
+							<td
+								dojoAttachPoint="play"
+								class="play">
+							</td>
+							<td
+								dojoAttachPoint="notifier"
+								class="notifier">
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div 
+						dojoType="dijit.TitlePane"
+						title="Stages"
+						style="background: #FFF; height: auto; width: 465px !important;"
+						>
+
+						<div
+							dojoAttachPoint="stagesStatusContainer"
+							class="status"
+							>
+						</div>
+
+					</div>
+				</td>
+				<td>
+			</tr>
+			<tr>
+				<td>
+					<div
+						dojoType="dijit.TitlePane"
+						title="Cluster"
+						class="clusterStatus"
+						style="background: #FFF; height: auto; width: 100% !important; font-size: 10px !important"
+						>
+						<div
+							dojoAttachPoint="clusterStatusContainer"
+							class="clusterStatusContainer"
+						>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div
+						dojoType="dijit.TitlePane"
+						title="Queue"
+						class="queueStatus"
+						style="background: #FFF; height: auto; width: 100% !important; font-size: 10px !important"
+						>
+						<div
+							dojoAttachPoint="queueStatusContainer"
+							class="queueStatusContainer"
+						>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+	</div>
+
+
+</div> 
+
+

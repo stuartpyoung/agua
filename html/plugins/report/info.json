@@ -1,0 +1,14 @@
+{
+	name: "plugins.report.Controller",
+
+	version : "0.01",
+
+	url : '',
+
+	description : "Allow the user to extract reports from Workflow results.",
+
+	dependencies :
+	[
+		{	name: "plugins.core.Controls", version: 0.01	}
+	]
+}

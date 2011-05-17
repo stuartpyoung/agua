@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>Agua Init Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+
+<style type="text/css">
+
+	/* DOJO STYLES */
+	@import "dojo-1.5.0/dojo/resources/dojo.css";
+
+	/* THEMES */
+	@import "dojo-1.5.0/dijit/themes/dijit.css";
+	@import "dojo-1.5.0/dijit/themes/soria/soria.css";
+	@import "dojo-1.5.0/dijit/themes/tundra/tundra.css";
+
+</style>
+
+
+<!--<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.5/dojo/dojo.xd.js" type="text/javascript" djConfig="parseOnLoad: true, isDebug: true"></script>-->
+
+<script type="text/javascript" src="dojo-1.5.0/dojo/dojo.js"
+	djConfig="parseOnLoad: true, isDebug: true"></script>	
+
+<!--<script type="text/javascript" src="builds/006/dojo/dojo/dojo.js"-->
+<!--	djConfig="isDebug: false, parseOnLoad: true, useCommentedJson: true, locale: 'ja-jp'"></script>-->
+
+<script type="text/javascript" src="builds/006/dojo/agua.js.uncompressed.js"></script>
+
+<!-- TO AVOID PROBLEMS WHEN LOADING -->
+<script type="text/javascript" src="dojo-1.5.0/dijit/nls/en-us.js"></script>
+<script type="text/javascript" src="dojo-1.5.0/dijit/nls/common.js"></script>
+
+
+<script type="text/javascript">
+
+	// SET CGI AND HTML URLS (RELATIVE TO dojo.js)
+	var cgiUrl = "../../cgi-bin/agua/0.6/";
+	var htmlUrl = "../../agua/0.6/";
+
+	// ***** COMMENT THIS OUT WHEN USING A BUILD !! ******
+	// REGISTER module path FOR PLUGINS
+	dojo.registerModulePath("plugins","../../plugins");	
+
+	// GLOBAL InitObject VARIABLE
+	var Agua = new Object; 		// EMPTY DUMMY TO SATISFY plugins.core.Common
+	var InitObject;
+	dojo.addOnLoad(function(){
+
+		dojo.require("plugins.init.Init");
+
+        InitObject = new plugins.init.Init( {
+          // SET CGI AND HTML URLS (RELATIVE TO dojo.js)
+            cgiUrl : cgiUrl,
+            htmlUrl : htmlUrl,
+            dataVolume : 'snap-55fe4a3f'
+        });
+	});
+
+</script>
+
+
+
+<body bgcolor="#FFFFFF" text="#000000" >
+
+<div align="center">
+
+  <table width="750" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td >
+        <div id="attachPoint" valign="top" align="center" >
+
+
+        </div>
+      </td>
+    </tr>
+  </table>
+
+
+
+</div>
+

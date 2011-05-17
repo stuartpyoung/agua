@@ -1,0 +1,50 @@
+/* HISTORY TAB */
+
+.workflow .history .downloadHistoryButton,
+.workflow .history .refreshHistoryButton {
+	background-color: #FFF;
+	border: 2px solid #EEE;
+	border-bottom-color: #DDD;	
+	border-left-color: #DDD;	
+	vertical-align: middle;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 28px;
+	height: 28px;
+}
+
+.workflow .history .downloadHistoryButton {
+	background-image: url("../../../plugins/workflow/images/download-24.png");
+}
+.workflow .history .refreshHistoryButton {
+	background-image: url("../../../plugins/workflow/images/refresh-24.png");
+}
+
+.workflow .history .downloadHistoryButton:hover,
+.workflow .history .refreshHistoryButton:hover {
+	border-bottom-color: #BBB;	
+	border-left-color: #BBB;
+	background-color : #FF8;
+}
+
+.workflow .history .downloadHistoryButton:active,
+.workflow .history .refreshHistoryButton:active {
+	border-bottom-color: #BBB;	
+	border-left-color: #BBB;
+	background-color : #8F8;
+}
+
+.workflow .history .historyTable table {
+	background-color: #111;
+
+}
+
+.workflow .history .historyTable table tr {
+	background-color: #FFF;
+	height: 20px;
+	font-size: 16px;	
+}
+
+.workflow .history .historyTable table tr td {
+	text-indent: 5px;
+}

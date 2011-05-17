@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title><!-- Insert your title here --></title>
+</head>
+<body>
+
+10.6.2 How Should Your Project Be Organized?
+Once you have decided on your preferred defi nition of ‘Sample’, you need to decide how
+your Samples and Amplicons should be organized within one or more Projects. Projects
+should be used to group together analyses for either ease of comparison or ease of
+navigation.
+Much of the effort in setting up a Project has to do with defi ning Reference Sequences
+and Amplicons. Therefore, it is advisable to set up your Projects so that they contain
+Amplicons that will be measured across a variety of Samples. That way you can continue
+to add new Samples to the existing Project rather than starting a new Project for each
+batch of Samples.
+If you are scanning for a large number of different Amplicons from a single data source,
+collecting them within the same Project would also make sense because it would make
+navigation easier. For example, while reviewing your results, you could jump from
+Amplicon to Amplicon without having to open different Projects.
+You are free to organize your Sample-Amplicon analyses into one or more Projects as
+you fi nd convenient. If you are a low volume user, you may be tempted to keep all of
+your analyses in the same Project even if they are unrelated to each other. However, you
+should keep in mind that pooling too many unrelated Samples together in a Project may
+unnecessarily clutter navigation menus and Variant summary pages.
+10.6.3 Should Amplicons Share a Reference Sequence or Have
+Individual Ones?
+When you are setting up your Amplicons for a Project, you will need to consider two
+opposing issues. The fi rst issue is that smaller Reference Sequences are more effi cient
+for computation. Excessively large Reference Sequences can lead to long computation
+times and slow scrolling and navigation, so shorter ones are preferable on that count.
+On the other hand, alignment views are restricted by Sample and Reference Sequence
+combinations. This means that if you want to look at alignments or difference plots for
+two or more different Amplicons at the same time, those Amplicons must be defi ned from
+within the same Reference Sequence.
+It makes sense to use a common Reference Sequence when your Amplicons actually overlap
+with one another and to use separate ones for Amplicons that don’t overlap. However, you
+can also construct artifi cial Reference Sequences that allow you to view multiple unrelated
+Amplicons in a tab at the same time. These artifi cial Reference Sequences can be constructed
+by concatenating Amplicon sequences together with a string of N’s as separators. Such a
+Reference Sequence would be convenient if you have a small to moderate set of Amplicons
+that you are measuring in Samples that contain an unknown number of Variants. You
+would then be able to look at the difference plot and get an overview of all the Amplicons
+at the same time, so you can identify obvious variations.
+However, if you use an artifi cial Reference Sequence with too many Amplicons in it, you
+will get diminishing returns; the longer Reference Sequence will slow down computation,
+and the alignments will get more inconvenient to navigate. In general it is best to keep
+your Reference Sequences as compact as possible, thus if you wanted to measure a large
+number of exons from a particular gene, it would be better to use a Reference Sequence
+constructed by concatenating the exons (joining them with N-separators), rather than
+using the full genomic sequence of the gene. As long as the exons don’t overlap with each
+other, it would be even better to use separate Reference Sequences for each exon (provided
+viewing the exons within the same alignment or difference plot is not a priority).
+
+</body>
+</html>

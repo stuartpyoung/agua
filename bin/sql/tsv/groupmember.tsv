@@ -1,0 +1,80 @@
+syoung	admin		admin	user	Stuart  Young	syoung@med.miami.edu
+syoung	admin		Project2	project	MAQ and ERANGE	Project2
+syoung	bioinfo	Bioinformatics Team	jclarke	user	Jennifer Clarke	
+syoung	bioinfo	Bioinformatics Team	nnorton	user	Nadine Norton	
+syoung	bioinfo	Bioinformatics Team	Project1	project	Eland to .ace pipeline	/nethome/syoung/.aqwa/Project1
+syoung	bioinfo	Bioinformatics Team	Project2	project	Transcriptome pipeline	/nethome/syoung/.aqwa/Project2
+syoung	nextgen	Next Generation Sequencing	dhedges	user	Dale Hedges	
+syoung	nextgen	Next Generation Sequencing	yedwards	user	Yvonne Edwards	
+syoung	test		admin	user	Stuart  Young	syoung@med.miami.edu
+syoung	test		Project1	project	Transcriptome	Project1
+syoung	admin		Project1	project	Transcriptome	Project1
+admin	NextGen		Project1	project		Project1
+admin	NextGen		Project2	project		Project2
+admin	NextGen		syoung	user	S  Young	syoung@med.miami.edu
+admin	NextGen		testsource1	source	test source 1	/nethome/bioinfo/data/sequence/mtdna
+admin	jessica-lab		Project1	project		Project1
+syoung	Bixby		jbixby	user	John  Bixby	/nethome/bioinfo/data/sequence/labs/bixby
+syoung	Bixby		dstrikis	user	Dinara  Strikis	/nethome/bioinfo/data/sequence/labs/bixby
+syoung	Bixby		jlhaner	user	Jessica  Lerner-Haner	/nethome/bioinfo/data/sequence/labs/bixby
+syoung	Bixby		dmotti	user	Dario  Motti	/nethome/bioinfo/data/sequence/labs/bixby
+syoung	Bixby		fkuo	user	Frank  Kuo	/nethome/bioinfo/data/sequence/labs/bixby
+syoung	Bixby		ogutierrez	user	O  Gutierrez	/nethome/bioinfo/data/sequence/labs/bixby
+syoung	Bixby		Bixby mouse run1	source	Bixby solexa paired-end samples (4 each)	/nethome/bioinfo/data/sequence/labs/bixby
+admin	Bixby		dmotti	user	Dario  Motti	dmotti@med.miami.edu
+admin	Bixby		jlhaner	user	Jessica  Lerner-Haner	jlhaner@med.miami.edu
+admin	Bixby		admin	user	Stuart  Young	syoung@med.miami.edu
+admin	Bixby		vlemmon	user	Vance  Lemmon	vlemmon@med.miami.edu
+admin	Bixby		jbixby	user	John  Bixby	jbixby@med.miami.edu
+admin	Bixby		dstrikis	user	Dinara  Strikis	dstrikis@med.miami.edu
+admin	Bixby		fkuo	user	Frank  Kuo	fkuo@med.miami.edu
+syoung	Bixby		Demo data	source	Demo input and output data files	/nethome/bioinfo/data/sequence/demo
+syoung	Bixby		Human cDNA	source	Human cDNA from EMBL and NCBI for MAQ (human-cd	/nethome/bioinfo/data/sequence/cdna
+syoung	Bixby		MAQ human chromosome	source	Human chromosomes in FASTA format (human-fa), MAQ binary format (human-bfa) and ELAND binary format (human-sq), generated from single-chromosome FASTA files (Build 36.1)	/nethome/bioinfo/data/sequence/chromosomes
+syoung	Bixby		Solexa archive	source	Archive of all solexa NGS runs	/q/solexa1
+dmotti	TryDario		Project1	project		Project1
+jlhaner	jlhaner		Project1	project		Project1
+jlhaner	jlhaner		Sequences	source	Solexa sequences	/nethome/jlhaner/base/pipeline/sequences
+jlhaner	jlhaner		aabate	user	A  Abate	aabate@med.miami.edu
+jlhaner	jlhaner		syoung	user	S  Young	syoung@med.miami.edu
+jlhaner	jlhaner		vlemmon	user	Vance  Lemmon	vlemmon@med.miami.edu
+jlhaner	jlhaner		ogutierrez	user	O  Gutierrez	ogutierrez@med.miami.edu
+jlhaner	jlhaner		fkuo	user	Frank  Kuo	fkuo@med.miami.edu
+jlhaner	jlhaner		dmotti	user	Dario  Motti	dmotti@med.miami.edu
+jlhaner	jlhaner		jbixby	user	John  Bixby	jbixby@med.miami.edu
+jlhaner	jlhaner		dstrikis	user	Dinara  Strikis	dstrikis@med.miami.edu
+syoung	Bixby		Project1	project	Transcriptome	Project1
+dmotti	TryDario		jlhaner	user	Jessica  Lerner-Haner	jlhaner@med.miami.edu
+dmotti	TryDario		jbixby	user	John  Bixby	jbixby@med.miami.edu
+dmotti	TryDario		ogutierrez	user	O  Gutierrez	ogutierrez@med.miami.edu
+dmotti	TryDario		dstrikis	user	Dinara  Strikis	dstrikis@med.miami.edu
+dmotti	TryDario		fkuo	user	Frank  Kuo	fkuo@med.miami.edu
+dmotti	TryDario		vlemmon	user	Vance  Lemmon	vlemmon@med.miami.edu
+dmotti	TryDario		Sequences	source	Raw sequences	/nethome/dmotti/base/sequences
+syoung	Bixby		Bixby	source	Bixby Solexa sequences	/nethome/bioinfo/data/sequence/labs/bixby
+dmotti	TryDario		New	source	new	/nethome/bioinfo/data/sequence
+dmotti	TryDario		abeecham	user	A  Beecham	abeecham@med.miami.edu
+dmotti	TryDario		dummy	source	test	test notes
+dmotti	TryDario		acoustics	user	A  Coustics	acoustics@med.miami.edu
+dmotti	TryDario		whulme	user	W  Hulme	whulme@med.miami.edu
+dmotti	testgroup		Project1	project		Project1
+syoung	nextgen		jhahn	user	J  Hahn	jhahn@med.miami.edu
+syoung	nextgen		Demo data	source	Demo input and output data files	/nethome/bioinfo/data/sequence/demo
+syoung	nextgen		Human cDNA	source	Human cDNA from EMBL and NCBI for MAQ (human-cd	/nethome/bioinfo/data/sequence/cdna
+syoung	nextgen		Human chromosomes (3	source	Human chromosomes in FASTA format (human-fa), MAQ binary format (human-bfa) and ELAND binary format (human-sq), generated from single-chromosome FASTA files (Build 36.1)	/nethome/bioinfo/data/sequence/chromosomes
+syoung	nextgen		Solexa archive	source	Archive of all solexa NGS runs	/q/solexa1
+syoung	nextgen		Project1	project		Project1
+syoung	nextgen		Project2	project	MAQ and ERANGE	Project2
+jhahn	testgrp1		Project1	project		Project1
+syoung	bioinfo		vandreev	user	V  Andreev	vandreev@med.miami.edu
+syoung	bioinfo		Demo data	source	Demo input and output data files	/nethome/bioinfo/data/sequence/demo
+syoung	bioinfo		Human cDNA	source	Human cDNA from EMBL and NCBI for MAQ (human-cd	/nethome/bioinfo/data/sequence/cdna
+syoung	bioinfo		Human chromosomes (3	source	Human chromosomes in FASTA format (human-fa), MAQ binary format (human-bfa) and ELAND binary format (human-sq), generated from single-chromosome FASTA files (Build 36.1)	/nethome/bioinfo/data/sequence/chromosomes
+syoung	bioinfo		Solexa archive	source	Archive of all solexa NGS runs	/q/solexa1
+jgilbert	gilbert		Project1	project		Project1
+dmotti	testgroup		vlemmon	user	Vance  Lemmon	vlemmon@med.miami.edu
+dmotti	testgroup		ogutierrez	user	O  Gutierrez	ogutierrez@med.miami.edu
+dmotti	testgroup		jbixby	user	John  Bixby	jbixby@med.miami.edu
+dmotti	testgroup		jhahn	user	J  Hahn	jhahn@med.miami.edu
+dmotti	testgroup		dmotti	user	Dario  Motti	dmotti@med.miami.edu
+dmotti	testgroup		dstrikis	user	Dinara  Strikis	dstrikis@med.miami.edu

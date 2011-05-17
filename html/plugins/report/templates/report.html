@@ -1,0 +1,50 @@
+<div dojoattachpoint="containerNode">
+
+	<div 
+		dojoAttachPoint="mainTab"
+		title="Report"
+		class="report"
+		dojoType="dijit.layout.BorderContainer"
+		iconClass="dijitEditorIcon dijitEditorIconReport"
+		style="top: 3px !important; width: 1320px !important; height: 700px !important;"
+		closable="true"
+	>
+
+		<div dojoType="dijit.layout.ContentPane"
+			style="width: 1320px !important; height: 700px !important;"
+		>
+
+			<div dojoType="dijit.layout.TabContainer"
+				useSlider="false"
+				dojoAttachPoint="leftPane"
+			>
+				<div
+					dojoType="dijit.layout.ContentPane"
+					title="SNP"
+					dojoAttachPoint="snpPane"
+				>
+				</div>
+
+				<div
+					dojoType="dijit.layout.ContentPane"
+					title="Graph"
+					dojoAttachPoint="graphPane" 
+				>Graph Report
+				</div>
+
+				<div
+					dojoType="dijit.layout.ContentPane"
+					title="Transcriptome"
+					dojoAttachPoint="transcriptomePane"
+				>Transcriptome
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+

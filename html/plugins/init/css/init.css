@@ -1,0 +1,214 @@
+@import "../../../dojo-1.5.0/dojo/tests/dnd/dndDefault.css";
+
+/* USE FIXED-WIDTH FONT FOR PRE-LIKE SPACING IN TEXTAREA */
+.init textarea {
+	white-space: pre-wrap !important;
+	font-weight: bold !important;
+	color: #222222 !important;
+	font-family: arial !important;
+	font-size: 12px !important;
+	font-family: Courier New !important;
+}
+
+.dijitTextBoxError .dijitValidationTextBoxError .dijitError {
+	border: 2px solid #F00 !important;	
+}
+
+.dijitValidationTextBoxError .dijitError {
+	border: 2px solid #F00 !important;	
+}
+
+.dijitError {
+	border: 2px solid #F00 !important;	
+}
+
+.dijitTooltipContents {
+	background-color: #FFFFAA !important;
+	color: #55B !important;
+	-moz-border-radius-bottomleft:4pt;
+	-moz-border-radius-bottomright:4pt;
+	-moz-border-radius-topleft:4pt;
+	-moz-border-radius-topright:4pt;
+}
+
+.init .dijitHover,
+.init .awsAccessKeyId:hover,
+.init .secretAccessKey:hover {
+	background-color: #FFFFCC !important;
+}
+
+.init .dijitReset .dijitValidationContainer {
+	visibility: hidden !important;
+	left: 40px;
+}
+
+.init .progress {
+	visibility: hidden !important;
+}
+
+.init .progress .active {
+	visibility: visible !important;
+}
+
+.dijitTextBoxError .dijitValidationContainer {
+    cursor: default;
+    display: none;
+}
+
+.dijitReset .dijitInputField .dijitValidationIcon .dijitValidationInner {
+	visibility: hidden !important;
+	left: 40px !important;	
+}
+
+.init .label {
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+	text-align:	center !important;
+	font-weight: bolder;
+	font-size: 24px !important;
+	font-family: Verdana;
+	font-size: 14px;
+	font-style: oblique;
+	height: 30px;
+	vertical-align: middle !important;
+	background: #EEE;
+}
+
+.init .saveAwsButton {
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+	font-size: 24px;
+	background-color: #EEEEEE;
+	color: #224;
+}
+.init .saveAwsButton:hover {
+	font-size: 24px;
+	background-color: #FFFFFF;
+	color: #224;
+}
+
+.init .saveAwsButton:active {
+	font-size: 24px;
+	background-color: #CCFFCC;
+	color: #224;
+}
+
+.init .awsAccessKeyId,
+.init .secretAccessKey {
+	font-weight: bolder !important;
+	font-family: Verdana !important;
+}
+
+.init .awsAccessKeyId {
+	width: 270px !important;
+}
+
+.init .secretAccessKey {
+	width: 580px !important;
+}
+
+.init .userVolumeLabel,
+.init .dataVolumeLabel {
+	display: inline;
+	width: 150px !important;	
+}
+
+.init .amazonUserId,
+.init .userVolume,
+.init .dataVolume,
+.init .userVolumeSize,
+.init .dataVolumeSize
+{
+	height: 20px;
+	font-size: 16px !important;
+	color: #222;
+	text-align: left !important;
+	vertical-align: middle !important;
+	font-weight: bolder !important;
+	padding-top: 4px;
+}
+
+.init .userVolume,
+.init .dataVolume {	
+	width: 140px !important;
+	font-style: oblique;
+	text-indent: 4px !important;
+	color: #777 !important;
+	background-color: #DDD;
+}
+
+.init .userVolume .enabled,
+.init .dataVolume .enabled {
+	color: #000 !important;
+	background-color: #FFF !important;
+	font-style: normal !important;
+	padding-left: 4px !important;
+}
+
+.init .invalid,
+.init .amazonUserId .dijitTextArea .invalid,
+.init .dataVolume .dijitTextArea .invalid,
+.init .userVolume .dijitTextArea .invalid
+{
+	border: 2px solid #F00 !important;
+}
+
+.init .dataVolumeSize,
+.init .userVolumeSize {
+	text-indent: 4px !important;
+	vertical-align: middle !important;
+	width: 60px !important;
+}
+
+
+.init .amazonUserId {
+	vertical-align: middle !important;
+	font-size: 16px !important;
+	width: 140px !important;	
+}
+
+.init .volumeId {
+	width: 120px !important;
+}
+
+.init .editUserRow {
+	width: 100%;
+	height: 20px !important;
+}
+
+
+.init .initTable
+{
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border:3px solid #AAA;
+
+	cursor:default;
+	padding:1em 0.5em;
+	width: 120px;	
+	height: 260px;
+	min-height: 100px;
+
+	text-align: left !important;
+	color: #333;
+	font-weight: bold;	
+	font-family: Verdana;
+	font-size: 18px;
+
+	/* NEEDED SO THAT SCROLLBAR WILL SHOW */
+	display: block !important;
+	overflow:auto !important;
+}
+
+

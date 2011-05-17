@@ -1,0 +1,1075 @@
+release:  Using profile: profiles/agua.profile.js
+release:  Using version number: 0.5 for the release.
+release:  Deleting: ../../../builds/006/dojo
+release:  Copying: ../../dojo/../dijit to: ../../../builds/006/dojo/dijit
+release:  Copying: ../../dojo/../dojox to: ../../../builds/006/dojo/dojox
+release:  Copying: ../../dojo/../../plugins to: ../../../builds/006/dojo/plugins
+release:  Copying: ../../dojo to: ../../../builds/006/dojo/dojo
+release:  Copying: ../../dojo/../includes to: ../../../builds/006/dojo/includes
+release:   ********** Not Copied: ../../dojo/../includes
+release:  Building dojo.js and layer files
+release:  Interning strings for file: ../../../builds/006/dojo/dojo/dojo.js
+release:  Optimizing (shrinksafe) file: ../../../builds/006/dojo/dojo/dojo.js
+release:  Interning strings for file: ../../../builds/006/dojo/dojo/../agua.js
+release:  Interning strings for : ../../../builds/006/dojo/dojo/../agua.js.uncompressed.js
+release:      ../../../builds/006/dojo/dijit/form/templates/Button.html
+release:      ../../../builds/006/dojo/dijit/form/templates/DropDownButton.html
+release:      ../../../builds/006/dojo/dijit/form/templates/ComboButton.html
+release:      ../../../builds/006/dojo/dijit/form/templates/CheckBox.html
+release:      ../../../builds/006/dojo/dijit/form/templates/HorizontalSlider.html
+release:      ../../../builds/006/dojo/dijit/form/templates/VerticalSlider.html
+release:      ../../../builds/006/dojo/dijit/form/templates/TextBox.html
+release:      ../../../builds/006/dojo/dijit/templates/Tooltip.html
+release:      ../../../builds/006/dojo/dijit/form/templates/ValidationTextBox.html
+release:      ../../../builds/006/dojo/dijit/form/templates/ComboBox.html
+release:      ../../../builds/006/dojo/dijit/form/templates/Spinner.html
+release:      ../../../builds/006/dojo/dijit/templates/Calendar.html
+release:      ../../../builds/006/dojo/dijit/templates/TooltipDialog.html
+release:      ../../../builds/006/dojo/dijit/templates/Dialog.html
+release:      ../../../builds/006/dojo/plugins/admin/templates/access.html
+release:      ../../../builds/006/dojo/plugins/admin/templates/parameterrow.html
+release:      ../../../builds/006/dojo/plugins/admin/templates/parameters.html
+release:      ../../../builds/006/dojo/plugins/admin/templates/approw.html
+release:      ../../../builds/006/dojo/plugins/admin/templates/apps.html
+release:      ../../../builds/006/dojo/plugins/admin/templates/projectrow.html
+release:      ../../../builds/006/dojo/plugins/admin/templates/projects.html
+release:      ../../../builds/006/dojo/plugins/admin/templates/groupprojectrow.html
+release:      ../../../builds/006/dojo/plugins/admin/templates/groupprojects.html
+release:      ../../../builds/006/dojo/plugins/admin/templates/Users.html
+release:      ../../../builds/006/dojo/plugins/admin/templates/groupuserrow.html
+release:      ../../../builds/006/dojo/plugins/admin/templates/groupusers.html
+release:      ../../../builds/006/dojo/plugins/admin/templates/sourcerow.html
+release:      ../../../builds/006/dojo/plugins/admin/templates/sources.html
+release:      ../../../builds/006/dojo/plugins/admin/templates/groupsourcerow.html
+release:      ../../../builds/006/dojo/plugins/admin/templates/groupsources.html
+release:      ../../../builds/006/dojo/plugins/admin/templates/grouprow.html
+release:      ../../../builds/006/dojo/plugins/admin/templates/groups.html
+release:      ../../../builds/006/dojo/plugins/admin/templates/admin.html
+release:      ../../../builds/006/dojo/dojox/layout/resources/ExpandoPane.html
+release:      ../../../builds/006/dojo/dojox/layout/resources/FloatingPane.html
+release:      ../../../builds/006/dojo/dijit/templates/TitlePane.html
+release:      ../../../builds/006/dojo/dijit/layout/templates/TabContainer.html
+release:      ../../../builds/006/dojo/dijit/templates/MenuItem.html
+release:      ../../../builds/006/dojo/dijit/templates/CheckedMenuItem.html
+release:      ../../../builds/006/dojo/dijit/templates/MenuSeparator.html
+release:      ../../../builds/006/dojo/dijit/templates/Menu.html
+release:      ../../../builds/006/dojo/dijit/layout/templates/_TabButton.html
+release:      ../../../builds/006/dojo/dijit/layout/templates/ScrollingTabController.html
+release:      ../../../builds/006/dojo/dijit/layout/templates/_ScrollingTabControllerButton.html
+release:      ../../../builds/006/dojo/plugins/admin/templates/confirmDialogue.html
+release:      ../../../builds/006/dojo/plugins/admin/templates/controller.html
+release:      ../../../builds/006/dojo/dijit/layout/templates/AccordionButton.html
+release:      ../../../builds/006/dojo/plugins/core/templates/controls.html
+release:      ../../../builds/006/dojo/dojox/widget/Dialog/Dialog.html
+release:      ../../../builds/006/dojo/dojox/widget/RollingList/RollingList.html
+release:      ../../../builds/006/dojo/dojox/form/resources/FileInput.html
+release:      ../../../builds/006/dojo/dojox/form/resources/FileInputAuto.html
+release:      ../../../builds/006/dojo/dijit/templates/InlineEditBox.html
+release:      ../../../builds/006/dojo/dojox/widget/RollingList/RollingList.html
+release:      ../../../builds/006/dojo/plugins/core/templates/inputdialog.html
+release:      ../../../builds/006/dojo/plugins/core/templates/confirmdialog.html
+release:      ../../../builds/006/dojo/plugins/files/templates/filemenu.html
+release:      ../../../builds/006/dojo/plugins/files/templates/workflowmenu.html
+release:      ../../../builds/006/dojo/plugins/files/templates/fileselectormenu.html
+release:      ../../../builds/006/dojo/plugins/files/templates/selectormenu.html
+release:      ../../../builds/006/dojo/plugins/files/templates/workflowselectormenu.html
+release:      ../../../builds/006/dojo/plugins/help/templates/help.html
+release:      ../../../builds/006/dojo/plugins/help/templates/controller.html
+release:      ../../../builds/006/dojo/dojox/widget/FilePicker/_FileInfoPane.html
+release:      ../../../builds/006/dojo/plugins/project/templates/filesystem.html
+release:      ../../../builds/006/dojo/plugins/project/templates/filesystem.html
+release:      ../../../builds/006/dojo/plugins/project/templates/filesystem.html
+release:      ../../../builds/006/dojo/plugins/project/templates/project.html
+release:      ../../../builds/006/dojo/dijit/templates/ColorPalette.html
+release:      ../../../builds/006/dojo/dojox/grid/resources/View.html
+release:      ../../../builds/006/dojo/dojox/grid/resources/_Grid.html
+release:      ../../../builds/006/dojo/plugins/report/templates/grid.html
+release:      ../../../builds/006/dojo/plugins/report/templates/snp.html
+release:      ../../../builds/006/dojo/plugins/report/templates/report.html
+release:      ../../../builds/006/dojo/dijit/templates/TreeNode.html
+release:      ../../../builds/006/dojo/dijit/templates/Tree.html
+release:      ../../../builds/006/dojo/plugins/workflow/templates/runstatus.html
+release:      ../../../builds/006/dojo/plugins/workflow/templates/runstatusrow.html
+release:      ../../../builds/006/dojo/plugins/workflow/templates/history.html
+release:      ../../../builds/006/dojo/plugins/workflow/templates/historypane.html
+release:      ../../../builds/006/dojo/plugins/workflow/templates/historypanerow.html
+release:      ../../../builds/006/dojo/plugins/workflow/templates/shared.html
+release:      ../../../builds/006/dojo/plugins/workflow/templates/parametersrow.html
+release:      ../../../builds/006/dojo/plugins/workflow/templates/parameters.html
+release:      ../../../builds/006/dojo/plugins/workflow/templates/approw.html
+release:      ../../../builds/006/dojo/plugins/workflow/templates/apptype.html
+release:      ../../../builds/006/dojo/plugins/workflow/templates/appsmenu.html
+release:      ../../../builds/006/dojo/plugins/workflow/templates/apps.html
+release:      ../../../builds/006/dojo/plugins/workflow/templates/stagerow.html
+release:      ../../../builds/006/dojo/plugins/workflow/templates/stagesmenu.html
+release:      ../../../builds/006/dojo/plugins/core/templates/confirm.html
+release:      ../../../builds/006/dojo/plugins/workflow/templates/stages.html
+release:      ../../../builds/006/dojo/plugins/workflow/templates/workflow.html
+release:      ../../../builds/006/dojo/plugins/login/templates/loginstatus.html
+release:      ../../../builds/006/dojo/plugins/login/templates/login.html
+release:      ../../../builds/006/dojo/plugins/workflow/templates/controller.html
+release:      ../../../builds/006/dojo/plugins/project/templates/controller.html
+release:      ../../../builds/006/dojo/plugins/report/templates/controller.html
+release:      ../../../builds/006/dojo/plugins/workflow/templates/status.html
+release:  Optimizing (shrinksafe) file: ../../../builds/006/dojo/dojo/../agua.js
+release:  Files baked into this build:
+
+dojo.js:
+./jslib/dojoGuardStart.jsfrag
+./../../dojo/_base/_loader/bootstrap.js
+./../../dojo/_base/_loader/loader.js
+./../../dojo/_base/_loader/hostenv_browser.js
+./../../../builds/006/dojo/dojo/_base/lang.js
+./../../../builds/006/dojo/dojo/_base/array.js
+./../../../builds/006/dojo/dojo/_base/declare.js
+./../../../builds/006/dojo/dojo/_base/connect.js
+./../../../builds/006/dojo/dojo/_base/Deferred.js
+./../../../builds/006/dojo/dojo/_base/json.js
+./../../../builds/006/dojo/dojo/_base/Color.js
+./../../../builds/006/dojo/dojo/_base.js
+./../../../builds/006/dojo/dojo/_base/window.js
+./../../../builds/006/dojo/dojo/_base/event.js
+./../../../builds/006/dojo/dojo/_base/html.js
+./../../../builds/006/dojo/dojo/_base/NodeList.js
+./../../../builds/006/dojo/dojo/_base/query.js
+./../../../builds/006/dojo/dojo/_base/xhr.js
+./../../../builds/006/dojo/dojo/_base/fx.js
+./../../../builds/006/dojo/dojo/_base/browser.js
+./jslib/dojoGuardEnd.jsfrag
+
+../agua.js:
+./../../../builds/006/dojo/dojo/window.js
+./../../../builds/006/dojo/dijit/_base/manager.js
+./../../../builds/006/dojo/dijit/_base/focus.js
+./../../../builds/006/dojo/dojo/AdapterRegistry.js
+./../../../builds/006/dojo/dijit/_base/place.js
+./../../../builds/006/dojo/dijit/_base/window.js
+./../../../builds/006/dojo/dijit/_base/popup.js
+./../../../builds/006/dojo/dijit/_base/scroll.js
+./../../../builds/006/dojo/dojo/uacss.js
+./../../../builds/006/dojo/dijit/_base/sniff.js
+./../../../builds/006/dojo/dijit/_base/typematic.js
+./../../../builds/006/dojo/dijit/_base/wai.js
+./../../../builds/006/dojo/dijit/_base.js
+./../../../builds/006/dojo/dojo/date/stamp.js
+./../../../builds/006/dojo/dojo/parser.js
+./../../../builds/006/dojo/dijit/_Widget.js
+./../../../builds/006/dojo/dojo/string.js
+./../../../builds/006/dojo/dojo/cache.js
+./../../../builds/006/dojo/dijit/_Templated.js
+./../../../builds/006/dojo/dijit/_Container.js
+./../../../builds/006/dojo/dijit/_Contained.js
+./../../../builds/006/dojo/dijit/layout/_LayoutWidget.js
+./../../../builds/006/dojo/dijit/_CssStateMixin.js
+./../../../builds/006/dojo/dijit/form/_FormWidget.js
+./../../../builds/006/dojo/dijit/dijit.js
+./../../../builds/006/dojo/dijit/_HasDropDown.js
+./../../../builds/006/dojo/dijit/form/Button.js
+./../../../builds/006/dojo/dijit/form/ToggleButton.js
+./../../../builds/006/dojo/dijit/form/CheckBox.js
+./../../../builds/006/dojo/dojo/dnd/common.js
+./../../../builds/006/dojo/dojo/dnd/autoscroll.js
+./../../../builds/006/dojo/dojo/dnd/Mover.js
+./../../../builds/006/dojo/dojo/dnd/Moveable.js
+./../../../builds/006/dojo/dojo/dnd/move.js
+./../../../builds/006/dojo/dojo/i18n.js
+./../../../builds/006/dojo/dojo/regexp.js
+./../../../builds/006/dojo/dojo/number.js
+./../../../builds/006/dojo/dijit/form/HorizontalSlider.js
+./../../../builds/006/dojo/dijit/form/VerticalSlider.js
+./../../../builds/006/dojo/dijit/form/HorizontalRule.js
+./../../../builds/006/dojo/dijit/form/VerticalRule.js
+./../../../builds/006/dojo/dijit/form/HorizontalRuleLabels.js
+./../../../builds/006/dojo/dijit/form/VerticalRuleLabels.js
+./../../../builds/006/dojo/dijit/form/Slider.js
+./../../../builds/006/dojo/dojo/data/util/sorter.js
+./../../../builds/006/dojo/dojo/data/util/simpleFetch.js
+./../../../builds/006/dojo/dojo/data/util/filter.js
+./../../../builds/006/dojo/dijit/form/TextBox.js
+./../../../builds/006/dojo/dijit/Tooltip.js
+./../../../builds/006/dojo/dijit/form/ValidationTextBox.js
+./../../../builds/006/dojo/dijit/form/ComboBox.js
+./../../../builds/006/dojo/dijit/form/FilteringSelect.js
+./../../../builds/006/dojo/dijit/form/_Spinner.js
+./../../../builds/006/dojo/dijit/form/NumberTextBox.js
+./../../../builds/006/dojo/dijit/form/NumberSpinner.js
+./../../../builds/006/dojo/dijit/_editor/selection.js
+./../../../builds/006/dojo/dijit/_editor/range.js
+./../../../builds/006/dojo/dijit/_editor/html.js
+./../../../builds/006/dojo/dijit/_editor/RichText.js
+./../../../builds/006/dojo/dijit/_KeyNavContainer.js
+./../../../builds/006/dojo/dijit/ToolbarSeparator.js
+./../../../builds/006/dojo/dijit/Toolbar.js
+./../../../builds/006/dojo/dijit/_editor/_Plugin.js
+./../../../builds/006/dojo/dijit/_editor/plugins/EnterKeyHandling.js
+./../../../builds/006/dojo/dijit/Editor.js
+./../../../builds/006/dojo/dojo/cldr/supplemental.js
+./../../../builds/006/dojo/dojo/date.js
+./../../../builds/006/dojo/dojo/date/locale.js
+./../../../builds/006/dojo/dijit/Calendar.js
+./../../../builds/006/dojo/dijit/form/_DateTimeTextBox.js
+./../../../builds/006/dojo/dijit/form/DateTextBox.js
+./../../../builds/006/dojo/dijit/form/SimpleTextarea.js
+./../../../builds/006/dojo/dijit/form/Textarea.js
+./../../../builds/006/dojo/dojo/cldr/monetary.js
+./../../../builds/006/dojo/dojo/currency.js
+./../../../builds/006/dojo/dijit/form/CurrencyTextBox.js
+./../../../builds/006/dojo/dojo/dnd/TimedMoveable.js
+./../../../builds/006/dojo/dojo/fx/Toggler.js
+./../../../builds/006/dojo/dojo/fx.js
+./../../../builds/006/dojo/dijit/form/_FormMixin.js
+./../../../builds/006/dojo/dijit/_DialogMixin.js
+./../../../builds/006/dojo/dijit/DialogUnderlay.js
+./../../../builds/006/dojo/dojo/html.js
+./../../../builds/006/dojo/dijit/layout/ContentPane.js
+./../../../builds/006/dojo/dijit/TooltipDialog.js
+./../../../builds/006/dojo/dijit/Dialog.js
+./../../../builds/006/dojo/dojo/data/ItemFileReadStore.js
+./../../../builds/006/dojo/dojo/data/ItemFileWriteStore.js
+./../../../builds/006/dojo/plugins/core/form/Template.js
+./../../../builds/006/dojo/plugins/admin/Access.js
+./../../../builds/006/dojo/dijit/form/RadioButton.js
+./../../../builds/006/dojo/dojo/dnd/Container.js
+./../../../builds/006/dojo/dojo/dnd/Selector.js
+./../../../builds/006/dojo/dojo/dnd/Avatar.js
+./../../../builds/006/dojo/dojo/dnd/Manager.js
+./../../../builds/006/dojo/dojo/dnd/Source.js
+./../../../builds/006/dojo/plugins/core/Common.js
+./../../../builds/006/dojo/plugins/admin/ParameterRow.js
+./../../../builds/006/dojo/plugins/admin/Parameters.js
+./../../../builds/006/dojo/plugins/admin/AppRow.js
+./../../../builds/006/dojo/plugins/admin/Apps.js
+./../../../builds/006/dojo/plugins/admin/ProjectRow.js
+./../../../builds/006/dojo/plugins/admin/Projects.js
+./../../../builds/006/dojo/plugins/core/ComboBox.js
+./../../../builds/006/dojo/plugins/admin/GroupProjectRow.js
+./../../../builds/006/dojo/plugins/admin/GroupProjects.js
+./../../../builds/006/dojo/plugins/admin/Users.js
+./../../../builds/006/dojo/plugins/admin/GroupUserRow.js
+./../../../builds/006/dojo/plugins/admin/GroupUsers.js
+./../../../builds/006/dojo/plugins/admin/SourceRow.js
+./../../../builds/006/dojo/plugins/admin/Sources.js
+./../../../builds/006/dojo/plugins/admin/GroupSourceRow.js
+./../../../builds/006/dojo/plugins/admin/GroupSources.js
+./../../../builds/006/dojo/plugins/admin/GroupRow.js
+./../../../builds/006/dojo/plugins/admin/Groups.js
+./../../../builds/006/dojo/plugins/admin/Admin.js
+./../../../builds/006/dojo/dojo/cookie.js
+./../../../builds/006/dojo/dijit/layout/BorderContainer.js
+./../../../builds/006/dojo/plugins/core/BorderContainer.js
+./../../../builds/006/dojo/dojox/layout/ExpandoPane.js
+./../../../builds/006/dojo/plugins/core/ExpandoPane.js
+./../../../builds/006/dojo/dojox/html/_base.js
+./../../../builds/006/dojo/dojox/layout/ContentPane.js
+./../../../builds/006/dojo/dojox/layout/ResizeHandle.js
+./../../../builds/006/dojo/dojox/layout/FloatingPane.js
+./../../../builds/006/dojo/dijit/TitlePane.js
+./../../../builds/006/dojo/dijit/layout/StackController.js
+./../../../builds/006/dojo/dijit/layout/StackContainer.js
+./../../../builds/006/dojo/dijit/layout/_TabContainerBase.js
+./../../../builds/006/dojo/dijit/MenuItem.js
+./../../../builds/006/dojo/dijit/PopupMenuItem.js
+./../../../builds/006/dojo/dijit/CheckedMenuItem.js
+./../../../builds/006/dojo/dijit/MenuSeparator.js
+./../../../builds/006/dojo/dijit/Menu.js
+./../../../builds/006/dojo/dijit/layout/TabController.js
+./../../../builds/006/dojo/dijit/layout/ScrollingTabController.js
+./../../../builds/006/dojo/dijit/layout/TabContainer.js
+./../../../builds/006/dojo/plugins/admin/ConfirmDialogue.js
+./../../../builds/006/dojo/plugins/admin/Controller.js
+./../../../builds/006/dojo/dijit/layout/LayoutContainer.js
+./../../../builds/006/dojo/dijit/layout/AccordionPane.js
+./../../../builds/006/dojo/dijit/layout/AccordionContainer.js
+./../../../builds/006/dojo/dijit/layout/SplitContainer.js
+./../../../builds/006/dojo/plugins/core/WidgetFramework.js
+./../../../builds/006/dojo/dojox/widget/Standby.js
+./../../../builds/006/dojo/plugins/core/Plugin.js
+./../../../builds/006/dojo/plugins/core/PluginManager.js
+./../../../builds/006/dojo/plugins/core/BorderContainerStatic.js
+./../../../builds/006/dojo/plugins/core/Controls.js
+./../../../builds/006/dojo/plugins/core/DropTarget.js
+./../../../builds/006/dojo/plugins/core/Test.js
+./../../../builds/006/dojo/plugins/dnd/Target.js
+./../../../builds/006/dojo/dojox/fx/_base.js
+./../../../builds/006/dojo/dojox/fx.js
+./../../../builds/006/dojo/dojox/widget/Dialog.js
+./../../../builds/006/dojo/dojo/fx/easing.js
+./../../../builds/006/dojo/dojox/timing/Sequence.js
+./../../../builds/006/dojo/plugins/files/Dialog.js
+./../../../builds/006/dojo/dojox/html/metrics.js
+./../../../builds/006/dojo/dojox/widget/RollingList.js
+./../../../builds/006/dojo/dojox/form/FileInput.js
+./../../../builds/006/dojo/dojo/io/iframe.js
+./../../../builds/006/dojo/dojox/form/FileInputAuto.js
+./../../../builds/006/dojo/dojox/embed/Flash.js
+./../../../builds/006/dojo/dojox/html/styles.js
+./../../../builds/006/dojo/dojox/embed/flashVars.js
+./../../../builds/006/dojo/dojox/form/FileUploader.js
+./../../../builds/006/dojo/plugins/files/FileUpload.js
+./../../../builds/006/dojo/dijit/InlineEditBox.js
+./../../../builds/006/dojo/plugins/files/_GroupDragPane.js
+./../../../builds/006/dojo/plugins/files/FileDrag.js
+./../../../builds/006/dojo/plugins/files/FileManager.js
+./../../../builds/006/dojo/dojox/data/FileStore.js
+./../../../builds/006/dojo/plugins/menu/Menu.js
+./../../../builds/006/dojo/plugins/core/InputDialog.js
+./../../../builds/006/dojo/plugins/core/ConfirmDialog.js
+./../../../builds/006/dojo/plugins/files/FileMenu.js
+./../../../builds/006/dojo/plugins/files/FolderMenu.js
+./../../../builds/006/dojo/plugins/files/WorkflowMenu.js
+./../../../builds/006/dojo/plugins/files/FileSelectorMenu.js
+./../../../builds/006/dojo/plugins/files/SelectorMenu.js
+./../../../builds/006/dojo/plugins/files/TitlePane.js
+./../../../builds/006/dojo/plugins/files/WorkflowSelectorMenu.js
+./../../../builds/006/dojo/plugins/help/Help.js
+./../../../builds/006/dojo/plugins/help/Controller.js
+./../../../builds/006/dojo/dojox/widget/FisheyeLite.js
+./../../../builds/006/dojo/dojox/widget/FilePicker.js
+./../../../builds/006/dojo/plugins/project/ProjectFiles.js
+./../../../builds/006/dojo/plugins/project/SharedProjectFiles.js
+./../../../builds/006/dojo/plugins/project/SourceFiles.js
+./../../../builds/006/dojo/plugins/project/SharedSourceFiles.js
+./../../../builds/006/dojo/plugins/project/Project.js
+./../../../builds/006/dojo/plugins/upload/FileInput.js
+./../../../builds/006/dojo/plugins/upload/FileUpload.js
+./../../../builds/006/dojo/dojo/colors.js
+./../../../builds/006/dojo/dijit/_PaletteMixin.js
+./../../../builds/006/dojo/dijit/ColorPalette.js
+./../../../builds/006/dojo/plugins/report/Editor.js
+./../../../builds/006/dojo/plugins/workflow/FileManager.js
+./../../../builds/006/dojo/plugins/workflow/_GroupDragPane.js
+./../../../builds/006/dojo/plugins/workflow/_GroupSelectorPane.js
+./../../../builds/006/dojo/plugins/workflow/FileSelector.js
+./../../../builds/006/dojo/dojox/grid/util.js
+./../../../builds/006/dojo/dojox/grid/_Scroller.js
+./../../../builds/006/dojo/dojox/grid/cells/_base.js
+./../../../builds/006/dojo/dojox/grid/cells.js
+./../../../builds/006/dojo/dojox/grid/_Builder.js
+./../../../builds/006/dojo/dojox/grid/_View.js
+./../../../builds/006/dojo/dojox/grid/_RowSelector.js
+./../../../builds/006/dojo/dojox/grid/_Layout.js
+./../../../builds/006/dojo/dojox/grid/_ViewManager.js
+./../../../builds/006/dojo/dojox/grid/_RowManager.js
+./../../../builds/006/dojo/dojox/grid/_FocusManager.js
+./../../../builds/006/dojo/dojox/grid/_EditManager.js
+./../../../builds/006/dojo/dojox/grid/Selection.js
+./../../../builds/006/dojo/dojox/grid/_Events.js
+./../../../builds/006/dojo/dojox/grid/_Grid.js
+./../../../builds/006/dojo/dojox/grid/DataSelection.js
+./../../../builds/006/dojo/dojox/grid/DataGrid.js
+./../../../builds/006/dojo/plugins/report/Grid.js
+./../../../builds/006/dojo/plugins/report/SNP.js
+./../../../builds/006/dojo/plugins/report/Report.js
+./../../../builds/006/dojo/dojo/DeferredList.js
+./../../../builds/006/dojo/dijit/tree/TreeStoreModel.js
+./../../../builds/006/dojo/dijit/tree/ForestStoreModel.js
+./../../../builds/006/dojo/dijit/Tree.js
+./../../../builds/006/dojo/dojox/rpc/Service.js
+./../../../builds/006/dojo/dojo/io/script.js
+./../../../builds/006/dojo/dojox/timing/_base.js
+./../../../builds/006/dojo/dojox/timing.js
+./../../../builds/006/dojo/plugins/workflow/RunStatus.js
+./../../../builds/006/dojo/plugins/workflow/History.js
+./../../../builds/006/dojo/plugins/workflow/HistoryPane.js
+./../../../builds/006/dojo/plugins/workflow/Shared.js
+./../../../builds/006/dojo/plugins/workflow/ParameterRow.js
+./../../../builds/006/dojo/plugins/workflow/Parameters.js
+./../../../builds/006/dojo/plugins/workflow/AppRow.js
+./../../../builds/006/dojo/plugins/workflow/AppType.js
+./../../../builds/006/dojo/plugins/workflow/AppsMenu.js
+./../../../builds/006/dojo/plugins/workflow/Apps.js
+./../../../builds/006/dojo/plugins/workflow/StageRow.js
+./../../../builds/006/dojo/plugins/workflow/StagesMenu.js
+./../../../builds/006/dojo/plugins/workflow/WorkflowIO.js
+./../../../builds/006/dojo/plugins/core/Confirm.js
+./../../../builds/006/dojo/plugins/workflow/Stages.js
+./../../../builds/006/dojo/plugins/workflow/Workflow.js
+./../../../builds/006/dojo/plugins/login/LoginStatus.js
+./../../../builds/006/dojo/plugins/login/Login.js
+./../../../builds/006/dojo/plugins/login/Controller.js
+./../../../builds/006/dojo/plugins/workflow/Controller.js
+./../../../builds/006/dojo/plugins/project/Controller.js
+./../../../builds/006/dojo/plugins/report/Controller.js
+./../../../builds/006/dojo/plugins/report/Template.js
+./../../../builds/006/dojo/plugins/report/Common.js
+./../../../builds/006/dojo/plugins/upload/FileUp.js
+./../../../builds/006/dojo/plugins/workflow/Status.js
+
+release:  Interning strings for: ../../../builds/006/dojo/dijit
+release:  Interning strings for : ../../../builds/006/dojo/dijit/Calendar.js
+release:      ../../../builds/006/dojo/dijit/templates/Calendar.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/CheckedMenuItem.js
+release:      ../../../builds/006/dojo/dijit/templates/CheckedMenuItem.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/ColorPalette.js
+release:      ../../../builds/006/dojo/dijit/templates/ColorPalette.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/Dialog.js
+release:      ../../../builds/006/dojo/dijit/templates/Dialog.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/form/Button.js
+release:      ../../../builds/006/dojo/dijit/form/templates/Button.html
+release:      ../../../builds/006/dojo/dijit/form/templates/DropDownButton.html
+release:      ../../../builds/006/dojo/dijit/form/templates/ComboButton.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/form/CheckBox.js
+release:      ../../../builds/006/dojo/dijit/form/templates/CheckBox.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/form/ComboBox.js
+release:      ../../../builds/006/dojo/dijit/form/templates/ComboBox.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/form/HorizontalSlider.js
+release:      ../../../builds/006/dojo/dijit/form/templates/HorizontalSlider.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/form/Select.js
+release:      ../../../builds/006/dojo/dijit/form/templates/Select.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/form/TextBox.js
+release:      ../../../builds/006/dojo/dijit/form/templates/TextBox.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/form/ValidationTextBox.js
+release:      ../../../builds/006/dojo/dijit/form/templates/ValidationTextBox.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/form/VerticalSlider.js
+release:      ../../../builds/006/dojo/dijit/form/templates/VerticalSlider.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/form/_Spinner.js
+release:      ../../../builds/006/dojo/dijit/form/templates/Spinner.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/InlineEditBox.js
+release:      ../../../builds/006/dojo/dijit/templates/InlineEditBox.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/layout/AccordionContainer.js
+release:      ../../../builds/006/dojo/dijit/layout/templates/AccordionButton.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/layout/ScrollingTabController.js
+release:      ../../../builds/006/dojo/dijit/layout/templates/ScrollingTabController.html
+release:      ../../../builds/006/dojo/dijit/layout/templates/_ScrollingTabControllerButton.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/layout/TabController.js
+release:      ../../../builds/006/dojo/dijit/layout/templates/_TabButton.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/layout/_TabContainerBase.js
+release:      ../../../builds/006/dojo/dijit/layout/templates/TabContainer.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/Menu.js
+release:      ../../../builds/006/dojo/dijit/templates/Menu.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/MenuBar.js
+release:      ../../../builds/006/dojo/dijit/templates/MenuBar.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/MenuBarItem.js
+release:      ../../../builds/006/dojo/dijit/templates/MenuBarItem.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/MenuItem.js
+release:      ../../../builds/006/dojo/dijit/templates/MenuItem.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/MenuSeparator.js
+release:      ../../../builds/006/dojo/dijit/templates/MenuSeparator.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/ProgressBar.js
+release:      ../../../builds/006/dojo/dijit/templates/ProgressBar.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/TitlePane.js
+release:      ../../../builds/006/dojo/dijit/templates/TitlePane.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/Tooltip.js
+release:      ../../../builds/006/dojo/dijit/templates/Tooltip.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/TooltipDialog.js
+release:      ../../../builds/006/dojo/dijit/templates/TooltipDialog.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/Tree.js
+release:      ../../../builds/006/dojo/dijit/templates/TreeNode.html
+release:      ../../../builds/006/dojo/dijit/templates/Tree.html
+release:  Interning strings for : ../../../builds/006/dojo/dijit/_TimePicker.js
+release:      ../../../builds/006/dojo/dijit/templates/TimePicker.html
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/icons/commonIcons.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/icons/commonIcons_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/icons/editorIcons.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/icons/editorIcons_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/Calendar.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/Calendar_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/claro.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/claro_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/ColorPalette.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/Common.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/Dialog.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/Dialog_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/document.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/Editor.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/Editor_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/form/Button.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/form/Button_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/form/Checkbox.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/form/Common.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/form/Common_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/form/NumberSpinner.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/form/RadioButton.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/form/Select.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/form/Select_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/form/Slider.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/form/Slider_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/InlineEditBox.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/layout/AccordionContainer.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/layout/BorderContainer.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/layout/ContentPane.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/layout/TabContainer.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/layout/TabContainer_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/Menu.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/Menu_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/ProgressBar.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/TimePicker.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/TimePicker_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/TitlePane.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/TitlePane_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/Toolbar.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/claro/Tree.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/dijit.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/dijit_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/Calendar.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/Calendar_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/ColorPalette.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/Common.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/Dialog.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/Dialog_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/Editor.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/Editor_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/form/Button.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/form/Button_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/form/Checkbox.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/form/Common.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/form/RadioButton.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/form/Select.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/form/Slider.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/form/Slider_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/form/TimeTextBox.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/layout/AccordionContainer.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/layout/AccordionContainer_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/layout/BorderContainer.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/layout/ContentPane.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/layout/SplitContainer.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/layout/TabContainer.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/layout/TabContainer_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/Menu.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/Menu_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/nihilo.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/nihilo_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/ProgressBar.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/TimePicker.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/TimePicker_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/TitlePane.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/TitlePane_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/Toolbar.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/Tree.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/nihilo/Tree_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/Calendar.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/Calendar_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/ColorPalette.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/Common.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/Dialog.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/Dialog_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/Editor.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/Editor_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/form/Button.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/form/Button_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/form/Checkbox.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/form/Common.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/form/RadioButton.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/form/Select.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/form/Slider.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/form/Slider_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/form/TimeTextBox.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/layout/AccordionContainer.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/layout/AccordionContainer_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/layout/BorderContainer.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/layout/ContentPane.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/layout/SplitContainer.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/layout/TabContainer.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/layout/TabContainer_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/Menu.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/Menu_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/ProgressBar.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/soria.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/soria_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/TimePicker.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/TimePicker_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/TitlePane.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/TitlePane_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/Toolbar.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/Tree.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/soria/Tree_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/Calendar.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/Calendar_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/ColorPalette.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/Common.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/Dialog.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/Dialog_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/Editor.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/Editor_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/form/Button.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/form/Checkbox.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/form/Common.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/form/RadioButton.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/form/Select.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/form/Slider.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/form/Slider_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/layout/AccordionContainer.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/layout/BorderContainer.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/layout/ContentPane.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/layout/SplitContainer.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/layout/TabContainer.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/layout/TabContainer_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/Menu.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/Menu_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/ProgressBar.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/TimePicker.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/TimePicker_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/TitlePane.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/TitlePane_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/Toolbar.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/Tree.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/Tree_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/tundra.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dijit/themes/tundra/tundra_rtl.css
+release:  Interning strings for: ../../../builds/006/dojo/dojox
+release:  Interning strings for : ../../../builds/006/dojo/dojox/atom/widget/FeedEntryEditor.js
+release:      ../../../builds/006/dojo/dojox/atom/widget/templates/FeedEntryEditor.html
+release:      ../../../builds/006/dojo/dojox/atom/widget/templates/PeopleEditor.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/atom/widget/FeedEntryViewer.js
+release:      ../../../builds/006/dojo/dojox/atom/widget/templates/FeedEntryViewer.html
+release:      ../../../builds/006/dojo/dojox/atom/widget/templates/EntryHeader.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/atom/widget/FeedViewer.js
+release:      ../../../builds/006/dojo/dojox/atom/widget/templates/FeedViewer.html
+release:      ../../../builds/006/dojo/dojox/atom/widget/templates/FeedViewerEntry.html
+release:      ../../../builds/006/dojo/dojox/atom/widget/templates/FeedViewerGrouping.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/av/widget/PlayButton.js
+release:      ../../../builds/006/dojo/dojox/av/widget/resources/PlayButton.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/av/widget/Player.js
+release:      ../../../builds/006/dojo/dojox/av/widget/resources/Player.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/av/widget/ProgressSlider.js
+release:      ../../../builds/006/dojo/dojox/av/widget/resources/ProgressSlider.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/av/widget/Status.js
+release:      ../../../builds/006/dojo/dojox/av/widget/resources/Status.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/av/widget/VolumeButton.js
+release:      ../../../builds/006/dojo/dojox/av/widget/resources/VolumeButton.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/editor/plugins/TablePlugins.js
+release:      ../../../builds/006/dojo/dojox/editor/plugins/resources/insertTable.html
+release:      ../../../builds/006/dojo/dojox/editor/plugins/resources/modifyTable.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/form/CheckedMultiSelect.js
+release:      ../../../builds/006/dojo/dojox/form/resources/_CheckedMultiSelectItem.html
+release:      ../../../builds/006/dojo/dojox/form/resources/CheckedMultiSelect.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/form/FileInput.js
+release:      ../../../builds/006/dojo/dojox/form/resources/FileInput.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/form/FileInputAuto.js
+release:      ../../../builds/006/dojo/dojox/form/resources/FileInputAuto.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/form/FilePickerTextBox.js
+release:      ../../../builds/006/dojo/dojox/form/resources/FilePickerTextBox.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/form/PasswordValidator.js
+release:      ../../../builds/006/dojo/dojox/form/resources/PasswordValidator.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/form/RangeSlider.js
+release:      ../../../builds/006/dojo/dojox/form/resources/HorizontalRangeSlider.html
+release:      ../../../builds/006/dojo/dojox/form/resources/VerticalRangeSlider.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/grid/_Grid.js
+release:      ../../../builds/006/dojo/dojox/grid/resources/_Grid.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/grid/_TreeView.js
+release:      ../../../builds/006/dojo/dojox/grid/resources/Expando.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/grid/_View.js
+release:      ../../../builds/006/dojo/dojox/grid/resources/View.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/image/Gallery.js
+release:      ../../../builds/006/dojo/dojox/image/resources/Gallery.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/image/Lightbox.js
+release:      ../../../builds/006/dojo/dojox/image/resources/Lightbox.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/image/SlideShow.js
+release:      ../../../builds/006/dojo/dojox/image/resources/SlideShow.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/image/ThumbnailPicker.js
+release:      ../../../builds/006/dojo/dojox/image/resources/ThumbnailPicker.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/layout/ExpandoPane.js
+release:      ../../../builds/006/dojo/dojox/layout/resources/ExpandoPane.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/layout/FloatingPane.js
+release:      ../../../builds/006/dojo/dojox/layout/resources/FloatingPane.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/layout/GridContainerLite.js
+release:      ../../../builds/006/dojo/dojox/layout/resources/GridContainer.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/layout/ScrollPane.js
+release:      ../../../builds/006/dojo/dojox/layout/resources/ScrollPane.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/widget/Calendar.js
+release:      ../../../builds/006/dojo/dojox/widget/Calendar/Calendar.html
+release:      ../../../builds/006/dojo/dojox/widget/Calendar/CalendarDay.html
+release:      ../../../builds/006/dojo/dojox/widget/Calendar/CalendarMonthYear.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/widget/CalendarViews.js
+release:      ../../../builds/006/dojo/dojox/widget/Calendar/CalendarMonth.html
+release:      ../../../builds/006/dojo/dojox/widget/Calendar/CalendarYear.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/widget/ColorPicker.js
+release:      ../../../builds/006/dojo/dojox/widget/ColorPicker/ColorPicker.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/widget/Dialog.js
+release:      ../../../builds/006/dojo/dojox/widget/Dialog/Dialog.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/widget/DocTester.js
+release:      ../../../builds/006/dojo/dojox/widget/DocTester/DocTester.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/widget/FilePicker.js
+release:      ../../../builds/006/dojo/dojox/widget/FilePicker/_FileInfoPane.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/widget/gauge/_Gauge.js
+release:      ../../../builds/006/dojo/dojox/widget/gauge/_Gauge.html
+release:      ../../../builds/006/dojo/dojox/widget/gauge/_Indicator.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/widget/Pager.js
+release:      ../../../builds/006/dojo/dojox/widget/Pager/Pager.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/widget/RollingList.js
+release:      ../../../builds/006/dojo/dojox/widget/RollingList/RollingList.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/widget/SortList.js
+release:      ../../../builds/006/dojo/dojox/widget/SortList/SortList.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/widget/UpgradeBar.js
+release:      ../../../builds/006/dojo/dojox/widget/UpgradeBar/UpgradeBar.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/widget/Wizard.js
+release:      ../../../builds/006/dojo/dojox/widget/Wizard/Wizard.html
+release:  Interning strings for : ../../../builds/006/dojo/dojox/xmpp/widget/ChatSession.js
+release:      ../../../builds/006/dojo/dojox/xmpp/widget/templates/ChatSession.html
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/atom/widget/templates/css/EntryHeader.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/atom/widget/templates/css/HtmlFeedEntryEditor.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/atom/widget/templates/css/HtmlFeedEntryViewer.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/atom/widget/templates/css/HtmlFeedViewer.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/atom/widget/templates/css/HtmlFeedViewerEntry.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/atom/widget/templates/css/HtmlFeedViewerGrouping.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/av/widget/resources/Player.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/drawing/resources/drawing.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/drawing/resources/toolbar.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/editor/plugins/resources/css/Blockquote.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/editor/plugins/resources/css/Breadcrumb.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/editor/plugins/resources/css/CollapsibleToolbar.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/editor/plugins/resources/css/FindReplace.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/editor/plugins/resources/css/InsertAnchor.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/editor/plugins/resources/css/InsertEntity.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/editor/plugins/resources/css/PageBreak.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/editor/plugins/resources/css/PasteFromWord.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/editor/plugins/resources/css/Preview.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/editor/plugins/resources/css/Save.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/editor/plugins/resources/css/ShowBlockNodes.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/editor/plugins/resources/css/Smiley.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/editor/plugins/resources/css/StatusBar.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/editor/plugins/resources/css/TextColor.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/editor/plugins/resources/editorPlugins.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/form/resources/BusyButton.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/form/resources/CheckedMultiSelect.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/form/resources/FileInput.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/form/resources/FilePickerTextBox.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/form/resources/FileUploader.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/form/resources/ListInput.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/form/resources/RangeSlider.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/form/resources/Rating.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/geo/charting/resources/Map.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/grid/enhanced/resources/claroEnhancedGrid.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/grid/enhanced/resources/EnhancedGrid.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/grid/enhanced/resources/EnhancedGrid_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/grid/enhanced/resources/tundraEnhancedGrid.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/grid/resources/claroGrid.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/grid/resources/Grid.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/grid/resources/Grid_rtl.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/grid/resources/nihiloGrid.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/grid/resources/soriaGrid.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/grid/resources/tundraGrid.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/highlight/resources/highlight.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/highlight/resources/pygments/autumn.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/highlight/resources/pygments/borland.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/highlight/resources/pygments/colorful.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/highlight/resources/pygments/default.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/highlight/resources/pygments/emacs.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/highlight/resources/pygments/friendly.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/highlight/resources/pygments/fruity.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/highlight/resources/pygments/manni.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/highlight/resources/pygments/murphy.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/highlight/resources/pygments/native.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/highlight/resources/pygments/pastie.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/highlight/resources/pygments/perldoc.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/highlight/resources/pygments/trac.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/html/resources/ellipsis.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/image/resources/Badge.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/image/resources/Gallery.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/image/resources/image.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/image/resources/Lightbox.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/image/resources/Magnifier.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/image/resources/SlideShow.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/image/resources/ThumbnailPicker.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/layout/resources/DndGridContainer.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/layout/resources/ExpandoPane.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/layout/resources/FloatingPane.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/layout/resources/GridContainer.css
+release:  ../../mdnd/resources/dnd.css
+  URL not a relative URL, skipping: data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/layout/resources/RadioGroup.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/layout/resources/ResizeHandle.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/layout/resources/RotatorContainer.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/layout/resources/ScrollPane.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/layout/resources/ToggleSplitter.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/mdnd/resources/dnd.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/mobile/themes/android/android-compat.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/mobile/themes/android/android.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/mobile/themes/buttons-compat.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/mobile/themes/buttons.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/mobile/themes/iphone/iphone-app-compat.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/mobile/themes/iphone/iphone-app.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/mobile/themes/iphone/iphone-compat.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/mobile/themes/iphone/iphone.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/sketch/resources/sketch.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/widget/Calendar/Calendar.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/widget/ColorPicker/ColorPicker.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/widget/Dialog/Dialog.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/widget/DocTester/DocTester.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/widget/FilePicker/FilePicker.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/widget/FisheyeList/FisheyeList.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/widget/gauge/_Gauge.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/widget/Loader/Loader.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/widget/Pager/Pager.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/widget/Portlet/Portlet.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/widget/RollingList/RollingList.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/widget/SortList/SortList.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/widget/Toaster/Toaster.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/widget/UpgradeBar/UpgradeBar.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojox/widget/Wizard/Wizard.css
+release:  Interning strings for: ../../../builds/006/dojo/plugins
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/Access.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/access.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/Admin.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/admin.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/AppRow.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/approw.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/Apps.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/apps.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/ConfirmDialogue.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/confirmDialogue.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/Controller.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/controller.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/GroupProjectRow.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/groupprojectrow.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/GroupProjects.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/groupprojects.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/GroupRow.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/grouprow.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/Groups.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/groups.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/GroupSourceRow.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/groupsourcerow.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/GroupSources.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/groupsources.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/GroupUserRow.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/groupuserrow.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/GroupUsers.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/groupusers.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/ParameterRow.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/parameterrow.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/Parameters.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/parameters.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/ProjectRow.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/projectrow.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/Projects.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/projects.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/SourceRow.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/sourcerow.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/Sources.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/sources.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/UserRow.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/userrow.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/admin/Users.js
+release:      ../../../builds/006/dojo/plugins/admin/templates/Users.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/core/Agua.js
+release:      ../../../builds/006/dojo/plugins/core/templates/agua.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/core/Confirm.js
+release:      ../../../builds/006/dojo/plugins/core/templates/confirm.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/core/ConfirmDialog.js
+release:      ../../../builds/006/dojo/plugins/core/templates/confirmdialog.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/core/Controls.js
+release:      ../../../builds/006/dojo/plugins/core/templates/controls.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/core/InputDialog.js
+release:      ../../../builds/006/dojo/plugins/core/templates/inputdialog.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/files/FileDrag.js
+release:      ../../../builds/006/dojo/dojox/widget/RollingList/RollingList.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/files/FileMenu.js
+release:      ../../../builds/006/dojo/plugins/files/templates/filemenu.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/files/FileSelectorMenu.js
+release:      ../../../builds/006/dojo/plugins/files/templates/fileselectormenu.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/files/SelectorMenu.js
+release:      ../../../builds/006/dojo/plugins/files/templates/selectormenu.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/files/WorkflowMenu.js
+release:      ../../../builds/006/dojo/plugins/files/templates/workflowmenu.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/files/WorkflowSelectorMenu.js
+release:      ../../../builds/006/dojo/plugins/files/templates/workflowselectormenu.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/help/Controller.js
+release:      ../../../builds/006/dojo/plugins/help/templates/controller.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/help/Help.js
+release:      ../../../builds/006/dojo/plugins/help/templates/help.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/login/Login.js
+release:      ../../../builds/006/dojo/plugins/login/templates/login.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/login/LoginStatus.js
+release:      ../../../builds/006/dojo/plugins/login/templates/loginstatus.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/project/Controller.js
+release:      ../../../builds/006/dojo/plugins/project/templates/controller.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/project/Project.js
+release:      ../../../builds/006/dojo/plugins/project/templates/project.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/project/ProjectFiles.js
+release:      ../../../builds/006/dojo/plugins/project/templates/filesystem.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/project/SharedSourceFiles.js
+release:      ../../../builds/006/dojo/plugins/project/templates/filesystem.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/project/SourceFiles.js
+release:      ../../../builds/006/dojo/plugins/project/templates/filesystem.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/report/Controller.js
+release:      ../../../builds/006/dojo/plugins/report/templates/controller.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/report/Grid.js
+release:      ../../../builds/006/dojo/plugins/report/templates/grid.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/report/Report.js
+release:      ../../../builds/006/dojo/plugins/report/templates/report.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/report/SNP.js
+release:      ../../../builds/006/dojo/plugins/report/templates/snp.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/report/Template/SNP.js
+release:      ../../../builds/006/dojo/plugins/report/templates/SNP.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/workflow/AppRow.js
+release:      ../../../builds/006/dojo/plugins/workflow/templates/approw.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/workflow/Apps.js
+release:      ../../../builds/006/dojo/plugins/workflow/templates/apps.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/workflow/AppsMenu.js
+release:      ../../../builds/006/dojo/plugins/workflow/templates/appsmenu.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/workflow/AppType.js
+release:      ../../../builds/006/dojo/plugins/workflow/templates/apptype.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/workflow/Controller.js
+release:      ../../../builds/006/dojo/plugins/workflow/templates/controller.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/workflow/History.js
+release:      ../../../builds/006/dojo/plugins/workflow/templates/history.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/workflow/HistoryPane.js
+release:      ../../../builds/006/dojo/plugins/workflow/templates/historypane.html
+release:      ../../../builds/006/dojo/plugins/workflow/templates/historypanerow.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/workflow/ParameterRow.js
+release:      ../../../builds/006/dojo/plugins/workflow/templates/parametersrow.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/workflow/Parameters.js
+release:      ../../../builds/006/dojo/plugins/workflow/templates/parameters.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/workflow/RunStatus.js
+release:      ../../../builds/006/dojo/plugins/workflow/templates/runstatus.html
+release:      ../../../builds/006/dojo/plugins/workflow/templates/runstatusrow.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/workflow/Shared.js
+release:      ../../../builds/006/dojo/plugins/workflow/templates/shared.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/workflow/StageRow.js
+release:      ../../../builds/006/dojo/plugins/workflow/templates/stagerow.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/workflow/Stages.js
+release:      ../../../builds/006/dojo/plugins/workflow/templates/stages.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/workflow/StagesMenu.js
+release:      ../../../builds/006/dojo/plugins/workflow/templates/stagesmenu.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/workflow/Status.js
+release:      ../../../builds/006/dojo/plugins/workflow/templates/status.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/workflow/StatusPane.js
+release:      ../../../builds/006/dojo/plugins/workflow/templates/runstatus.html
+release:      ../../../builds/006/dojo/plugins/workflow/templates/historypanerow.html
+release:  Interning strings for : ../../../builds/006/dojo/plugins/workflow/Workflow.js
+release:      ../../../builds/006/dojo/plugins/workflow/templates/workflow.html
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/admin/css/access.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/admin/css/admin.css
+release:  ../../../builds/006/dojo/plugins/admin/css/admin.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojox/layout/resources/ExpandoPane.css
+release:  ../../../builds/006/dojo/plugins/admin/css/admin.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojox/layout/tests/expando.css
+release:  ../../../builds/006/dojo/plugins/admin/css/admin.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dijit/themes/tundra/tundra.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/admin/css/apps-old.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/admin/css/apps.css
+release:  ../../../builds/006/dojo/plugins/admin/css/apps.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojo/tests/dnd/dndDefault.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/admin/css/appsettings.css
+release:  ../../../builds/006/dojo/plugins/admin/css/appsettings.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojo/tests/dnd/dndDefault.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/admin/css/controller.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/admin/css/fisheye.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/admin/css/groupprojects.css
+release:  ../../../builds/006/dojo/plugins/admin/css/groupprojects.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojo/tests/dnd/dndDefault.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/admin/css/groups-old.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/admin/css/groups.css
+release:  ../../../builds/006/dojo/plugins/admin/css/groups.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojo/tests/dnd/dndDefault.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/admin/css/groupsources.css
+release:  ../../../builds/006/dojo/plugins/admin/css/groupsources.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojo/tests/dnd/dndDefault.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/admin/css/groupusers.css
+release:  ../../../builds/006/dojo/plugins/admin/css/groupusers.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojo/tests/dnd/dndDefault.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/admin/css/parameters.css
+release:  ../../../builds/006/dojo/plugins/admin/css/parameters.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojo/tests/dnd/dndDefault.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/admin/css/projects-old.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/admin/css/projects-old2.css
+release:  ../../../builds/006/dojo/plugins/admin/css/projects-old2.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojo/tests/dnd/dndDefault.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/admin/css/projects.css
+release:  ../../../builds/006/dojo/plugins/admin/css/projects.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojo/tests/dnd/dndDefault.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/admin/css/sources.css
+release:  ../../../builds/006/dojo/plugins/admin/css/sources.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojo/tests/dnd/dndDefault.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/admin/css/tables.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/admin/css/Users.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/core/css/confirm.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/core/css/confirmdialog.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/core/css/controls.bkp.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/core/css/controls.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/core/css/core.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/core/css/inputdialog.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/core/css/menu.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/core/css/toolbar.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/files/css/filemenu.css
+release:  ../../../builds/006/dojo/plugins/files/css/filemenu.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojox/form/resources/FileInput.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/files/css/fileselectormenu.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/files/css/selectormenu.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/files/css/titlepane.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/files/css/workflowmenu.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/files/css/workflowselectormenu.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/files/FileDrag/FileDrag.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/files/FileDrag/FilePicker-bkp.css
+release:  ../../../builds/006/dojo/plugins/files/FileDrag/FilePicker-bkp.css
+  Cannot inline css import, skipping: ../RollingList/RollingList.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/files/FileDrag/FilePicker.css
+release:  ../../../builds/006/dojo/plugins/files/FileDrag/FilePicker.css
+  Cannot inline css import, skipping: ../RollingList/RollingList.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/files/FileDrag/RollingList.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/help/css/controller.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/help/css/help.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/login/css/admin.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/login/css/login.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/login/css/loginstatus.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/project/css/controller.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/project/css/dialog.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/project/css/project.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/project/css/tooltip.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/report/css/controller.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/report/css/grid.css
+release:  ../../../builds/006/dojo/plugins/report/css/grid.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojo/resources/dojo.css
+release:  ../../../builds/006/dojo/plugins/report/css/grid.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojox/grid/resources/Grid.css
+release:  ../../../builds/006/dojo/plugins/report/css/grid.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojox/grid/resources/tundraGrid.css
+release:  ../../../builds/006/dojo/plugins/report/css/grid.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojox/grid/resources/soriaGrid.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/report/css/report-old.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/report/css/report.css
+release:  ../../../builds/006/dojo/plugins/report/css/report.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojox/layout/resources/ExpandoPane.css
+release:  ../../../builds/006/dojo/plugins/report/css/report.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojox/layout/tests/expando.css
+release:  ../../../builds/006/dojo/plugins/report/css/report.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dijit/themes/tundra/tundra.css
+release:  ../../../builds/006/dojo/plugins/report/css/report.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojox/layout/resources/ExpandoPane.css
+release:  ../../../builds/006/dojo/plugins/report/css/report.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojox/layout/tests/expando.css
+release:  ../../../builds/006/dojo/plugins/report/css/report.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dijit/themes/tundra/tundra.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/report/css/SNP.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/upload/FileUpload/fileManager.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/upload/FileUpload/fileUpload.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/workflow/css/apps.css
+release:  ../../../builds/006/dojo/plugins/workflow/css/apps.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojo/tests/dnd/dndDefault.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/workflow/css/appsmenu.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/workflow/css/controller.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/workflow/css/filemanager.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/workflow/css/filemenu.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/workflow/css/history.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/workflow/css/infopane-bkp.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/workflow/css/infopane.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/workflow/css/RollingList.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/workflow/css/runstatus.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/workflow/css/shared.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/workflow/css/stagerow.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/workflow/css/stages.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/workflow/css/stagesmenu.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/workflow/css/workflow.css
+release:  ../../../builds/006/dojo/plugins/workflow/css/workflow.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojox/layout/resources/ExpandoPane.css
+release:  ../../../builds/006/dojo/plugins/workflow/css/workflow.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dojox/layout/tests/expando.css
+release:  ../../../builds/006/dojo/plugins/workflow/css/workflow.css
+  Cannot inline css import, skipping: ../../../dojo.1.4.2/dijit/themes/tundra/tundra.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/workflow/FileManager/css/FileManager.css
+release:  ../../../builds/006/dojo/plugins/workflow/FileManager/css/FileManager.css
+  Cannot inline css import, skipping: RollingList.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/workflow/FileSelector/FileDrag.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/workflow/FileSelector/FileManager.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/workflow/FileSelector/FilePicker.css
+release:  ../../../builds/006/dojo/plugins/workflow/FileSelector/FilePicker.css
+  Cannot inline css import, skipping: ../RollingList/RollingList.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/plugins/workflow/FileSelector/RollingList.css
+release:  Interning strings for: ../../../builds/006/dojo/dojo
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojo/resources/dnd.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojo/resources/dojo.css
+release:  Optimizing (comments.keepLines) CSS file: ../../../builds/006/dojo/dojo/_firebug/firebug.css
+release:  Interning strings for: ../../../builds/006/dojo/includes
+release:  Build is in directory: ../../../builds/006/dojo
+Build time: 473.75 seconds

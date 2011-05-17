@@ -1,0 +1,109 @@
+<div dojoAttachPoint="containerNode">
+    <table class="clusterRow" width="100%">
+
+        <tr>
+			<td
+                dojoAttachEvent="onclick:toggle"
+                dojoAttachPoint="clusterName"
+                class="clusterName"
+                title="Cluster Name"
+            >${clusterName}</td>
+
+			<td>
+				<input
+					dojoAttachPoint="minNodes"
+					dojoAttachEvent="onKeyPress:checkEnterNodes"
+					class="minNodes"
+					type="text"
+					value="${minNodes}"
+					dojoType="dijit.form.NumberTextBox"
+					value="0"
+					constraints="{min:0,max:99999,places:0}"
+					maxlength="4" 
+					promptMessage="Minimum nodes: from 1 to 99999" 
+					invalidMessage="Minimum nodes: from 1 to 99999"
+					tooltipPosition="above, below"
+                    style="display: table-cell; text-align: center; width: 25px !important;"
+				>
+			</td>
+
+            <td>
+				<div
+					dojoAttachPoint="maxNodes"
+					dojoAttachEvent="onKeyPress:checkEnterNodes"
+					class="maxNodes"
+					dojoType="dijit.form.NumberTextBox"
+					value="${maxNodes}"
+					constraints="{min:0,max:99999,places:0}"
+					maxlength="4" 
+					promptMessage="Maximum nodes: from 1 to 99999" 
+					invalidMessage="Maximum nodes: from 1 to 99999"
+					tooltipPosition="above, below"
+                    style="display: table-cell; text-align: center; width: 25px !important;"
+				</div>
+			</td>
+        </tr>
+
+        <tr>
+            <td align="center"
+                dojoAttachPoint="typeComboContainer"
+                style="display: none;"
+                >
+                <select
+                    dojoAttachPoint="typeCombo"
+                    dojoAttachEvent="onchange:saveCluster"
+                    class="typeCombo">
+					<option value="t1.micro">t1.micro</option> 
+					<option value="m1.small">m1.small</option>
+					<option value="m1.large">m1.large</option>
+					<option value="m1.xlarge">m1.xlarge</option>
+					<option value="m1.xlarge">m2.xlarge</option>
+					<option value="m2.2xlarge">m2.2xlarge</option>
+					<option value="m2.4xlarge">m2.4xlarge</option>
+					<option value="c1.medium">c1.medium</option>
+					<option value="c1.xlarge">c1.xlarge</option>
+					<option value="cc1.4xlarge">cc1.4xlarge</option>
+					<option value="cg1.4xlarge">cg1.4xlarge</option>
+                </select>
+            </td>
+            <td align="center"
+                colspan="2"
+                style="display: none;"
+                dojoAttachPoint="amiId"
+                dojoAttachEvent="onclick:editCluster"
+                class="amiId"
+                type="text"
+                title="The AMI ID of the Starcluster image used for all cluster nodes (The base x86_64 StarCluster AMI is ami-d1c42db8)"
+            >ami-d1c42db8</td>
+        </tr>
+
+		<tr width="95%">
+			<td
+                align="center"
+                colspan="3"
+                dojoAttachPoint="description"
+                dojoAttachEvent="onclick:editCluster"
+                class="description"
+                style="display: none;"
+                width="100%"
+                title="A brief description of the cluster group"
+            >${description}</td>
+		</tr>
+
+		<tr width="95%">
+			<td
+                align="center"
+                colspan="3"
+                dojoAttachPoint="notes"
+                dojoAttachEvent="onclick:editCluster"
+                class="notes"
+                value="Notes"
+                style="display: none;"
+                title="Additional notes on the cluster"
+				>${notes}</textarea>
+			</td>
+		</tr>
+
+    </table>
+
+</div>

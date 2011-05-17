@@ -1,0 +1,36 @@
+workflowApplications:
+[
+
+    {
+        "stagedescription":"Ace file generation",
+        "childpid":"",
+        "outputs": {
+            "acefile":
+            {
+                'format': 'ace', 'type': 'file',
+                'arguments': 'arguments.inputfile',
+                'javascript': 'function(inputfile) { var acefile = inputfile; acefile = acefile.replace(/\\.txt/, \".ace\"); return acefile; }'
+            }
+        },
+
+        "status":"",
+        "workflowdescription":"Generate .ace files from Eland alignment",
+        "workflowpid":"","stagename":"eland2ace.pl",
+        "applicationname":"eland2ace.pl",
+        "completed":"",
+        "workflownumber":1,
+        "stderrfile":"",
+        "progress":"","inputfiles":"",
+        "application":"bin/nextgen/eland2ace.pl",
+        "stagenumber":"2",
+        "outputfiles":"",
+        "stdoutfile":"",
+        "parentpid":"",
+        "projectname":"Project1",
+        "started":"",
+        "arguments":
+        "{ 'inputfile': { 'option': '--inputfile', 'type': 'file', 'format': 'eland-sorted', 'description': '/full/path/to/eland_sorted.txt (output from Eland alignment)', 'required' : true }, 'referencefile': { 'option': '--referencefile', 'type': 'directory', 'format': 'inputfile', 'description': '/full/path/to/directory/containing/reference_sequences.2bpb, .idx and .vld files', 'required': false }, 'multi': { 'option': '--multi', 'type': 'parameter', 'format': '', 'description': 'Run Eland with '--multi' option (Boolean)', 'required': false } }",
+        "workflowname":"Workflow3-indels"
+    }
+
+]

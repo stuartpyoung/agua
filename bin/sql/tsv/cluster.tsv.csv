@@ -1,0 +1,6 @@
+syoung	microcluster	0	3	t1.micro	ami-d1c42db8	us-east-1a	micro cluster for testing	0000-00-00
+syoung	z	5	5	t1.micro	ami-d1c42db8	us-east-1a	Z	0000-00-00
+syoung	mediumcluster	5	10	t1.micro	ami-d1c42db8	us-east-1a	Medium	0000-00-00
+syoung	largecluster	10	15	t1.micro	ami-d1c42db8	us-east-1a	Large	0000-00-00
+syoung	smallcluster	0	5	t1.micro	ami-d1c42db8	us-east-1a	Small	0000-00-00
+syoung	nanocluster	0	1	t1.micro	ami-d1c42db8	us-east-1a	Nano	0000-00-00

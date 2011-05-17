@@ -1,0 +1,320 @@
+[
+    {
+        "applicationname":"image2eland.pl",
+        "stagenumber":"1",
+        "application":"bin/nextgen/image2eland.pl",
+        "stagedescription": "Process images into base calls with Bustard and align reads against reference sequence with Eland",
+
+        "projectname":"Project1",
+        "workflownumber":1,
+        "workflowname":"Workflow3-indels",
+        "workflowdescription":"Generate .ace files from Eland alignment",
+        "stagename":"Image2Eland",
+
+        "inputs":
+        [
+            {
+                'name': "type",
+                'type': 'parameter',
+                'arguments': [ 'arguments.type.value' ]
+            },
+            {
+                'name': "rundir",
+                'type': 'directory',
+                'arguments': [ 'arguments.rundir.value' ]
+            },
+            {
+                'name': "geraldfile",
+                'type': 'parameter',
+                'arguments': [ 'arguments.geraldfile.value' ]
+            },
+            {
+                'name': "referencefile",
+                'type': 'file',
+                'format': 'fasta',
+                'arguments': [ 'arguments.referencefile.value' ]
+            },
+            {
+                'name': "outputdir",
+                'type': 'directory',
+                'arguments': [ 'arguments.outputdir.value' ]
+            },
+            {
+                'name': "readlength",
+                'type': 'parameter',
+                'arguments': [ 'arguments.readlength.value' ]
+            },
+            {
+                'name': "tiles",
+                'type': 'parameter',
+                'arguments': [ 'arguments.tiles.value' ]
+            }
+        ],
+
+        "outputs":
+        [
+            {
+                'name': "geraldfile",
+                'type': 'file',
+                'format': 'text',
+                'arguments': [ 'arguments.geraldfile.value' ]
+            },
+            {
+                'name': "make-error",
+                'type': 'file',
+                'format': 'text',
+                'arguments': [ 'arguments.geraldfile.value' ]
+            },
+            {
+                'name': "sequencefile",
+                'type': 'file',
+                'format': 'solexa',
+                'arguments': [ 'arguments.tiles.value' ],
+                'javascript': "new Function('tiles', 'var tilesArray = tiles.split(\",\"); var sequenceFiles = new Array; for ( var i = 0; i < tilesArray.length; i++ ) {   var sequenceFile = tilesArray[i] + \"_sequence.txt\"; sequenceFiles.push(sequenceFile); } return sequenceFiles; ')"
+
+            },
+            {
+                'name': "sortedfile",
+                'type': 'file',
+                'format': 'sorted',
+                'arguments': [ 'arguments.tiles.value' ],
+                'javascript': "new Function('tiles', 'var tilesArray = tiles.split(\",\"); var sortedFiles = new Array; for ( var i = 0; i < tilesArray.length; i++ ) {   var sortedFile = tilesArray[i] + \"_sorted.txt\"; sortedFiles.push(sortedFile); } return sortedFiles; ')"
+
+            },
+            {
+                'name': "make-error",
+                'type': 'file',
+                'format': 'error',
+                'arguments': [ 'arguments.outputdir.value' ],
+                'javascript': "new Function('outputdir', 'var file = outputdir + \"/make.error\"; return file; ')"
+            },
+            {
+                'name': "make-out",
+                'type': 'file',
+                'format': 'error',
+                'arguments': [ 'arguments.outputdir.value' ],
+                'javascript': "new Function('outputdir', 'var file = outputdir + \"/make.out\"; return file; ')"
+            },
+            {
+                'name': "makefile-error",
+                'type': 'file',
+                'format': 'error',
+                'arguments': [ 'arguments.outputdir.value' ],
+                'javascript': "new Function('outputdir', 'var file = outputdir + \"/makefile.error\"; return file; ')"
+            },
+            {
+                'name': "makefile-out",
+                'type': 'file',
+                'format': 'error',
+                'arguments': [ 'arguments.outputdir.value' ],
+                'javascript': "new Function('outputdir', 'var file = outputdir + \"/makefile.out\"; return file; ')"
+            }
+        ],
+
+        "arguments":
+        {
+            'type':
+            {
+                'option': '--type',
+                'value': 'single',
+                'type': 'parameter',
+                'description': "Either 'single' or 'paired' reads",
+                'required' : true
+            },
+            'rundir':
+            {
+                'option': '--rundir',
+                'value': 'Project1/Workflow3-indels',
+                'type': 'file',
+                'format': 'eland-sorted',
+                'description': '',
+                'required' : true
+            },
+            'geraldfile':
+            {
+                'option': '--geraldfile',
+                'value': '/run2lane6-test/eland/geraldfile.txt',
+                'type': 'file',
+                'format': 'gerald',
+                'description': '/full/path/to/eland_sorted.txt (output from Eland alignment)',
+                'required' : true
+            },
+            'outputdir':
+            {
+                'option': '--outputdir',
+                'value': 'Project1/Workflow3-indels/eland',
+                'type': 'directory',
+                'format': 'eland-sorted',
+                'description': '/full/path/to/eland_sorted.txt (output from Eland alignment)',
+                'required' : true
+            },
+            'referencefile':
+            {
+                'option': '--referencefile',
+                'value': '/store/home/syoung/base/pipeline/human-mtdna/human-mtDNA-AC_000021.fasta',
+                'type': 'file',
+                'format': 'fasta',
+                'description': '/full/path/to/reference fasta file',
+                'required': true
+            },
+            'readlength':
+            {
+                'option': "--readlength",
+                'type': 'parameter',
+                'value': '30',
+                'format': '',
+                'description': 'Run Eland with "--readlength" option (Boolean)',
+                'required': false
+            },
+            'tiles':
+            {
+                'option': "--tiles",
+                'type': 'parameter',
+                'value': 's_6_150',
+                'format': '',
+                'description': 'Process images for these tiles only',
+                'required': false
+            }
+        },
+
+        "stderrfile":"",
+        "stdoutfile":"",
+        "started":"",
+
+        "progress":"",
+        "status":"",
+        "completed":"",
+
+        "workflowpid":"",
+        "parentpid":""
+    },
+
+
+
+    {
+        "applicationname":"eland2ace.pl",
+        "stagenumber":"2",
+        "application":"bin/nextgen/eland2ace.pl",
+        "stagedescription": "Convert Eland output 'sorted.txt' file into an .ace file",
+
+        "projectname":"Project1",
+        "workflownumber":1,
+        "workflowname":"Workflow3-indels",
+        "workflowdescription":"Generate .ace files from Eland alignment",
+        "stagename":"eland2ace.pl",
+
+        "outputs":
+        [
+            {
+                'name': "acefile",
+                'format': 'ace', 'type': 'file',
+                'arguments': [ 'arguments.inputfile.value' ],
+                'javascript': "new Function('inputfile', 'var acefile = inputfile; acefile = acefile.replace(/\\.txt/, \".ace\"); return acefile;')"
+            }
+        ],
+
+        "arguments":
+        {
+            'inputfile': {
+                'option': '--inputfile',
+                'value': 'Project1/Workflow3-indels/eland/6_1_sorted.txt',
+                'type': 'file',
+                'format': 'eland-sorted',
+                'description': '/full/path/to/eland_sorted.txt (output from Eland alignment)',
+                'required' : true
+            },
+            'referencefile':
+            {
+                'option': '--referencefile',
+                'type': 'directory',
+                'format': 'inputfile',
+                'description': '/full/path/to/directory/containing/reference_sequences.2bpb, .idx and .vld files',
+                'required': false
+            },
+            'multi':
+            {
+                'option': "--multi",
+                'type': 'parameter',
+                'format': '',
+                'description': 'Run Eland with "--multi" option (Boolean)',
+                'required': false
+            }
+        },
+
+        "stderrfile":"",
+        "stdoutfile":"",
+        "started":"",
+
+        "progress":"",
+        "status":"",
+        "completed":"",
+
+        "workflowpid":"",
+        "parentpid":""
+    },
+
+
+
+    {
+        "applicationname":"splitace.pl",
+        "stagenumber":"3",
+        "application":"bin/nextgen/splitace.pl",
+        "stagedescription": "Convert .ace file into multiple ace files",
+
+        "projectname":"Project1",
+        "workflownumber":1,
+        "workflowname":"Workflow3-indels",
+        "workflowdescription":"Generate .ace files from Eland alignment",
+        "stagename":"eland2ace.pl",
+
+        "inputs":
+        [
+            {
+                'name': "acefile",
+                'format': 'ace', 'type': 'file',
+                'arguments': [ 'previous.outputs.acefile', 'arguments.outputdir.value' ],
+                'javascript': "function(acefile, outputdir) { var acefile = inputfile; acefile = acefile.replace(/\\.txt/, \".ace\"); return acefile; }"
+            }
+        ],
+        "outputs":
+        [
+            {
+                'name': "acefiles",
+                'format': 'ace', 'type': 'file',
+                'arguments': [ 'arguments.inputfile.value', 'arguments.outputdir.value' ],
+                'javascript': "new Function('inputfile', 'var acefile = inputfile; acefile = acefile.replace(/\\.txt/, \".ace\"); return acefile;')"
+            }
+        ],
+
+        "arguments":
+        {
+            'inputfile': {
+                'option': '--i',
+                'value': 'Project1/Workflow3-indels/eland/6_1_sorted.ace',
+                'type': 'file',
+                'format': 'ace',
+                'description': '/full/path/to/input_file',
+                'required' : true
+            },
+            'outputdir':
+            {
+                'option': '-i',
+                'type': 'directory',
+                'format': 'inputfile',
+                'description': '/full/path/to/directory/containing/reference_sequences.2bpb, .idx and .vld files',
+                'required': false
+            }
+        },
+
+        "stderrfile":"",
+        "stdoutfile":"",
+        "started":"",
+
+        "progress":"",
+        "status":"",
+        "completed":"",
+
+        "workflowpid":"",
+        "parentpid":""
+    }
+]

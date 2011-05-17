@@ -1,0 +1,61 @@
+<div dojoAttachPoint="containerNode" class="login">
+
+    <div
+        dojoAttachPoint="loginDialogue"
+        class="loginDialogue"
+        label="Login"
+        class="login"
+        dojoType="dojox.widget.Dialog"
+        style="overflow: visible; position: absolute; top: 240px; left: 248px; opacity: 1; width: 300px; height: 300px; align: center;"
+        title="Agua Login"
+        >
+
+        <table align="center" width="100%">
+            <tr align="center">
+                <td align="right">Username</td>
+                <td align="left">
+                    <div
+                        dojoAttachPoint="username"
+                        class="username"
+                        value=""
+                        dojoType="dijit.form.TextBox"
+                        style="width: 100px"
+                        >
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Password</td>
+                <td align="left">
+                    <div
+                        dojoAttachPoint="password"
+                        class="password"
+                        value=""
+                        type="password"
+                        dojoType="dijit.form.TextBox"
+                        style="width: 100px"
+                        >
+                    </div>
+                </td>
+            </tr>
+            <tr class="loginCenteredRow">
+                <td align="center" colspan="2">
+                    <div
+                        dojoAttachPoint="loginButton"
+                        dojoAttachEvent="onclick:login"
+                        class="loginButton"
+                        >Login</div>
+                </td>
+            </tr>
+            <tr class="loginCenteredRow">
+                <td align="center" colspan="2">
+                    <div
+                        dojoAttachPoint="message"
+                        colspan="2">
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</div>

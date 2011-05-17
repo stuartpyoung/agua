@@ -1,0 +1,231 @@
+<div dojoattachpoint="containerNode">
+
+	<!-- init TAB -->
+	<div
+		dojoAttachPoint="initTab"
+		class="init"
+		dojoType="dijit.layout.ContentPane"
+		title="Settings"
+		style="text-align: center; max-height: auto !important; width: 900px !important; padding: 0 !important;"
+		>
+
+		<table valign="top" align="center" width="900px">
+			<tr align="center" width="100%">
+				<td width="100%">
+					<div class="label"> Input Your EC2 Keys and Save to Initialize</div>
+					<div
+						dojoAttachPoint="initTable"
+						class="initTable"
+						style="height: 720px; width: 95%;"
+					>
+						<table width="850px" align="center">
+							<tr class="progress">
+								<td align="center" colspan="4">
+									<div
+										dojoAttachPoint="progress">
+									</div>
+								</td>
+							</tr>
+
+							<tr >
+								<td width="25%" align="center">Amazon User ID</td>
+								<td width="5%" colspan="1">
+									<input
+										class="amazonUserId"
+										size="20"
+										dojoAttachPoint="amazonuserid"
+										style="width:100%; font-weight: bolder; font-family: Verdana;";
+										dojoType="dijit.form.ValidationTextBox"
+										regExp="^\d{12}$"
+										maxlength="12" 
+										promptMessage="Enter your 12-digit Amazon User ID (no '-'s)" 
+										invalidMessage="Invalid User ID (Must be 12-digit number, no '-'s)."
+										value="728213020069"
+										wrap="off"
+									>
+								</td>
+								<td width="50%" colspan="1" align="left">
+									<input
+										dojoAttachEvent="onclick:saveAws"
+										dojoAttachPoint="saveAwsButton"
+										class="saveAwsButton"
+										type="button"
+										value="Save Keys"
+									/>
+								</td>
+								<td colspan="1"></td>
+							</tr>
+
+							<tr>
+								<td align="center">Data Volume</td>
+								<td colspan="1">
+									<input
+										class="dataVolume"
+										dojoAttachPoint="datavolume"
+										type="text"
+										dojoType="dijit.form.ValidationTextBox"
+										maxlength="13" 
+										value=""
+										regExpGen="return '(snap|vol)\-[A-F0-9a-f]{8}'"
+										invalidMessage="Required format: 'snap-abcdef09' or 'vol-abcdef09'"
+										promptMessage="Enter snapshot or volume ID"
+										disabled
+										required="true"
+									/> 
+								</td>
+
+								<td colspan="1" align="left" class="dataVolumeCheckbox">
+									<input
+										dojoAttachPoint="datavolumecheckbox"
+										dojoAttachEvent="onclick:toggleDataVolume"
+										type="checkbox"
+									/>
+									<div class="dataVolumeLabel">
+										Custom
+									</div>
+									<input
+										class="dataVolumeSize"
+										dojoAttachPoint="datavolumesize"
+										type="text"
+										dojoType="dijit.form.NumberTextBox"
+										name="elevation"
+										value="40"
+										constraints="{min:40,max:1000,places:0}"
+										required="true"
+										invalidMessage="Valid range: 40GB - 1,000GB"
+										promptMessage="Valid range: 40GB - 1,000GB"
+									>
+									10-1,000GB
+								</td>
+							</tr>
+
+							<tr>
+								<td align="center">User Volume</td>
+								<td colspan="1">
+									<input
+										class="userVolume"
+										dojoAttachPoint="uservolume"
+										type="text"
+										dojoType="dijit.form.ValidationTextBox"
+										maxlength="13"
+										value="  New volume"
+										regExpGen="return '(snap|vol)\-[A-F0-9a-f]{8}'"
+										invalidMessage="Required format: 'snap-abcdef09' or 'vol-abcdef09'"
+										promptMessage="Required format: 'snap-abcdef09' or 'vol-abcdef09'"
+										disabled
+										required="true"
+									/> 
+								</td>
+
+								<td colspan="1" align="left" class="userVolumeCheckbox">
+									<input
+										dojoAttachPoint="uservolumecheckbox"
+										dojoAttachEvent="onclick:toggleUserVolume"
+										type="checkbox"
+									/>	
+									<div class="dataVolumeLabel">
+										Custom
+									</div>
+
+									<input
+										class="userVolumeSize"
+										dojoAttachPoint="uservolumesize"
+										type="text"
+										dojoType="dijit.form.NumberTextBox"
+										name="elevation"
+										value="100"
+										constraints="{min:10,max:1000,places:0}"
+										required="true"
+										invalidMessage="Valid range: 10GB - 1,000GB"
+										promptMessage="Valid range: 10GB - 1,000GB"
+									>
+									10-1,000GB
+								</td>
+							</tr>
+
+							<tr>
+								<td align="center">AWS Access Key ID</td>
+								<td colspan="3">
+									<input
+										class="awsAccessKeyId"
+										dojoAttachPoint="awsaccesskeyid"
+										dojoType="dijit.form.ValidationTextBox"
+										value="AKIAIZXZ6S7ARZ44TTHQ"
+										type="text"
+										maxlength="20"
+										uppercase="true"
+										regExpGen="return '[A-Z0-9]{16,24}'"
+										invalidMessage="20 characters: capital letters or numbers"
+										promptMessage="20 characters: capital letters or numbers"
+									>								</td>
+							</tr>
+
+							<tr>
+								<td align="center">Secret Access Key</td>
+								<td colspan="3">
+									<input
+										dojoAttachPoint="secretaccesskey"
+										class="secretAccessKey"
+										value="4+0Max8DLoykQ+kPeGzP6S4LUJw0y5Ab0DrschU6"
+										dojoType="dijit.form.ValidationTextBox"
+										type="text"
+										maxlength="60"
+										regExpGen="return '.{35,45}'"
+										invalidMessage="40 characters"
+										promptMessage="40 characters"
+									>								</td>
+							</tr>
+
+
+							<tr>
+								<td align="center">EC2 Public Certificate</td>
+								<td colspan="4">
+									<textarea
+										dojoType="plugins.form.ValidationTextarea"
+										promptMessage="-----BEGIN CERTIFICATE-----<br>MIICeDCCA...&lt;rest of key&gt;...PMLuYkyOikXi<br>-----END CERTIFICATE-----"
+										required="true"
+										dojoAttachPoint="ec2publiccert"
+										class="ec2publiccert"
+										style="width:100%; font-size: 10px; font-weight: bolder; font-family: Verdana;";
+										cols="40"
+										rows="15"
+									>-----BEGIN PRIVATE KEY-----
+MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAIECyxb2URs4jXN6HlIChSqdwXp7NDszRkZ+A9+j9sqSbFNmK1wNseU/HyLZEOyuuGMWQE85jpwlqC5QipmtWLzSYBiWQL9Zq1TQ4pEy05CwY9XswyEw1JgPXDA3jxKIOlacX1ahIh3Jec2bLANPM9V6YlYwxsJSsH2H5Wmk8+kTAgMBAAECgYA8oGFsQwjOb/8ZO1QwWfrWkhgwROHAyFHIIsQTPuxlOfYqIyNROSZWgxlQuQ1ZDKqd9gD2uieofZHRYgwgN/Qw69GuDUt9HzcNQ5yDPm3Ofa0WcD0tQa9YToHqEWVQaddc8D6DLcOwBDEropf2OIqd4JFusmenVBSIETihVKX8cQJBAM3Zs6W4nWtDExw7QlucgiKC0/R5exBk+BGVBAGHHcBTy+WXFrycUEJbj6q/PEIdGFxFvcO6GUk8x0JFGBgEB28CQQCgcNVc2Ar3kN3BAeM0xM5SVWlDYjDZwq5KId72g6CI/tcfjdpIHNI7yGlMNj4YPKOW2CAZebPLj3C74wclPUadAkEAgOcVju33baaX/fLBz/pGp3PDZHD59j8z9FabJpXEtJ4ErWWacEt2GseZRHPyOPhdO9LUTQ9pLCpqIH6B4vAK8wJAa0cnE16N7r1Z2Y1Wi9kwkBL2QI0uVtz6xyzgtfqLZC7qTvn9w4wp8rlt1vzKBlC9ncZDqGUdGHaADdGe3IKdbQJATBQ5VR3WM0lx6BrxXtHlxmmTikQ1mTlEdkjL4xJ9iXw7cRIIVdDzAait4TwuoxWxNODHlfMxK4ul8zcEE5bSlw==-----END PRIVATE KEY-----</textarea>
+								</td>
+							</tr>
+
+
+
+
+							<tr>
+								<td align="center">EC2 Private Key</td>
+								<td colspan="4">
+									<textarea
+										promptMessage="-----BEGIN PRIVATE KEY-----<br>MIICdgIBA...&lt;rest of key&gt;,,,ibdjDymvrg==<br>-----END PRIVATE KEY-----" 
+										dojoType="plugins.form.ValidationTextarea"
+										required="true"
+										dojoAttachPoint="ec2privatekey"
+										class="ec2privatekey"
+										style="width:100%; font-size: 10px; font-weight: bolder; font-family: Verdana;";
+										cols="40"
+										rows="15"
+									>-----BEGIN CERTIFICATE-----
+MIICdzCCAeCgAwIBAgIFHoFGKBUwDQYJKoZIhvcNAQEFBQAwUzELMAkGA1UEBhMCVVMxEzARBgNVBAoTCkFtYXpvbi5jb20xDDAKBgNVBAsTA0FXUzEhMB8GA1UEAxMYQVdTIExpbWl0ZWQtQXNzdXJhbmNlIENBMB4XDTEwMTExOTE2NDMzNFoXDTExMTExOTE2NDMzNFowUzELMAkGA1UEBhMCVVMxEzARBgNVBAoTCkFtYXpvbi5jb20xFzAVBgNVBAsTDkFXUy1EZXZlbG9wZXJzMRYwFAYDVQQDEw0xd2h3enZlN21ueGNhMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCBAssW9lEbOI1zeh5SAoUqncF6ezQ7M0ZGfgPfo/bKkmxTZitcDbHlPx8i2RDsrrhjFkBPOY6cJaguUIqZrVi80mAYlkC/WatU0OKRMtOQsGPV7MMhMNSYD1wwN48SiDpWnF9WoSIdyXnNmywDTzPVemJWMMbCUrB9h+VppPPpEwIDAQABo1cwVTAOBgNVHQ8BAf8EBAMCBaAwFgYDVR0lAQH/BAwwCgYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUls+H6G2aw4Di4BAiw39F5NjCNZswDQYJKoZIhvcNAQEFBQADgYEAbW0DkQ9+pqJO8bxoKUGgskdkJo9pzvF+5qeG/ncPyEYXj0ufrBqcEBfOmIBC0af7N5uFYZ9yvMm4QI7mR9K7Gjfmwa3pq1zHVyfNkuAd4XVdX4x4/eYGwGPDDqqqudkI0PEjYqYism14Gy9EA49oP9CWbJzhkHqqiHDjsuOAN8E=
+-----END CERTIFICATE-----</textarea>
+								</td>
+							</tr>
+
+						</table>
+
+					</div>
+				</td>
+			</tr>
+
+		</table>
+
+	</div>
+	<!-- END init TAB -->
+
+</div> 
+
+

@@ -1,0 +1,31 @@
+<div dojoattachpoint="containerNode" style="position: absolute; top: 25px;">
+
+	<span style="position: absolute; top: -20px; left: 5px;" class="dijitFileInputText" dojoattachpoint="titleNode">${title}</span>
+
+	<div class="templateLoading" style="position: relative; top: -60px; left: 250px;">
+
+		<img id="${loading}"
+			style="display: none;"
+			src="../plugins/report/images/loading.gif"
+			width="15" height="15" />
+	</div>
+
+
+	<!-- ADD USER BUTTON -->
+	<div style="position: absolute; top: 24px; left: 155px; height: 20px; width: 250px;">
+		<button id="${addGroupButton}"
+				dojoType="dijit.form.Button" 
+				class="adminGroupsAddButton"
+				expandIconSrcPlus="../../../plugins/admin/images/group_add.png"
+				expandIconSrcMinus="../../../plugins/admin/images/group_delete.png"
+				iconWidth="16"
+				iconHeight="16"
+				type=submit">
+			Add Group
+		</button>
+		<span class="adminGroupsAddButtonTitle"> Add Group </span>
+	</div>
+
+
+
+</div> <!-- dojoattachpoint="containerNode" -->

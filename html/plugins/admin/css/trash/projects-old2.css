@@ -1,0 +1,342 @@
+@import "../../../dojo-1.5.0/dojo/tests/dnd/dndDefault.css";
+
+body {
+	padding: 0.5em;
+	background: #ededed;
+}
+
+/* GENERAL sources STYLES */
+.sources .tabTitle {
+	background-color: #264eea;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	font-stretch: expanded;
+	font-weight: bold;
+	color: #FFF;
+}
+.sources .comboLabel {
+	/*text-align:	center;*/
+	font-weight: bolder;
+	font-size: 18px;
+	font-family: Verdana;
+	font-size: 14px;
+	font-style: oblique;
+	height: 20px;
+	vertical-align: bottom !important;
+	background: #EEE;
+}
+
+/* GROUP COMBO */
+
+.sources .groupCombo,
+.sources .dijitMenu li,
+.sources .dijitMenuItem li
+{
+	text-indent: 10px;
+}
+
+.sources .groupCombo {
+	text-indent: 10px;
+	height: auto;
+	width: 150px;
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* NOTE: THIS IS NECESSARY FOR THE NEXT RULE TO WORK!!! */
+.sources .groupCombo .dijitReset .dijitMenu li,
+.sources .groupCombo .dijitReset .dijitMenuItem li
+{
+	/*color: #0FF !important;*/
+}
+.sources .dijitMenu li,
+.sources .dijitMenuItem li
+{
+	color: #224 !important;
+	height: 25px;
+}
+
+
+.sources .dragSource
+{
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border:3px solid #CCCCCC;
+	cursor:default;
+	padding:1em 0.5em;
+
+	/*margin-top: 5px;*/
+	width: 120px;	
+	height: 260px;
+	min-height: 100px;
+
+	text-align: left;
+	/*color: #339;*/
+	/*color: darkred;*/
+	/*font-weight: bold;*/
+	font-family: Verdana;
+	font-size: 12px;
+	border-color: #333;
+
+	/* NEEDED SO THAT SCROLLBAR WILL SHOW */
+	display: block !important;
+	overflow:auto !important;
+}
+.sources .dragSource .description {
+	font-size: 12px;
+}
+
+
+.sources .dropTarget {
+
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border:3px solid #CCCCCC;
+	cursor:default;
+	padding:1em 0.5em;
+
+	text-align: left;
+	font-size: 14px;
+	font-family: Verdana;
+
+	width: 160px;
+	height: 350px;
+	min-height: 100px;
+
+	/* NEEDED SO THAT SCROLLBAR WILL SHOW */
+	display: block !important;
+	overflow:auto !important;
+}
+
+.sources .dropTarget .description {
+	font-size: 12px;
+}
+
+
+.sources .trash{
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border:3px solid #CCCCCC;
+	cursor:default;
+	padding:1em 0.5em;
+
+	margin-top: 5px;
+	width: 150px;	
+	height: 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+.sources .trashIcon {
+	height: 100%;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+
+	background-image: url(../../../plugins/admin/images/trash-60.png);
+	background-repeat: no-repeat;
+
+}
+
+
+
+
+.draggableItem {
+	list-style: none;
+	/*padding-left: 18px;*/
+	top: 16px;
+	/*position: relative;*/
+	/*background-position: 10px 10px;*/
+	text-align: left;
+	text-indent: 28px;
+	/*background-image: url("../../../plugins/workflow/images/cog-blue-20.png");*/
+	/*background-image: url("../../../plugins/workflow/images/blue-orb-20.png");*/
+	background-repeat: no-repeat;
+}
+
+
+
+.dojoxDialogTitle {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: Verdana;
+}
+
+
+.adminSourcesSourceManagerButton {
+	font-size: 10px;
+	font-family: Verdana;
+	font-weight: bold;
+}
+
+.adminSourcesFloatingPane {
+	padding: 10px;
+}
+
+.adminSourcesButtonSpan {
+	width: 36px;
+	height: 36px;
+	background-color: #FFF;
+}
+
+.adminSourcesButtonOpenTitle {
+	color: #339;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Verdana;
+	display: inline;
+	position: relative;
+	top: -30px;
+	left: 5px;
+}
+
+.adminSourcesButtonOpenContainer {
+	position: absolute;
+	left: 490px;
+	top: 0px;
+	color: #339;
+	width: 400px;
+}
+.adminSourcesButtonOpen {
+	background-image: url(../../../plugins/admin/images/source-24.png);
+	background-repeat: no-repeat;
+	width: 36px;
+	height: 36px;
+}
+
+.adminSourcesButtonAdd {
+	background-image: url(../../../plugins/admin/images/source_add-24.png);
+	background-repeat: no-repeat;
+	width: 36px;
+	height: 36px;
+}
+
+/* title of floatingPane */
+.dijitTitleNode {
+	font-size: 24px;
+	position: relative;
+	top: -4px;
+}
+
+.adminSourcesPaneTitle {
+	font-family: Verdana;
+	text-align: center;
+}
+
+
+.clear {
+	clear: both;
+}
+
+
+
+.container .adminSourcesDropColumn1 {
+	width: 100px;
+	text-align: center;
+}
+
+.container .adminSourcesDropColumn2 {
+	width: 100px;
+	text-align: center;
+}
+
+
+.adminDeleteButton { 	
+	background-color: #FFFFFF;
+	color: #222222;
+	font-weight: normal;
+	font-style: normal; 
+	font-size: 20px;
+	font-family: Times New Roman;
+}
+
+
+.adminSourcesComboBoxTitle
+{
+	position: absolute;
+	left: 25px;
+	top: 50px;
+	font-size: 25px;
+	font-weight: bolder;	
+}
+
+.adminSourcesTable {
+	padding: 5px;
+	z-index: 999;
+	position: absolute;
+	left: 30px;
+	top: 120px;
+	text-align:	center;
+	font-weight: bolder;
+	font-style: italic; 
+}
+
+.adminSourcesTableRow {
+	z-index: 1000;
+	text-align:	center;
+	font-weight: normal;
+	font-style: normal;
+	width: 600px;
+}
+
+.adminSourcesTableData {
+	text-align:	center;
+	font-weight: normal;
+	font-style: normal;
+	color: #040404;
+	font-family: Arial;
+	font-size: 18px;
+	width: 150px;
+}
+
+.adminSourcesTableWideColumn {
+	min-width: 100px;
+	width: 200px;
+	max-width: 350px;	
+}
+
+.adminSourcesTableNarrowColumn {
+	min-width: 50px;
+	width: 120px;
+	max-width: 200px;	
+}
+
+.adminSourcesTableInput {
+	width: 100%;
+	padding: 5px;
+}
+
+.adminSourcesTableHeader {
+	font-family: Verdana;
+	font-size: 20px;
+	text-align: center;
+	background-color: #DDF;
+}

@@ -1,0 +1,2 @@
+
+for ( my i = 0; i < outputfiles; i++ ) { if ( outputfiles[i].format == 'ace') { return outputfiles[i].value; }}

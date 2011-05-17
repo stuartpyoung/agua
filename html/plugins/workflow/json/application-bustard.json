@@ -1,0 +1,19 @@
+{
+    data :
+    [
+        ['name', 'bustard'],
+        ['description', 'Base calling application in GAPipeline 1.0'],
+        ['application', 'bin/pipeline4/readscollect.pl'],
+        ['inputfiles', ''],
+        ['outputfiles', 'pipeline/outputdir/intfiles/*.int.txt.gz, pipeline/outputdir/seqfiles/*.seq.txt '],
+        ['stderrfile', 'pipeline/outputdir/bustard.stderr'],
+        ['stdoutfile', 'pipeline/outputdir/bustard.stdout'],
+        ['started', '0000-00-00 00:00:00'],
+        ['completed', '0000-00-00 00:00:00'],
+        [
+            [ '-d', 'funnybase11'],
+            [ '-e', 151],
+            [ '-p', '1-5']
+        ]
+    ]
+}

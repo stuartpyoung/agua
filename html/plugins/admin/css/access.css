@@ -1,0 +1,128 @@
+/* DOES THIS HELP AUTOSIZING? */
+.access {
+	height: auto !important;
+}
+
+.access .tabTitle {
+	background-color: #264eea;
+	text-align: center !important;
+	vertical-align: middle;
+	font-size: 20px;
+	font-stretch: expanded;
+	font-weight: bold;
+	color: #FFF;
+}
+
+.access .label {
+	text-align:	center !important;
+	font-weight: bolder;
+	font-size: 18px;
+	font-family: Verdana;
+	font-size: 14px;
+	font-style: oblique;
+	height: 20px;
+	vertical-align: bottom !important;
+	background: #EEE;
+}
+
+.access .table {
+	top: 20px !important;
+	height: auto !important;
+	font-family: Verdana;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+	background:#EEE none repeat scroll 0 0;
+	border: 2px solid #CCCCCC;
+	cursor: default;
+	/*padding: 0 0 !important;*/
+	/*padding: 2px 2px !important;*/
+	margin: 2px 2px !important;
+	/*width: 300px;	*/	
+	text-align: left !important;
+	font-size: 11px;
+	border-color: #CCC;
+
+	/* NEEDED SO THAT SCROLLBAR WILL SHOW */
+	/*display: block !important;*/
+	overflow:auto !important;	
+}
+.access .saveButton {
+	width: 250px !important;
+	color: #333333 !important;
+	font-size: 20px !important;
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	-moz-border-radius-bottomleft: 8pt;
+	-moz-border-radius-bottomright: 8pt;
+	-moz-border-radius-topleft: 8pt;
+	-moz-border-radius-topright: 8pt;
+	background: #FFF none repeat scroll 0 0;
+	height: 30px !important;
+	color: #CCC;	
+	font-weight: 400;
+}
+.access .saveButton:hover {
+	color: #FF00FF !important;
+}
+.access .saveButton:active {
+	color: #00FF00 !important;
+}
+.access .allowed,
+.access .denied {
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+	background-position: center;
+}
+.access .allowed {
+	background-image: url("../../../plugins/admin/images/access-yes-18.png");
+}
+
+.access .denied {
+	background-image: url("../../../plugins/admin/images/access-no-18.png");
+}
+
+.access .table .header,
+.access .table .subHeader {
+    border-width: 0 0 0 1px;
+    border-style: solid;
+    color: #222;
+}
+
+.access .table .headerBold {
+	font-weight: bolder;
+	font-size: 16px;
+}
+
+.access .table .header td {
+	width: 80px !important;
+	background-color: #FFFFCC;
+}
+
+.access .table .header {
+    font-size: 15px;
+	text-align: center;
+    /*background-color: #5928f8;*/
+}
+
+.access .table .subHeader {
+	font-family: Arial;
+}
+
+.access .table .narrowColumn {
+	background-color: #FFF !important;
+	text-align: center;
+    font-size: 11px !important;
+	color: #333;
+	width: 40px !important;
+	font-family: Arial;
+	font-weight: bolder;
+}
+

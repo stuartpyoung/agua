@@ -1,0 +1,43 @@
+"Feature","Added","Type","Class",
+"ccdsGene","*","EXON","exon",
+"cytoBand",,"TOPOLOGY","basic",
+"cytoBandIdeo",,"TOPOLOGY","basic",
+"cpgIslandExt",,"TOPOLOGY","dblhelix",
+"dgv",,"VARIATION","triangle hgred",
+"ensGene","*","GENE","transcript",
+"exoniphy",,"EXON","exon",
+"gap",,"TOPOLOGY","basic",
+"gold",,"ASSEMBLY",,"  Schema for Assembly - Assembly from Fragments"
+"geneid",,"GENE","transcript",
+"genomicSuperDups",,"TOPOLOGY","dblhelix",
+"gwasCatalog",,"VARIATION","triangle hgred",
+"hgIkmc",,,,"Schema for IKMC Genes Mapped - International Knockout Mouse Consortium Genes Mapped to Human Genome"
+"hinv70Coding","*",,,"Haemophilus influenzae"
+"hinv70NonCoding","*",,,
+"hinv70PseudoGene","*",,,
+"knownAlt",,,,
+"knownGene",,,,
+"microsat","*",,,
+"nestedRepeats","*","TOPOLOGY","dblhelix",
+"nscanGene",,"GENE","transcript",
+"omimGene",,"GENE","transcript",
+"pgNA12878","*","VARIATION","triangle hgblue","CEU daughter"
+"pgNA12891","*",,,"CEU father"
+"pgNA12892 (CEU mother)'","*",,,"CEU mother"
+"pgNA19240 (YRI daugher)","*",,,"Personal genome variants"
+"pgYoruban3 (YRI 18507)","*",,,"Personal genome variants"
+"pgYh1 (YanHuang)","*",,,"Personal genome variants"
+"pgSjk (SJK)","*",,,"Personal genome variants"
+"refGene",,,,
+"rmsk Repeat Masker","*","TOPOLOGY","dblhelix",
+"sgpGene",,,,"SGP Gene Predictions Using Mouse/Human Homology"
+"simpleRepeat","*","TOPOLOGY","dblhelix",
+"snp131","*",,,
+"snp130","*",,,
+"tRNAs",,,,
+"vegaGene",,,,
+"vegaPseudoGene",,,,
+"wgEncodeGencodeAutoV4",,,,
+"wgEncodeGencodePolyaV4",,,,
+"wgEncodeGencode2wayConsPseudoV4",,,,
+"wgRNA (sno/miRNA)",,,,

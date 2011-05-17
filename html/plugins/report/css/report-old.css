@@ -1,0 +1,30 @@
+.reportIcon {
+	background-image: url("../../../plugins/report/images/report-18.png");
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+}
+.reportIcon* { background-position: 0px; }
+
+.isDraggable {
+	list-style: none;
+	font-size: 16px;
+}
+
+.notDraggable {
+	background-color: #CCF;
+	font-style:italic;
+	font-size: 16px;
+	font-family: Verdana, Georgia,"Times New Roman",Times,serif;
+}
+
+.report .leftPane {
+	width: 100px !important;
+	color: #F00 !important;
+}
+
+.report .leftPane .options {
+	width: 100px !important;
+	color: #F00 !important;
+}

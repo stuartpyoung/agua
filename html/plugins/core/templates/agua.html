@@ -1,0 +1,40 @@
+<div dojoAttachPoint="containerNode">
+
+	<div
+		dojoAttachPoint="controls"
+		class="controls"
+		style="min-height: 100% !important; min-width: 100% !important;"		
+	>
+
+		<div
+            dojoAttachPoint="toolbar"
+            dojoType="dijit.Toolbar"
+            class="toolbar"
+        >
+        </div>
+
+		<div
+			dojoAttachPoint="tabs"
+			dojoType="dijit.layout.TabContainer"
+			class="tabs"
+			useSlider="false"
+			tabPosition="top"
+			tabStrip="false"
+			style="position: relative; top: 0px; left: 0px; height: 850px !important; min-height: 100% !important; width: 1200px !important; min-width: 100% !important; right: auto; bottom: auto;"
+		>
+		</div>
+
+		<div
+			dojoAttachPoint="toaster"
+			dojoType="dojox.widget.Toaster"
+			class="toaster" 
+			positionDirection="bl-right"
+			duration="500" 
+			messageTopic="toastTopic"
+		></div> 
+
+	</div>
+
+	<div dojoAttachPoint="fileManagerNode"></div>
+
+</div>

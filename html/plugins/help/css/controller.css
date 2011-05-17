@@ -1,0 +1,30 @@
+.helpIcon {
+	background-image: url("../../../plugins/help/images/help-18.png");
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+}
+.controls .dijitInline .dijitReset .dijitButtonNode {
+	background-color: #FFF;
+	vertical-align: middle;
+	border: 2px solid #BBB;
+	border-bottom-color: #888;	
+	border-left-color: #888;
+	font-weight: bold;
+	height: 20px;
+	width: 80px;
+	text-indent: -2px;
+}
+
+.controls .dijitInline .dijitReset .dijitButtonNode:hover {
+	background-color: #FFA;
+}
+.controls .dijitInline .dijitReset .dijitButtonNode:active {
+	background-color: #8F8;
+}
+.helpButton {
+	position: relative;
+	top: -25px;
+	left: 30px;
+	font-size: 16px;
+}

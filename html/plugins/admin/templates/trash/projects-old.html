@@ -1,0 +1,39 @@
+<div dojoattachpoint="containerNode" style="position: relative; top: 25px;">
+
+	<span style="position: absolute; top: -20px; left: 5px;" class="dijitFileInputText" dojoattachpoint="titleNode">${title}</span>
+
+	<div class="templateLoading" style="position: relative; top: -60px; left: 250px;">
+
+		<img id="${loading}"
+			style="display: none;"
+			src="../plugins/report/images/loading.gif"
+			width="15" height="15" />
+	</div>
+
+
+	<!-- GROUP COMBOBOX -->
+	<div class="formAnswer" style="position: absolute; top: 30px; left: 20px;">
+
+		<label class="firstLabel"> Group </label>
+
+		<select id="${adminComboContainer}"
+				dojoType="dijit.form.ComboBox"
+				class="adminProjectsGroupCombo"
+				autocomplete="true"
+				hasDownArrow="true"
+				disabled="false"
+		>
+		</select>
+	</div>
+
+
+	<!-- ADD Project BUTTON -->
+	<div style="position: absolute; top: 30px; left: 350px; height: 20px;">
+		<button id="${addProjectButton}" dojoType="dijit.form.Button" iconClass="plusIcon" type=submit">
+			Add Project
+		</button>
+	</div>
+
+
+
+</div> <!-- dojoattachpoint="containerNode" -->

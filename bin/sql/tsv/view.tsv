@@ -1,0 +1,16 @@
+syoung	Project1	View1	human	hg19	chr1	Encode,CpG,vegaGene	1	12270000	Notes for View1	2010-06-15 18:59:15
+syoung	Project1	View2	mouse	mm9	chr1	Encode,CpG,vegaGene,polyA	1270000	12270000	Notes for View3	2010-06-15 18:59:15
+syoung	Project2	View1	human	hg19	chr1	Encode,CpG,vegaGene	1200000	11200000	Notes for View1	2010-06-15 18:59:15
+syoung	Project2	View3	human	hg19	chr1	Encode,CpG,vegaGene,polyA	1	12270000	Notes for View2	2010-06-15 18:59:15
+admin	Project1	View1	human	hg19	chr1	Encode,CpG,vegaGene	1	12270000	Notes for View1	2010-06-15 18:59:15
+admin	Project1	View2	mouse	mm9	chr1	Encode,CpG,vegaGene,polyA	1270000	12270000	Notes for View3	2010-06-15 18:59:15
+admin	ProjectX	View1	human	hg19	chr1	Encode,CpG,vegaGene	1200000	11200000	Notes for View1	2010-06-15 18:59:15
+admin	ProjectX	View3	human	hg19	chr1	Encode,CpG,vegaGene,polyA	1	12270000	Notes for View2	2010-06-15 18:59:15
+jgilbert	Project2	View1	human	hg19	chr1	Encode,CpG,vegaGene	1	12270000	Notes for View1	2010-06-15 18:59:15
+jgilbert	Project2	View2	mouse	mm9	chr1	Encode,CpG,vegaGene,polyA	1270000	12270000	Notes for View3	2010-06-15 18:59:15
+jgilbert	Project3	View1	human	hg19	chr1	Encode,CpG,vegaGene	1200000	11200000	Notes for View1	2010-06-15 18:59:15
+jgilbert	Project3	View3	human	hg19	chr1	Encode,CpG,vegaGene,polyA	1	12270000	Notes for View2	2010-06-15 18:59:15
+syoung	Project2	View2				Encode,CpG,vegaGene	0	0		2011-02-27 20:20:40
+syoung	Project1	View3				Encode,CpG,vegaGene,polyA	0	0		2011-02-28 00:19:05
+syoung	Project1	View4				Encode,CpG,vegaGene	0	0		2011-02-28 00:21:59
+syoung	Project1	View5				Encode,CpG,vegaGene,polyA	0	0		2011-02-28 00:22:41

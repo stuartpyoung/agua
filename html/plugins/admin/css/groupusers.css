@@ -1,0 +1,217 @@
+@import "../../../dojo-1.5.0/dojo/tests/dnd/dndDefault.css";
+
+body {
+	padding: 0.5em;
+	background: #ededed;
+}
+
+/* GENERAL groupusers STYLES */
+.groupusers .tabTitle {
+	background-color: #264eea;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	font-stretch: expanded;
+	font-weight: bold;
+	color: #FFF;
+}
+.groupusers .comboLabel {
+	/*text-align:	center;*/
+	font-weight: bolder;
+	font-size: 18px;
+	font-family: Verdana;
+	font-size: 14px;
+	font-style: oblique;
+	height: 20px;
+	vertical-align: bottom !important;
+	background: #EEE;
+}
+
+/* GROUP COMBO */
+.groupusers .groupCombo,
+.groupusers .dijitMenu li,
+.groupusers .dijitMenuItem li
+{
+	text-indent: 10px;
+}
+
+.groupusers .groupCombo {
+	text-indent: 10px;
+	height: auto;
+	width: 150px;
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* NOTE: THIS IS NECESSARY FOR THE NEXT RULE TO WORK!!! */
+.groupusers .groupCombo .dijitReset .dijitMenu li,
+.groupusers .groupCombo .dijitReset .dijitMenuItem li
+{
+	/*color: #0FF !important;*/
+}
+.groupusers .dijitMenu li,
+.groupusers .dijitMenuItem li
+{
+	color: #224 !important;
+	height: 25px;
+}
+
+
+.groupusers .dragSource
+{
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border:3px solid #CCCCCC;
+	cursor:default;
+	padding:1em 0.5em;
+
+	/*margin-top: 5px;*/
+	width: 120px;	
+	height: 260px;
+	min-height: 100px;
+
+	text-align: left;
+	/*color: #339;*/
+	/*color: darkgreen;*/
+	/*font-weight: bold;*/
+	font-family: Verdana;
+	font-size: 12px;
+	border-color: #333;
+
+	/* NEEDED SO THAT SCROLLBAR WILL SHOW */
+	display: block !important;
+	overflow:auto !important;
+}
+
+.groupusers .dragSource .dojoDndItemAnchor,
+.groupusers .dropTarget .dojoDndItemAnchor {
+	background-color: #CCFFCC !important;
+}
+
+.groupusers .dragSource .username,
+.groupusers .dropTarget .username {
+	font-size: 14px;
+	font-weight: 900;
+	background-image: url(../../../plugins/admin/images/user-18.png);
+	text-indent: 22px;
+	background-repeat: no-repeat;
+	height: 18px;
+}
+.groupusers .dragSource .username {
+	color: darkred;
+}
+.groupusers .dropTarget .username {
+	font-size: 14px;
+	color: darkgreen;
+}
+
+.groupusers .dragSource .fullname,
+.groupusers .dropTarget .fullname {
+	font-size: 12px;
+	color: #444;
+}
+
+.groupusers .dragSource .description,
+.groupusers .dropTarget .description {
+	font-size: 12px;
+	color: #444;
+}
+
+.groupusers .dragSource .email,
+.groupusers .dragSource .datetime,
+.groupusers .dropTarget .email,
+.groupusers .dropTarget .datetime,
+.groupusers .dragSource .location,
+.groupusers .dragSource .datetime,
+.groupusers .dropTarget .location,
+.groupusers .dropTarget .datetime {
+	font-size: 9px;
+}
+
+.groupusers .dragSource .fullname,
+.groupusers .dragSource .description,
+.groupusers .dragSource .email,
+.groupusers .dragSource .datetime,
+.groupusers .dropTarget .fullname,
+.groupusers .dropTarget .description,
+.groupusers .dropTarget .email,
+.groupusers .dropTarget .datetime {
+	background-color: #EFEFEF;
+}
+
+
+.groupusers .dropTarget {
+
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border:3px solid #CCCCCC;
+	cursor:default;
+	padding:1em 0.5em;
+
+	text-align: left;
+	font-size: 14px;
+	font-family: Verdana;
+
+	width: 160px;
+	height: 350px;
+	min-height: 100px;
+
+	/* NEEDED SO THAT SCROLLBAR WILL SHOW */
+	display: block !important;
+	overflow:auto !important;
+}
+
+.groupusers .dropTarget .description {
+	font-size: 12px;
+}
+
+
+.groupusers .trash{
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border:3px solid #CCCCCC;
+	cursor:default;
+	padding:1em 0.5em;
+
+	margin-top: 5px;
+	width: 150px;	
+	height: 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+.groupusers .trashIcon {
+	height: 100%;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+
+	background-image: url(../../../plugins/admin/images/trash-60.png);
+	background-repeat: no-repeat;	
+}

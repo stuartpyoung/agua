@@ -1,0 +1,14 @@
+{
+	name: "plugins.help.Controller",
+
+	version : "0.01",
+
+	url : '',
+
+	description : "Display the help page and provide links to useful resources and to open other tabs",
+
+	dependencies :
+	[
+		{	name: "plugins.core.Controls", version: 0.01	}
+	]
+}

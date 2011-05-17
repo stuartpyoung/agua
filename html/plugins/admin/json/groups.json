@@ -1,0 +1,47 @@
+{
+    //identifier: 'name',
+    label: 'name',
+    items: [
+        {
+            name: 'Project1',
+            type: 'project',
+            description: 'Next Generation Analysis Tools',
+            groupname: 'bioinfo',
+            groupdesc: 'Bioinformatics Team'
+        },
+        {   name: 'skhuri',
+            type: 'user',
+            description: 'Sawsan Khuri',
+            groupname: 'bioinfo',
+            groupdesc: 'Bioinformatics Team'
+        },
+        {
+            name: 'syoung',
+            type: 'user',
+            description: 'Stuart Young',
+            groupname: 'bioinfo',
+            groupdesc: 'Bioinformatics Team'
+        },
+        {
+            name: 'Project2',
+            type: 'project',
+            description: "Next Generation Data Analysis",
+            groupname:  'nextgen',
+            groupdesc: 'Next Generation Sequencing'
+        },
+        {
+            name: 'yedwards',
+            type: 'user',
+            description: 'Yvonne Edwards',
+            groupname:  'nextgen',
+            groupdesc: 'Next Generation Sequencing'
+        },
+        {
+            name: 'dhedges',
+            type: 'user',
+            description: 'Dale Hedges',
+            groupname:  'nextgen',
+            groupdesc: 'Next Generation Sequencing'
+        }
+    ]
+}

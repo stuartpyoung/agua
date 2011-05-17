@@ -1,0 +1,98 @@
+admin	clusterMAQ	pipeline	inputfile	input	inputfile	file	--inputfile		essential					
+admin	clusterMAQ	pipeline	outputdir	input	outputdir	directory	--outputdir	%project%/%workflow%	essential	dir	Absolute path to directory containing reference_sequences.2bpb, .idx and .vld files	inputs.acefile.value	acefile	var outputdir = acefile; outputdir = outputdir.replace(//[/]+$/, ""); return outputdir;
+admin	clusterMAQ	pipeline	referencefile	input	referencefile	file	--referencefile		required					
+admin	clusterMAQ	pipeline	sortedfile	output	sortedfile	file		%project%/%workflow%/s_1_1_sorted.txt	required					
+admin	deepvac.pl	utility	downloaddir	input	downloaddir	directory	--downloaddir	%project%/%workflow%/download	required		Files are downloaded to this directory			
+admin	deepvac.pl	utility	filter	input	filter	string	--filter		optional		Download only filenames containing this name fragment			
+admin	deepvac.pl	utility	regex	input	regex	string	--regex		optional		Download only filenames matching this regex			
+admin	deepvac.pl	utility	url	input	url	string	--url		required		URL of FTP site or link to file on web page			
+admin	ELAND	alignment	clean	input	clean	flag	--clean		optional		Clean run (remove old splitfile)			
+admin	ELAND	alignment	inputfile	input	inputfiles	files	--inputfile	%project%/%workflow%/s_1_1_sequence.fastq	essential		Solexa FASTQ format sequence file			
+admin	ELAND	alignment	inputtype	input	inputtype	string	--inputtype	fastq	required		Type of input sequence. Valid inputs: fastq, fasta, export or qseq			
+admin	ELAND	alignment	outputdir	input	outputdir	directory	--outputdir	%project%/%workflow%	required		Print ELAND alignment files to this directory (will create the directory if it does not exist)			
+admin	ELAND	alignment	pairedfile	input	pairedfile	file	--pairedfile		optional		Paired-end mate file (e.g., s_1_2_sequence.fastq)			
+admin	ELAND	alignment	pairparams	input	pairparams	string	--pairparams		optional		Paired read analysis parameters to pass to pickBestPair. Default: '--circular' (treats all chromosomes as circular).			
+admin	ELAND	alignment	quality	input	quality	integer	--quality		optional		Quality value of all bases in fasta mode (Default: 30)			
+admin	ELAND	alignment	reads	input	reads	integer	--reads		optional		Number of reads per sub-file			
+admin	ELAND	alignment	referencedir	input	referencedir	directory	--referencedir	%project%/%workflow%	required		Directory containing squashed reference genome files			
+admin	ELAND	alignment	seedlength	input	seedlength	integer	--seedlength		optional		Length of read used for ELAND alignment (Default: min. of seedlength and 32)			
+admin	ELAND	alignment	splitfile	input	splitfile	file	--splitfile		optional					
+admin	eland2ace.pl	converter	inputfile	input	inputfile	file	--inputfile		required	ace		output.sortedfile.value		
+admin	eland2ace.pl	converter	outputdir	input	outputdir	directory	--outputdir	%project%/%workflow%/dummy	required	dir		input.outputdir.value		
+admin	eland2ace.pl	converter	outputfile	output	outputfile	file			Discretion	ace		input.inputfile.value	inputfile	return inputfile.replace(/.txt/, '.ace');
+admin	SAV	pipeline	queue	input	queue	string	--queue	gsmall	required		Cluster job queue name			
+admin	SAV	pipeline	outputdir	output	outputdir	directory	--outputdir	%project%/%workflow%	required		Directory with one subdirectory per reference chromosome, each containing an out.sav output file	input.inputdir.value		
+admin	image2eland.pl	pipeline	inputfile	input	inputfile	file	--inputfile		essential					
+admin	image2eland.pl	pipeline	outputdir	input	outputdir	directory	--outputdir	%project%/%workflow%	essential					
+admin	image2eland.pl	pipeline	outputfile	output	outputfile	file	--outputfile		required					
+admin	image2eland.pl	pipeline	sortedfile	output	sortedfile	file		%project%/%workflow%/s_1_1_sorted.txt	required					
+admin	replaceString.pl	utility	inputfile	input	inputfile	file	--inputfile		required					
+admin	replaceString.pl	utility	outputdir	input	outputdir	directory	--outputdir		required					
+admin	replaceString.pl	utility	outputfile	output	outputfile	file	--outputfile		required					
+admin	splitace.pl	utility	outputdir	input	outputdir	directory	--outputdir		required			input.outputdir.value	outputdir	return outputdir + "/splitace";
+admin	splitace.pl	utility	outputfiles	output	outputfiles	files	--outputfiles		Discretion	ace		input.outputdir.value	outputdir	return outputdir + "/*.ace";
+admin	test1	pipeline	inputfile	input	inputfile	file	--inputfile		required					
+admin	test1	pipeline	outputdir	input	outputdir	directory	--outputdir		required					
+admin	test2	converter	inputfile	input	inputfile	file	--inputfile		required					
+admin	test2	converter	outputdir	input	outputdir	directory	--outputdir		required					
+admin	MAQ	pipeline	matefile	input	matefile	file	--matefile	%project%/%workflow%/s_1_2_sequence.fastq	essential		Second paired-end sequence file	input.matefile.value		
+admin	MAQ	pipeline	inputfile	input	inputfile	file	--inputfile	%project%/%workflow%/s_1_1_sequence.fastq	essential		Single read or first paired-end sequence file	input.inputfile.value		
+admin	MAQ	pipeline	outputdir	input	outputdir	directory	--outputdir	%project%/%workflow%	required		Output alignment and SNP files will be printed to this directory	input.outputdir.value		
+admin	MAQ	pipeline	referencedir	input	referencedir	directory	--referencedir	/nethome/bioinfo/data/sequence/chromosomes/human-bfa	essential		Directory containing MAQ format binary fasta (.bfa) files for all human chromosomes	input.referencedir.value		
+admin	MAQ	pipeline	splitfile	input	splitfile	file	--splitfile	%project%/%workflow%	optional		File containing list of batch input sequence file locations	input.splitfile.value		
+admin	MAQ	pipeline	convert	input	convert	flag	--convert	%project%/%workflow%	optional		Convert from Solexa FASTQ to Sanger FASTQ	input.convert.value		
+admin	MAQ	pipeline	reads	input	reads	integer	--reads	1000000	optional		Number of reads per batch input file (Default = 1 million)	input.reads.value		
+admin	MAQ	pipeline	clean	input	clean	flag	--clean		optional		Clean run (remove old splitfile)	input.clean.value		
+admin	MAQ	pipeline	queue	input	queue	string	--queue	-qgsmall	optional		Submit to a particular queue or add other submission options	input.queue.value		
+admin	MAQ	pipeline	maxjobs	input	jobs	integer	--jobs	30	optional		Maximum number of concurrently queued or running jobs on the cluster queue for this run (Default: 30)	input.jobs.value		
+admin	MAQ	pipeline	mapfile	output	mapfile	file		%project%/%workflow%/out.map	Discretion		Binary mapping file containing alignment of all reads against reference			
+admin	MAQ	pipeline	dupfile	output	dupfile	file		%project%/%workflow%/rmdup.map	Discretion		Same as out.map file but with duplicate reads aligned against the reference with identical outer coordinates removed			
+admin	MAQ	pipeline	PE-indels	output	indelpe	string		%project%/%workflow%/out.indelpe	Discretion		Indel calls, only produced with paired-end reads			
+admin	MAQ	pipeline	consensus	output	cns-maq	file		%project%/%workflow%/cns.fq	Discretion	fastq	Consensus sequence and qualities in FASTQ format			
+admin	MAQ	pipeline	indelsoa	output	indelsoa	file		%project%/%workflow%/out.indelsoa	Discretion		Predicted homozygous indels			
+admin	MAQ	pipeline	snp	output	indelsoa.filter	file		%project%/%workflow%/cns.snp	Discretion		List of raw SNPs extracted from comparison of consensus and reference files			
+admin	MAQ	pipeline	snp-filter	output	SNPfilter	file		%project%/%workflow%/out.SNPfilter	Discretion		Filtered SNP predictions based on indelsoa, indelpe and cns.snp files			
+admin	TOPHAT	aligner	inputfiles	input	inputfiles	string	--inputfiles		required		Comma-separated "*sequence.txt" file names (e.g., "s_1_1_sequence.txt,s_2_1_sequence.txt")			
+admin	MAQ	pipeline	hzsnps-filter	output	indelsoa	file		%project%/%workflow%/out.indelsoa.filter	Discretion		Filtered predicted homozygous indels			
+admin	TOPHAT	aligner	outputdir	input	outputdir	directory	--outputdir		required		Create this directory and write output files to it			
+admin	TOPHAT	aligner	params	input	params	string	--params		optional		Additional parameters to be passed to tophat (e.g., "--solexa1.3-quals"			
+admin	deepvac.pl	utility	type	input	type	string	--type		required		Type of page: 'html' or 'text'			
+admin	FTP	utility	url	input	url	string	--url		required		Download files linked on this page			
+admin	FTP	utility	type	input	type	string	--type		essential		Type of page: "html" or "text"			
+admin	FTP	utility	filter	input	filter	string	--filter		optional		Download only files containing this text fragment			
+admin	FTP	utility	regex	input	regex	string	--regex		optional		Download files matching this regular expression			
+admin	FTP	utility	outputdir	input	outputdir	directory	--outputdir	%project%/%workflow%/downloads	required		Create this directory and download files to it			
+admin	TOPHAT	aligner	reference	input	reference	file	--reference		required		Location of indexed reference file 
+(NB: Use file stub, e.g., /some/path/hg19)			
+admin	TOPHAT	aligner	label	input	label	string	--label		required		Name to used to submit jobs to cluster (e.g., tophat-sample1)			
+admin	TOPHAT	aligner	keep	input	keep	flag	--keep		optional		Keep intermediate files			
+admin	TOPHAT	aligner	queue	input	queue	string	--queue		optional		Cluster queue options			
+admin	TOPHAT	aligner	jobs	input	jobs	integer	--jobs		optional		Max. number of concurrent cluster jobs (DEFAULT = 30)			
+admin	TOPHAT	aligner	cpus	input	cpus	integer	--cpus		optional		Max. number of cpus per job (1 to 4) (DEFAULT = 4)			
+admin	TOPHAT	aligner	matefiles	input	matefiles	string	--matefiles		optional		Comma-separated "*sequence.txt" mate file names (e.g., "s_1_2_sequence.txt,s_2_2_sequence.txt") with locations as paths relative to the output directory			
+admin	TOPHAT	aligner	distance	input	distance	integer	--distance		required		The  mean inner distance between first read and its mate pair (corresponds to "-r"/"--mate-inner-dist" argument to Tophat)			
+dmotti	ELAND	alignment	clean	input	clean	flag	--clean		optional		Clean run (remove old splitfile)	<textareaclass="editParameterRow"></textarea>		
+admin	TOPHAT	aligner	hits	output	hits	file		%project%/%workflow/accepted_hits.sam	Discretion		A list of read alignments in SAM format. SAM is a compact short read alignment format that is increasingly being adopted.			
+admin	TOPHAT	aligner	coverage	output	coverage	file		%project%/%workflow/coverage.wig	Discretion		A UCSC BedGraph wigglegram track, showing the depth of coverage at each position, including the spliced read alignments.			
+admin	TOPHAT	aligner	junctions	output	junctions	file		%project%/%workflow/junctions.bed	Discretion		A UCSC BED track of junctions reported by TopHat. Each junction consists of two connected BED blocks, where each block is as long as the maximal overhang of any read spanning the junction. The score is the number of alignments spanning the junction.			
+admin	GSMAPPER	pipeline	inputfiles	input	inputfiles	files	--inputfiles	%project%/%workflow%/sample1.fna	essential		Comma-separated list of input FASTA files			
+admin	GSMAPPER	pipeline	outputdirs	input	outputdirs	directories	--outputdirs	%project%/%workflow%/sample1	required		Comma-separated list of output directories (one per input file)			
+admin	GSMAPPER	pipeline	referencefile	input	outputdirs	file	--referencefile	%project%/%workflow%/myReference.fna	essential		Reference sequence FASTA file			
+admin	GSMAPPER	pipeline	queue	input	queue	string	-queue	-qgsmall	optional		Optional cluster queue parameters			
+admin	GSMAPPER	pipeline	HCsnps	output	queue	files			optional		High-confidence predicted SNPs			
+admin	GSMAPPER	pipeline	Allsnps	output	queue	files			optional		All predicted SNPs			
+admin	SAV	pipeline	dbsnp	input	dbsnp	string	--dbsnp	snp130	optional		dbSNP version for given species			
+admin	SAV	pipeline	inputdir	input	inputdir	directory	--inputdir	%project%/%workflow%	required		Directory with one subdirectory per reference chromosome, each containing an out.sam or out.bam alignment output file	output.outputdir.value		
+admin	filterSNP	report	species	input	species	string	--species		required					
+admin	SAV	pipeline	cluster	input	cluster	string	--cluster	PBS	required		Cluster type (e.g., PBS, LSF, SGE)			
+admin	filterSNP	report	sense	input	sense	string	--sense		optional					
+admin	filterSNP	report	quality	input	quality	integer	--quality		optional					
+admin	filterSNP	report	outputdir	output	outputdir	directory	--outputdir	%project%/%workflow%	required		Directory with one subdirectory per reference chromosome, each containing an "out.sav.flt" filterSNP output file	input.inputdir.value		
+admin	filterSNP	report	inputdir	input	inputdir	directory	--inputdir	%project%/%workflow%	essential		Directory with one subdirectory per reference chromosome, each containing an out.sav extended pileup format file of predicted SNPs and annotation information	output.outputdir.value		
+admin	filterSNP	report	coverage	input	coverage	integer	--coverage		optional					
+admin	filterSNP	report	filename	input	filename	file	--filename		optional					
+admin	filterSNP	report	chromosome	input	chromosome	string	--chromosome		optional					
+admin	SAV	pipeline	referencedir	input	referencedir	directory	--referencedir	/nethome/bioinfo/data/sequence/chromosomes/human/hg19/fasta	essential		Location of directory containing chr*.fa reference files			
+admin	SAV	pipeline	species	input	species	string	--species	human	required		Name of the reference species (e.g., human, mouse)			
+admin	MAQ	pipeline	label	input	label	String	--label		required		A one-word label describing the experiment or data	input.label.value		
+admin	MAQ	pipeline	species	input	species	String	--species		required		Species name (e.g., human, mouse)	input.species.value		

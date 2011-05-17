@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="9341f2ea-e012-4a04-b00b-ca2e78e8801e" kpf_version="4" name="project.kpf">
+<folder id="b5905e9c-5178-4095-9e64-64ace48de6e0" idref="9341f2ea-e012-4a04-b00b-ca2e78e8801e" name="lib">
+</folder>
+<file id="1ec48278-79af-4633-b098-ec8e1508b7e0" idref="b5905e9c-5178-4095-9e64-64ace48de6e0" name="Project.pm" url="file:///C:/DATA/base/html/aqwa/lib/Project.pm">
+</file>
+<preference-set idref="9341f2ea-e012-4a04-b00b-ca2e78e8801e">
+  <boolean id="import_live">1</boolean>
+</preference-set>
+<preference-set idref="b5905e9c-5178-4095-9e64-64ace48de6e0">
+  <string id="import_dirname">C:\DATA\base\html\aqwa\lib</string>
+  <string id="import_include_matches">Project.pm</string>
+</preference-set>
+</project>

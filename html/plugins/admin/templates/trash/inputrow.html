@@ -1,0 +1,128 @@
+<div dojoAttachPoint="containerNode">
+    <table width="100%">
+        <tr>
+            <td
+                colspan="1"
+                dojoAttachPoint="name"
+                class="name"
+                title="Input name"
+                >${name}</td>
+
+            <td colspan="1" align="right" width="70px">
+
+                <select
+                    dojoAttachPoint="paramtype"
+                    class='paramtype'
+                    style="width: 70px !important; display: table-cell; text-align: center; width: 100%; font-weight: bold; font-family: Verdana; font-size: 10px;";
+                    title="Input type"
+                    >
+                    <option selected="true" class="default" value="${paramtype}">${paramtype}</option>
+                    <option value="input">input</option>
+                    <option value="resource">resource</option>
+                    <option value="output">output</option>
+                </select>
+
+            </td>
+
+            <td colspan="1" align="right" width="80px">
+
+                <select
+                    dojoAttachPoint="discretion"
+                    class='discretion'
+                    style="width: 80px !important; display: table-cell; text-align: center; font-weight: bold; font-family: Verdana; font-size: 10px;";
+                    title="Please select optional,  required (must not be empty) or essential (file/directory must be present)"
+                    >
+                    <option selected="true" class="default" value="${discretion}">${discretion}</option>
+                    <option value="essential">essential</option>
+                    <option value="required">required</option>
+                    <option value="optional">optional</option>
+                </select>
+
+            </td>
+
+
+        </tr>
+        <tr>
+            <td 
+                colspan="1"
+                dojoAttachPoint="argument"
+                class="argument"
+                title="Command line option or switch for input"
+                style="display: none;" >${argument}</td>
+
+            <td colspan="1">
+
+                <select
+                    dojoAttachPoint="type"
+                    class="type"
+                    style="display: none; text-align: center; width: 100%; font-weight: bolder; font-family: Verdana;";
+                    title="Input may be physical (file or directory location), or abstract (integer or text string)"
+                    >
+                    <option selected="true" class="default" value="${type}">${type}</option>
+                    <option value="file">file</option>
+                    <option value="files">files</option>
+                    <option value="directory">directory</option>
+                    <option value="directories">directories</option>
+                    <option value="integer">integer</option>
+                    <option value="string">string</option>
+                    <option value="flag">flag</option>
+                </select>
+
+            </td>
+            <td
+                colspan="1"
+                dojoAttachPoint="category"
+                title="User-defined category for input to be used with input/output chaining"
+                class="category"
+                style="display: none; text-align: right;" >${category}</td>
+        </tr>
+        <tr>
+            <td colspan="3"
+                dojoAttachPoint="value"
+                class='value'
+                title="Default value of input (use %project% or %workflow% for default file path locations)"
+                style="display: none;" >${value}</td>
+
+        </tr>
+
+        <tr>
+            <td colspan="3"
+                dojoAttachPoint="description"
+                class='description'
+                title="A description of the input and its usage"
+                style="display: none;" >${description}</td>
+
+        </tr>
+
+        <tr>
+            <td 
+                colspan="1"
+                dojoAttachPoint="format"
+                class="format"
+                title="Special file formats, e.g., FASTA, FASTQ"
+                style="display: none;" >${format}</td>
+            <td
+                colspan="1"
+                dojoAttachPoint="args"
+                class="args"
+                title="Arguments for input/output chaining function (see paramFunction below)"
+                style="display: none; text-align: center;"
+                >${args}</td>
+            <td
+                colspan="1"
+                dojoAttachPoint="params"
+                class="params"
+                title="Pointers for corresponding values for args (see above)"
+                style="display: none; text-align: right;" >${params}</td>
+        </tr>
+
+        <tr>
+            <td colspan="3"
+                dojoAttachPoint="paramFunction"
+                class='paramFunction'
+                title="Input/output chaining function to automatically determine input value from preceding applications in workflow"
+                style="display: none;" >${paramFunction}</td>
+        </tr>
+
+    </table>
+</div>

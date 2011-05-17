@@ -1,0 +1,16 @@
+{ identifier: 'name',
+  label: 'name',
+  items: [
+        { name:'Africa', type:'continent', population:'900 million', area: '30,221,532 sq km',
+           timezone: '-1 UTC to +4 UTC',
+            children:[{_reference:'Egypt'}, {_reference:'Kenya'}, {_reference:'Sudan'}] },
+        { name:'Egypt', type:'country' },
+        { name:'Kenya', type:'country',
+            children:[{_reference:'Nairobi'}, {_reference:'Mombasa'}] },
+        { name:'Nairobi', type:'city' },
+        { name:'Mombasa', type:'city' },
+        { name:'Sudan', type:'country',
+            children:{_reference:'Khartoum'} },
+        { name:'Khartoum', type:'city' }
+    ]
+}

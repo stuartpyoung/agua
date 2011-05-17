@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+		"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+<title> plugins.admin.Access module test</title>
+
+<style type="text/css">
+
+	/* DOJO STYLES */
+	@import "../../../dojo-1.5.0/dojo/resources/dojo.css";
+
+	/* THEMES */
+	@import "../../../dojo-1.5.0/dijit/themes/dijit.css";
+	@import "../../../dojo-1.5.0/dijit/themes/soria/soria.css";
+	@import "../../../dojo-1.5.0/dijit/themes/tundra/tundra.css";
+
+</style>
+
+<link rel="stylesheet" href="plugins/core/css/toolbar.css">
+
+<!-- LOAD DOJO -->
+
+<script type="text/javascript" src="../../../dojo-1.5.0/dojo/dojo.js"
+	djConfig="parseOnLoad: true, isDebug: true"></script>	
+
+<!-- TO AVOID PROBLEMS WHEN LOADING -->
+<!--<script type="text/javascript" src="../../../dojo-1.5.0/dijit/nls/en-us.js"></script>-->
+<!--<script type="text/javascript" src="../../../dojo-1.5.0/dijit/nls/common.js"></script>-->
+
+<script type="text/javascript">
+
+
+
+var data = new Object;
+data.headings = {
+	leftPane : [ "Access" ],
+	middlePane : [],
+	rightPane : []
+};
+
+data.access = [
+	{
+	  'owner' : 'syoung',
+	  'worldcopy' : '1',
+	  'groupwrite' : '1',
+	  'worldwrite' : '1',
+	  'groupname' : 'mihg',
+	  'groupcopy' : '1',
+	  'groupview' : '1',
+	  'worldview' : '1'
+	},
+	{
+	  'owner' : 'syoung',
+	  'worldcopy' : '1',
+	  'groupwrite' : '1',
+	  'worldwrite' : '1',
+	  'groupname' : 'snp',
+	  'groupcopy' : '1',
+	  'groupview' : '1',
+	  'worldview' : '1'
+	}
+];
+
+	// LOAD MODULES
+	dojo.registerModulePath("plugins","../../plugins");	
+	dojo.require("plugins.core.Agua")
+	dojo.require("plugins.admin.Access")
+	dojo.require("dojox.robot.recorder")
+
+	// GLOBAL Agua VARIABLE
+	var Agua;
+
+	dojo.addOnLoad(function(){
+
+	// GLOBAL Agua VARIABLE
+	Agua = new plugins.core.Agua([]);
+	Agua.stages = data.stages;
+
+
+	// OVERRIDE Agua METHODS TO SUPPLY TEST DATA
+	Agua.getStageParameters = function(moniker) {
+		if ( moniker == "current" )	return data.stageParameters;
+		else return data.previousStageParameters;
+	};
+
+	var access = new plugins.admin.Access({});
+
+
+
+	});
+
+</script>
+
+</head>
+<body class="agua tundra">
+
+
+	<div id="attachPoint"></div>
+
+	<h2> plugins.admin.Access module test</h2>
+
+
+</body>
+</html>

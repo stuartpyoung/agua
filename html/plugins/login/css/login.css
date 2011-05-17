@@ -1,0 +1,172 @@
+/* LOGIN DIALOGUE */
+
+.login table {
+	position: absolute;
+	top: 25%;
+}
+
+.login {
+	text-align: center;
+	vertical-align: middle;
+	color: #224;
+	font-size: 14px;
+	font-family: Verdana;
+	font-weight: bold;
+	z-index: 1001;
+}
+.login .dojoxDialogWrapper {
+	z-index: 1001;
+}
+
+
+
+.login .dojoxDialogTitleBar {
+    height: 3em !important;
+    /*opacity : 4;*/
+	background-color: transparent;
+}
+
+
+
+
+/* BUTTONS */
+
+
+.login .loginButton {
+	/* SIZE, BORDER */
+	background-color: #FFF;
+	border: 3px solid #EEE;
+	border-bottom-color: #DDD;	
+	border-left-color: #DDD;	
+	vertical-align: middle;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 40px;
+
+	/* TEXT */
+	-moz-user-select: none;
+    color: #222;
+    font-weight: bolder;
+    font-size: 28px;
+	vertical-align: middle;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.login .loginButton:hover,
+.login .loginButton:active {
+	background-color: #FF0 !important;
+	border: 3px solid #DDD;
+	border-bottom-color: #BBB;	
+	border-left-color: #BBB;	
+}
+.login .loginButton:active{
+	background-color: #0F0 !important;
+}
+
+
+.login .error {
+    color: #F44;
+}
+
+.login .accepted {
+    color: #4D4;
+}
+
+/*.login .loginButtonError:hover, .login .loginButtonError:active {*/
+/*    color: #FF0000;*/
+/*}*/
+
+
+
+
+
+
+
+
+/*.dojoxDialogTitle {*/
+/*	background-color: #FFF;*/
+/*	text-align: center;*/
+/*	font-size: 24px;*/
+/*	font-weight: bold;*/
+/*	font-family: Verdana;*/
+/*}*/
+/**/
+/**/
+/*.login .dojoxDialogTitle {*/
+/*    */
+/*	background-color: transparent;*/
+/*	background-color: white !important;*/
+/*    color: #88F;*/
+/*    font-size: 28px;*/
+/*    font-family: Verdana;*/
+/*}*/
+
+/**/
+/*.login .dojoxDialog {*/
+/*	background-color: #F00 !important;*/
+/*	z-index: 1001;*/
+/*	text-align: center;*/
+/*}*/
+/**/
+
+/*.login .dijitDialog {*/
+/*	background: black;*/
+/*	z-index: 999;*/
+/*	height: auto;*/
+/*}*/
+/*	*/
+/*	*/
+/*.login .dijitDialogUnderlayWrapper {*/
+/*	position: absolute;*/
+/*	left: 0;*/
+/*	top: 0;*/
+/*	z-index: 10;*/
+/*	display: inline;*/
+/*	/*background: transparent !important;*/*/
+/*}*/
+/*	*/
+/*.dijitDialogUnderlayWrapper_underlay {*/
+/*	/*display: none;*/*/
+/*}*/
+
+
+/*.login .dijitDialog {*/
+/*	position: absolute;*/
+/*	z-index: 999;*/
+/*	padding: 1px;*/
+/*}*/
+
+/*.login .dijitDialogFixed div.dijitDialogTitleBar {*/
+/*	cursor:default; */
+/*}*/
+/**/
+/*.login .dijit_a11y .dijitInputLayoutContainer,*/
+/*.login .dijit_a11y .dijitDialog {*/
+/*	opacity: 1 !important;*/
+/*	background-color: white !important;*/
+/*}*/
+/*.login .dijitDialog .closeText {*/
+/*	display:none;*/
+/*	*/
+/*	position:absolute;*/
+/*}*/
+/*.login .dijit_a11y .dijitDialog .closeText {*/
+/*	display:inline;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+/*.login .dijitDialogUnderlay {*/
+/*    background: grey;*/
+/*	z-index: 998;*/
+/*	display: none;*/
+/*	opacity: 0.5;*/
+/*}*/

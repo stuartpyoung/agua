@@ -1,0 +1,50 @@
+<div dojoattachpoint="containerNode">
+
+	<!-- PROJECTS TAB -->
+	<div
+		dojoAttachPoint="projectsTab"
+		dojoType="dijit.layout.ContentPane"
+		title="Projects"
+		style="height: 700px; width: 200px !important; position: absolute; top: 13px !important; border: 1px solid #243C5F;"
+		>
+
+		<table align="center">
+			<tr>
+				<td align="center">
+					<!-- PROJECTS GROUP COMBO -->
+					<div 
+						dojoAttachPoint="groupCombo"
+						dojoType="dijit.form.ComboBox"
+						autocomplete="true"
+						class="groupCombo"
+						style="height: 20px; width: 150px;"
+					>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<!-- ADD PROJECT BUTTON -->
+					<div
+						dojoAttachPoint="addProjectButton"
+						dojoType="dijit.form.Button"
+						iconClass="plusIcon"
+						style="height: 20px;"
+						>
+						Add Project
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<table>
+			<div
+				 dojoAttachPoint="projectTable">
+			</div>
+		</table>
+		</table>
+
+
+	</div>
+
+</div> <!-- dojoattachpoint="containerNode" -->

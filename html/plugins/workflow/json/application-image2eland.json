@@ -1,0 +1,27 @@
+{
+    data :
+    [
+        ['name', 'image2eland'],
+        ['description', 'Do image processing, base calling and Eland alignment'],
+        ['application', 'bin/nextgen/image2eland-cluster.pl'],
+        ['inputfiles', ''],
+        ['outputfiles', 'pipeline/outputdir/intfiles/*.int.txt.gz,pipeline/outputdir/seqfiles/*.sequence.txt,pipeline/outputdir/seqfiles/*.eland_extended.txt,pipeline/outputdir/seqfiles/*.eland_multi.txt,,pipeline/outputdir/seqfiles/*.eland_sorted.txt'],
+        ['arguments', '{
+            '--rundir' :   '/full/path/to/run_directory',
+            '--refdir' :   '/full/path/to/directory/containing/reference_sequences.2bpb, .idx and .vld files',
+            '--outputfile' :   '/full/path/to/outputfile',
+            '--multi' :   'Run Eland with '--multi' option (Boolean)'
+
+
+        }']
+        ['stderrfile', 'pipeline/outputdir/bustard.stderr'],
+        ['stdoutfile', 'pipeline/outputdir/bustard.stdout'],
+        ['started', '0000-00-00 00:00:00'],
+        ['completed', '0000-00-00 00:00:00'],
+        [
+            [ '-d', 'funnybase11'],
+            [ '-e', 151],
+            [ '-p', '1-5']
+        ]
+    ]
+}

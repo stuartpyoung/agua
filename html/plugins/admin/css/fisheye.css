@@ -1,0 +1,73 @@
+
+#adminList {
+	position:absolute;
+	left: 0px;
+	cursor:pointer;
+}
+
+#adminFisheyeContainer { margin:0 auto; width:300px; }
+
+#adminList ul {
+	position: absolute;
+	/*left: -25px;*/
+	width: 120px;
+	list-style-type:none;
+}
+
+.bounce {
+	font-size: 19px;
+	list-style-type:none;
+	list-style:none;
+	position: relative;
+	left: -10px;
+}
+
+.fisheyeTarget {
+	font-weight:bold;
+	font-size: 24px;
+}
+
+#adminFisheyeContainer li {
+	text-align:right;
+	padding-bottom:12px;
+}
+
+.ilk {
+
+	border-top:1px solid #999;
+	color:#666;
+	font:14px Arial,sans-serif;
+}
+
+#inlineList li {
+	list-style: none;
+	list-style-type: none;
+	margin-top:20px;
+	margin-bottom:20px;
+	border:2px solid #ededed;
+	display:inline;
+	background:#fff;
+}
+
+#lineHeightTest {
+	text-align:center;
+	position:relative;
+	overflow:visible;
+}
+
+span.line {
+	margin: 10px;
+	padding: 3px;
+	line-height: 22px;
+	/*font:10px Arial,sans-serif;*/
+	display: block;
+}
+
+.imgBounce {
+	padding:0;
+	width:  35px;
+	height: 35px;
+	vertical-align:middle;
+	position:relative;
+	top:0;
+}

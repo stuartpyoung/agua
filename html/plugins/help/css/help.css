@@ -1,0 +1,85 @@
+.help {
+	position: relative;
+	top: -20px;
+	background-color: black !important;
+}
+
+/* TABLE ROWS */
+
+.help table {
+	margin-top: 100px;
+	width: 100%;
+	background-color: #AAF;	
+	text-align: center;
+	color: #FFF;
+	vertical-align: top; 
+	font-size: 24px;	
+}
+
+.help tr {
+	background-color: #CFC;		
+	width: 450px;
+	vertical-align: middle; 
+	height: 40px;
+}
+
+.help td {
+	width: 100%;
+	background-color: #AAF;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.help td:hover {
+	background-color: #BDB;	
+	color: darkred;
+}
+
+/* AGUA IMAGE AND HEADER */
+
+.help .aguaIconBig {
+	background-image: url("../../../plugins/help/images/agua-blue-orb-40.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 28px;
+	height: 100px;
+	width:40px !important;
+	position: relative;
+	top: 2px;
+	text-align: center;
+	top:2px;
+	color: #FFF;
+	font-size: 24px;
+	font-family: Verdana;
+	font-weight: bolder;
+	vertical-align: bottom;
+}
+
+.help .aguaIconBig {
+	width: 5% !important;
+}
+
+.help .aguaIconBig:hover,
+.help .alignRight:hover,
+.help .alignLeft:hover {
+	background-color: #AAF;
+	color: #FFF;
+}
+
+.help .alignRight,
+.help .alignLeft {
+	width: auto;
+}
+
+.help .alignRight {
+	text-align: right;
+}
+
+.help .alignLeft {
+	text-align: left;
+}
+
+.help td {
+	background-color: #AAF !important;
+}
+

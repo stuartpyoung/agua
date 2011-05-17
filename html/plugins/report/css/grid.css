@@ -1,0 +1,284 @@
+@import "../../../dojo-1.5.0/dojo/resources/dojo.css";
+@import "../../../dojo-1.5.0/dojox/grid/resources/Grid.css";
+@import "../../../dojo-1.5.0/dojox/grid/resources/tundraGrid.css";
+@import "../../../dojo-1.5.0/dojox/grid/resources/soriaGrid.css";
+
+/* OUTPUT RESULTS */
+.report .results .dijitTabContainerTop-dijitContentPane,
+.report .results .dijitTabContainerLeft-dijitContentPane,
+.report .results .dijitTabContainerBottom-dijitContentPane,
+.report .results .dijitTabContainerRight-dijitContentPane,
+.report .results .dijitAccordionContainer-dijitContentPane {
+	background-color:#FFFFFF;
+	border: medium none;
+	padding: 0px !important;
+}
+
+.report .resultTable {
+	height: 20px !important;
+	background-color: #EEE !important;
+	font-weight: bolder;
+	font-size: 14px;
+	text-align: center;
+	border: 1px solid #AAA;
+}
+
+.oddTitle,
+.evenTitle {
+	padding: 8px;
+}
+.oddTitle {
+	background-color: #FFF;
+}
+.evenTitle {
+	background-color: #EEE;
+}
+.report .results .totalResults, 
+.report .results .showResults, 
+.report .results .resultStart, 
+.report .results .resultStop {
+	color: #F00;
+}
+.report .results .resultStart, 
+.report .results .resultStop {
+	margin-bottom: 10px;
+}
+.report .results .showResults {
+	width: 30px;
+	margin: 5px;
+}
+
+
+/* SET RESULTS SPINNER HEIGHT */
+.dijitSpinnerButtonContainer {
+	float:right;
+	height:30px;
+	overflow:hidden;
+	position:relative;
+	width:18px;
+	height: 20px !important;
+	vertical-align: middle !important;
+	padding-top: 10px !important;
+}
+
+.report .results .dijitInputField input,
+.report .results  .dijitTextBox,
+.report .results  .dijitComboBox,
+.report .results  .dijitSpinner {
+	color: #F00;
+	font-size: 18px;
+	font-weight: bolder;
+	vertical-align: middle !important;
+	height: 30px !important;
+}
+
+/* UP AND DOWN SPINNER ARROWS */
+.report .results .dijitArrowButtonInner {
+	margin-left: 1px !important;
+	/*padding: 2px !important;*/
+	width: 18px !important;
+	height: 18px !important;	
+}
+
+.report .results .dijitUpArrowButton .dijitArrowButtonInner {
+	background: transparent url(http://localhost/agua/0.4/plugins/report/images/uparrow-15.png) no-repeat scroll !important;
+	margin-bottom: 3px !important;
+}
+.report .results .dijitDownArrowButton .dijitArrowButtonInner {
+	margin: 1px !important;
+	margin-top: 2px !important;
+	padding: 1px !important;
+	background: transparent url(http://localhost/agua/0.4/plugins/report/images/downarrow-15.png) no-repeat scroll !important;
+}
+
+/* DOESN'T WORK: CHANGE THE BGCOLOR ON HOVER */
+/*dijitReset dijitLeft dijitButtonNode dijitArrowButton dijitDownArrowButton*/
+.report .results .dijitSpinnerUpArrowHover .dijitUpArrowHover 
+.report .results .dijitDownArrowHover .dijitReset .dijitSpinnerButtonContainer {
+	background-color: #AFA !important;
+}
+
+
+
+/* FORMAT AND VERTICALLY CENTER RESULTS SPINNER INPUT TEXT */
+.report .results .dijitReset .dijitInputField .dijitReset {
+	height: 30px !important;
+	text-align: center !important;
+	vertical-align: middle !important;
+	margin-top: 4px !important;
+}
+
+/* REMOVE soria DEFAULT BACKGROUND IMAGE */
+.report .results .dijitButtonNode {
+	/*background: none !important;*/
+}
+
+
+/* GRID */
+
+.dojoxGridScrollbox {
+    position: relative;
+    top: 20px;
+}
+
+.dojoxGridMasterHeader {
+    visibility: visible !important;
+    display: inline !important;
+}
+
+/*dijitTitlePaneContentInner*/
+
+.report .grid .work-pane-split {
+	position: relative !important;
+	top: 20px !important;
+}
+
+.report .grid .output td {	
+	/*padding-left: 0px !important;*/
+}
+
+
+.report .grid .dojoxGridRowTable {
+	color: #F00 !important;	
+	height: 10px;
+}
+
+/* SHOW THE BOTTOM OF THE HEADER */
+.report .grid .dojoxGridScrollbox {
+	position: relative !important;
+	top: 0px !important;
+}
+
+
+/* GRID HEADER HEIGHT */
+.report .grid .dojoxGridHeader {
+	position: relative;
+	top: 0px !important;
+	left: 0px !important;
+	text-align: center !important;
+	vertical-align: middle !important;
+	font-weight: bold;
+}
+/* ADJUST THIS AS WELL AS dojoxGridHeader TO CHANGE HEADER HEIGHT */
+.report .grid .dojoxGridSortNode {
+	height: 35px !important;	
+}
+.report .grid .headerContentNode {
+	z-index: 1000 !important;
+	height: 25px;
+}
+
+/* GRID HEADER TEXT */
+.report .grid .dojoxGridHeader .dojoxGridCell {
+	font-weight: bolder;	
+	font-size: 12px;
+	text-align: center;
+}
+
+
+
+
+/* CONTAINER FOR GRID OUTPUT ROWS */
+.report .grid .dojoxGridContent,
+.reportSNPGrid {
+	width: 1000px !important;
+}
+
+.reportSNPGrid {
+    position: relative;
+    top: -20px;  /* SO DOESN'T COVER HEADER ROW */
+	/*height: 90em !important;*/
+	color: #000;
+	font-size: 10px;
+	font-family: Ariel;
+}
+
+
+.report .grid .dojoxGridContent {
+	height: 12px;
+}
+
+.reportSNPGrid tr, .reportSNPGrid td {
+	height: 20px;
+	width: 90em;
+	color: #000;
+}
+
+/* NO EFFECT ON HEIGHT OF HEADER */
+/*.report .grid .viewsHeaderNode {*/
+/*	height: 30px !important;*/
+/*}*/
+
+
+
+
+
+/*.dijitSplitContainer-dijitContentPane,*/
+/*.soria .dijitBorderContainer-dijitContentPane {*/
+/*    padding:  0px !important;    */
+/*}*/
+/**/
+/*.report .grid {*/
+/*    border:  0px !important;*/
+/*    padding:  0px !important;*/
+/*    */
+/*}*/
+/**/
+/*.dijitSplitContainer-dijitContentPane {*/
+/*    border:  0px !important;*/
+/*}*/
+/**/
+/*.dijitContentPane .dijitSplitPane .report {*/
+/*    padding: 0px !important;*/
+/*}*/
+/**/
+/*.notes hideNode {*/
+/*    position: relative;*/
+/*    top: 10px;*/
+/*}*/
+/**/
+/**/
+/*.dijitTitlePaneContentInner {*/
+/*    padding: 0px !important;*/
+/*    /*position: relative;*/*/
+/*    /*top: 0px;*/*/
+/*}*/
+/**/
+/*.reportNotesTitlePane {*/
+/*    width: 600px !important;    */
+/*    font-size: 14px;*/
+/*}*/
+/**/
+/*.dijitTitlePaneTitle .dijitClosed,*/
+/*.dijitTitlePaneTitle .dijitOpen {*/
+/*    color: #222;*/
+/*    font-size: 14px;*/
+/*    font-family: Verdana;*/
+/*    width: 600px !important;*/
+/*}*/
+/**/
+/**/
+/**/
+/*.dijitTitlePaneContentInner {*/
+/*    padding: 0px !important;*/
+/*    /*position: relative;*/*/
+/*    /*top: 0px;*/*/
+/*}*/
+/**/
+/**/
+/*.notes hideNode {*/
+/*    position: relative;*/
+/*    top: 10px;*/
+/*}*/
+/**/
+/**/
+/**/
+/**/
+/*.dijitTitlePaneTitle .dijitClosed,*/
+/*.dijitTitlePaneTitle .dijitOpen {*/
+/*    color: #222;*/
+/*    font-size: 14px;*/
+/*    font-family: Verdana;*/
+/*    width: 600px !important;*/
+/*}*/
+/**/

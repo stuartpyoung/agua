@@ -1,0 +1,335 @@
+@import "../../../dojo-1.5.0/dojo/tests/dnd/dndDefault.css";
+
+/* GENERAL */
+.clusters {
+	height: auto !important;
+}
+
+tbody,
+tr,
+td {
+	margin: 0px !important;
+    padding: 0px !important;
+	height: 0px !important;
+}
+
+.clusters .dijitTabInnerDiv {
+	padding: 0px 0px 0px 0px !important;
+}
+
+/* HEADERS */
+.clusters .tabTitle {
+	background-color: #264eea;
+	text-align: center !important;
+	vertical-align: middle;
+	font-size: 20px;
+	font-stretch: expanded;
+	font-weight: bold;
+	color: #FFF;
+}
+
+.clusters .label {
+	text-align:	center !important;
+	font-weight: bolder;
+	font-size: 18px;
+	font-family: Verdana;
+	font-size: 14px;
+	font-style: oblique;
+	height: 20px;
+	vertical-align: bottom !important;
+	background: #EEE;
+}
+
+/* COMBOBOX AND INPUT-RELATED STYLES */
+/* NOTE: THIS IS NECESSARY FOR THE NEXT RULE TO WORK!!! */
+.stages .typeCombo .dijitReset .dijitMenu li,
+.stages .typeCombo .dijitReset .dijitMenuItem li
+{
+/*color: #0FF !important;*/
+}
+.stages .dijitMenu li,
+.stages .dijitMenuItem li
+{
+	color: #224 !important;
+	height: 14px;
+	font-size: 18px;
+	top: -6px !important;
+}
+
+workflow .dijitContainer .dijitLayoutContainer .dijitTabPane .dijitTabContainerTop-dijitLayoutContainer {
+	border: solid 1px #CCC !important;
+}
+
+.tundra .dijitInputContainer input, .tundra .dijitTextBox {
+    margin: 0 !important;
+    text-align: center !important;
+}
+.clusters .dijitInputContainer {
+    float: none !important;
+    overflow: hidden;
+    padding-bottom: 0px !important;
+    padding-left: 3px;
+    padding-right: 3px;
+    position: relative;
+    top: 2px;
+}
+
+.clusters .headerRow {
+	/*height: 8px !important;*/
+	/*font-size: 12px !important;*/
+	color: darkblue !important;
+	text-align: center !important;
+	padding: 0px !important;
+}
+
+/* FORM INPUTS */
+.clusters .addClusterButton {
+	font-size: 18px;
+	color: #224;
+	height: 24px !important;
+}
+
+.clusters .addClusterButton {
+    -moz-user-select: none;
+    background-color: #FEFEFE;
+    border-color: #BBBBBB #BBBBBB #888888 #888888;
+    border-style: solid;
+    border-width: 4px;
+    color: #222244;
+    font-family: Verdana;
+    font-size: 14px;
+    font-weight: bolder;
+    height: 20px !important;
+    margin-right: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 115px !important;
+}
+
+.clusters .clusterName,
+.clusters .minNodes,
+.clusters .maxNodes {
+	width: 100%;
+	font-weight: bolder !important;
+	font-family: Verdana;
+}
+.clusters .clusterName {
+    background: url() !important;
+	height: 22px;
+	font-size: 14px;
+	color: #444;
+	vertical-align: middle !important;
+	font-style: oblique;
+	font-weight: bolder !important;
+	padding-top: 2px;
+}
+.clusters .minNodes,
+.clusters .maxNodes {
+    background: url() !important;
+	background-color: #FFF;
+	width: 60px !important;
+	height: 21px !important;
+	padding-top: 3px !important;
+	/*height: 25px !important;*/
+}
+.clusters .typeCombo {
+    background: url() !important;
+	background-color: #FFF !important;
+	font-weight: bolder;
+	font-family: Verdana;
+	font-size: 16px !important;
+}
+
+.clusters .typeCombo select,
+.clusters .typeCombo option {
+	background-color: #FFF !important;
+}
+
+.clusters .typeCombo {
+	width : 180px !important;
+	text-align: center !important;
+}
+.clusters .amiId {
+	width:100%;
+	font-weight: bolder;
+	font-family: Verdana;
+	width: 160px !important;
+	height: 24px !important;
+	text-align: center !important;
+	background-color: #FFF !important;
+}
+.clusters .description,
+.clusters .notes {
+	width: 97%;
+	font-weight: bolder;
+	font-family: Verdana;
+}
+
+.clusters .clusterRow .description,
+.clusters .clusterRow .notes {
+	color: #222;
+	width: 100% !important;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left !important;
+	background: none repeat scroll 0 0 #FFFFFF !important;
+}
+
+
+/* INVALID INPUT */
+.clusters .invalid ,
+.clusters .clusterName .dijitTextArea .invalid,
+.clusters .minNodes .dijitTextArea .invalid,
+.clusters .maxNodes .dijitTextArea .invalid,
+.clusters .amiId .dijitTextArea .invalid
+{
+	border: 2px solid #F00 !important;
+}
+
+
+/* CLUSTER TABLE */
+.clusters .dragSource
+{
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border:3px solid #CCCCCC;
+	cursor:default;
+	padding:1em 0.5em;
+
+	/*margin-top: 5px;*/
+	width: 120px;	
+	height: 260px;
+	min-height: 100px;
+
+	text-align: left !important;
+	/*color: #339;*/
+	/*color: darkred;*/
+	/*font-weight: bold;*/
+
+	font-family: Verdana;
+	/*font-size: 12px;*/
+	border-color: #333;
+
+	/* NEEDED SO THAT SCROLLBAR WILL SHOW */
+	display: block !important;
+	overflow:auto !important;
+}
+.clusters .dragSource .dojoDndItemAnchor {
+	/*background-color: #8AE0F2 !important;*/
+	/*background-color: #CAF0F2 !important;*/
+	/*background-color: #DAF0F2 !important;*/
+	/*background-color: #EAF0F2 !important;*/
+	background-color: #CCFFCC !important;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	/*-moz-background-origin:padding;*/
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+}
+
+/* CLUSTER TABLE ROWS */
+
+.clusters textarea {
+	overflow: auto !important;
+}
+.clusters table textarea {
+	font-family: Verdana;
+}
+.clusters .clusterRow textarea {
+	text-align: center !important;
+}
+
+.clusters .clusterRow .headerRow {
+	font-size: 10px !important;
+	color: red !important;
+}
+
+.clusters .editClusterRow {
+	width: 100%;
+	height: 20px;
+}
+
+.clusters .clusterRow .clusterName {
+	font-size: 14px;
+	color: darkred;
+	font-weight: bolder;
+	text-align: left !important;
+
+	background-image: url(../../../plugins/admin/images/cluster-18.png) !important;
+	text-indent: 22px;
+	background-repeat: no-repeat !important;
+	/*height: 18px;*/
+	background-position: center left !important;
+/*	min-width: 35px;
+	min-height: 35px;
+	width: 35px;
+	height: 35px;
+*/}
+
+.clusters .clusterRow .minNodes,
+.clusters .clusterRow .maxNodes {
+	color: #222;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left !important;
+	background: #FFF !important;
+	min-width: 60px !important;
+}
+.clusters .clusterRow .amiId {
+	color: #000;
+	/*font-weight: 900;*/
+	/*font-size: 12px;*/
+	/*text-align: left !important;*/
+	background: #EFEFEF;
+}
+.clusters .clusterRow .instanceType {
+	color: #000;
+	font-weight: normal;
+	/*font-size: 12px;*/
+	font-style: italic;
+	text-align: left !important;
+	background: #EFEFEF;
+	background-color: #EFEFEF !important;
+}
+/* TRASH CAN */
+.clusters .trash {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border:3px solid #CCCCCC;
+	cursor:default;
+	padding:1em 0.5em;
+
+	margin-top: 5px;
+	width: 150px;	
+	height: 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.clusters .trashIcon {
+	height: 100%;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+
+	background-image: url(../../../plugins/admin/images/trash-60.png);
+	background-repeat: no-repeat;
+
+}
+

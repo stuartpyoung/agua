@@ -1,0 +1,171 @@
+<div dojoAttachPoint="containerNode">
+    <table class="parameterrow" width="100%">
+        <tr>
+            <td
+                colspan="1"
+                dojoAttachPoint="name"
+                class="name"
+                title="Parameter name"
+                >${name}</td>
+
+
+            <td colspan="1" width="40%">
+
+                <table>
+                    <tr>
+                        <td dojoAttachPoint="locked"
+                            dojoAttachEvent="onclick:toggleLock"
+                            class="unlocked"
+                            style="display: table-cell; text-align: center; width: 25px !important;"
+                        >
+                        </td>
+
+                        <td colspan="1" width="75%">
+
+                            <select
+                                dojoAttachPoint="paramtype"
+                                class='paramtype'
+                                style="display: table-cell; text-align: center; width: 100%; font-weight: bold; font-family: Verdana;";
+                                title="Parameter type"
+                                >
+                                <option selected="true" class="default" value="${paramtype}">${paramtype}</option>
+                                <option value="input">input</option>
+                                <option value="resource">resource</option>
+                                <option value="output">output</option>
+                            </select>
+
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+
+            <td colspan="1" width="100px">
+
+                <select
+                    dojoAttachPoint="discretion"
+                    class='discretion'
+                    style="display: table-cell; text-align: center; width: 100%; font-weight: bold; font-family: Verdana; font-size: 10px;";
+                    title="Discretion - please select optional,  required (must not be empty) or essential (file/directory must be present)"
+                >
+                    <option selected="true" class="default" value="${discretion}">${discretion}</option>
+                    <option value="essential">essential</option>
+                    <option value="required">required</option>
+                    <option value="optional">optional</option>
+                </select>
+
+            </td>
+
+        </tr>
+        <tr>
+            <td 
+                colspan="1"
+                dojoAttachPoint="argument"
+                class="argument"
+                title="Command line option or switch for parameter"
+                style="display: none;" >${argument}</td>
+
+            <td colspan="1">
+                <select
+                    dojoAttachPoint="valuetype"
+                    class="valuetype"
+                    style="display: none; text-align: center; width: 100%; font-weight: bolder; font-family: Verdana;";
+                    title="Type of parameter: may be physical (e.g., file or directory location), or abstract (e.g., integer or text string)"
+                    >
+                    <option selected="true" class="default" value="${valuetype}">${valuetype}</option>
+                    <option value="file">file</option>
+                    <option value="files">files</option>
+                    <option value="directory">directory</option>
+                    <option value="directories">directories</option>
+                    <option value="integer">integer</option>
+                    <option value="string">string</option>
+                    <option value="flag">flag</option>
+                </select>            
+            </td>
+
+            <td
+                colspan="1"
+                dojoAttachPoint="category"
+                title="User-defined category for parameter to be used with input/output chaining"
+                class="category"
+                style="display: none; text-align: right;" >${category}</td>
+        </tr>
+        <tr>
+            <td colspan="2"
+                dojoAttachPoint="value"
+                class='value'
+                title="Default value of parameter (use %project% or %workflow% for default file path locations)"
+                style="display: none;" >${value}</td>
+
+            <td colspan="1"
+                class="ordinal"
+                style="display: none;"
+                dojoAttachPoint="ordinal"
+            >
+                <span style="font-size: 10px"> Ordinal </span>
+                <select
+                    title="Adjust the ordinal value if your application requires the parameters to be in a certain order. Parameters with the same ordinal will be grouped together in alphabetical order."
+                    >
+                    Ordinal
+                    <option selected="true" class="default" value="${ordinal}">${ordinal}</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </select>            
+            </td>
+
+        </tr>
+
+        <tr>
+            <td colspan="3"
+                dojoAttachPoint="description"
+                class='description'
+                title="A description of the parameter and its usage"
+                style="display: none;" >${description}</td>
+
+        </tr>
+
+        <tr>
+            <td 
+                colspan="1"
+                dojoAttachPoint="format"
+                class="format"
+                title="Special file formats, e.g., FASTA, FASTQ"
+                style="display: none;" >${format}</td>
+            <td
+                colspan="1"
+                dojoAttachPoint="args"
+                class="args"
+                title="Arguments for input/output chaining function (see paramFunction below)"
+                style="display: none; text-align: center;"
+                >${args}</td>
+            <td
+                colspan="1"
+                dojoAttachPoint="params"
+                class="params"
+                title="Pointers for corresponding values for args (see above)"
+                style="display: none; text-align: right;" >${params}</td>
+        </tr>
+
+        <tr>
+            <td colspan="3"
+                dojoAttachPoint="paramFunction"
+                class='paramFunction'
+                title="Input/output chaining function to automatically determine parameter value from preceding applications in workflow"
+                style="display: none;" >${paramFunction}</td>
+        </tr>
+
+    </table>
+</div>

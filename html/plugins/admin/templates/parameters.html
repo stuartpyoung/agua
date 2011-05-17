@@ -1,0 +1,424 @@
+<div dojoattachpoint="containerNode">
+
+	<!-- SOURCES TAB -->
+	<div
+		dojoAttachPoint="parametersTab"
+		class="parameters"
+		dojoType="dijit.layout.ContentPane"
+		title="Parameters"
+		style="height: 700px !important; width: 350px !important; padding: 0 !important;"
+		>
+
+		<!--style="height: 700px !important; max-height: auto !important; width: 350px !important; position: absolute; top: 23px !important; padding: 0 !important;"-->
+
+		<table width="100%">
+			<tr valign="top" width="100%">
+				<td colspan="2" class="tabTitle" align="center">
+					Parameters
+				</td>
+			</tr>
+
+			<tr class="inputs" valign="top" width="95%">
+				<td colspan="2" width="100%">
+
+					<table width="100%" style="padding: 0px;">
+						<tr width="100%">
+
+							<td colspan="3" height="32px" width="100%">
+
+								<table cellspacing="0px" cellpadding="0px" border="0" style="padding: 0; margin: 0;">
+									<tr>
+
+										<td align="center" >
+											<table>
+												<tr>
+													<td align="center">
+														<textarea
+															dojoAttachPoint="name"
+															class="name"
+															style="width:100%; font-weight: bolder;"
+															cols="30"
+															rows="1"
+															title="Name"
+															>Name</textarea>
+													</td>
+													<td dojoAttachPoint="locked"
+														dojoAttachEvent="onclick:toggleLock"
+														class="unlocked"
+														title="Click to lock/unlock user access to edit this parameter">
+													</td>
+												</tr>
+											</table>
+										</td>
+
+										<td height="20px"
+											width="120px"
+											align="right">
+
+											<div
+												dojoAttachPoint="addParameterButton"
+												class="addParameterButton"
+											>
+											New Param
+											</div>
+										</td>
+
+									</tr>
+								</table>
+							</td>
+
+						</tr>
+
+						<tr class="headerRow" width="100%" height="8px">
+							<td width="33%">Argument</td>
+							<td width="33%">Type</td>
+							<td width="33%">Category</td>
+						</tr>
+
+						<tr width="100%">
+							<td width="33%">
+								<textarea
+									dojoAttachPoint="argument"
+									class="argument"
+									style="width: 100%; font-weight: bolder; font-family: Verdana;";
+									cols="40"`
+									rows="1"
+									title="Command line argument (e.g., '--inputfile')"
+									>Argument</textarea>
+							</td>
+
+							<td width="33%">
+								<select
+									dojoAttachPoint="valuetype"
+									class="valuetype"
+									style="width: 100%; font-weight: bolder; font-family: Verdana;";
+									title="Parameter type"
+									>
+									<option selected="true" class="default" value="Type">Type</option>
+									<option value="file">file</option>
+									<option value="files">files</option>
+									<option value="directory">directory</option>
+									<option value="directories">directories</option>
+									<option value="integer">integer</option>
+									<option value="string">string</option>
+									<option value="flag">flag</option>
+								</select>
+							</td>
+
+							<td width="33%"
+								style="padding-left: 5px;">
+								<textarea
+									dojoAttachPoint="category"
+									class="category"
+									style="width: 100%; font-weight: bolder; font-family: Verdana;";
+									cols="40"
+									rows="1"
+									title="Parameter category (e.g., 'inputfile' includes the arguments '-i', '-infile' and '--inputfile')"
+									>Category</textarea>
+							</td>
+						</tr>
+
+						<tr class="headerRow" width="100%" height="8px">
+							<td width="33%">Value</td>
+							<td width="33%">Ordinal</td>
+							<td width="33%">ParamType</td>
+						</tr>
+
+						<tr width="100%">
+							<td colspan="1">
+								<textarea
+									dojoAttachPoint="value"
+									class="value"
+									style="width: 100%; font-weight: bolder; font-family: Verdana; overflow: hidden !important;";
+									cols="40"
+									rows="1"
+									title="Default value of the parameter (or leave blank)"
+									>Value</textarea>
+							</td>
+
+							<td width="33%">
+								<select
+									dojoAttachPoint="ordinal"
+									class="ordinal"
+									style="width: 100%; font-weight: bolder; font-family: Verdana;";
+									title="Adjust the ordinal value if your application requires the parameters to be in a certain order. Parameters with the same ordinal will be grouped together in alphabetical order."
+									>
+									<option selected="true" class="default" value="1">Ordinal</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+								</select>
+							</td>
+
+							<td colspan="1">
+								<select
+									dojoAttachPoint="paramtype"
+									class="paramtype"
+									value="Paramtype"
+									style="width:100%; font-weight: bolder; font-family: Verdana;";
+									title="Input, resource or output"
+									>
+									<option style="text-style: italic; text-weight: normal; background-color: #DDD;" value="Paramtype">Paramtype</option>
+									<option value="input">input</option>
+									<option value="resource">resource</option>
+									<option value="output">output</option>
+								</select>
+							</td>
+						</tr>
+
+
+						<tr class="headerRow" width="100%" height="8px">
+							<td width="67%" colspan="2">Description</td>
+							<td width="33%">Discretion</td>
+						</tr>
+
+
+						<tr>
+							<td colspan="2">
+								<textarea
+									dojoAttachPoint="description"
+									class="description"
+									style="width:100%; font-weight: bolder; font-family: Verdana;";
+									cols="40"
+									rows="1"
+									title="A brief description of the parameter"
+								>Description</textarea>
+							</td>
+
+							<td colspan="1">
+								<select
+									dojoAttachPoint="discretion"
+									class="discretion"
+									value="Discretion"
+									style="width:100%; font-weight: bolder; font-family: Verdana;";
+									title="Please select optional,  required (must not be empty) or essential (file/directory must be present)"
+									>
+									<option style="text-style: italic; text-weight: normal; background-color: #DDD;" value="Discretion">Discretion</option>
+									<option value="essential">essential</option>
+									<option value="required">required</option>
+									<option value="optional">optional</option>
+								</select>
+							</td>
+
+						</tr>
+
+
+						<tr class="headerRow" width="100%" height="8px">
+							<td width="33%">Format</td>
+							<td width="33%">Arguments</td>
+							<td width="33%">Parameters</td>
+						</tr>
+
+						<tr width="100%">
+							<td width="33%">
+								<textarea
+									dojoAttachPoint="format"
+									class="format"
+									style="width: 100%; font-weight: bolder; font-family: Verdana;";
+									cols="40"
+									rows="1"
+									title="Format type (e.g., '' or 'PBS')"
+									>Format</textarea>
+							</td>
+							<td width="34%"
+								style="padding-left: 4px; padding-right: 4px;" >
+								<textarea
+									dojoAttachPoint="args"
+									class="args"
+									style="width: 100%; font-weight: bolder; font-family: Verdana;";
+									cols="40"
+									rows="1"
+									title="Args (e.g., 'pipeline', 'converter', 'utility')"
+									>Args</textarea>
+							</td>
+
+							<td width="34%">
+								<textarea
+									dojoAttachPoint="params"
+									class="params"
+									style="width: 100%; font-weight: bolder; font-family: Verdana;";
+									cols="40"
+									rows="1"
+									title="Params (e.g., '/usr/bin/perl')"
+									>Params</textarea>
+							</td>
+						</tr>
+
+						<tr class="headerRow" width="100%" height="8px">
+							<td colspan="3">Parameter Function</td>
+						</tr>
+
+						<tr>
+							<td colspan="3">
+								<textarea
+									dojoAttachPoint="paramFunction"
+									class="paramFunction"
+									style="width:100%; font-weight: bolder; font-family: Verdana;";
+									cols="40"
+									rows="1"
+									title="Javascript function to calculate parameter's value"
+									>ParamFunction</textarea>
+							</td>
+						</tr>
+
+					</table>
+				</td>
+			</tr>
+
+			<tr>
+				<td width="50%" align="center">
+					<table>
+						<tr valign="top" width="95%">
+							<td width="95%">
+								<div class="label"> Application </div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<div
+									dojoAttachPoint="appsCombo"
+									dojoType="plugins.core.ComboBox"
+									class="appsCombo"
+									popupClass="parameters appsCombo dijitReset dijitMenu"
+									autocomplete="true"
+									hasDownArrow="true"
+									disabled="false"
+									style="width: 150px;"
+									title="Select the order of the displayed applications"
+								>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="center">
+								<div
+									dojoAttachPoint="appNamesCombo"
+									dojoType="plugins.core.ComboBox"
+									class="appNamesCombo"
+									popupClass="parameters appNamesCombo dijitReset dijitMenu"
+									autocomplete="true"
+									hasDownArrow="true"
+									disabled="false"
+									style="width: 150px;"
+									title="Select an application to view its inputs below"
+								>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td width="50%" align="center" valign="top">
+					<table valign="top">
+						<tr valign="top">
+							<td>
+								<div class="label paramTypes"> Parameters </div>
+
+							</td>
+						</tr>
+						<tr>
+							<td align="center">
+
+								<select
+									dojoAttachPoint="paramOrderCombo"
+									class='paramOrderCombo'
+									title="Filter displayed parameters"
+									>
+									<option 
+											class="option"
+											selected="true"
+											value="Order by Ordinal">Order by Ordinal</option>
+									<option 
+											class="option"
+											value="Order by Name">Order by Name</option>
+									<option
+											class="option"
+											value="Order by Type">Order by Type</option>
+								</select>
+
+							</td>
+						</tr>			
+
+
+						<tr>
+							<td align="center">
+
+								<select
+									dojoAttachPoint="paramFilterCombo"
+									class='paramFilterCombo'
+									title="Filter displayed parameters"
+									>
+									<option
+											class="option"
+											selected="true"
+											value="All">All</option>
+									<option
+											class="option"
+											value="input">input</option>
+									<option
+											class="option"
+											value="resource">resource</option>
+									<option
+											class="option"
+											value="output">output</option>
+								</select>
+
+							</td>
+						</tr>			
+
+					</table>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2" width="100%">
+					<div
+						dojoAttachPoint="dragSource"
+						accept="draggableItem"
+						class="dragSource"
+						style="height: 280px; width: 95%;"
+					>
+					</div>
+				</td>
+			</tr>
+
+			<tr align="center">
+				<td colspan="2" width="100%">
+
+					<!-- TRASH CONTAINER -->
+					<div
+						dojoAttachPoint="trashContainer"
+						class="trash"
+						style="height: 60px; width: 150px; align: center;" 
+						>
+						<div
+							dojoAttachPoint="trashIcon"
+							class="trashIcon"
+							style="height: 60px; width: 60px;"
+							>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+
+
+	</div>
+	<!-- END SOURCES TAB -->
+
+</div> 
+
+

@@ -1,0 +1,74 @@
+/* GENERAL DIALOG STYLE */
+.confirmDialog {
+	/*background-color: #EEE;*/
+	font-size: 16px !important;
+	font-family: Verdana !important;
+	color: #226 !important;
+	font-weight: bolder;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 2000 !important;
+}
+
+.dijitDialog .dijitContentPane .confirmDialog {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:4pt;
+	-moz-border-radius-bottomright:4pt;
+	-moz-border-radius-topleft:4pt;
+	-moz-border-radius-topright:4pt;
+	padding: 4px !important;
+}
+/* TITLE */
+.dialog .dijitDialogTitleBar .dijitDialogTitle .confirmDialog {
+	font-size: 14px !important;
+	font-family: Verdana !important;
+	color: #822 !important;
+	margin-right: auto;
+	margin-left: auto;
+}
+/* MESSAGE */
+.confirmDialog .message {
+	font-size: 14px;
+	color: #A00;
+}
+/* ENTER AND CANCEL BUTTONS */
+.confirmDialog .yesButton,
+.confirmDialog .noButton {
+	font-size: 18px;
+}
+.confirmDialog .yesButton {
+	color: #0A0;
+}
+.confirmDialog .noButton {
+	color: #A00;
+}
+
+/* HIDE CLOSE BUTTON  */
+/**** FIX THIS LATER TO REMOVE GLOBAL EFFECT ****/
+.soria .dijitDialogCloseIcon {
+/*.soria .dijitDialogCloseIcon .confirmDialog,*/
+/*.dijitDialogCloseIcon .confirmDialog  {*/
+
+	display: none !important;
+	visibility: hidden !important;
+}
+
+.soria .dijitDialog .dijitDialogPaneContent {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#FFFFFF none repeat scroll 0 0;
+border-color:#B1BADF -moz-use-text-color -moz-use-text-color;
+border-style:solid none none;
+border-width:1px medium medium;
+padding:10px;
+}
+Dialog.css (line 18)
+.confirmDialog {
+color:#222266 !important;
+font-family:Verdana !important;
+font-size:16px !important;
+font-weight:bolder;
+}

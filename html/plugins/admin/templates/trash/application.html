@@ -1,0 +1,109 @@
+<div dojoattachpoint="containerNode" class="tundra" style="position: relative; top: 25px;">
+
+	<!--<span style="position: absolute; top: -20px; left: 5px;" class="dijitFileInputText" dojoattachpoint="titleNode"> Click on a row to edit </span>-->
+
+	<link rel="stylesheet" href="dojo-1.5.0/dojox/layout/resources/FloatingPane.css">	
+	<link rel="stylesheet" href="../dojo-1.5.0/dojox/layout/resources/ResizeHandle.css">
+
+
+	<div class="templateLoading" style="position: relative; top: 0px; left: 250px;">
+		<img id="${loading}"
+			style="display: none;"
+			src="../plugins/report/images/loading.gif"
+			width="15" height="15" />
+	</div>
+
+	<table style="position: absolute; top: -20px; left: 5px; width: 100%;" class="adminApplicationTable">
+		<tr class="adminApplicationTableRow">
+			<td colspan="3">
+				<div dojoType="dijit.TitlePane" title="Details" open="true" width="200" class="adminApplicationTable">
+					<table id="detailsTable" style="position: relative; top: 10px; left: 5px" class="adminApplicationTable">
+						<tr class="adminApplicationTableRow">
+							<td width="10%" class="adminApplicationTableRowTitle">Name</td>
+							<td width="85%" class="adminApplicationTableRowValue">${name}</td>
+							<td width="auto" class="adminApplicationDetailsColumn" >
+								<button baseClass="adminApplicationEditButton" class="adminApplicationTableRowEdit" dojoType="dijit.form.Button" iconClass="noteIcon" type=submit"></button>
+							</td>
+						</tr>
+						<tr class="adminApplicationTableRow">
+							<td class="adminApplicationTableRowTitle">Type</td>
+							<td>${type}</td>
+							<td class="adminApplicationDetailsColumn" >
+								<button baseClass="adminApplicationEditButton" class="adminApplicationTableRowEdit" dojoType="dijit.form.Button" iconClass="noteIcon" type=submit"></button>
+							</td>
+						</tr>
+						<tr class="adminApplicationTableRow">
+							<td class="adminApplicationTableRowTitle">Location</td>
+							<td>${location}</td>
+							<td class="adminApplicationDetailsColumn" >
+								<button baseClass="adminApplicationEditButton" class="adminApplicationTableRowEdit" dojoType="dijit.form.Button" iconClass="noteIcon" type=submit"></button>
+							</td>
+						</tr>
+						<tr class="adminApplicationTableRow">
+							<td class="adminApplicationTableRowTitle">Description</td>
+							<td>${description}</td>
+							<td class="adminApplicationDetailsColumn" >
+								<button baseClass="adminApplicationEditButton" class="adminApplicationTableRowEdit" dojoType="dijit.form.Button" iconClass="noteIcon" type=submit"></button>
+							</td>
+						</tr>
+						<tr class="adminApplicationTableRow">
+							<td class="adminApplicationTableRowTitle">Executor</td>
+							<td>${executor}</td>
+							<td class="adminApplicationDetailsColumn" >
+								<button baseClass="adminApplicationEditButton" class="adminApplicationTableRowEdit" dojoType="dijit.form.Button" iconClass="noteIcon" type=submit"></button>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</td>
+		<tr>
+			<td colspan="3">
+				<div dojoType="dijit.TitlePane" title="Arguments" open="false" width="200">
+					<table id="argumentsTable" style="position: relative; top: 10px; left: 5px" class="adminApplicationTable">
+						<tr class="adminApplicationTableRow">
+							<td colspan='12' align="center">
+								<button dojoType="dijit.form.Button" iconClass="plusIcon" type=submit">
+									Add
+								</button>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div dojoType="dijit.TitlePane" title="Inputs" open="true" width="200">
+					<table id="inputsTable" style="position: relative; top: 10px; left: 5px" class="adminApplicationTable">
+						<tr class="adminApplicationTableRow">
+							<td colspan='12' align="center">
+								<button dojoType="dijit.form.Button" iconClass="plusIcon" type=submit">
+									Add
+								</button>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div dojoType="dijit.TitlePane" title="Outputs" open="false" width="200">
+					<table id="outputsTable" style="position: relative; top: 0px; left: 5px; width: 100%" class="adminApplicationTable">
+						<tr class="adminApplicationTableRow">
+							<td colspan='12' align="center">
+								<button dojoType="dijit.form.Button" iconClass="plusIcon" type=submit">
+									Add
+								</button>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+	</table>
+
+</div> <!-- dojoattachpoint="containerNode" -->

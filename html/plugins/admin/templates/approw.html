@@ -1,0 +1,72 @@
+<div dojoAttachPoint="containerNode">
+    <table width="100%">
+        <tr>
+            <td
+                colspan="2"
+                dojoAttachPoint="name"
+                class="name"
+				title="Name of application"
+                >${name}</td>
+            <td
+                colspan="1"
+                dojoAttachPoint="type"
+                class="type"
+				title="Type (e.g., 'pipeline', 'converter', 'utility')"
+                style="align: right;"
+                >${type}</td>
+        </tr>
+        <tr>
+            <td
+                colspan="1"
+                dojoAttachPoint="executor"
+                class="executor"
+				title="Executor (e.g., '/usr/bin/perl')"
+                style="display: none;" >${executor}</td>
+
+            <td 
+                colspan="2"
+                dojoAttachPoint="version"
+                class="version"
+                style="display: none;" >${version}</td>
+
+        </tr>
+        <tr>
+            <td colspan="2"
+                dojoAttachPoint="location"
+                class='location'
+                style="display: none;" >${location}</td>
+
+            <td colspan="1"
+                class="submit"
+                title="Select to make application only executable locally (e.g., a herder that manages cluster jobs)"
+                dojoAttachPoint="submitContainer"
+                style="display: none;" 
+            >
+                <span>
+                    Local Only
+                </span>
+
+                <span
+                    dojoAttachPoint="submit"
+                    dojoType="dijit.form.CheckBox"
+                    dojoAttachEvent="onClick:submitChange"
+                    checked="false"
+                    class="newLocalOnlyCheckbox"
+                ></span>
+            </td>
+
+        </tr>
+        <tr>
+            <td colspan="3"
+                dojoAttachPoint="description"
+                class='description'
+                style="display: none;" >${description}</td>
+        </tr>
+        <tr>
+            <td colspan="3"
+                dojoAttachPoint="notes"
+                class='notes'
+                style="display: none;">${notes}</td>
+        </tr>
+    </table>
+</div>

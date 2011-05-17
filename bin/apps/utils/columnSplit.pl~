@@ -1,0 +1,158 @@
+#!/usr/bin/perl -w
+
+### TEST
+### TEST
+### TEST
+### TEST
+### TEST
+### TEST
+
+#### DEBUG
+
+#### TIME
+my $time = time();
+
+=head2
+
+	APPLICATION     columnSplit
+
+    PURPOSE
+
+        SPLIT LINES INTO A SEPARATE FILE PER UNIQUE VALUE IN THE USER-DEFINED COLUMN
+
+    INPUT
+
+        1. INPUT FILE (NB: WILL SKIP LINES BEGINNING WITH '#')
+
+        2. OUTPUT DIRECTORY
+
+        3. NUMBER OF COLUMN CONTAINING value NAME
+
+        4. (OPTIONAL) COLUMN SEPARATOR
+
+        5. (OPTIONAL) FILE PREFIX, E.G., 'chr'
+
+        6. (OPTIONAL) FILE SUFFIX, E.G., 'snp'
+
+    OUTPUT
+
+        1. MULTIPLE OUTPUT FILES CONTAINING LINES WITH THE SAME VALUE IN THE USER-DEFINED COLUMN 
+
+    USAGE
+
+    ./columnSplit.pl  <--inputfile String> <--outputdir String> <--column String> [--separator String] [-h]
+
+        --inputfile		       :   /Full/path/to/inputfile 
+        --outputdir		       :   /Full/path/to/output_directory
+        --column               :   /Full/path/to/column
+        --separator            :   (optional) Column separator (default = white space)
+        --outputfile               :   (optional) Prefix to use for output files
+        --suffix               :   (optional) Suffix to use for output files
+        --subdir               :   Create the output file in a subdir named after the column value
+        --help                 :   print help info
+
+    EXAMPLES
+
+/nethome/bioinfo/apps/agua/0.5/bin/apps/utils/columnSplit.pl \
+--inputfile /nethome/syoung/base/pipeline/jbrowse/ucsc/0.5/rat/rn4/gtf/CpG \
+--column 1 \
+--outputdir /nethome/syoung/base/pipeline/jbrowse/ucsc/0.5/rat/rn4/gtf \
+--outputfile CpG.gtf
+
+=cut
+
+use strict;
+
+#### USE LIBRARY
+use FindBin qw($Bin);
+use lib "$Bin/../../../lib";
+use lib "$Bin/../../../lib/external";
+
+#### FLUSH BUFFER
+$| = 1;
+
+#### INTERNAL MODULES
+use Util::FileTools;
+use Timer;
+use Util;
+
+#### EXTERNAL MODULES
+use Term::ANSIColor qw(:constants);
+use Getopt::Long;
+use File::Path;
+
+
+#### SET DEFAULT SEPARATOR
+my $DEFAULT_SEPARATOR = "\\s+";
+
+#### SAVE ARGUMENTS
+my @arguments = @ARGV;
+
+#### GET OPTIONS
+my $mode;
+my $suffix;
+my $inputdir;
+my $inputfile;
+my $outputdir;
+my $column;
+my $separator;
+my $outputfile;
+my $subdir;
+my $help;
+if ( not GetOptions (
+    'mode=s' 		=> \$mode,
+    'suffix=s' 		=> \$suffix,
+    'inputdir=s' 	=> \$inputdir,
+    'inputfile=s' 	=> \$inputfile,
+    'outputdir=s' 	=> \$outputdir,
+    'column=s' 		=> \$column,
+    'separator=s' 	=> \$separator,
+    'outputfile=s' 	=> \$outputfile,
+    'subdir=s' 		=> \$subdir,
+    'help' => \$help
+) )
+{ print "Use option --help for usage instructions.\n";  exit;    };
+
+#### PRINT HELP
+if ( defined $help )	{	usage();	}
+
+#### CHECK INPUTS
+die "Either inputfile or inputdir must be defined (Use --help for usage)\n"
+	if not defined $inputfile and not defined $inputdir;
+die "Column number not defined (Use --help for usage)\n" if not defined $column;
+$column =~ s/\s+//g;
+die "Column number is not numeric: '$column' (Use --help for usage)\n" if $column !~ /^\d+$/;
+
+my $filetool = Util::FileTools->new();
+$filetool->columnSplit(
+	{
+		mode		=>	$mode,
+		suffix		=>	$suffix,
+		inputdir	=>	$inputdir,
+		inputfile	=>	$inputfile,
+		outputdir	=>	$outputdir,
+		column		=>	$column,
+		separator	=>	$separator,
+		outputfile	=>	$outputfile,
+		subdir		=>	$subdir,
+	}
+);
+
+#### PRINT RUN TIME
+my $runtime = Timer::runtime( $time, time() );
+print "\nRun time: $runtime\n";
+print "Completed $0\n";
+print Util::datetime(), "\n";
+print "****************************************\n\n\n";
+exit;
+
+#:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+#									SUBROUTINES
+#:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+sub usage
+{
+	print `perldoc $0`;
+    exit;
+}
+

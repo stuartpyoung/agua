@@ -1,0 +1,23 @@
+<div dojoattachpoint="containerNode" style="position: relative; top: 25px;">
+
+	<span style="position: absolute; top: -20px; left: 5px;" class="dijitFileInputText" dojoattachpoint="titleNode">${title}</span>
+
+	<span style="position: absolute; top: 15px; left: 5px;" class="dijitFileInputText" dojoattachpoint="titleNode">${description}</span>
+
+	<div class="templateLoading" style="position: relative; top: -60px; left: 250px;">
+
+		<img id="${loading}"
+			style="display: none;"
+			src="../plugins/report/images/loading.gif"
+			width="15" height="15" />
+	</div>
+
+	<!-- ADD Application BUTTON -->
+	<div style="position: absolute; top: 5px; left: 25px; height: 20px;">
+		<button id="${addApplicationButton}" dojoType="dijit.form.Button" iconClass="plusIcon" type=submit">
+			Add Application
+		</button>
+	</div>
+
+
+</div> <!-- dojoattachpoint="containerNode" -->

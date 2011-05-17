@@ -1,0 +1,14 @@
+{
+	name: "plugins.workflow.Controller",
+
+	version : "0.01",
+
+	url : '',
+
+	description : "Create a new three-partition (left, middle, right) tab pane in the tabs region containing drag and drop application source (left pane) and target (middle pane). Click on any application name to view information about the application (right pane) which can be edited by the user to change the application information or runtime parameters. Click 'Save' to save the information to your personal account (you must be logged in to see this option).",
+
+	dependencies :
+	[
+		{	name: "plugins.core.Controls", version: 0.01	}
+	]
+}

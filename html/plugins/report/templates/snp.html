@@ -1,0 +1,407 @@
+<div dojoAttachPoint="containerNode" >
+
+	<div
+		dojoAttachPoint="mainTab"
+		dojoType="dijit.layout.BorderContainer"
+		style="width: 1000px !important; height: 800px !important; padding: 0px !important; bottom: 0px !important;"
+	>
+
+		<!-- LEFT PANE -->
+		<div
+			dojoAttachPoint="leftPane" 
+			class="SNP"
+			dojoType="dojox.layout.ExpandoPane" 
+			maxWidth="298px"
+			splitter="true" 
+			duration="125"
+			region="left"
+			startExpanded="true"
+			easeIn="dojo.fx.easing.expoOut" 
+			easeOut="dojo.fx.easing.expoInOut"
+			duration="100"
+
+			style="width: 298px !important; min-width: 25px; height: 700px !important; max-height: auto !important; position: relative; top: 0px !important; padding: 0 !important; "
+		>
+
+			<div
+				dojoType="dijit.TitlePane"
+				open="true"
+				title="Inputs"
+				style="width: 298px !important;"> 
+
+				<table >
+					<tr>
+						<td class="subTitle" colspan="3">Project</td>
+					</tr>
+					<tr>
+						<td class="projectIcon">
+						</td>
+
+						<td colspan="2">
+							<div dojoType="plugins.core.ComboBox"
+								class="projectCombo"
+								dojoAttachPoint="projectCombo"
+								autocomplete="false"
+							>
+							</div>
+						</td>
+
+					</tr>
+
+
+					<tr>
+						<td class="subTitle" colspan="3">Workflow</td>
+					</tr>
+
+					<tr>
+
+						<td class="workflowIcon">
+						</td>
+
+						<td colspan="2">
+							<div dojoType="plugins.core.ComboBox"
+								class="workflowCombo"
+								dojoAttachPoint="workflowCombo"
+								autocomplete="false"
+							>
+							</div>
+						</td>
+
+					</tr>
+
+					<tr>
+						<td class="subTitle" colspan="3">Report</td>
+					</tr>
+
+					<tr>
+
+						<td class="reportIcon">
+						</td>
+
+						<td colspan="2">
+
+							<div dojoType="plugins.core.ComboBox"
+								class="reportCombo"
+								dojoAttachPoint="reportCombo"
+								autocomplete="false"
+							>
+
+						</td>
+						<!--<td dojoAttachPoint="deleteReportButton"-->
+						<!--	class="deleteReportButton" >-->
+						<!--</td>-->
+
+					</tr>
+
+					<tr>
+						<td class="subTitle" colspan="3">SNP file</td>
+					</tr>
+
+					<tr>
+
+						<td class="fileIcon">
+						</td>
+
+						<td width="260px">
+							<input
+								class="fileInput"
+								type="text"
+								align="right"
+								dojoAttachPoint="fileInput"
+							/>
+						</td>
+
+						<td class="fileBrowse"
+							dojoAttachPoint="fileBrowse"
+							dojoAttachEvent="onclick:openFileBrowser"> 
+						</td>
+
+						<!--<td dojoAttachPoint="fileUpload"-->
+						<!--	class="fileUpload" >-->
+						<!--</td>-->
+
+					</tr>
+				</table>
+
+			</div>
+
+
+			<!-- ************************************************************* -->
+			<!-- ************************************************************* -->
+
+
+			<!-- EDITOR TITLE PANE -->
+			<div class="notes" dojoType="dijit.TitlePane" open="false" title="Notes"> 
+
+				<div dojoAttachPoint="editorNode"
+						  class="editor"
+				></div>
+
+			</div>
+
+
+
+			<!-- ************************************************************* -->
+			<!-- ************************************************************* -->
+
+
+			<!-- FILTERS TITLE PANE -->
+			<div class="controls" dojoType="dijit.TitlePane" open="true" title="Controls"> 
+
+				<table cellspacing="0px" padding-left="5px" width="550px">
+
+
+					<!-- TOTAL LINE -->
+					<tr align="left" >
+						<td class="rowName" width="85px" align="left">
+							Filter SNPs
+						</td>
+						<td colspan="2" width="70px" >
+							<div 
+								dojoAttachPoint="okButton"
+								class="okButton" >
+							</div>
+						</td>
+
+						<!-- TOTAL -->
+						<td width="40px" align="center">
+							Total
+						</td>
+
+
+						<!-- TOTAL RESULT-->
+						<td>
+							<div class="result" dojoAttachPoint="totalResult">-</div>	
+						</td>	
+					</tr>
+
+
+					<!-- SPECIES -->
+					<tr>
+						<td class="rowName" width="85px" align="left">
+							Species
+						</td>
+						<td colspan="3">
+							<select dojoAttachPoint="speciesCombo"
+									dojoType="plugins.core.ComboBox"
+									style="width: 120px;"
+									autocomplete="true"
+									hasDownArrow="true"
+							>
+								<option selected="true">Human</option>
+								<option>Mouse</option>
+							</select>
+						</td>
+
+						<td width="80px"></td>
+					</tr>
+
+
+					<!-- CHROMOSOME -->
+					<tr>
+						<td class="rowName" width="85px" align="left">
+							Chromosome</td>
+						<td width="20px">
+							<input
+								dojoAttachPoint="chromosomeCheckbox"
+								dojoType="dijit.form.CheckBox"
+								checked="false"
+								/>
+						</td>
+						<td colspan="2">
+							<div>
+								<select dojoAttachPoint="chromosomeCombo"
+										dojoType="plugins.core.ComboBox"
+										style="width: 100px;"
+										autocomplete="true"
+										hasDownArrow="true"
+										disabled="true"
+								>
+								</select>
+							</div>
+						</td>
+
+						<td>
+							<div class="result" dojoAttachPoint="chromosomeResult">-</div>
+
+						</td>
+					</tr>
+
+
+					<!-- VARIANT -->			
+					<tr>
+						<td class="rowName" width="75px" align="left">
+							% Variant	
+						</td>
+						<td width="20px">
+							<input dojoAttachPoint="variantCheckbox"
+								   dojoType="dijit.form.CheckBox"
+								   checked="checked"/>
+						</td>
+						<td class="slider">
+
+							<div dojoType="dijit.form.HorizontalSlider" 
+								value="10"
+								maximum="100"
+								minimum="0"
+								pageIncrement="100"
+								showButtons="true"
+								intermediateChanges="true"
+								slideDuration="500"
+								dojoAttachPoint="variantSlider">
+
+							</div>
+						</td>
+
+						<td width="40px" class="variantInput">
+							<input
+								   readonly
+								   dojoAttachPoint="variantInput"
+								   size="2"
+								   value="10%"
+								   />
+						</td>
+
+						<td>
+							<div class="result"
+								dojoAttachPoint="variantResult">-</div>
+						</td>
+					</tr>
+
+
+					<!-- DEPTH -->
+					<tr>
+						<td class="rowName" width="85px" align="left">
+							Min. depth
+						</td>
+						<td width="20px">
+							<input dojoAttachPoint="depthCheckbox"
+									dojoType="dijit.form.CheckBox"
+									checked="checked" />
+						</td>
+						<td colspan="2">
+							<div dojoAttachPoint="depthNode">
+							</div>
+						</td>
+						<td>
+							<div
+								class="result"
+								dojoAttachPoint="depthResult">-</div>
+						</td>
+					</tr>
+
+
+					<!-- SENSE -->
+					<tr>
+						<td class="rowName" width="85px" align="left">
+							Sense
+						</td>
+						<td width="20px">
+							<input
+								dojoAttachPoint="senseCheckbox"
+								dojoType="dijit.form.CheckBox"/>
+						</td>
+						<td colspan="2">
+							<select dojoAttachPoint="senseCombo"
+									dojoType="plugins.core.ComboBox"
+									style="width: 110px;"
+									autocomplete="true"
+									hasDownArrow="true"
+									disabled = "true"
+							>
+								<option selected="true">Missense</option>
+								<option>Synonymous</option>
+							</select>
+						</td>
+						<td
+							class="result"
+							dojoAttachPoint="senseResult">-</td>
+					</tr>
+
+
+					<!-- GENE -->
+					<tr>
+						<td class="rowName" width="85px" align="left">
+							Gene
+						</td>
+						<td width="20px">
+							<input dojoAttachPoint="exonicCheckbox"
+								   dojoType="dijit.form.CheckBox" disabled="false"/>
+						</td>
+						<td colspan="2">
+							<select dojoAttachPoint="exonicCombo"
+									dojoType="plugins.core.ComboBox"
+									class="exonic"
+									style="width: 110px;"
+									autocomplete="true"
+									hasDownArrow="true"
+									disabled = "true"
+							>
+								<option selected="true">Exonic</option>
+								<option>Intronic</option>
+								<option>Non-coding</option>
+								<option>3'-UTR</option>
+								<option>3'-UTR</option>
+							</select>
+						</td>
+
+						<td>
+							<div class="result"
+								dojoAttachPoint="exonicResult">-</div>
+
+						</td>
+					</tr>
+
+
+					<!-- dbSNP -->
+					<tr>
+						<td class="rowName" width="85px" align="left">
+							dbSNP
+						</td>
+
+						<td width="20px">
+							<input dojoAttachPoint="dbsnpCheckbox"
+							   dojoType="dijit.form.CheckBox" disabled="false"/>
+						</td>
+
+						<td colspan="2">
+							<select dojoAttachPoint="dbsnpCombo"
+									dojoType="plugins.core.ComboBox"
+									class="dbsnp"
+									style="width: 110px;"
+									autocomplete="true"
+									hasDownArrow="true"
+									disabled = "true"
+							>
+								<option selected="true" value="only">dbSNP only</option>
+								<option value="non">non-dbSNP</option>
+							</select>
+						</td>
+
+						<td>
+
+							<div class="result"
+								dojoAttachPoint="dbsnpResult">-</div>
+
+						</td>
+					</tr>	
+				</table>
+
+			</div>	
+
+		</div>	
+		<!-- LEFT PANE -->
+
+
+		<!-- RIGHT PANE -->
+		<div
+			dojoAttachPoint="gridPane"
+			dojoType="dijit.layout.ContentPane"
+			style="left: 300px; width: 1000px !important; height: 700px !important; max-height: auto !important; position: absolute !important; top: 0px !important; padding: 0 !important;"
+			>
+		</div>
+		<!-- RIGHT PANE -->
+
+	</div>
+
+</div>

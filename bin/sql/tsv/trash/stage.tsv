@@ -1,0 +1,28 @@
+syoung	admin	Project1	Workflow1	TOPHAT	2	aligner	apps/TOPHAT.pl	/usr/bin/perl	PBS	0				6/21/2010 15:47	6/21/2010 16:35				waiting
+admin	admin	Project1	Workflow0	TOPHAT	1	aligner	apps/TOPHAT.pl	/usr/bin/perl	PBS	0									
+whulme	admin	Project1	Workflow1	MAQ	1	pipeline	apps/MAQ.pl	/usr/bin/perl	PBS	0				6/21/2010 16:43					running
+syoung	admin	Project1	Workflow1	MAQ	1	pipeline	apps/MAQ.pl	/usr/bin/perl	PBS	0				6/21/2010 16:43	6/21/2010 16:35				running
+dmotti	admin	Project2	Workflow1	MAQ	1	pipeline	apps/MAQ.pl	/usr/bin/perl	PBS	0									
+jlhaner	admin	Project1		TOPHAT	6	aligner	apps/TOPHAT.pl	/usr/bin/perl	PBS	0									
+dmotti	admin	Project2	test	TOPHAT	1	aligner	apps/TOPHAT.pl	/usr/bin/perl	PBS	0									
+jhahn	admin	Project1	Workflow1	TOPHAT	1	aligner	apps/TOPHAT.pl	/usr/bin/perl	PBS	0			3/22/2010 11:54	6/21/2010 16:43	3/22/2010 11:59	8413	8413	245002	running
+jlhaner	admin	Project1		TOPHAT	5	aligner	apps/TOPHAT.pl	/usr/bin/perl	PBS	0									
+jlhaner	admin	Project1		TOPHAT	3	aligner	apps/TOPHAT.pl	/usr/bin/perl	PBS	0									
+jgilbert	admin	Project1	Workflow1	MAQ	2	pipeline	apps/MAQ.pl	/usr/bin/perl	PBS	0				6/21/2010 15:47	5/13/2010 10:38				running
+jlhaner	admin	Project1		TOPHAT	2	aligner	apps/TOPHAT.pl	/usr/bin/perl	PBS	0									
+jhahn	admin	Project1	Workflow1	MAQ	7	pipeline	apps/MAQ.pl	/usr/bin/perl	PBS	0			3/22/2010 11:54	3/22/2010 11:54	3/22/2010 11:59		8413	245002	completed
+jhahn	admin	Project1	Workflow1	MAQ	6	pipeline	apps/MAQ.pl	/usr/bin/perl	PBS	0			3/22/2010 11:54	3/22/2010 11:54	3/22/2010 11:59		8413	245002	completed
+jhahn	admin	Project1	Workflow1	MAQ	5	pipeline	apps/MAQ.pl	/usr/bin/perl	PBS	0			3/22/2010 11:54	3/22/2010 11:54	3/22/2010 11:59		8413	245002	completed
+jhahn	admin	Project1	Workflow1	MAQ	4	pipeline	apps/MAQ.pl	/usr/bin/perl	PBS	0			3/22/2010 11:54	3/22/2010 11:54	3/22/2010 11:59		8413	245002	completed
+jhahn	admin	Project1	Workflow1	MAQ	2	pipeline	apps/MAQ.pl	/usr/bin/perl	PBS	0			3/22/2010 11:54	6/21/2010 15:47	3/22/2010 11:59		8413	245002	running
+jhahn	admin	Project1	Workflow1	ELAND	3	alignment	apps/clusterELAND.pl	perl		0									
+whulme	admin	Project1	Workflow0	MAQ	1	pipeline	apps/MAQ.pl	/usr/bin/perl	PBS	0			3/22/2010 12:16	3/22/2010 12:16	0000-00-00 00:00:00		9720	245009	
+whulme	admin	Project1	Workflow0	TOPHAT	2	aligner	apps/TOPHAT.pl	/usr/bin/perl	PBS	0			3/22/2010 12:16	3/22/2010 12:16	0000-00-00 00:00:00	9720	9720	245009	
+jlhaner	admin	Project1	100405	TOPHAT	2	aligner	apps/TOPHAT.pl	/usr/bin/perl	PBS	0									
+jlhaner	admin	Project1	100405	TOPHAT	3	aligner	apps/TOPHAT.pl	/usr/bin/perl	PBS	0									
+jlhaner	admin	Project1	100405	TOPHAT	5	aligner	apps/TOPHAT.pl	/usr/bin/perl	PBS	0									
+jlhaner	admin	Project1	100405	TOPHAT	6	aligner	apps/TOPHAT.pl	/usr/bin/perl	PBS	0									
+jlhaner	admin	Project1	100405	TOPHAT	8	aligner	apps/TOPHAT.pl	/usr/bin/perl	PBS	0									
+jlhaner	admin	Project1	100405	TOPHAT	9	aligner	apps/TOPHAT.pl	/usr/bin/perl	PBS	0									
+syoung	admin	SNP	MAQ	GSMAPPER	1	pipeline	apps/GSMAPPER.pl	/usr/bin/perl	PGS	0									
+jgilbert	admin	Project1	Workflow1	MAQ	1	pipeline	apps/MAQ.pl	/usr/bin/perl	PBS	0				6/21/2010 16:43	5/13/2010 10:38				running

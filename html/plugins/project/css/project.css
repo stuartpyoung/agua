@@ -1,0 +1,290 @@
+/* MOVE DOWN TAB TO BOTTOM OF TAB LABEL */
+.dijitTabPaneWrapper .dijitTabContainerTop-container .dijitAlignClient {
+	position: relative;
+	top: 24px !important;
+}
+
+.project .dijitContainer .dijitBorderContainer .dijitTabPane .dijitTabContainerTop-dijitBorderContainer
+{
+	top: 70px;
+	overflow: scroll;
+}
+
+.dijitTabContainer .tabs .dijitContainer .dijitTabContainerTop .dijitAlignNone .dijitLayoutContainer {
+	/*position: absolute;*/
+	/*top: 24px !important;*/
+	overflow: scroll !impccsortant;	
+}
+
+.dijitTabPaneWrapper .dijitTabContainerTop-container .dijitAlignClient {
+	overflow: scroll !important;	
+}
+
+/* FILEDRAG - NO BORDER ON CONTAINEROVER */
+.fileDrag .dojoDndSource .dojoDndTarget .dojoDndContainer,
+.fileDrag .dojoDndSource .dojoDndTarget .dojoDndContainerOver {
+	border : 0 !important;
+}
+
+/* SCROLL ON OVERFLOW */
+.project .dijitContainer .dijitBorderContainer .dijitTabPane .dijitTabContainerTop-dijitBorderContainer {
+	overflow: scroll !important;
+	overflow: 
+}
+
+ .project .directories .dijitTabPaneWrapper .dijitTabContainerTop-container .dijitAlignClient {
+	position: absolute !important;
+	top: 0px !important;
+	overflow: scroll !important;
+}
+
+.tabs .dijitTabPaneWrapper .dijitTabContainerTop-container .dijitAlignClient {
+	overflow: scroll !important;	
+}
+
+.project .directories {
+	/*vertical-align: top;*/
+	/*position: relative;*/
+	/*top: 24px !important;*/
+	overflow: scroll !important;
+}
+
+
+
+
+
+/*/* REMOVE PADDING INSIDE TITLE PANE */*/
+/*.project .dijitTitlePaneContentInner {*/
+/*	padding: 0px !important;*/
+/*}*/
+/**/
+/*.project .dijitTitlePane .dijitTitlePaneTitle {*/
+/*	padding: 1px 1px !important;*/
+/*}*/
+/**/
+/**/
+/*/* EXPAND-FOLD ARROW */*/
+/*.project .dijitArrowNode {*/
+/*	/*width: 26px !important;*/*/
+/*	/*height: 26px !important;*/*/
+/*}*/
+/**/
+/*.project .filesArrowNode {*/
+/*	width: 24px !important;*/
+/*	height: 24px !important;*/
+/*	background-image: url('../../../plugins/files/images/expand-22.png');*/
+/*	background-repeat: no-repeat !important;	*/
+/*	background-position: center !important;*/
+/**/
+/*	-moz-border-radius-bottomleft: 4pt;*/
+/*	-moz-border-radius-bottomright: 4pt;*/
+/*	-moz-border-radius-topleft: 4pt;*/
+/*	-moz-border-radius-topright: 4pt;*/
+/**/
+/*	border: 2px solid;*/
+/*	border-color: transparent !important;*/
+/*	vertical-align: middle !important;*/
+/*}*/
+/**/
+/*.project .filesArrowNode:hover {*/
+/*	background-color: #FFF;*/
+/*	border: 2px solid #EEE;*/
+/*	border-bottom-color: #DDD;	*/
+/*	border-left-color: #DDD;	*/
+/*	vertical-align: middle;*/
+/*}*/
+/**/
+/**/
+/*.project .dijitOpen .filesArrowNode {*/
+/*	background-image: url('../../../plugins/files/images/fold-22.png');*/
+/*}*/
+/**/
+/*.project .dijitClosed .filesArrowNode {*/
+/*	background-image: url('../../../plugins/files/images/expand-22.png');*/
+/*}*/
+/**/
+/**/
+
+/*/* TITLE PANE TITLE */*/
+/**/
+/*.project .dijitTitlePaneTitle * {*/
+/*	vertical-align: bottom !important;*/
+/*}*/
+/**/
+/**/
+/*.project .titlePane {*/
+/**/
+/*	-moz-background-clip: border;*/
+/*	-moz-background-inline-policy: continuous;*/
+/*	/*-moz-background-origin: padding;*/*/
+/*	-moz-border-radius-bottomleft: 4pt;*/
+/*	-moz-border-radius-bottomright: 4pt;*/
+/*	-moz-border-radius-topleft: 4pt;*/
+/*	-moz-border-radius-topright: 4pt;*/
+/**/
+/*	display: inline;*/
+/*	width: 600px !important;*/
+/*	height: 20px !important;*/
+/**/
+/*	vertical-align: top !important;*/
+/*	background:#FFFFFF none repeat scroll 0 0;*/
+/*	border: 1px solid #CCCCCC;*/
+/*	border-color: #333;*/
+/**/
+/*	font-family: Verdana;*/
+/*	text-align: left !important;*/
+/*	font-size: 16px;*/
+/*	/*margin-top: 2px;*/*/
+/*	text-indent: 5px;*/
+/*	*/
+/*	overflow: hidden !important;*/
+/*}*/
+/**/
+/*.project .titlePane .owner {*/
+/*	text-align: left;*/
+/*	/*background-color: white !important;	*/*/
+/*	color: darkred;*/
+/*	width: 80px !important;*/
+/**/
+/*	font-family: Verdana;*/
+/*	-moz-background-clip:border;*/
+/*	-moz-background-inline-policy:continuous;*/
+/*	-moz-background-origin:padding;*/
+/*	-moz-border-radius-bottomleft:4pt;*/
+/*	/*-moz-border-radius-bottomright:4pt;*/*/
+/*	-moz-border-radius-topleft:4pt;*/
+/*	/*-moz-border-radius-topright:4pt;*/*/
+/*}*/
+/*.project .titlePane .name {*/
+/*	width: auto !important;*/
+/*	color: darkblue;*/
+/*	padding-right: 5px !important;*/
+/*	padding-left: 5px !important;*/
+/*}*/
+/**/
+/*.project .titlePane .type {*/
+/*	color: darkgreen;*/
+/*}*/
+/**/
+/**/
+/*.project .titlePane .description {*/
+/*	/*display: none;*/*/
+/*	color: darkgreen;*/
+/*}*/
+/**/
+/*.project .dijitTitlePaneFocused .dijitTitlePaneTextNode {*/
+/*	text-decoration:none;*/
+/*	/*background-image: none;*/*/
+/*}*/
+/**/
+/*.project .dijitTitlePane .dijitTitlePaneTitle {*/
+/*	/*background-image: none;*/*/
+/*	/*background-color: #8F8;*/*/
+/*}*/
+/**/
+/**/
+/*/* FILE PANE */*/
+/**/
+/*/* REFRESH */*/
+/*.project .refreshTitlePane {*/
+/**/
+/*	-moz-border-radius-bottomleft: 4pt;*/
+/*	-moz-border-radius-bottomright: 4pt;*/
+/*	-moz-border-radius-topleft: 4pt;*/
+/*	-moz-border-radius-topright: 4pt;*/
+/**/
+/*	display: inline !important;*/
+/*	border: 2px solid;*/
+/*	border-color: transparent !important;*/
+/*	/*border-bottom-color: #DDD;	*/*/
+/*	/*border-left-color: #DDD;	*/*/
+/*	vertical-align: middle;*/
+/*	background-position: center;*/
+/*	background-repeat: no-repeat;*/
+/*	width: 24px !important;*/
+/*	height: 24px !important;*/
+/*	background-image: url("../../../plugins/files/images/refresh-20.png");*/
+/*	z-index: 9999;*/
+/*}*/
+/**/
+/*/* REFRESH */*/
+/*.project .refreshTitlePane:hover {*/
+/*	background-color: #FFF;*/
+/*	border: 2px solid #EEE;*/
+/*	border-bottom-color: #DDD;	*/
+/*	border-left-color: #DDD;	*/
+/*	vertical-align: middle;*/
+/*}*/
+/**/
+
+/* ALIGN FILES TO TOP OF PANE */
+.project .dojoxRollingListPane {
+	vertical-align: top !important;
+	height: auto !important;
+	max-height: 250px;
+	min-width: 40px;
+	max-width: 250px !important;
+	overflow: scroll;
+}
+
+.project .fileDrag .dojoDndSource .dojoDndTarget .dojoDndContainer {
+	border: 0;
+}
+
+.soria .project .dijitClosed .dijitTitlePaneTextNode {
+	height: auto !important;
+}
+
+.soria .project .dijitClosed .dijitTitlePaneTextNode {
+	color: #448 !important;	
+	font-size: 12px !important;
+	font-family: Verdana;
+	font-weight: bold !important;
+}
+
+.soria .project .dijitOpen .dijitTitlePaneTextNode {
+	color: #008 !important;	
+	font-size: 16px !important;
+	font-family: Verdana;
+	font-weight: bolder !important;
+}
+
+.project .dijitTitlePaneContentInner {
+	padding:0.05em;
+	margin : 0px;
+}
+
+.project .dojoxRollingList, .project .dojoxFileDrag {
+	padding:0.05em;
+	margin: 0px;
+}
+
+
+.dojoxFileDrag {
+	height: auto;
+}
+
+
+
+
+
+/*.projectResizeHandle {*/
+/*	/*background-color: #F00;*/*/
+/*	/*display: inline;*/*/
+/*	/*border: double;*/*/
+/*	/*border-color: #000000;*/*/
+/*	height: 13px;*/
+/*	width: 13px;	*/
+/*	float: right;*/
+/*	position: absolute;*/
+/*	right: 2px;*/
+/*	bottom: 2px;*/
+/*	z-index: 101;*/
+/*	background-image: url('../../../dojo-1.5.0/dojox/layout/resources/icons/resize.png');*/
+/*	/*line-height: 0px;*/*/
+/*}*/
+
+
+
+
+

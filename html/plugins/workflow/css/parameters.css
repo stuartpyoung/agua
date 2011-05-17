@@ -1,0 +1,363 @@
+/* SET BACKGROUND COLOR AND FONT */
+.workflow .parameters {
+	font-family: Verdana;
+	background-color: #FFF;
+}
+
+.parameters .dijitContentPane .dijitTabPane .dijitTabContainerTop-dijitContentPane .dijitTitlePaneTitle,
+.parameters .dijitContentPane .dijitTabPane .dijitTabContainerTop-dijitContentPane .dijitTitlePaneTitle .dijitClosed {
+
+	height: 20px !important;
+}
+
+ .parameters .dijitContentPane .dijitTabPane .dijitTabContainerTop-dijitContentPane td {
+	min-height: 40px !important;
+}
+
+.dijitTitlePane .outputsTitlePane {
+	min-height: 40px !important;	
+}
+
+/* APPLICATION NAME */
+.parameters .appName {
+	height: 17px;
+	background-color: #DDEEFF;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 17px;
+	font-stretch: expanded;
+	font-weight: bolder;
+	color: darkred;
+}
+
+/* TITLE PANE TITLE */
+.parameters .dijitTitlePaneTextNode {
+	color: #484 !important;
+	font-weight: bolder;
+	font-size: 16px;
+}
+
+/* SET TAB PANE WRAPPER MIN HEIGHT SO ALL TITLE PANES ARE VISIBLE */
+.dijitTabPaneWrapper .dijitTabContainerTop-container .parameters {
+	height: auto !important;
+	min-height: 130px !important;
+}
+
+
+/*/* TITLE PANE HEIGHT */*/
+/*.parameters .dijitTitlePaneContentInner{*/
+/*	/*min-height: 30px !important;*/*/
+/*	margin-bottom: 20px;*/
+/*}*/
+/**/
+/*.parameters .dijitTitlePaneTitle .dijitTitlePaneFocused .dijitClosed {*/
+/*	/*min-height: 20px !important;*/*/
+/*	/*margin-bottom: 20px;*/*/
+/*}*/
+/**/
+/*.parameters .dijitTitlePane .dijitTitlePaneTitle {*/
+/*	/*min-height: 40px !important;	*/*/
+/*}*/
+
+/* INFO PANE CONTAINER */
+
+.parameters {
+
+	/*min-height: 40px !important;	*/
+
+	height: auto !important;
+	font-family: Verdana;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border: 2px solid #CCCCCC;
+	cursor: default;
+	/*padding: 0 0 !important;*/
+	/*padding:1em 0.5em;*/
+	/*margin: 0 0 !important;*/
+	/*width: 300px;	*/
+
+	text-align: left !important;
+	font-size: 12px;
+	border-color: #333;
+
+	/* NEEDED SO THAT SCROLLBAR WILL SHOW */
+	/*display: block !important;*/
+	overflow:auto !important;
+}
+
+/* INPUT HOVER */
+.parameters .name {
+	color: darkred;	
+}
+.parameters .name:hover {
+	color: #FFFFFF;
+}
+
+.parameters .input:hover,
+.parameters .output:hover {
+	background-color: #88CCFF !important;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+	/*margin: 0 0 !important;*/
+	/*padding: 0 0 !important;*/
+}
+
+/* EDITING value TEXT AREA */
+.parameters .value textarea,
+.parameters .description textarea {
+	width: 98%;
+	font-family: Verdana;
+	color: #222;
+	font-weight: bolder;
+	height: 28px;
+	font-size: 12px;
+}
+.parameters .description textarea {
+	height: 40px;
+}
+
+
+/* HIDDEN CONTENT (DISPLAYED ONCLICK)*/
+
+.parameters .hidden {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:4pt;
+	-moz-border-radius-bottomright:4pt;
+	-moz-border-radius-topleft:4pt;
+	-moz-border-radius-topright:4pt;
+
+	padding-bottom: 0px;
+	/*margin-bottom: 20px !important;*/
+
+	/*background-color: #FFF;*/
+	background-color: #FFB;
+
+}
+.parameters .hidden table:hover {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:4pt;
+	-moz-border-radius-bottomright:4pt;
+	-moz-border-radius-topleft:4pt;
+	-moz-border-radius-topright:4pt;
+
+	background-color: #FF5;
+}
+
+
+.parameters .name,
+.parameters .type,
+.parameters .typeTitle,
+.parameters .value,
+.parameters .discretion {
+	height: 20px !important;
+	text-align: left !important;
+	vertical-align: middle !important;
+	font-weight: bold !important;
+	padding-top: 0px;
+}
+
+
+.parameters .value {
+	width: auto !important;
+	/*font-weight:bold !important;*/
+	/*height:20px !important;*/
+	/*padding-top:0;*/
+	/*text-align:left !important;*/
+	/*vertical-align:middle !important;*/
+	/*width: 300px !important;*/
+}
+
+/* NAME */
+.parameters .name {
+	height: 24px !important;
+	font-size: 14px;
+	font-weight: bolder;
+	color: darkred;
+	width: 120px !important;
+	/*text-align: left !important;*/
+	/*margin-top: 5px;*/
+
+	vertical-align: middle;
+	background-image: url(../../../plugins/workflow/images/parameter-18.png);
+	background-position: center left;
+	text-indent: 22px;
+	background-repeat: no-repeat;
+	height: 18px;
+}
+
+/* DISCRETION */
+.parameters .discretion {
+	color: darkgreen !important;
+	/*font-style: italic;*/
+}
+
+/* TYPE */
+.parameters .type {
+	text-align: center !important;
+	font-size: 12px;
+	height: 24px !important;
+	padding-top: 0px;
+	position: relative;
+	left: 4px;
+	text-align: left;
+	width: 60px !important;
+	color: darkblue;
+}
+
+
+/* BACKGROUND FOR ALL HIDDEN ELEMENTS */
+.parameters .description, 
+.parameters .uploadButton,
+.parameters .browseButton {
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	-moz-border-radius-bottomleft: 4pt;
+	-moz-border-radius-bottomright: 4pt;
+	-moz-border-radius-topleft: 4pt;
+	-moz-border-radius-topright: 4pt;
+	background-color:  #FFC;	
+}
+
+/* INPUT VALUE LINE */
+.parameters .input .value {
+	-moz-border-radius-topright: 4pt;
+	-moz-border-radius-bottomright: 4pt;
+}
+
+/* DISCRETION */
+.parameters .required {
+	background-color: #FBB !important;
+}
+.parameters .satisfied {
+	background-color: #AFA !important;
+	border: 2px solid #AFA !important;
+}
+
+/* AVAILABILITY */
+.parameters .filePresent {
+	color: #000 !important;
+}
+.parameters .fileMissing {
+	color: #444 !important;
+	font-style: italic !important;
+}
+
+/* INVALID INPUT */
+.parameters .invalid,
+.parameters .input .required {
+	border: 2px solid #F00 !important;
+	color: #555 !important;
+	font-style: italic !important;
+}
+
+
+
+/* UPLOAD, DOWNLOAD AND BROWSE BUTTONS */
+
+.parameters .browseButton,
+.parameters .uploadButton,
+.parameters .downloadButton {
+	background-color: #FFF;
+	border: 2px solid #EEE;
+	border-bottom-color: #DDD;	
+	border-left-color: #DDD;	
+	vertical-align: middle;
+	min-width: 28px;
+}
+
+.parameters .browseButton:hover,
+.parameters .uploadButton:hover,
+.parameters .downloadButton:hover {
+	border: 2px solid #FFD;
+	border-bottom-color: #EEC;	
+	border-left-color: #EEC;
+	background-color : #CFC;
+}
+
+.parameters .browseButton:active,
+.parameters .uploadButton:active,
+.parameters .downloadButton:active {
+	border: 2px solid #FFD;
+	border-bottom-color: #BBB;	
+	border-left-color: #BBB;
+	background-color : #8F8;
+}
+
+.parameters .browseButton {
+	float: inherit;
+	background-image: url("../../../plugins/workflow/images/browse-28.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 28px;
+	height: 34px;
+}
+
+.parameters .uploadButton {
+	background-image: url("../../../plugins/workflow/images/upload-24.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 28px;
+	height: 28px;
+}
+
+.parameters .downloadButton {
+	background-image: url("../../../plugins/workflow/images/download-24.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 28px;
+	height: 28px;
+}
+
+/* EXPOSE FILE UPLOAD ONCLICK ELEMENT */
+
+.parameters .dijitFileInput {
+	position: relative;
+	top: -2px;
+	left: 0px;
+	/*height: 32px !important;*/
+	width: 32px !important;
+	z-index: 10;
+	border: 0px;
+	opacity: 0;
+	max-height: 20px !important;
+}
+
+.parameters .dijitFileInputReal {
+	height: 20px !important;
+	width: 30px !important;
+	background: none;
+	z-index: 11;
+}
+
+.parameters .fileInputMask {
+	/*background-color: #F00;*/
+	position: relative;
+	top: 0px;
+	left: 0px;
+	height: 25px !important;
+	width: 200px !important;
+	z-index: 12;
+}
+
+
+.parameters .dijitTitlePaneContentInner {
+	overflow-y: auto !important;
+	max-height: 420px !important;
+}

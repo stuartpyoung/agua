@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="0552be3e-7291-43a3-a63e-d15e52d265e4" kpf_version="4" name="admin.kpf">
+<folder id="5773d4db-398e-4700-a4cf-592319cbe713" idref="0552be3e-7291-43a3-a63e-d15e52d265e4" name="sql">
+</folder>
+<folder id="ab47b92b-a4d3-4803-8e92-782a8c3d140e" idref="0552be3e-7291-43a3-a63e-d15e52d265e4" name="cgi-bin">
+</folder>
+<folder id="bf2822a6-a613-44bd-86c0-03cf66c23ae3" idref="0552be3e-7291-43a3-a63e-d15e52d265e4" name="lib">
+</folder>
+<file id="4bf7e2a2-9c8c-49a7-b7dd-96d1caa7ca4b" idref="5773d4db-398e-4700-a4cf-592319cbe713" name="groupusers.sql" url="file:///C:/DATA/base/html/agua/bin/sql/groupusers.sql">
+</file>
+<file id="5c2c9653-375f-46bd-b74c-88c90504c144" idref="5773d4db-398e-4700-a4cf-592319cbe713" name="source.sql" url="file:///C:/DATA/base/html/agua/bin/sql/source.sql">
+</file>
+<file id="1303ea4a-71c0-44d6-af95-851b91474947" idref="ab47b92b-a4d3-4803-8e92-782a8c3d140e" name="agua" url="file:///C:/DATA/base/cgi-bin/agua/agua">
+</file>
+<file id="ff5796c3-d6c8-430a-a764-2a7f142869db" idref="ab47b92b-a4d3-4803-8e92-782a8c3d140e" name="admin.pl" url="file:///C:/DATA/base/cgi-bin/agua/admin.pl">
+</file>
+<file id="98afad84-8824-4aeb-a875-053c6be7316d" idref="bf2822a6-a613-44bd-86c0-03cf66c23ae3" name="Admin.pm" url="file:///C:/DATA/base/html/agua/lib/Admin.pm">
+</file>
+<preference-set idref="0552be3e-7291-43a3-a63e-d15e52d265e4">
+  <boolean id="import_live">1</boolean>
+</preference-set>
+<preference-set idref="5773d4db-398e-4700-a4cf-592319cbe713">
+  <string id="import_dirname">C:\DATA\base\html\agua\bin\sql</string>
+  <string id="import_include_matches">*.sql</string>
+</preference-set>
+<preference-set idref="ab47b92b-a4d3-4803-8e92-782a8c3d140e">
+  <string id="import_dirname">C:\DATA\base\cgi-bin\agua</string>
+</preference-set>
+<preference-set idref="bf2822a6-a613-44bd-86c0-03cf66c23ae3">
+  <string id="import_dirname">C:\DATA\base\html\agua\lib</string>
+  <string id="import_include_matches">Admin.pm</string>
+</preference-set>
+</project>

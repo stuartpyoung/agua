@@ -1,0 +1,28 @@
+{
+    stages: [
+
+        stage:  {
+            'workflownumber' => '1',
+            'workflowname' => 'Assembler',
+            'workflowdescription' => 'Collect reads, screen for vector, load into mysql and assemble with CAP3',
+            'workflowxmlfile' => 'bin/pipeline4/xml/workflow/est.assembler.xml',
+            'stagenumber' => '1',
+            'stagename' => 'Collect reads',
+            'stagedescription' => 'Collect all chromat files and put in chromat_dir',
+            'status' => 'waiting',
+            'progress' => ' ',
+            'applicationname' => 'readscollect',
+            'application' => 'bin/pipeline4/readscollect.pl',
+            'arguments' => '"-dfunnybase11", "-e151", "-p1-5"',
+            'inputfiles' => '',
+            'outputfiles' => 'pipeline/funnybase11/chromat_dir/*.ab1',
+            'stderrfile' => 'pipeline/funnybase11/collection/funnybase11.readscollect.stderr',
+            'stdoutfile' => 'pipeline/funnybase11/collection/funnybase11.readscollect.stdout',
+            'started' => '0000-00-00 00:00:00',
+            'completed' => '0000-00-00 00:00:00',
+            'workflowpid' => '27229',
+            'parentpid' => ' ',
+            'childpid' => ' ',
+        }
+    ]
+}

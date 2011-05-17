@@ -1,0 +1,24 @@
+/* tooltip CSS */
+
+/* dijit.TooltipDialog : the little arrow part of the tooltip */
+/* dijit.TooltipContainer : the main rectangle area */
+
+.soria .dijitTooltip,
+.dijitTooltipDialog {
+    opacity: 0.9;
+
+	/* make the area on the sides of the arrow transparent */
+    /*background: orange;    */
+
+	background-color: yellow;
+}
+
+.soria .dijitTooltipContainer {
+    background-color: yellow;
+    border:1px solid #cbcbcb;
+    opacity: 0.9;
+    padding:0.45em;
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+}

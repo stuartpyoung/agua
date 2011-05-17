@@ -1,0 +1,38 @@
+<div dojoAttachPoint="containerNode">
+
+	<!-- access TAB -->
+	<div
+		dojoAttachPoint="accessTab"
+		class="access"
+		dojoType="dijit.layout.ContentPane"
+		title="Access"
+		style="height: 700px; max-height: auto !important; width: 350px !important; padding: 0 !important;"
+		>
+
+		<span style="position: absolute; top: -20px; left: 5px;" class="dijitFileInputText" dojoattachpoint="titleNode">${title}</span>
+
+		<div class="templateLoading" style="position: relative; top: -60px; left: 250px;">
+
+			<img
+				dojoAttachPoint="loading"
+				style="display: none;"
+				src="../plugins/report/images/loading.gif"
+				width="15" height="15" />
+		</div>
+
+
+		<!-- ADD USER BUTTON -->
+		<div style="position: absolute; top: 10px; left: 40px; height: 20px; width: 250px;">
+			<button
+					dojoAttachPoint="saveButton"
+					dojoAttachEvent="onclick:saveStore()"
+					dojoType="dijit.form.Button" 
+					type=submit">
+				Save
+			</button>
+		</div>
+
+	</div>
+	<!-- END access TAB -->
+
+</div> <!-- dojoattachpoint="containerNode" -->

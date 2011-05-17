@@ -1,0 +1,123 @@
+@import url("../../../dojo-1.5.0/dojox/layout/resources/ExpandoPane.css");
+/*@import url("../../../dojo-1.5.0/dojox/layout/tests/expando.css");*/
+@import url("../../../dojo-1.5.0/dijit/themes/tundra/tundra.css");
+
+
+/* USED BY plugins.admin.Admin */
+
+/* ALL-ADMIN STYLES */
+
+/* TAB BACKGROUND COLOUR */
+.admin .dijitTabContent {
+	/*background-color: #EEE;*/
+}
+
+/* TAB LABEL SIZE */
+.admin .dijitTabInnerDiv .dijitTabContent {
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	position: relative;
+
+	/* IF UNCOMMENTED PUTS A WHITE BLANK IN ADJACENT TAB WHEN NOT FOCUSED */
+	/*background: transparent url(../images/tabContainerSprite.gif) repeat-x scroll 0 -350px;*/
+
+	/* CHANGE THE HEIGHT OF THE TAB LABEL HERE */
+	/*padding: 5px 3px 4px 4px;*/
+	padding: 0px 0px 0px 0px !important;
+}
+
+
+.admin .dijitTabInnerDiv {
+	padding: 0px 0px 0px 0px !important;
+}
+
+/* TAB LABELS */
+.admin .tabLabel {
+	padding: 3px;
+	border: solid 2px transparent;
+	/*color: #243C5F;*/
+	/*color: #111f82;*/
+	/*color: #F00;*/
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.admin .dijitTabChecked .tabLabel {
+	color: darkred;
+	/*color: #055817;*/ /* dark green */
+	/*color: #088a24;*/
+	/*color: #08a92b;*/
+	/*color: #08a92b;*/
+	/*color: #0e1a67;*/
+	/*color: #25e14e;*/
+	/* color: 10f041 */
+
+	font-weight: bold;
+}
+
+.admin .dijitFocused .tabLabel {
+	padding: 3px;
+	border: solid 2px #0F0;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:3pt;
+	-moz-border-radius-bottomright:3pt;
+	-moz-border-radius-topleft:3pt;
+	-moz-border-radius-topright:3pt;
+	-moz-outline-style: none;
+}
+
+.admin .tabTitle {
+	color: white;
+	background-color: #264eea;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	font-weight: bold;
+	-moz-user-select: none !important;
+}
+
+
+/* PANES & CONTAINERS */
+
+/* NO SCROLLBARS IN LEFT, MIDDLE AND RIGHT PANES */
+.admin .dijitContentPane {
+	overflow: hidden !important;
+}
+
+/* CONTAINERS HAVE WHITE BACKGROUND AND NO PADDING */
+.admin .dijitBorderContainer {
+	background-color: #FFF;
+	padding: 0;
+}
+
+.admin .inputsTitlePane {
+	background-color: #000;
+}
+
+/* CONTAINER HEIGHT */
+.browserContainer {	
+	height:	900px;
+}
+
+.admin .dijitLayoutContainer {
+	top: 0px;
+	left: 0px;
+}
+
+.admin .dijitTabPaneWrapper {
+	width: auto !important;
+	/*top: 20px !important;*/
+	/*border: none;*/
+}
+
+.admin .dijitTabPaneWrapper .dijitTabContainerTop-container .dijitAlignClient{
+	height: auto;
+}
+
+.admin .groups .dijitContentPane .dijitTabPane .dijitTabContainerTop-dijitContentPane {
+	width: auto !important;
+}
+

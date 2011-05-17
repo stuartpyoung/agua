@@ -1,0 +1,62 @@
+.adminIcon {
+	background-image: url("../../../plugins/admin/images/admin-18.png");
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+}
+.controls .dijitInline .dijitReset .dijitButtonNode {
+	background-color: #FFF;
+	vertical-align: middle;
+	border: 2px solid #BBB;
+	border-bottom-color: #888;	
+	border-left-color: #888;
+	font-weight: bold;
+	height: 20px;
+	width: 80px;
+}
+
+.controls .dijitInline .dijitReset .dijitButtonNode:hover {
+	background-color: #FFA;
+}
+.controls .dijitInline .dijitReset .dijitButtonNode:active {
+	background-color: #8F8;
+}
+.adminButton {
+	position: relative;
+	top: -25px;
+	left: 30px;
+	font-size: 16px;
+}
+
+
+/*.dijitButtonFocused .dijitFocused {*/
+/*	height: 20px;*/
+/*	width: 180px;*/
+/*}*/
+/**/
+/*.dijit .dijitReset .dijitLeft .dijitInline .adminButton .dijitButton .dijitButtonFocused .dijitFocused*/
+/* {*/
+/*	height: 20px;*/
+/*	width: 180px;*/
+/*}*/
+/**/
+/**/
+/*.dijitReset .dijitStretch .dijitButtonContents:hover {*/
+/*	height: 20px;*/
+/*	width: 180px;*/
+/*}*/
+/**/
+/*.controls .dijitReset .dijitStretch .dijitButtonContents:hover {*/
+/*	height: 20px;*/
+/*	width: 180px;*/
+/*}*/
+/*.controls .dijitReset .dijitStretch .dijitButtonContents:active {*/
+/*	height: 20px;*/
+/*	width: 180px;*/
+/*}*/
+/*.controls .dijitReset .dijitStretch .dijitButtonContents {*/
+/*	height: 20px;*/
+/*	width: 180px;*/
+/*}*/
+/**/
+/**/

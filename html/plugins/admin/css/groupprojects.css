@@ -1,0 +1,216 @@
+@import "../../../dojo-1.5.0/dojo/tests/dnd/dndDefault.css";
+
+/* GENERAL groupprojects STYLES */
+.groupprojects .tabTitle {
+	background-color: #264eea;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	font-stretch: expanded;
+	font-weight: bold;
+	color: #FFF;
+}
+.groupprojects .comboLabel {
+	/*text-align:	center;*/
+	font-weight: bolder;
+	font-size: 18px;
+	font-family: Verdana;
+	font-size: 14px;
+	font-style: oblique;
+	height: 20px;
+	vertical-align: bottom !important;
+	background: #EEE;
+}
+
+/* GROUP COMBO */
+
+.groupprojects .groupCombo,
+.groupprojects .dijitMenu li,
+.groupprojects .dijitMenuItem li
+{
+	text-indent: 10px;
+}
+
+.groupprojects .groupCombo {
+	text-indent: 10px;
+	height: auto;
+	width: 150px;
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* NOTE: THIS IS NECESSARY FOR THE NEXT RULE TO WORK!!! */
+.groupprojects .groupCombo .dijitReset .dijitMenu li,
+.groupprojects .groupCombo .dijitReset .dijitMenuItem li
+{
+	/*color: #0FF !important;*/
+}
+.groupprojects .dijitMenu li,
+.groupprojects .dijitMenuItem li
+{
+	color: #224 !important;
+	height: 25px;
+}
+
+
+.groupprojects .dragSource
+{
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border:3px solid #CCCCCC;
+	cursor:default;
+	padding:1em 0.5em;
+
+	/*margin-top: 5px;*/
+	width: 120px;	
+	height: 260px;
+	min-height: 100px;
+
+	text-align: left;
+	/*color: #339;*/
+	/*color: darkgreen;*/
+	/*font-weight: bold;*/
+	font-family: Verdana;
+	font-size: 12px;
+	border-color: #333;
+
+	/* NEEDED SO THAT SCROLLBAR WILL SHOW */
+	display: block !important;
+	overflow:auto !important;
+}
+
+.groupprojects .dragSource .dojoDndItemAnchor,
+.groupprojects .dropTarget .dojoDndItemAnchor {
+	background-color: #CCFFCC !important;
+}
+
+.groupprojects .dragSource .name,
+.groupprojects .dropTarget .name {
+	font-size: 14px;
+	font-weight: 900;
+	background-image: url(../../../plugins/admin/images/name-20.png);
+	text-indent: 22px;
+	background-repeat: no-repeat;
+	height: 18px;
+}
+
+.groupprojects .dropTarget .name,
+.groupprojects .dragSource .name {
+	font-size: 14px;
+	color: darkred;
+	font-weight: bolder;
+	text-align: left !important;
+
+	background-image: url(../../../plugins/admin/images/project-18.png);
+	text-indent: 22px;
+	background-repeat: no-repeat;
+	height: 18px;
+}
+
+.groupprojects .dropTarget .name {
+	color: darkgreen;
+}
+.groupprojects .dragSource .description,
+.groupprojects .dropTarget .description {
+	font-size: 12px;
+	color: #444;
+}
+
+.groupprojects .dragSource .number,
+.groupprojects .dragSource .datetime,
+.groupprojects .dropTarget .number,
+.groupprojects .dropTarget .datetime,
+.groupprojects .dragSource .description,
+.groupprojects .dragSource .datetime,
+.groupprojects .dropTarget .description,
+.groupprojects .dropTarget .datetime {
+	font-size: 9px;
+}
+
+.groupprojects .dragSource .fullname,
+.groupprojects .dragSource .description,
+.groupprojects .dragSource .number,
+.groupprojects .dragSource .datetime,
+.groupprojects .dropTarget .fullname,
+.groupprojects .dropTarget .description,
+.groupprojects .dropTarget .number,
+.groupprojects .dropTarget .datetime {
+	background-color: #EFEFEF;
+}
+
+
+.groupprojects .dropTarget {
+
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border:3px solid #CCCCCC;
+	cursor:default;
+	padding:1em 0.5em;
+
+	text-align: left;
+	font-size: 14px;
+	font-family: Verdana;
+
+	width: 160px;
+	height: 350px;
+	min-height: 100px;
+
+	/* NEEDED SO THAT SCROLLBAR WILL SHOW */
+	display: block !important;
+	overflow:auto !important;
+}
+
+.groupprojects .dropTarget .description {
+	font-size: 12px;
+}
+
+
+.groupprojects .trash{
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border:3px solid #CCCCCC;
+	cursor:default;
+	padding:1em 0.5em;
+
+	margin-top: 5px;
+	width: 150px;	
+	height: 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+.groupprojects .trashIcon {
+	height: 100%;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+
+	background-image: url(../../../plugins/admin/images/trash-60.png);
+	background-repeat: no-repeat;	
+}

@@ -1,0 +1,28 @@
+<div dojoAttachPoint="containerNode">
+    <table width="100%">
+        <tr>
+            <td colspan="2"
+                dojoAttachPoint="username"
+                class="username"
+                >
+                ${username}</td>
+        </tr>
+        <tr>
+            <td colspan="2"
+                dojoAttachPoint="email"
+                class="email"
+                >
+                ${email}</td>
+        </tr>
+        <tr>
+            <td dojoAttachPoint="firstname" class='firstname' style="display: block;">${firstname}</td>
+            <td dojoAttachPoint="lastname" class='lastname' style="display: block;">${lastname}</td>
+        </tr>
+        <tr>
+            <td colspan="2" dojoAttachPoint="description" class='description' style="display: block;" >${description}</td>
+        </tr>
+        <!--<tr>-->
+        <!--    <td colspan="2" dojoAttachPoint="datetime" class='datetime' style="display: block;">${datetime}</td>-->
+        <!--</tr>-->
+    </table>
+</div>

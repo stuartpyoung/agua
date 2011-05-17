@@ -1,0 +1,83 @@
+#adminGroupsTable {
+	top: 40px;
+}
+
+.adminGroupsTableHeader { 
+	font-size: 18px;
+	font-weight: normal;
+	font-family: Times New Roman;
+	text-align: center;
+}
+
+.adminGroupsDeleteButton { 	
+	background-image: url("../../../plugins/admin/images/group_delete.png");
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+}
+
+.adminGroupsAddButtonTitle {
+	text-align:	center;
+	/*font-weight: bolder;*/
+	font-size: 14px;
+	font-family: Verdana;
+	/*font-style: italic; */
+}
+
+.adminGroupsAddButton { 	
+
+	background-image: url("../../../plugins/admin/images/group_add.png");
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+	/*position: relative;*/
+	/*left: -10px;*/
+	color: #0A0;
+}	 
+
+.adminGroupsButtonSpan {
+	width: 36px;
+	height: 36px;
+	background-color: #FFF;
+}
+
+
+.adminGroupsTable {
+	position: relative;
+	left: 30px;
+	top: 70px;
+	text-align:	center;
+	font-weight: bolder;
+	font-style: italic; 
+}
+/**/
+/*.adminGroupsTableRow {*/
+/*	text-align:	center;*/
+/*	font-weight: normal;*/
+/*	font-style: normal;*/
+/*	width: 600px;*/
+/*}*/
+/**/
+/**/
+/*.adminGroupsTableData {*/
+/*	text-align:	center;*/
+/*	font-weight: normal;*/
+/*	font-style: normal;*/
+/*	color: #040404;*/
+/*	font-family: Arial;*/
+/*	font-size: 18px;*/
+/*	width: 150px;*/
+/*}*/
+
+.adminGroupsTableInput {
+	width: 100%;
+	padding: 5px;	
+}
+
+.adminGroupsEditButton {
+	width: 60px;
+	color: #FF00FF;
+}
+

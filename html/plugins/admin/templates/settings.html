@@ -1,0 +1,287 @@
+<div dojoattachpoint="containerNode">
+
+	<!-- settings TAB -->
+	<div
+		dojoAttachPoint="settingsTab"
+		class="settings"
+		dojoType="dijit.layout.ContentPane"
+		title="Settings"
+		style="height: 700px; max-height: auto !important; width: 350px !important; padding: 0 !important;"
+		>
+
+		<table>
+			<tr valign="top" width="100%">
+				<td colspan="2" class="tabTitle" align="center"> Settings </td>
+			</tr>
+			<tr valign="top" width="95%">
+				<td width="95%">
+					<div class="label"> Personal Info </div>
+					<div
+						class="settingsTable"
+						style="height: 230px; width: 95%;"
+					>
+
+					<table width="100%">
+
+						<tr valign="top" width="95%">
+							<td>
+								<table>
+									<tr>
+										<td>Username</td>
+										<td	dojoAttachPoint="username"
+												class="username"
+												style="width:100%; font-weight: bolder; font-family: Verdana;";
+										></td>
+										<td>
+											<div
+												dojoAttachPoint="updateUserButton"
+												class="updateUserButton"
+												dojoType="dijit.form.Button"
+												label="Save"
+												>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Firstname</td>
+										<td colspan="2">
+											<input
+												dojoAttachPoint="firstname"
+												class="firstname"
+												style="width:100%; font-weight: bolder; font-family: Verdana;";
+											>
+										</td>
+									</tr>
+									<tr>
+										<td>Lastname</td>
+										<td colspan="2">
+											<input
+												dojoAttachPoint="lastname"
+												class="lastname"
+												style="width:100%; font-weight: bolder; font-family: Verdana;";
+											>
+										</td>
+									</tr>
+									<tr>
+										<td>Email</td>
+										<td colspan="2">
+											<input
+												dojoAttachPoint="email"
+												class="email"
+												value="Email"
+												style="width:100%; font-weight: bolder; font-family: Verdana;";
+											>
+										</td>
+									</tr>
+									<tr>
+										<td>Old Password</td>
+										<td colspan="2">
+											<input
+												dojoAttachPoint="oldPassword"
+												class="password"
+												type="password"
+												style="width:100%; font-weight: bolder; font-family: Verdana;";
+												value=""
+											>
+										</td>
+									</tr>
+
+
+<!--<tr>
+	<td colspan="2">
+
+		<div dojoType="dojox.form.PasswordValidator" name="pwValidate">
+			<table>
+				<tr>
+										<td>New Password</td>
+					<td>
+											<input
+												dojoAttachPoint="newPassword"
+												class="password"
+												type="password" pwType="new" />
+					</td>
+				</tr>
+				<tr>
+										<td>Confirm Password</td>
+					<td>
+											<input
+												dojoAttachPoint="confirmPassword"
+												class="password"
+												type="password" pwType="verify" />
+					</td>
+				</tr>
+			</table>
+		</div>
+
+	</td>
+</tr>
+-->
+
+<!--<script type="text/javascript">
+
+function confirmPassword(value, constraints)
+{
+    var isValid = false;
+    if(constraints && constraints.other)  {
+        var otherInput =  dijit.byId(constraints.other);
+        if(otherInput) {
+                var otherValue = otherInput.value;
+                isValid = (value == otherValue);
+        }
+    }
+    return isValid;
+}
+
+</script>
+
+-->
+
+
+									<tr>
+										<td>New Password</td>
+										<td colspan="2">
+											<input
+												dojoAttachPoint="newPassword"
+												dojoType="plugins.admin.ValidationTextBox"
+pa												required="true"
+											    invalidMessage="Passwords don't match"
+												class="password"
+												type="password"
+												tooltipPosition="below"
+												style="width:100%; font-weight: bolder; font-family: Verdana;";
+											>
+										</td>
+									</tr>
+									<tr>
+										<td>Confirm Password</td>
+										<td colspan="2">
+											<input
+												dojoAttachPoint="confirmPassword"
+												dojoType="plugins.admin.ValidationTextBox"
+pa												required="true"
+											    invalidMessage="Passwords don't match"
+												class="password"
+												type="password"
+												tooltipPosition="below"
+												style="width:100%; font-weight: bolder; font-family: Verdana;";
+											>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+
+				</td>
+
+			<tr valign="top" width="95%">
+				<td width="95%">
+					<div class="label"> Amazon Cloud Settings </div>
+					<div
+						dojoAttachPoint="settingsTable"
+						class="settingsTable"
+						style="height: 400px; width: 95%;"
+					>
+						<table>
+							<tr>
+								<td>Amazon User ID</td>
+								<td colspan="2">
+									<input
+										dojoAttachPoint="amazonuserid"
+										class="amazonuserid"
+										style="width:100%; font-weight: bolder; font-family: Verdana;";
+									>
+								</td>
+								<td>
+									<div
+										dojoAttachPoint="saveAwsButton"
+										class="saveAwsButton"
+										dojoType="dijit.form.Button"
+										label="Save"
+										>
+									</div>
+								</td>
+							</tr>
+
+
+							<tr>
+								<td>Volume Size (GB)</td>
+								<td colspan="3">
+									<input
+										class="volumeSize"
+										dojoAttachPoint="volumesize"
+										type="text"
+										dojoType="dijit.form.NumberTextBox"
+										name="elevation"
+										value="100"
+										constraints="{min:10,max:1000,places:0}"
+										required="true"
+										invalidMessage="Invalid size (10GB - 1TB)"
+									>
+								</td>
+							</tr>
+
+
+							<tr>
+								<td>EC2 Public Certificate</td>
+								<td colspan="3">
+									<textarea
+										dojoAttachPoint="ec2publiccert"
+										class="ec2publiccert"
+										style="width:100%; font-weight: bolder; font-family: Verdana;";
+										cols="40"
+										rows="3"
+									></textarea>
+								</td>
+							</tr>
+
+							<tr>
+								<td>EC2 Private Key</td>
+								<td colspan="3">
+									<textarea
+										dojoAttachPoint="ec2privatekey"
+										class="ec2privatekey"
+										style="width:100%; font-weight: bolder; font-family: Verdana;";
+										cols="40"
+										rows="3"
+									></textarea>
+								</td>
+							</tr>
+
+							<tr>
+								<td>AWS Access Key ID</td>
+								<td colspan="3">
+									<input
+										dojoAttachPoint="awsaccesskeyid"
+										class="awsaccesskeyid"
+										style="width:100%; font-weight: bolder; font-family: Verdana;";
+									>
+								</td>
+							</tr>
+
+							<tr>
+								<td>Secret Access Key</td>
+								<td colspan="3">
+									<input
+										dojoAttachPoint="secretaccesskey"
+										class="secretaccesskey"
+										type="password"
+										style="width:100%; font-weight: bolder; font-family: Verdana;";
+									>
+								</td>
+							</tr>
+
+						</table>
+
+					</div>
+				</td>
+			</tr>
+
+		</table>
+
+	</div>
+	<!-- END settings TAB -->
+
+</div> 
+
+

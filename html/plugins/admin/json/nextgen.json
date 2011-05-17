@@ -1,0 +1,31 @@
+{
+    identifier: 'name',
+    label: 'name',
+    items: [
+        {
+            name:   'bioinfo',
+            type:   'group',
+            description: 'Bioinformatics Team',
+            children: [
+                    { _reference: 'Project1' },
+                    { _reference: 'skhuri' },
+                    { _reference: 'syoung' }
+            ]
+        },
+        {   name: 'Project1', type: 'project', description: 'Next Generation Analysis Tools' },
+        {   name: 'skhuri', type: 'user', description: 'Sawsan Khuri' },
+        {   name: 'syoung', type: 'user', description: 'Stuart Young' },
+        {
+            name:  'nextgen',
+            type:  'group',
+            description: 'Next Generation Sequencing',
+            children: [
+                    { _reference: 'Project2' },
+                    { _reference: 'dhedges' },
+                    { _reference: 'syoung' }
+            ]
+        },
+        {   name: 'Project2', type: 'project', description: "Next Generation Data Analysis" },
+        {   name: 'dhedges', type: 'user', description: 'Dale Hedges' }
+    ]
+}

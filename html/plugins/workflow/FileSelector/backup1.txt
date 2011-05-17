@@ -1,0 +1,92 @@
+		// ADD dojo.connect TO DND SOURCE NODES
+		var allNodes = this._menu.getAllNodes();
+		for ( var i = 0; i < allNodes.length; i++ )
+		{
+			var node = allNodes[i];
+			var applicationName = node.innerHTML;
+
+			// GET indexInParent - THE LEVEL OF THIS MENU IN THE PARENT
+			var indexInParent = this.getIndexInParent();
+
+			// SET nodeType BASED ON THE indexInParent TO COINCIDE WITH accept PARAMETER
+			// OF DND SOURCE OF SAME LEVEL (E.G., Stages CAN BE DRAGGED NEXT TO OTHER
+			// WORKFLOWS BUT NOT INTO THE LOWER FILE DIRECTORIES)
+			var nodeType;
+			if ( indexInParent == 0 )
+			{
+				nodeType = 'workflow';
+			}
+			else
+			{
+				nodeType = "file";
+			}
+
+			node.setAttribute("dndType", nodeType),
+
+
+			// ADD CLASS FROM type TO NODE
+			//dojo.addClass(node, nodeClass);
+			node.type = [ nodeClass ];
+
+			// IF ITEM CLASS IS isDraggable, SHOW APPLICATION INFO WHEN CLICKED
+			//if ( nodeClass == 'isDraggable' )
+			//{
+
+			var groupDragPane = this;
+
+			dojo.connect(
+				node,
+				"onclick",
+				null,
+				function(e)
+				{
+
+					// CALL dojox.widget.RollingList._getPaneForItem AS INHERITED METHOD
+					// FOR plugins.project.FileDrag OBJECT
+					// 	_getPaneForItem: function(/* item? */ item, /* dijit._Contained? */ parentPane, /* item[]? */ children){
+
+					// summary: gets the pane for the given item, and mixes in our needed parts
+					// Returns the pane for the given item (null if the root pane) - after mixing in
+					// its stuff.
+
+					//
+					//	var ret = this.getPaneForItem(item, parentPane, children);
+					//	ret.store = this.store;
+					//	ret.parentWidget = this;
+					//	ret.parentPane = parentPane||null;
+					//	if(!item){
+					//		ret.query = this.query;
+					//		ret.queryOptions = this.queryOptions;
+					//	}else if(children){
+					//		ret.items = children;
+					//	}else{
+					//		ret.items = [item];
+					//	}
+					//	return ret;
+
+
+					var item = groupDragPane.items[i];
+
+					var itemPane = groupDragPane.parentWidget._getPaneForItem(e.target.item, this, e.target.item.children);
+
+					if(itemPane)
+					{
+
+						// CALLS addChild IN plugins.project._GroupDragPane
+						// summary: adds a child to this rolling list - if passed an insertIndex,
+						//  then all children from that index on will be removed and destroyed
+						//  before adding the child.
+
+
+						groupDragPane.parentWidget.addChild(itemPane, groupDragPane.getIndexInParent() + 1);
+					}
+					else
+					{
+						// CAUSES ERROR ON COMPRESSING:
+						// this.parentWidget.(this);
+						groupDragPane.parentWidget(groupDragPane);
+						groupDragPane.parentWidget._onItemClick(null, groupDragPane, selectMenuItem.item, selectMenuItem.children);
+					}
+				}
+
+			); // dojo.connect

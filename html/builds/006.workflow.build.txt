@@ -1,0 +1,219 @@
+release:  Using profile: profiles/workflow.profile.js
+release:  Using version number: 0.6 for the release.
+release:  Deleting: ../../../builds/006-workflow/dojo
+release:  Copying: ../../dojo to: ../../../builds/006-workflow/dojo/dojo
+release:  Copying: ../../dojo/../dijit to: ../../../builds/006-workflow/dojo/dijit
+release:  Copying: ../../dojo/../dojox to: ../../../builds/006-workflow/dojo/dojox
+release:  Building dojo.js and layer files
+release:  Interning strings for file: ../../../builds/006-workflow/dojo/dojo/dojo.js
+release:  Optimizing (shrinksafe) file: ../../../builds/006-workflow/dojo/dojo/dojo.js
+release:  Interning strings for file: ../../../builds/006-workflow/dojo/dojo/../workflow.js
+release:  Optimizing (shrinksafe) file: ../../../builds/006-workflow/dojo/dojo/../workflow.js
+release:  Files baked into this build:
+
+dojo.js:
+./jslib/dojoGuardStart.jsfrag
+./../../dojo/_base/_loader/bootstrap.js
+./../../dojo/_base/_loader/loader.js
+./../../dojo/_base/_loader/hostenv_browser.js
+./../../../builds/006-workflow/dojo/dojo/_base/lang.js
+./../../../builds/006-workflow/dojo/dojo/_base/array.js
+./../../../builds/006-workflow/dojo/dojo/_base/declare.js
+./../../../builds/006-workflow/dojo/dojo/_base/connect.js
+./../../../builds/006-workflow/dojo/dojo/_base/Deferred.js
+./../../../builds/006-workflow/dojo/dojo/_base/json.js
+./../../../builds/006-workflow/dojo/dojo/_base/Color.js
+./../../../builds/006-workflow/dojo/dojo/_base/window.js
+./../../../builds/006-workflow/dojo/dojo/_base/event.js
+./../../../builds/006-workflow/dojo/dojo/_base/html.js
+./../../../builds/006-workflow/dojo/dojo/_base/NodeList.js
+./../../../builds/006-workflow/dojo/dojo/_base/query.js
+./../../../builds/006-workflow/dojo/dojo/_base/xhr.js
+./../../../builds/006-workflow/dojo/dojo/_base/fx.js
+./../../../builds/006-workflow/dojo/dojo/_base/browser.js
+./../../../builds/006-workflow/dojo/dojo/_base.js
+./jslib/dojoGuardEnd.jsfrag
+
+../workflow.js:
+
+
+release:  Interning strings for: ../../../builds/006-workflow/dojo/dojo
+release:  Interning strings for: ../../../builds/006-workflow/dojo/dijit
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/InlineEditBox.js
+release:      ../../../builds/006-workflow/dojo/dijit/templates/InlineEditBox.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/Tooltip.js
+release:      ../../../builds/006-workflow/dojo/dijit/templates/Tooltip.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/Dialog.js
+release:      ../../../builds/006-workflow/dojo/dijit/templates/Dialog.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/Tree.js
+release:      ../../../builds/006-workflow/dojo/dijit/templates/TreeNode.html
+release:      ../../../builds/006-workflow/dojo/dijit/templates/Tree.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/Menu.js
+release:      ../../../builds/006-workflow/dojo/dijit/templates/Menu.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/MenuBarItem.js
+release:      ../../../builds/006-workflow/dojo/dijit/templates/MenuBarItem.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/TooltipDialog.js
+release:      ../../../builds/006-workflow/dojo/dijit/templates/TooltipDialog.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/form/CheckBox.js
+release:      ../../../builds/006-workflow/dojo/dijit/form/templates/CheckBox.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/form/TextBox.js
+release:      ../../../builds/006-workflow/dojo/dijit/form/templates/TextBox.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/form/_DateTimeTextBox.js
+release:      ../../../builds/006-workflow/dojo/dijit/form/templates/DropDownBox.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/form/_Spinner.js
+release:      ../../../builds/006-workflow/dojo/dijit/form/templates/Spinner.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/form/Select.js
+release:      ../../../builds/006-workflow/dojo/dijit/form/templates/Select.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/form/Button.js
+release:      ../../../builds/006-workflow/dojo/dijit/form/templates/Button.html
+release:      ../../../builds/006-workflow/dojo/dijit/form/templates/DropDownButton.html
+release:      ../../../builds/006-workflow/dojo/dijit/form/templates/ComboButton.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/form/ComboBox.js
+release:      ../../../builds/006-workflow/dojo/dijit/form/templates/DropDownBox.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/form/VerticalSlider.js
+release:      ../../../builds/006-workflow/dojo/dijit/form/templates/VerticalSlider.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/form/HorizontalSlider.js
+release:      ../../../builds/006-workflow/dojo/dijit/form/templates/HorizontalSlider.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/form/ValidationTextBox.js
+release:      ../../../builds/006-workflow/dojo/dijit/form/templates/ValidationTextBox.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/TitlePane.js
+release:      ../../../builds/006-workflow/dojo/dijit/templates/TitlePane.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/CheckedMenuItem.js
+release:      ../../../builds/006-workflow/dojo/dijit/templates/CheckedMenuItem.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/MenuItem.js
+release:      ../../../builds/006-workflow/dojo/dijit/templates/MenuItem.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/ProgressBar.js
+release:      ../../../builds/006-workflow/dojo/dijit/templates/ProgressBar.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/MenuSeparator.js
+release:      ../../../builds/006-workflow/dojo/dijit/templates/MenuSeparator.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/_TimePicker.js
+release:      ../../../builds/006-workflow/dojo/dijit/templates/TimePicker.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/MenuBar.js
+release:      ../../../builds/006-workflow/dojo/dijit/templates/MenuBar.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/ColorPalette.js
+release:      ../../../builds/006-workflow/dojo/dijit/templates/ColorPalette.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/layout/AccordionContainer.js
+release:      ../../../builds/006-workflow/dojo/dijit/layout/templates/AccordionButton.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/layout/TabController.js
+release:      ../../../builds/006-workflow/dojo/dijit/layout/templates/_TabButton.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/layout/_TabContainerBase.js
+release:      ../../../builds/006-workflow/dojo/dijit/layout/templates/TabContainer.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/layout/ScrollingTabController.js
+release:      ../../../builds/006-workflow/dojo/dijit/layout/templates/ScrollingTabController.html
+release:      ../../../builds/006-workflow/dojo/dijit/layout/templates/_ScrollingTabControllerButton.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dijit/Calendar.js
+release:      ../../../builds/006-workflow/dojo/dijit/templates/Calendar.html
+release:  Interning strings for: ../../../builds/006-workflow/dojo/dojox
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/xmpp/widget/ChatSession.js
+release:      ../../../builds/006-workflow/dojo/dojox/xmpp/widget/templates/ChatSession.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/av/widget/ProgressSlider.js
+release:      ../../../builds/006-workflow/dojo/dojox/av/widget/resources/ProgressSlider.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/av/widget/Status.js
+release:      ../../../builds/006-workflow/dojo/dojox/av/widget/resources/Status.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/av/widget/Player.js
+release:      ../../../builds/006-workflow/dojo/dojox/av/widget/resources/Player.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/av/widget/PlayButton.js
+release:      ../../../builds/006-workflow/dojo/dojox/av/widget/resources/PlayButton.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/av/widget/VolumeButton.js
+release:      ../../../builds/006-workflow/dojo/dojox/av/widget/resources/VolumeButton.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/image/SlideShow.js
+release:      ../../../builds/006-workflow/dojo/dojox/image/resources/SlideShow.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/image/Gallery.js
+release:      ../../../builds/006-workflow/dojo/dojox/image/resources/Gallery.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/image/ThumbnailPicker.js
+release:      ../../../builds/006-workflow/dojo/dojox/image/resources/ThumbnailPicker.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/image/Lightbox.js
+release:      ../../../builds/006-workflow/dojo/dojox/image/resources/Lightbox.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/form/RangeSlider.js
+release:      ../../../builds/006-workflow/dojo/dojox/form/resources/HorizontalRangeSlider.html
+release:      ../../../builds/006-workflow/dojo/dojox/form/resources/VerticalRangeSlider.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/form/CheckedMultiSelect.js
+release:      ../../../builds/006-workflow/dojo/dojox/form/resources/_CheckedMultiSelectItem.html
+release:      ../../../builds/006-workflow/dojo/dojox/form/resources/CheckedMultiSelect.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/form/FilePickerTextBox.js
+release:      ../../../builds/006-workflow/dojo/dojox/form/resources/FilePickerTextBox.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/form/FileInput.js
+release:      ../../../builds/006-workflow/dojo/dojox/form/resources/FileInput.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/form/PasswordValidator.js
+release:      ../../../builds/006-workflow/dojo/dojox/form/resources/PasswordValidator.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/form/FileInputAuto.js
+release:      ../../../builds/006-workflow/dojo/dojox/form/resources/FileInputAuto.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/grid/_TreeView.js
+release:      ../../../builds/006-workflow/dojo/dojox/grid/resources/Expando.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/grid/LazyTreeGrid.js
+release:      ../../../builds/006-workflow/dojo/dojox/grid/resources/Expando.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/grid/_Grid.js
+release:      ../../../builds/006-workflow/dojo/dojox/grid/resources/_Grid.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/grid/_View.js
+release:      ../../../builds/006-workflow/dojo/dojox/grid/resources/View.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/grid/enhanced/plugins/filter/FilterDefDialog.js
+release:      ../../../builds/006-workflow/dojo/dojox/grid/enhanced/templates/FilterDefPane.html
+release:      ../../../builds/006-workflow/dojo/dojox/grid/enhanced/templates/CriteriaBox.html
+release:      ../../../builds/006-workflow/dojo/dojox/grid/enhanced/templates/FilterBoolValueBox.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/grid/enhanced/plugins/filter/FilterBar.js
+release:      ../../../builds/006-workflow/dojo/dojox/grid/enhanced/templates/FilterBar.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/grid/enhanced/plugins/filter/FilterStatusTip.js
+release:      ../../../builds/006-workflow/dojo/dojox/grid/enhanced/templates/FilterStatusPane.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/grid/enhanced/plugins/filter/ClearFilterConfirm.js
+release:      ../../../builds/006-workflow/dojo/dojox/grid/enhanced/templates/ClearFilterConfirmPane.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/grid/enhanced/plugins/Pagination.js
+release:      ../../../builds/006-workflow/dojo/dojox/grid/enhanced/templates/Pagination.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/atom/widget/FeedViewer.js
+release:      ../../../builds/006-workflow/dojo/dojox/atom/widget/templates/FeedViewer.html
+release:      ../../../builds/006-workflow/dojo/dojox/atom/widget/templates/FeedViewerEntry.html
+release:      ../../../builds/006-workflow/dojo/dojox/atom/widget/templates/FeedViewerGrouping.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/atom/widget/FeedEntryEditor.js
+release:      ../../../builds/006-workflow/dojo/dojox/atom/widget/templates/FeedEntryEditor.html
+release:      ../../../builds/006-workflow/dojo/dojox/atom/widget/templates/PeopleEditor.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/atom/widget/FeedEntryViewer.js
+release:      ../../../builds/006-workflow/dojo/dojox/atom/widget/templates/FeedEntryViewer.html
+release:      ../../../builds/006-workflow/dojo/dojox/atom/widget/templates/EntryHeader.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/editor/plugins/TablePlugins.js
+release:      ../../../builds/006-workflow/dojo/dojox/editor/plugins/resources/insertTable.html
+release:      ../../../builds/006-workflow/dojo/dojox/editor/plugins/resources/modifyTable.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/widget/Dialog.js
+release:      ../../../builds/006-workflow/dojo/dojox/widget/Dialog/Dialog.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/widget/UpgradeBar.js
+release:      ../../../builds/006-workflow/dojo/dojox/widget/UpgradeBar/UpgradeBar.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/widget/ColorPicker.js
+release:      ../../../builds/006-workflow/dojo/dojox/widget/ColorPicker/ColorPicker.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/widget/gauge/_Gauge.js
+release:      ../../../builds/006-workflow/dojo/dojox/widget/gauge/_Gauge.html
+release:      ../../../builds/006-workflow/dojo/dojox/widget/gauge/_Indicator.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/widget/SortList.js
+release:      ../../../builds/006-workflow/dojo/dojox/widget/SortList/SortList.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/widget/Pager.js
+release:      ../../../builds/006-workflow/dojo/dojox/widget/Pager/Pager.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/widget/CalendarViews.js
+release:      ../../../builds/006-workflow/dojo/dojox/widget/Calendar/CalendarMonth.html
+release:      ../../../builds/006-workflow/dojo/dojox/widget/Calendar/CalendarYear.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/widget/Wizard.js
+release:      ../../../builds/006-workflow/dojo/dojox/widget/Wizard/Wizard.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/widget/FilePicker.js
+release:      ../../../builds/006-workflow/dojo/dojox/widget/FilePicker/_FileInfoPane.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/widget/DocTester.js
+release:      ../../../builds/006-workflow/dojo/dojox/widget/DocTester/DocTester.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/widget/RollingList.js
+release:      ../../../builds/006-workflow/dojo/dojox/widget/RollingList/RollingList.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/widget/Calendar.js
+release:      ../../../builds/006-workflow/dojo/dojox/widget/Calendar/Calendar.html
+release:      ../../../builds/006-workflow/dojo/dojox/widget/Calendar/CalendarDay.html
+release:      ../../../builds/006-workflow/dojo/dojox/widget/Calendar/CalendarMonthYear.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/calc/Grapher.js
+release:      ../../../builds/006-workflow/dojo/dojox/calc/templates/Grapher.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/calc/FuncGen.js
+release:      ../../../builds/006-workflow/dojo/dojox/calc/templates/FuncGen.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/calc/GraphPro.js
+release:      ../../../builds/006-workflow/dojo/dojox/calc/templates/GraphPro.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/calc/Standard.js
+release:      ../../../builds/006-workflow/dojo/dojox/calc/templates/Standard.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/layout/ScrollPane.js
+release:      ../../../builds/006-workflow/dojo/dojox/layout/resources/ScrollPane.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/layout/GridContainerLite.js
+release:      ../../../builds/006-workflow/dojo/dojox/layout/resources/GridContainer.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/layout/FloatingPane.js
+release:      ../../../builds/006-workflow/dojo/dojox/layout/resources/FloatingPane.html
+release:  Interning strings for : ../../../builds/006-workflow/dojo/dojox/layout/ExpandoPane.js
+release:      ../../../builds/006-workflow/dojo/dojox/layout/resources/ExpandoPane.html
+release:  Build is in directory: ../../../builds/006-workflow/dojo
+Build time: 26.149 seconds

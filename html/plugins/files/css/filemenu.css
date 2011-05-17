@@ -1,0 +1,174 @@
+/***************** FILE UPLOAD *****************/
+/*
+	PURPOSE
+
+		HIDE AND STUNT UNNECESSARY NODES: fakeNodeHolder
+		AND ITS CHILD NODES inputNode, titleNode, cancelNode
+
+	HTML
+
+		<div class="dijitFileInput " widgetid="plugins.files.FileMenu_0">
+
+			WE WANT TO KEEP THIS
+
+			<input type="file" dojoattachpoint="fileInput" class="dijitFileInputReal" name="uploadFile" id="plugins.files.FileMenu_0">
+
+			AND GET RID OF THIS
+
+			<div dojoattachpoint="fakeNodeHolder" class="dijitFakeInput">
+				<input type="text" dojoattachpoint="focusNode, inputNode" class="dijitFileInputVisible" id="plugins.files.FileMenu_0" tabindex="0">
+				<div dojoattachpoint="titleNode" class="dijitInline dijitFileInputText">Upload File</div>
+				<div dojoattachevent="onclick:reset" dojoattachpoint="cancelNode" class="dijitInline dijitFileInputButton">Cancel</div>
+			</div>
+			<div dojoattachpoint="overlay" class="dijitProgressOverlay">&nbsp;</div>
+		</div>
+
+*/
+
+@import "../../../dojo-1.5.0/dojox/form/resources/FileInput.css";
+
+
+/* KEEP MENU ITEM HEIGHT CONSTRAINED */
+
+.filemenu .dijitFakeInput,
+.filemenu .dijitInline .dijitFileInputText,
+.filemenu .dijitInline .dijitFileInputButton {
+	display: none !important;
+}
+
+.filemenu .dijitFocused  {
+	/*height: 15px;*/
+	/*padding: 3px;*/
+	border: solid 2px #0F0;
+	/*-moz-background-clip:border;*/
+	/*-moz-background-inline-policy:continuous;*/
+	/*-moz-background-origin:padding;*/
+	/*-moz-border-radius-bottomleft:5pt;*/
+	/*-moz-border-radius-bottomright:5pt;*/
+	/*-moz-border-radius-topleft:5pt;*/
+	/*-moz-border-radius-topright:5pt;*/
+	/*-moz-outline-style: none;*/
+}
+
+
+/* DOESN'T WORK - WANT TO: CHANGE BORDER OF FOCUSED MENU ITEM */
+.filemenu .dijitFileInput  .Focused .dijitFocused {
+	border-color: #0F0;	
+}
+
+/* DOESN'T WORK - WANT TO LIMIT WIDTH OF MENU ITEM
+  BECAUSE FILE INPUT ELEMENT OVERSHOOTS ON RIGHT SIDE */
+
+.filemenu .dijitMenuItem {
+	max-width: 80px !important;
+}
+
+.filemenu .dijitMenuItem td,
+.filemenu .dijitReset .dijitMenuArrowCell,
+.filemenu .dijitReset .dijitMenuItemLabel {
+	height: 20px !important;
+}
+
+/* INPUT BOX - ONCLICK OPENS LOCAL FILE MENU */
+.filemenu .dijitFakeInput {
+	height: 20px !important;
+	width: 80px !important;
+}
+
+/* UPLOAD PROGRESS OVERLAY */
+.filemenu .dijitProgressOverlay {
+	position: relative;
+	top: -20px;
+	left: -15px;	
+	height: 10px !important;
+	width: 80px !important;
+}
+
+/**** IMPORTANT: SET dijitFileInput HEIGHT TO ZERO TO REMOVE EXTRA HEIGHT ****/
+.filemenu .dijitFileInput {
+	position: relative;
+	top: -20px;
+	left: -15px;
+	height: 0px !important;
+	width: 80px !important;
+	z-index: 10;
+	border: 0px;
+	opacity: 0.4;
+}
+
+.filemenu .dijitFileInputReal {
+	height: 20px !important;
+	width: 80px !important;
+	background: black;
+	z-index: 11;
+}
+
+
+.filemenu .fileInputMask {
+	background-color: #F00;
+	position: relative;
+	top: -20px !important;
+	left: 100px !important;
+	height: 0px !important;
+	width: 100px !important;
+	z-index: 12;
+}
+
+/***************** END FILE UPLOAD *****************/
+
+
+
+
+/***************** FILE MENU *****************/
+.filemenu {
+    font-family: Verdana;
+	text-indent: 4px;
+	font-size: 16px;
+	color: darkred;
+	font-weight: bold;
+}
+.filemenu .title {
+    color: #822;
+    font-weight: bolder;
+    background-color: #EEE;
+    text-align: left;
+	text-indent: 5px;
+}
+.filemenu .newFolder {
+	background-image: url("../../../plugins/files/images/newfolder-20.png");
+	background-repeat: no-repeat;
+}
+.filemenu .rename {
+	background-image: url("../../../plugins/files/images/rename-20.png");
+	background-repeat: no-repeat;
+}
+.filemenu .delete {
+	background-image: url("../../../plugins/files/images/delete-20.png");
+	background-repeat: no-repeat;
+}
+.filemenu .openWorkflow {
+	background-image: url("../../../plugins/files/images/workflow-20.png");
+	background-repeat: no-repeat;
+}
+.filemenu .upload {
+	background-image: url("../../../plugins/files/images/upload-20.png");
+	background-repeat: no-repeat;
+}
+.filemenu .download {
+	background-image: url("../../../plugins/files/images/download-20.png");
+	background-repeat: no-repeat;
+}
+.download .dijitMenuItemDisabled {
+	background-image: url("../../../plugins/files/images/delete-20.png");
+	background-color: black !important;
+	opacity: 0.5 !important;
+}
+.download .dijitMenuItemDisabled {
+	visibility: hidden;
+	opacity: 0.5 !important;
+	background-color: black !important;	
+}
+.dijitReset .dijitMenuItem .download .dijitMenuItemDisabled {
+	opacity: 0.5 !important;
+	background-color: black !important;	  	
+}

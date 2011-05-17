@@ -1,0 +1,26 @@
+[
+    { data: "Pipelines",     type: ["notDraggable"]  },
+    { data: "Image2eland",      type: ["isDraggable"]    },
+    { data: "MAQ",              type: ["isDraggable"]       },
+
+    { data: "Transcriptome",     type: ["notDraggable"]  },
+    { data: "Erange",          type: ["isDraggable"]    },
+
+    { data: "SNP callers",     type: ["notDraggable"]  },
+    { data: "MAQ",          type: ["isDraggable"]    },
+    { data: "Casava",          type: ["isDraggable"]    },
+    { data: "ssahaSNP",          type: ["isDraggable"]    },
+
+    { data: "Alta-Cyclic",      type: ["isDraggable"]   },
+
+    { data: "Assemblers",       type: ["notDraggable"]    },
+    { data: "Eland",            type: ["isDraggable"]     },
+    { data: "SOAP",             type: ["isDraggable"]       },
+    { data: "Velvet",           type: ["isDraggable"]       },
+
+    { data: "Utilities",        type: ["notDraggable"]       },
+    { data: "barcode2fasta",    type: ["isDraggable"]       },
+    { data: "eland2ace",        type: ["isDraggable"]       },
+    { data: "elandpaired2ace",  type: ["isDraggable"]       },
+    { data: "image2eland",      type: ["isDraggable"]       }
+]

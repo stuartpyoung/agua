@@ -1,0 +1,367 @@
+@import url("../../../dojo-1.5.0/dojox/layout/resources/ExpandoPane.css");
+@import url("../../../dojo-1.5.0/dojox/layout/tests/expando.css");
+/*@import url("../../../dojo-1.5.0/dijit/themes/tundra/tundra.css");*/
+
+/* MAKE TRACKS APPEAR AT TOP OF SCREEN */
+#gridtrack {
+	height: 0px !impo tant;
+	max-height: 0px !important;
+}
+
+.view .spacerTitle {
+	-moz-user-select: none;
+	padding-top: 5px !important;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bolder;
+	font-family: Verdana;
+	/*font-style: oblique;*/
+	height: 20px;
+	vertical-align: bottom;
+	background: #EEF;
+	color: darkblue;
+}
+
+/* SPECIES/BUILD LABEL */
+.view .speciesLabel, .view .buildLabel{
+	width: 50% !important;	
+	padding: 5px !important;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bolder;
+	font-family: Verdana;
+	/*font-style: oblique;*/
+	height: 20px;
+	vertical-align: bottom;
+	background: #FFF;
+	color: #222;
+}
+
+/* ADD FEATURE BUTTON */
+.view .addFeatureButton {
+	width: 150px !important;
+	color: #444 !important;
+	font-size: 20px !important;
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	-moz-border-radius-bottomleft: 8pt;
+	-moz-border-radius-bottomright: 8pt;
+	-moz-border-radius-topleft: 8pt;
+	-moz-border-radius-topright: 8pt;
+	-moz-user-select: none;
+	background: #FFF none repeat scroll 0 0;
+	height: 30px !important;
+	font-weight: 900;
+	border: 4px solid #BBB;
+	border-bottom-color: #444;	
+	border-left-color: #444;	
+	opacity: 0.6 <alphavalue>;
+
+}
+.view .addFeatureButton:hover {
+	color: #000 !important;
+}
+.view .addFeatureButton:active {
+	color: #00CC00 !important;
+	border-width: 2px !important;
+	width: 146 !important;
+}
+
+
+/* VIEW COMBOBOX MENU */
+
+/* Background colors to match menus */
+.tundra .dojoxRollingList {
+	border-color: #b3b3b3;
+}
+.tundra .dijitPopup .dojoxRollingList {
+	border-color: #406b9b;
+}
+.tundra .dojoxRollingListPane {
+	background-color: #f7f7f7;
+}
+
+/* NOTE: THIS IS NECESSARY FOR THE NEXT RULE TO WORK!!! */
+.view .viewCombo .dijitReset .dijitMenu li,
+.view .viewCombo .dijitReset .dijitMenuItem li
+{
+	/*color: #0FF !important;*/
+}
+.view .dijitMenu li,
+.view .dijitMenuItem li
+{
+	color: #224 !important;
+	height: 25px;
+}
+
+
+/* VIEW ICON */
+.viewIcon {
+	background-image: url("../../../plugins/view/images/view-18.png");
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	position: relative;
+	top: 0px;
+	text-align: center;
+}
+.viewIcon* { background-position: 0px; }
+
+/* LEFT PANE */
+.view .leftPane .projectTitle, .view .leftPane .workflowTitle,
+.view .leftPane .reportTitle, .view .leftPane .fileTitle,
+.view .leftPane .viewTitle {
+	-moz-user-select: none;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bolder;
+	font-family: Verdana;
+	/*font-style: oblique;*/
+	height: 20px;
+	vertical-align: bottom;
+	background: #EEE;
+	color: darkred;
+}
+
+.view .leftPane .message {
+	color: #444;
+	font-family: Verdana;
+	font-size: 12px;
+	font-style: italic;
+	text-align: center;
+	padding-right: 35px;
+}
+
+.view .leftPane .featureIcon, .view .leftPane .reportIcon,
+.view .leftPane .viewIcon, .view .leftPane .workflowIcon,
+.view .leftPane .projectIcon, .view .leftPane .speciesIcon {
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 35px;
+	min-height: 35px;
+	width: 35px;
+	height: 35px;
+}
+
+.view .leftPane .featureIcon {
+	background-image: url("../../../plugins/view/images/feature-28.png");
+}
+.view .leftPane .speciesIcon {
+	background-image: url("../../../plugins/view/images/species-28.png");
+}
+.view .leftPane .reportIcon {
+	background-image: url("../../../plugins/view/images/report-28.png");
+}
+.view .leftPane .viewIcon {
+	background-image: url("../../../plugins/view/images/view-28.png");
+}
+.view .leftPane .workflowIcon {
+	background-image: url("../../../plugins/view/images/workflow-28.png");
+}
+.view .leftPane .projectIcon {
+	background-image: url("../../../plugins/view/images/project-28.png");
+}
+
+.view .leftPane .deleteFeatureButton,
+.view .leftPane .saveViewButton, .view .leftPane .deleteViewButton,
+.view .leftPane .saveReportButton,  .view .leftPane .deleteReportButton,
+.view .leftPane .okButton {
+	background-color: #FFF;
+	border: 2px solid #EEE;
+	border-bottom-color: #DDD;	
+	border-left-color: #DDD;	
+	vertical-align: middle;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 28px !important;
+	height: 28px !important;
+}}
+
+.view .leftPane .saveViewButton {
+	background-image: url("../../../plugins/view/images/save-24.png");
+}
+.view .leftPane .deleteViewButton {
+	background-image: url("../../../plugins/view/images/delete-24.png");
+}
+.view .leftPane .deleteFeatureButton {
+	background-image: url("../../../plugins/view/images/delete-24.png");
+}
+.view .leftPane .okButton {
+	background-image: url("../../../plugins/view/images/OK-34.png");
+}
+
+.view .leftPane .deleteFeatureButton:hover,
+.view .leftPane .saveReportButton:hover, .view .leftPane .fileUpload:hover,
+.view .leftPane .fileBrowse:hover, .view .leftPane .deleteReportButton:hover,
+.view .leftPane .okButton:hover {
+	border-bottom-color: #BBB;	
+	border-left-color: #BBB;
+	background-color : #FF8;
+}
+
+.view .leftPane .deleteFeatureButton:active,
+.view .leftPane .saveReportButton:active, .view .leftPane .fileUpload:active,
+.view .leftPane .fileBrowse:active, .view .leftPane .deleteReportButton:active,
+.view .leftPane .okButton:active {
+	border-bottom-color: #BBB;	
+	border-left-color: #BBB;
+	background-color : #8F8;
+}
+
+.view .leftPane .completed {
+	background-image: url("../../../plugins/view/images/completed-18.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 35px;
+	min-height: 35px;
+	width: 35px;
+	height: 35px;
+}
+
+.view .leftPane .loading {
+	background-image: url("../../../plugins/view/images/loading-32.gif") !important;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 35px;
+	min-height: 35px;
+	width: 35px;
+	height: 35px;
+}
+
+.view .leftPane .fileBrowse,
+.view .leftPane .fileUpload {
+	background-color: #FFF;
+	border: 2px solid #EEE;
+	border-bottom-color: #DDD;	
+	border-left-color: #DDD;	
+	vertical-align: middle;
+	float: inherit;
+	min-width: 28px;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 28px;
+	height: 28px;
+}
+
+.view .leftPane .fileBrowse td:hover, .
+view .leftPane .fileUpload td:hover {
+	color: #F00;
+	border: 2px solid #FFD;
+	border-bottom-color: #EEC;	
+	border-left-color: #EEC;
+	background-color : #0F0;
+}
+
+.view .leftPane .fileBrowse {
+	background-image: url("../../../plugins/view/images/browse-28.png");
+}
+.view .leftPane .fileUpload {
+	background-image: url("../../../plugins/view/images/upload-28.png");
+}
+
+/* EXPOSE FILE UPLOAD ONCLICK ELEMENT */
+.view .leftPane .dijitFileInput {
+	position: relative;
+	top: -2px;
+	left: -3px;
+	height: 32px !important;
+	width: 32px !important;
+	z-index: 10;
+	border: 0px;
+}
+
+.view .leftPane .dijitFileInputReal {
+	background-color: #00F !important;
+	height: 30px !important;
+	width: 30px !important;
+	z-index: 11;
+}
+
+/* REMOVE BLANK AT RIGHT OF COMBO INPUT */
+.view .leftPane .dijitReset .dijitValidationIcon {
+	visibility: hidden;
+	display: none;
+}
+
+.view .leftPane .featureList, .view .leftPane .speciesCombo,
+.view .leftPane .viewProjectCombo, .view .leftPane .workflowCombo,
+.view .leftPane .featureProjectCombo, .view .leftPane .featureCombo, 
+.view .leftPane .reportCombo, .view .leftPane .viewCombo {
+    font-family: sans-serif;
+    font-size: 18px;
+    width: 130px !important;
+	color: #333333 !important;
+}
+
+.view .leftPane .featureList, .view .leftPane .featureCombo {
+	background: #FFF none repeat scroll 0 0;
+	font-size: 13px !important;
+}
+.view .leftPane .speciesCombo {
+	font-size: 15px !important;
+}
+
+/* GENOME BROWSER */
+
+/* AVAILABLE TRACKS */
+.view .tracks {
+	text-align: center;
+}
+.view .tracks .title,
+.view .tracks .subtitle {
+	font-weight: bold;
+}
+.view .tracks .title {
+	font-size: 20px;
+}
+.view .tracks .subtitle {
+	font-size: 15px;
+}
+
+.view .leftPaneTabContainer {
+	background-color: #000;
+}
+
+.view .dijitLayoutContainer {
+	top: 0px;
+	left: 0px;
+}
+
+.dijitTabPaneWrapper .dijitTabContainerTop-container .dijitAlignClient {
+	height: 800px !important;
+
+}
+.view .dijitTabPaneWrapper .dijitTabContainerTop-container .dijitAlignClient{
+	min-height: 800px !important;
+	height: 800px !important;
+	overflow:  
+}
+
+
+ .dijitTabContainer .rightPane .dijitContainer .dijitTabContainerTop .dijitLayoutContainer .tabStrip-disabled .dijitBorderContainer-child .dijitBorderContainer-dijitTabContainerTop .dijitBorderContainerPane {
+	top: 0px !important;
+	bottom: 0px !important;
+}
+
+
+.view dijitContainer dijitBorderContainer dijitTabPane dijitTabContainerTop-child dijitTabContainerTop-dijitBorderContainer dijitVisible {
+	top: 0px !important;
+	bottom: 0px !important;
+}
+
+.view .dojoxExpandoPane .leftPane .dijitExpandoPane .dojoxExpandoLeft .dijitBorderContainer-child .dijitBorderContainer-dijitExpandoPane .dijitBorderContainerPane {
+	top: 0px !important;
+	bottom: 0px !important;
+}
+
+
+.view .dojoxExpandoClosed .dojoxExpandoWrapper * {
+	/*height: 0px !important;*/
+	overflow:hidden !important;
+}
+
+
+.view .dojoxExpandoTitle {
+	height: 20px !important;
+}

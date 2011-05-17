@@ -1,0 +1,356 @@
+/* TAB PANE SUBTITLE */
+.tabs .subTitle {
+	text-align: center;
+	font-size: 16px;
+	font-weight: bolder;
+	font-family: Verdana;
+	/*font-style: oblique;*/
+	height: 20px;
+	vertical-align: bottom;
+	background: #EEE;
+	/*color: darkred;*/
+}
+
+/* CONTROLS LEFT MARGIN */
+.controls {
+	left: 3px !important;
+}
+
+.dijitTabPaneWrapper .dijitTabContainerTop-container .dijitAlignClient {
+	position: relative;
+	top: 0px !important;
+}
+
+.dijitContentPane  {
+    position: relative;
+    top: 23px !important;
+}
+
+
+/*.dijitTabHover .dijitTabInnerDiv .dijitTabContent, .soria .dijitTabCloseButtonHover .dijitTabInnerDiv .dijitTabContent*/
+/*{*/
+/*	background: transparent !important;*/
+/*	background-image: none !important;*/
+/*	*/
+/*}*/
+
+/* TAB BODY */
+/*dijitTabChecked dijitChecked dijitTabHover dijitTabCheckedHover dijitCheckedHover dijitHover*/
+
+.dijitTab,
+.dijitTab .dijitTabChecked .dijitChecked,
+.dijitTab .dijitTabHover .dijitHover
+/*,*/
+.dijitTab .dijitTabChecked .dijitChecked .dijitTabFocused .dijitTabCheckedFocused .dijitCheckedFocused .dijitFocused
+.dijitTabHover .dijitTabCheckedHover .dijitCheckedHover .dijitTabFocusedHover .dijitTabCheckedFocusedHover .dijitCheckedFocusedHover .dijitFocusedHover .dijitHover
+{
+	/*(../images/tabContainerSprite.gif) repeat-x scroll 0 -350px;*/
+	/*background: #55B !important;	*/
+
+	background: transparent !important;
+	background-image: none !important;
+	color: black !important;
+
+	padding: 2px;
+	border: solid 1px #CCC;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-topleft:3pt;
+	-moz-border-radius-topright:3pt;
+	-moz-outline-style: none;
+}
+
+
+/* TAB BODY */
+/*dijitTabChecked dijitChecked dijitTabHover dijitTabCheckedHover dijitCheckedHover dijitHover*/
+
+.dijitTab,
+.dijitTab .dijitTabChecked .dijitChecked,
+.dijitTab .dijitTabHover .dijitHover,
+.dijitTabHover .dijitTabCheckedHover .dijitCheckedHover .dijitTabFocusedHover .dijitTabCheckedFocusedHover .dijitCheckedFocusedHover .dijitFocusedHover .dijitHover
+{
+	/*(../images/tabContainerSprite.gif) repeat-x scroll 0 -350px;*/
+	/*background: #55B !important;	*/
+
+	background-image: none !important;
+	background-color: white !important;
+	color: #264EEA !important;
+
+	padding: 2px;
+	border: solid 1px #CCC;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-topleft:3pt;
+	-moz-border-radius-topright:3pt;
+	-moz-outline-style: none;
+}
+
+
+.dijitTab .dijitTabChecked .dijitChecked,
+.dijitTab .dijitTabHover .dijitHover,
+.dijitTab .dijitTabChecked .dijitChecked .dijitTabFocused .dijitTabCheckedFocused .dijitCheckedFocused .dijitFocused
+.dijitTabHover .dijitTabCheckedHover .dijitCheckedHover .dijitTabFocusedHover .dijitTabCheckedFocusedHover .dijitCheckedFocusedHover .dijitFocusedHover .dijitHover
+{
+	/*(../images/tabContainerSprite.gif) repeat-x scroll 0 -350px;*/
+	/*background: #55B !important;	*/
+
+	background-image: none !important;
+	background-color: #264EEA !important;
+	color: white !important;
+
+	padding: 2px;
+	border: solid 1px #CCC;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-topleft:3pt;
+	-moz-border-radius-topright:3pt;
+	-moz-outline-style: none;
+}
+
+
+
+
+/*.dijitTabHover .dijitTabCheckedHover .dijitCheckedHover .dijitTabFocusedHover .dijitTabCheckedFocusedHover .dijitCheckedFocusedHover .dijitFocusedHover .dijitHover {*/
+
+
+/*.dijitTab .dijitTabChecked .dijitChecked .dijitTabFocused .dijitTabCheckedFocused .dijitCheckedFocused .dijitFocused .dijitTabContent .tabLabel {*/
+/*	background: #FFD !important;	*/
+/*	background-image: none !important;*/
+/*	background-color: #FFD !important;*/
+/*	color: #F00;*/
+/*}*/
+
+/*.dijitTab .dijitTabChecked .dijitChecked {*/
+/*	background: #FFD !important;	*/
+/*	background-image: none !important;*/
+/*	background-color: #FFD !important;*/
+/*	color: #F00;*/
+/*}*/
+/**/
+
+/* TAB HOVER */
+.dijitTab .dijitTabHover .dijitHover {
+	/*background: #FFD !important;	*/
+	background-image: none !important;
+	background-color: #264EEA !important;
+	color: white;
+}
+
+
+
+/* CHECKED TAB CONTENT */
+.soria .dijitTabChecked .dijitTabInnerDiv .dijitTabContent {
+	background-image: none !important;
+	background-color: #264EEA !important;
+	color: white !important;
+	/*background: #FFD !important;	*/
+	/*background-image: none !important;*/
+	/*background-color: #FFD !important;*/
+}
+
+
+/*.dijitTab .dijitTabFocused .dijitFocused .dijitTabHover .dijitTabFocusedHover .dijitFocusedHover .dijitHover {*/
+/*	background: #FFD !important;	*/
+/*	background-image: none !important;*/
+/*}*/
+
+/*.dijitTab .dijitTabHover .dijitHover .dijitTabInnerDiv .dijitTabContent {*/
+/*	background: #FFD !important;	*/
+/*	background-image: none !important;*/
+/*	background-color: #FFD !important;*/
+/*	color: #F00;*/
+/*}*/
+
+
+/* TAB INNER DIV - BLANK OUT THE IMAGE ON THE RIGHT HALF OF THE TAB LABEL */
+.dijitTabInnerDiv {
+	background: transparent !important;	
+	background-image: none !important;
+}
+
+/* TAB LABEL SIZE */
+.tabs .dijitTabInnerDiv .dijitTabContent {
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	position: relative;
+
+	background: transparent;
+	background-image: none;
+
+	/*(../images/tabContainerSprite.gif) repeat-x scroll 0 -350px;*/
+
+	/* IF UNCOMMENTED PUTS A WHITE BLANK IN ADJACENT TAB WHEN NOT FOCUSED */
+	/*background: transparent url(../images/tabContainerSprite.gif) repeat-x scroll 0 -350px;*/
+
+	/* CHANGE THE HEIGHT OF THE TAB LABEL HERE */
+	/*padding: 5px 3px 4px 4px;*/
+	padding: 2px 0px 1px 1px !important;
+
+}
+
+
+
+/* STOP THE TAB CHILDREN FROM SHIFTING DOWN */
+.soria .dijitTabContainerTop-container {
+	top: 0px !important;
+}
+
+/*.dijitTabSpacer .dijitTabContainerTop-spacer .dijitAlignTop {*/
+/*	position: relative !important;*/
+/*	top: 0px !important;*/
+/*}*/
+/*.dijitTabContainerTop-tabs .dijitAlignTop {*/
+/*	position: relative !important;*/
+/*	top: 0px !important;*/
+/*	right: auto !important;*/
+/*	bottom: auto !important;*/
+/*	*/
+/*}*/
+
+
+
+/* AGUA ICON */
+.aguaIcon {
+	z-index: 10;
+	background-image: url("../../../plugins/core/images/agua-icon-24.png");	
+	background-position: center;
+	min-width: 24px;
+	background-repeat: no-repeat;
+	width: 28px;
+	height: 28px;
+	text-align: center;
+}
+
+/* TOOLBAR */
+.controls .dijit .dijitToolbar {
+	height: 30px;
+	background-image: url();
+	background: none;
+
+}
+
+.controls .toolbar {
+	height: 30px;
+	background-image: url();
+	background: none;
+	border: none !important;
+}
+
+.toolbar .dijitReset .dijitInline .dijitButtonNode{
+	/*position: relative;*/
+	/*top: -28px;*/
+	/*left: 30px;*/
+	height: 30px;
+	background-image: url();
+	background: none;
+}
+
+
+/* TABS */
+
+/* TAB LABEL SIZE */
+.controls .tabs  .dijitTabInnerDiv .dijitTabContent {
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	position: relative;
+
+	/* IF UNCOMMENTED PUTS A WHITE BLANK IN ADJACENT TAB WHEN NOT FOCUSED */
+	/*background: transparent url(../images/tabContainerSprite.gif) repeat-x scroll 0 -350px;*/
+
+	/* CHANGE THE HEIGHT OF THE TAB LABEL HERE */
+	padding: 5px 3px 4px 4px;
+	/*padding: 0px 0px 0px 0px;*/
+}
+
+/* TAB LABELS */
+.controls .tabs  .tabLabel {
+	padding: 3px;
+	border: solid 2px transparent;
+	/*color: #243C5F;*/
+	/*color: #111f82;*/
+	/*color: white !important;*/
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.controls .tabs  .dijitTabChecked .tabLabel {
+	color: white !important;
+	/*color: #055817;*/ /* dark green */
+	/*color: #088a24;*/
+	/*color: #08a92b;*/
+	/*color: #08a92b;*/
+	/*color: #0e1a67;*/
+	/*color: #25e14e;*/
+	/* color: 10f041 */
+
+	font-weight: bold;
+}
+
+/* CIRCLE AROUND CURRENTLY FOCUSED TAB PANE */
+
+.controls .tabs  .dijitFocused .tabLabel {
+	padding: 3px;
+	border: solid 2px #0F0;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:3pt;
+	-moz-border-radius-bottomright:3pt;
+	-moz-border-radius-topleft:3pt;
+	-moz-border-radius-topright:3pt;
+	-moz-outline-style: none;
+}
+
+/*.controls .tabs  .tabTitle {*/
+/*	color: white;*/
+/*	background-color: #264eea;*/
+/*	text-align: center;*/
+/*	vertical-align: middle;*/
+/*	font-size: 20px;*/
+/*	font-weight: bold;*/
+/*}*/
+/**/
+
+
+.controls .tabs dijitTabPaneWrapper dijitTabContainerTop-container dijitAlignClient,
+.controls .tabs dijitContainer dijitBorderContainer,
+.controls .tabs .dijitLayoutContainer {
+	/*position: relative;*/
+	/*top: -25px;*/
+	/*left: 30px;*/
+	height: 100% !important;
+	width: 100% !important;
+}
+
+/*/* TAB PANE LABELS */*/
+/*.controls .tabs .dijitTab {*/
+/*	color: #243C5F;*/
+/*	/*color: #111f82;*/*/
+/*	font-size: 16px;*/
+/*	font-weight: bolder;*/
+/*}*/
+/*.controls .tabs  .dijitTabChecked {*/
+/*	color: darkred !important;*/
+/*	/*color: #0e1a67;*/*/
+/*	font-weight: bold;*/
+/*}*/
+/**/
+
+
+
+.resizeHandle {
+	height: 13px;
+	width: 13px;
+	float: right;
+	position: absolute;
+	right: 2px;
+	bottom: 2px;
+	z-index: 10;
+	background-image: url('../../../dojo-1.5.0/dojox/layout/resources/icons/resize.png');
+}
+

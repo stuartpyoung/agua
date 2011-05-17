@@ -1,0 +1,67 @@
+<div dojoattachpoint="containerNode">
+
+    <div
+        dojoAttachPoint="mainTab"
+        dojoType="dijit.layout.ContentPane"
+        parseOnLoad="false"
+		title="Data"
+		class="parameters"
+		style="position: relative; height: 100%; max-height: auto !important; width: 400px !important; padding: 0 !important;"
+    >
+
+		<table width="100%">
+			<tr>
+				<td colspan="3"class="tabTitle" align="center">
+                    Data
+				</td>
+			</tr>
+			<tr>
+				<td
+					dojoAttachPoint="appNameNode"
+					colspan="3"
+					class="appName"
+					align="center"
+					>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<div 
+						dojoType="dijit.TitlePane"
+						title="Inputs"
+						style="background: #FFF; height: auto; width: 100% !important;"
+						>
+
+						<div
+							dojoAttachPoint="inputRows"
+							>
+						</div>
+
+					</div>
+				</td>
+				<td>
+			</tr>
+			<tr>
+				<td>
+					<div
+						dojoType="dijit.TitlePane"
+						title="Outputs"
+						class="outputsTitlePane"
+						style="background: #FFF; height: auto; width: 100% !important;"
+						>
+						<div
+							dojoAttachPoint="outputRows"
+							>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+	</div>
+
+
+</div> 
+
+

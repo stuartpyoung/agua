@@ -1,0 +1,137 @@
+<div dojoAttachPoint="containerNode" >
+
+<div
+	dojoAttachPoint="mainTab"
+	class="results"
+	dojoType="dijit.layout.ContentPane"
+	style="height: 700px !important; max-height: auto !important; width: 1000px !important; position: absolute; padding: 0 !important;"
+	>
+
+	<table
+		cellpadding="0px"
+		cellspacing="0px"
+		class="resultTable">
+
+		<tr height="20px">
+
+			<td class="oddTitle">Total Results</td>
+			<td width="20px"
+				class="oddTitle totalResults"
+				dojoAttachPoint="totalResults">-</td>
+
+			<td>
+				<table>
+					<tr>
+						<td colspan="3" width="100%">Displayed Range</td>
+					</tr>
+					<tr >
+						<td width="40px"
+							dojoAttachPoint="resultStart">-</td>
+						<td>
+							<div
+								dojoAttachPoint="gridSlider"
+								dojoType="dijit.form.HorizontalSlider" 
+								value="0"
+								maximum="100"
+								minimum="0"
+								pageIncrement="100"
+								showButtons="true"
+								intermediateChanges="true"
+								slideDuration="200"
+								disabled="false"
+								style="width: 150px;"
+								>
+							</div>
+						</td>
+						<td width="40px"
+							class="resultStop"
+							dojoAttachPoint="resultStop">-</td>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td class="oddTitle">Show</td>
+
+			<td valign="center">
+				<div
+					dojoAttachPoint="gridSpinnerNode"
+					class="oddTitle showResults"
+					>
+				</div>
+			</td>
+			<!--<td-->
+			<!--	class="oddTitle showResults"-->
+			<!--	dojoAttachPoint="showResults">-</td>-->
+
+			<td class="oddTitle" align="left">Results</td>			
+		</tr>
+	</table>
+
+	<table>	
+		<tr>
+			<td>
+				<div class="grid" dojoAttachPoint="outputResult" style="position: relative; top: 20px;">
+				</div>
+			</td>
+		</tr>
+	</table>
+
+
+<!--<div dojoType="dijit.Menu" id="gridMenu"  style="display: none;">-->
+<!--	<div dojoType="dijit.MenuItem" onClick="reportCell">See cell text...</div>-->
+<!--	<div dojoType="dijit.MenuItem" disabled="true">Disabled Item</div>-->
+<!--	<div dojoType="dijit.MenuSeparator"></div>-->
+<!---->
+<!--	<div dojoType="dijit.MenuItem" iconClass="dijitEditorIcon dijitEditorIconCut"-->
+<!--		onClick="alert('not actually cutting anything, just a test!')">Cut</div>-->
+<!--	<div dojoType="dijit.MenuItem" iconClass="dijitEditorIcon dijitEditorIconCopy"-->
+<!--		onClick="alert('not actually copying anything, just a test!')">Copy</div>-->
+<!--	<div dojoType="dijit.MenuItem" iconClass="dijitEditorIcon dijitEditorIconPaste"-->
+<!--		onClick="alert('not actually pasting anything, just a test!')">Paste</div>-->
+<!--	<div dojoType="dijit.MenuSeparator"></div>-->
+<!--</div>-->
+<!--<div dojoType="dijit.Menu" id="submenu1" contextMenuForWindow="true" style="display: none;">-->
+<!--	<div dojoType="dijit.MenuItem" onClick="alert('Hello world');">Enabled Item</div>-->
+<!--	<div dojoType="dijit.MenuItem" disabled="true">Disabled Item</div>-->
+<!---->
+<!--	<div dojoType="dijit.MenuSeparator"></div>-->
+<!--	<div dojoType="dijit.MenuItem" iconClass="dijitEditorIcon dijitEditorIconCut"-->
+<!--		onClick="alert('not actually cutting anything, just a test!')">Cut</div>-->
+<!--	<div dojoType="dijit.MenuItem" iconClass="dijitEditorIcon dijitEditorIconCopy"-->
+<!--		onClick="alert('not actually copying anything, just a test!')">Copy</div>-->
+<!--	<div dojoType="dijit.MenuItem" iconClass="dijitEditorIcon dijitEditorIconPaste"-->
+<!--		onClick="alert('not actually pasting anything, just a test!')">Paste</div>-->
+<!--	<div dojoType="dijit.MenuSeparator"></div>-->
+<!--	<div dojoType="dijit.PopupMenuItem">-->
+<!--		<span>Enabled Submenu</span>-->
+<!---->
+<!--		<div dojoType="dijit.Menu" id="submenu2">-->
+<!--			<div dojoType="dijit.MenuItem" onClick="alert('Submenu 1!')">Submenu Item One</div>-->
+<!--			<div dojoType="dijit.MenuItem" onClick="alert('Submenu 2!')">Submenu Item Two</div>-->
+<!--			<div dojoType="dijit.PopupMenuItem">-->
+<!--				<span>Deeper Submenu</span>-->
+<!--				<div dojoType="dijit.Menu" id="submenu4">-->
+<!--					<div dojoType="dijit.MenuItem" onClick="alert('Sub-submenu 1!')">Sub-sub-menu Item One</div>-->
+<!---->
+<!--					<div dojoType="dijit.MenuItem" onClick="alert('Sub-submenu 2!')">Sub-sub-menu Item Two</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--	<div dojoType="dijit.PopupMenuItem" disabled="true">-->
+<!--		<span>Disabled Submenu</span>-->
+<!--		<div dojoType="dijit.Menu" id="submenu3" style="display: none;">-->
+<!---->
+<!--			<div dojoType="dijit.MenuItem" onClick="alert('Submenu 1!')">Submenu Item One</div>-->
+<!--			<div dojoType="dijit.MenuItem" onClick="alert('Submenu 2!')">Submenu Item Two</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--	<div dojoType="dijit.PopupMenuItem">-->
+<!--		<span>Different popup</span>-->
+<!--		<div dojoType="dijit.ColorPalette"></div>-->
+<!---->
+<!--	</div>-->
+<!--</div>-->
+
+
+</div>

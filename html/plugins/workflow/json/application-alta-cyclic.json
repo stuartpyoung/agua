@@ -1,0 +1,29 @@
+{
+    data :
+    [
+        ['Name', 'Alta-Cyclic'],
+        ['Description', 'Machine-learning base calling application'],
+        ['Location', 'bin/nextgen/alta-cyclic.pl'],
+        ['Inputfiles', ''],
+        ['Outputfiles', 'pipeline/outputdir/intfiles/*.int.txt.gz, pipeline/outputdir/seqfiles/*.seq.txt '],
+        ['STDERRfile', 'pipeline/outputdir/bustard.stderr'],
+        ['STDOUTfile', 'pipeline/outputdir/bustard.stdout'],
+        ['Started', '0000-00-00 00:00:00'],
+        ['Completed', '0000-00-00 00:00:00'],
+        [
+            [ '--number_of_cycles',  34 ],
+            [ '--path_to_intensity_files', '/common/pipeline/phiX2/human-run2-phiX-int'],
+            [ '--path_to_training_sequences', '/common/pipeline/phiX2/human-run2-phiX-seq'],
+            [ '--lane_for_training', 5 ],
+            [ '--tiles_for_training', '1-300'],
+            [ '--reference_genome', '/common/pipeline/phiX2/phiFasta.fa'],
+            [ '--is_reference_genome_local', 'Y' ],
+            [ '--trim',  25 ],
+            [ '--threshold_for_analysis',  20 ],
+            [ '--maximum_lines_for_training', 100000 ],
+            [ '--flowcell', 'PHIX2'],
+            [ '--trim',  25 ],
+            [ 'addtional options', '--verbose --debug ']
+        ]
+    ]
+}

@@ -1,0 +1,61 @@
+<div dojoAttachPoint="containerNode">
+
+<div
+    dojoAttachPoint="menu"
+    class="stagesmenu"
+    dojoType="plugins.menu.Menu">
+
+<!--    <div dojoType="dijit.MenuItem"
+        label="Actions"
+        dojoAttachPoint="title"
+        class="title"
+        disabled="false">
+    </div>
+-->
+    <div
+        dojoAttachPoint="removeNode"
+        dojoType="dijit.MenuItem"
+        iconClass="dijitEditorIcon dijitEditorIconDelete"
+        >
+        Remove
+    </div>
+
+    <div dojoType="dijit.MenuSeparator">
+    </div>
+
+    <div
+        dojoAttachPoint="runNode"
+        dojoType="dijit.MenuItem"
+        class="runIcon"
+        >
+        Run
+    </div>
+
+    <div dojoType="dijit.MenuSeparator">
+    </div>
+
+    <div
+        dojoAttachPoint="chainNode"
+        dojoType="dijit.MenuItem"
+        class="chainIcon"
+        dojoAttachEvent="onClick:chain"    
+        >
+        Chain
+    </div>
+
+    <!--<div dojoType="dijit.MenuSeparator">-->
+    <!--</div>-->
+    <!--<div dojoType="dijit.PopupMenuItem">-->
+    <!--    <span>-->
+    <!--        Action-->
+    <!--    </span>-->
+    <!--    <div dojoType="dijit.Menu" id="submenu2">-->
+    <!--        <div dojoType="dijit.MenuItem" onClick="alert('diehard!')">-->
+    <!--            Diehard-->
+    <!--        </div>-->
+    <!--        <div dojoType="dijit.MenuItem" onClick="alert('indiana!')">-->
+    <!--            Indiana Jones-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+</div>

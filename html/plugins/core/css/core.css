@@ -1,0 +1,83 @@
+/*body {	
+	scrollbarFaceColor : #dee3e7!important;
+	scrollbarArrowColor : #006699!important;
+	scrollbarTrackColor : #efefef!important;
+	scrollbarShadowColor : #dee3e7!important;
+	scrollbarHighlightColor : #ffffff!important;
+	scrollbar3dlightColor : #d1d7dc!important;
+	scrollbarDarkshadowColor : #98aab1!important;
+}
+*/
+.controls {
+	left: 3px !important;
+	height: 30px !important;
+	position: absolute;
+	top: 5px;
+	left: 0px;
+}
+
+/* STOP THE TAB CHILDREN FROM SHIFTING DOWN */
+.dijitTabSpacer .dijitTabContainerTop-spacer .dijitAlignTop {
+
+	top: 0px !important;
+}
+
+.aguaIcon {
+	z-index: 10;
+	background-image: url("../../../plugins/core/images/agua-24.png");	
+	background-position: center;
+	min-width: 24px;
+	background-repeat: no-repeat;
+	width: 28px;
+	height: 28px;
+	/*position: relative;*/
+	/*top: 10px;*/
+	text-align: center;
+}
+
+.controls .controlButtons {
+	height: 30px;
+	background-image: url();
+	background: none;
+}
+
+.controlButtons .dijitReset .dijitInline .dijitButtonNode{
+	position: relative;
+	top: -28px;
+	left: 30px;
+}
+
+.tabs .dijitLayoutContainer {
+	position: relative;
+	top: -25px;
+	left: 30px;	
+}
+
+/* SUBHEADING LABELS IN ALL TAB PANES */
+.tabs .dijitTab {
+	color: #243C5F;
+	/*color: #111f82;*/
+	font-size: 16px;
+	font-weight: bolder;
+}
+
+.tabs .dijitTabChecked .dijitTabInnerDiv .dijitTabContent {
+	color: darkblue;
+	/*color: #0e1a67;*/
+	font-weight: bold;
+}
+
+
+
+
+.coreResizeHandle {
+	height: 13px;
+	width: 13px;	
+	float: right;
+	position: absolute;
+	right: 2px;
+	bottom: 2px;
+	z-index: 10;
+	background-image: url('../../../dojo-1.5.0/dojox/layout/resources/icons/resize.png');
+}
+

@@ -1,0 +1,106 @@
+admin	admin	Project1	Workflow0	1	TOPHAT	1	coverage	output	coverage	file		Project1/%workflow%/coverage.wig	Discretion		A UCSC BedGraph wigglegram track, showing the depth of coverage at each position, including the spliced read alignments.		\N	\N	\N
+admin	admin	Project1	Workflow0	1	TOPHAT	1	matefiles	input	matefiles	string	--matefiles		optional		Comma-separated *sequence.txt mate file names (e.g., s_1_2_sequence.txt,s_2_2_sequence.txt) with locations as paths relative to the output directory		\N	\N	\N
+admin	admin	Project1	Workflow0	1	TOPHAT	1	cpus	input	cpus	integer	--cpus		optional		Max. number of cpus per job (1 to 4) (DEFAULT = 4)		\N	\N	\N
+admin	admin	Project1	Workflow0	1	TOPHAT	1	label	input	label	string	--label		required		Name to used to submit jobs to cluster (e.g., tophat-sample1)		\N	\N	\N
+admin	admin	Project1	Workflow0	1	TOPHAT	1	keep	input	keep	flag	--keep		optional		Keep intermediate files		\N	\N	\N
+admin	admin	Project1	Workflow0	1	TOPHAT	1	distance	input	distance	integer	--distance	200	required		The  mean inner distance between first read and its mate pair (corresponds to -r/--mate-inner-dist argument to Tophat)		\N	\N	\N
+admin	admin	Project1	Workflow0	1	TOPHAT	1	hits	output	hits	file		Project1/%workflow%/accepted_hits.sam	Discretion		A list of read alignments in SAM format. SAM is a compact short read alignment format that is increasingly being adopted.		\N	\N	\N
+admin	admin	Project1	Workflow0	1	TOPHAT	1	inputfiles	input	inputfiles	string	--inputfiles		required		Comma-separated *sequence.txt file names (e.g., s_1_1_sequence.txt,s_2_1_sequence.txt)		\N	\N	\N
+admin	admin	Project1	Workflow0	1	TOPHAT	1	jobs	input	jobs	integer	--jobs		optional		Max. number of concurrent cluster jobs (DEFAULT = 30)		\N	\N	\N
+admin	admin	Project1	Workflow0	1	TOPHAT	1	junctions	output	junctions	file		Project1/%workflow%/junctions.bed	Discretion		A UCSC BED track of junctions reported by TopHat. Each junction consists of two connected BED blocks, where each block is as long as the maximal overhang of any read spanning the junction. The score is the number of alignments spanning the junction.		\N	\N	\N
+admin	admin	Project1	Workflow1	2	deepvaccuum	1	filter	input	filter	string	--filter		optional		Download only files containing this text fragment		\N	\N	\N
+admin	admin	Project1	Workflow1	2	deepvaccuum	1	outputdir	input	outputdir	directory	--outputdir	Project1/Workflow1/downloads	required		Create this directory and download files to it		\N	\N	\N
+admin	admin	Project1	Workflow1	2	deepvaccuum	1	regex	input	regex	string	--regex		optional		Download files matching this regular expression		\N	\N	\N
+admin	admin	Project1	Workflow1	2	deepvaccuum	1	url	input	url	string	--url	http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/	required		Download files linked on this page		\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	1	splitfile	input	splitfile	file	--splitfile	Project1/Workflow2	optional		File containing list of batch input sequence file locations	input.splitfile.value	\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	1	snp	output	indelsoa.filter	string		Project1/Workflow2/cns.snp	Discretion		List of raw SNPs extracted from comparison of consensus and reference files		\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	1	snp-filter	output	SNPfilter	string		Project1/Workflow2/out.SNPfilter	Discretion		Filtered SNP predictions based on indelsoa, indelpe and cns.snp files		\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	1	referencedir	input	referencedir	directory	--referencedir	/nethome/bioinfo/data/sequence/chromosomes/human-bfa	essential		Directory containing MAQ format binary fasta (.bfa) files for all human chromosomes	input.referencedir.value	\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	1	queue	input	queue	string	--queue	-qgsmall	optional		Submit to a particular queue or add other submission options	input.queue.value	\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	1	reads	input	reads	integer	--reads	1000000	optional		Number of reads per batch input file (Default = 1 million)	input.reads.value	\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	1	PE-indels	output	indelpe	string		Project1/Workflow2/out.indelpe	Discretion		Indel calls, only produced with paired-end reads		\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	1	inputfile	input	inputfile	file	--inputfile	/nethome/bioinfo/data/sequence/demo/maq/inputs/s_1_1_sequence.100000.txt	essential		Single read or first paired-end sequence file		\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	1	jobs	input	jobs	integer	--jobs	30	optional		Maximum number of concurrently queued or running jobs on the cluster queue for this run (Default: 30)	input.jobs.value	\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	1	mapfile	output	mapfile	string		Project1/Workflow2/out.map	Discretion		Binary mapping file containing alignment of all reads against reference		\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	1	matefile	input	matefile	file	--matefile	/nethome/bioinfo/data/sequence/demo/maq/inputs/s_1_2_sequence.100000.txt	essential		Second paired-end sequence file		\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	1	outputdir	input	outputdir	directory	--outputdir	Project1/Workflow2	required		Output alignment and SNP files will be printed to this directory	input.outputdir.value	\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	1	indelsoa	output	indelsoa	string		Project1/Workflow2/out.indelsoa	Discretion		Predicted homozygous indels		\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	1	hzsnps-filter	output	indelsoa	string		Project1/Workflow2/out.indelsoa.filter	Discretion		Filtered predicted homozygous indels		\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	1	dupfile	output	dupfile	string		Project1/Workflow2/rmdup.map	Discretion		Same as out.map file but with duplicate reads aligned against the reference with identical outer coordinates removed		\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	1	convert	input	convert	flag	--convert	Project1/Workflow2	optional		Convert from Solexa FASTQ to Sanger FASTQ	input.convert.value	\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	1	consensus	output	cns-maq	string		Project1/Workflow2/cns.fq	Discretion	fastq	Consensus sequence and qualities in FASTQ format		\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	1	clean	input	clean	flag	--clean		optional		Clean run (remove old splitfile)	input.clean.value	\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	3	matefile	input	matefile	file	--matefile	%project%/%workflow%/s_1_2_sequence.fastq	essential		Second paired-end sequence file	input.matefile.value	\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	3	inputfile	input	inputfile	file	--inputfile	%project%/%workflow%/s_1_1_sequence.fastq	essential		Single read or first paired-end sequence file	input.inputfile.value	\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	3	reads	input	reads	integer	--reads	1000000	optional		Number of reads per batch input file (Default = 1 million)	input.reads.value	\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	3	clean	input	clean	flag	--clean		optional		Clean run (remove old splitfile)	input.clean.value	\N	\N	\N
+admin	admin	Project1	Workflow2	3	MAQ	3	jobs	input	jobs	integer	--jobs	30	optional		Maximum number of concurrently queued or running jobs on the cluster queue for this run (Default: 30)	input.jobs.value	\N	\N	\N
+admin	admin	Project1	Workflow3-ftp	4	FTP	1	regex	input	regex	string	--regex		optional		Download files matching this regular expression		\N	\N	\N
+admin	admin	Project1	Workflow3-ftp	4	FTP	1	filter	input	filter	string	--filter		optional		Download only files containing this text fragment		\N	\N	\N
+admin	admin	Project1	Workflow3-ftp	4	FTP	1	outputdir	input	outputdir	directory	--outputdir	Project1/Workflow3-ftp/downloads	required		Create this directory and download files to it		\N	\N	\N
+admin	admin	Project1	Workflow3-ftp	4	FTP	1	url	input	url	string	--url	http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/	required		Download files linked on this page		\N	\N	\N
+admin	admin	Project1	Workflow3-ftp	4	FTP	1	type	input	type	string	--type	html	essential		Type of page: html or text		\N	\N	\N
+jgilbert	admin	Project1	Workflow1	1	MAQ	1	splitfile	input	splitfile	file	--splitfile	Project1/Workflow1/splitfile	optional		File containing list of batch input sequence file locations		\N	\N	\N
+jgilbert	admin	Project1	Workflow1	1	MAQ	1	species	input	species	String	--species	human	required		Species name (e.g., human, mouse)		\N	\N	\N
+jgilbert	admin	Project1	Workflow1	1	MAQ	1	snp-filter	output	SNPfilter	file		Project1/Workflow1/out.SNPfilter	Discretion		Filtered SNP predictions based on indelsoa, indelpe and cns.snp files		\N	\N	\N
+jgilbert	admin	Project1	Workflow1	1	MAQ	1	snp	output	indelsoa.filter	file		Project1/Workflow1/cns.snp	Discretion		List of raw SNPs extracted from comparison of consensus and reference files		\N	\N	\N
+jgilbert	admin	Project1	Workflow1	1	MAQ	1	referencedir	input	referencedir	directory	--referencedir	/nethome/bioinfo/data/sequence/chromosomes/human-bfa	essential		Directory containing MAQ format binary fasta (.bfa) files for all human chromosomes	input.referencedir.value	\N	\N	\N
+jgilbert	admin	Project1	Workflow1	1	MAQ	1	reads	input	reads	integer	--reads	1000000	optional		Number of reads per batch input file (Default = 1 million)	input.reads.value	\N	\N	\N
+jgilbert	admin	Project1	Workflow1	1	MAQ	1	queue	input	queue	string	--queue	-qgsmall	optional		Submit to a particular queue or add other submission options	input.queue.value	\N	\N	\N
+jgilbert	admin	Project1	Workflow1	1	MAQ	1	PE-indels	output	indelpe	string		Project1/Workflow1/out.indelpe	Discretion		Indel calls, only produced with paired-end reads		\N	\N	\N
+jgilbert	admin	Project1	Workflow1	1	MAQ	1	outputdir	input	outputdir	directory	--outputdir	Project1/Workflow1	required		Output alignment and SNP files will be printed to this directory	input.outputdir.value	\N	\N	\N
+jgilbert	admin	Project1	Workflow1	1	MAQ	2	species	input	species	String	--species		required		Species name (e.g., human, mouse)	input.species.value	\N	\N	\N
+jgilbert	admin	Project1	Workflow1	1	MAQ	1	maxjobs	input	jobs	integer	--jobs	30	optional		Maximum number of concurrently queued or running jobs on the cluster queue for this run (Default: 30)	input.jobs.value	\N	\N	\N
+jgilbert	admin	Project1	Workflow1	1	MAQ	2	queue	input	queue	string	--queue	-qgsmall	optional		Submit to a particular queue or add other submission options	input.queue.value	\N	\N	\N
+jgilbert	admin	Project1	Workflow1	1	MAQ	2	matefile	input	matefile	file	--matefile	Project1/Workflow1/inputs/s_1_2_sequence.100000.txt	essential		Second paired-end sequence file	input.matefile.value	\N	\N	\N
+jgilbert	admin	Project1	Workflow1	1	MAQ	2	label	input	label	String	--label	name	required		A one-word label describing the experiment or data		\N	\N	\N
+jgilbert	admin	Project1	Workflow1	1	MAQ	2	outputdir	input	outputdir	directory	--outputdir	Project1/Workflow1	required		Output alignment and SNP files will be printed to this directory	input.outputdir.value	\N	\N	\N
+syoung	admin	Project1	Workflow1	1	TOPHAT	1	queue	input	queue	string	--queue		optional		Cluster queue options				0
+syoung	admin	Project1	Workflow1	1	TOPHAT	1	reference	input	reference	directory	--reference	Project1/Workflow1/chr22/chr22.1.ebwt	required		Location of indexed reference file  (NB: Use file stub, e.g., /some/path/hg19)				0
+syoung	admin	Project1	Workflow1	1	TOPHAT	1	outputdir	input	outputdir	directory	--outputdir	Project1/Workflow1	required		Create this directory and write output files to it				0
+syoung	admin	Project1	Workflow1	1	TOPHAT	1	params	input	params	string	--params		optional		Additional parameters to be passed to tophat (e.g., --solexa1.3-quals				0
+syoung	admin	Project1	Workflow1	1	TOPHAT	1	matefiles	input	matefiles	file	--matefiles	Project1/Workflow1/yoruba1-1.reads_2.1M.sequence.txt	optional		Comma-separated *sequence.txt mate file names (e.g., s_1_2_sequence.txt,s_2_2_sequence.txt) with locations as paths relative to the output directory				0
+syoung	admin	Project1	Workflow1	1	TOPHAT	1	label	input	label	string	--label	yoruba	required		Name to used to submit jobs to cluster (e.g., tophat-sample1)				0
+syoung	admin	Project1	Workflow1	1	TOPHAT	1	keep	input	keep	flag	--keep		optional		Keep intermediate files				0
+syoung	admin	Project1	Workflow1	1	TOPHAT	1	junctions	output	junctions	file		Project1/%workflow/junctions.bed	Discretion		A UCSC BED track of junctions reported by TopHat. Each junction consists of two connected BED blocks, where each block is as long as the maximal overhang of any read spanning the junction. The score is the number of alignments spanning the junction.				0
+syoung	admin	Project1	Workflow1	1	TOPHAT	1	inputfiles	input	inputfiles	file	--inputfiles	Project1/Workflow1/yoruba1-1.reads_1.1M.sequence.txt	required		Comma-separated *sequence.txt file names (e.g., s_1_1_sequence.txt,s_2_1_sequence.txt)				0
+syoung	admin	Project1	Workflow1	1	TOPHAT	1	jobs	input	jobs	integer	--jobs		optional		Max. number of concurrent cluster jobs (DEFAULT = 30)				0
+syoung	admin	Project1	Workflow1	1	TOPHAT	1	coverage	output	coverage	file		Project1/%workflow/coverage.wig	Discretion		A UCSC BedGraph wigglegram track, showing the depth of coverage at each position, including the spliced read alignments.				0
+syoung	admin	Project1	Workflow1	1	TOPHAT	1	cpus	input	cpus	integer	--cpus	3	optional		Max. number of cpus per job (1 to 4) (DEFAULT = 4)				0
+syoung	admin	Project1	Workflow1	1	TOPHAT	1	distance	input	distance	integer	--distance	200	required		The  mean inner distance between first read and its mate pair (corresponds to -r/--mate-inner-dist argument to Tophat)				0
+syoung	admin	Project1	Workflow1	1	TOPHAT	1	hits	output	hits	file		Project1/%workflow/accepted_hits.sam	Discretion		A list of read alignments in SAM format. SAM is a compact short read alignment format that is increasingly being adopted.				0
+syoung	admin	Project1	Workflow2	2	ELAND	1	inputtype	input	inputtype	string	--inputtype	fastq	required		Type of input sequence. Valid inputs: fastq, fasta, export or qseq				0
+syoung	admin	Project1	Workflow2	2	ELAND	1	outputdir	input	outputdir	directory	--outputdir	Project1/Workflow2	required		Print ELAND alignment files to this directory (will create the directory if it does not exist)				0
+syoung	admin	Project1	Workflow2	2	ELAND	1	pairedfile	input	pairedfile	file	--pairedfile		optional		Paired-end mate file (e.g., s_1_2_sequence.fastq)				0
+syoung	admin	Project1	Workflow2	2	ELAND	1	quality	input	quality	integer	--quality		optional		Quality value of all bases in fasta mode (Default: 30)				0
+syoung	admin	Project1	Workflow2	2	ELAND	1	clean	input	clean	flag	--clean		optional		Clean run (remove old splitfile)				0
+syoung	admin	Project1	Workflow2	2	ELAND	1	inputfile	input	inputfiles	files	--inputfile	Project1/Workflow2/s_1_1_sequence.fastq	essential		Solexa FASTQ format sequence file				0
+syoung	admin	Project1	Workflow2	2	ELAND	1	reads	input	reads	integer	--reads		optional		Number of reads per sub-file				0
+syoung	admin	Project1	Workflow2	2	ELAND	1	referencedir	input	referencedir	directory	--referencedir	Project1/Workflow2	required		Directory containing squashed reference genome files				0
+syoung	admin	Project1	Workflow2	2	ELAND	1	seedlength	input	seedlength	integer	--seedlength		optional		Length of read used for ELAND alignment (Default: min. of seedlength and 32)				0
+syoung	admin	Project1	Workflow2	2	ELAND	1	splitfile	input	splitfile	file	--splitfile		optional						0
+syoung	admin	Project1	Workflow2	2	TOPHAT	2	coverage	output	coverage	file		Project1/%workflow/coverage.wig	Discretion		A UCSC BedGraph wigglegram track, showing the depth of coverage at each position, including the spliced read alignments.				0
+syoung	admin	Project1	Workflow2	2	TOPHAT	2	cpus	input	cpus	integer	--cpus		optional		Max. number of cpus per job (1 to 4) (DEFAULT = 4)				0
+syoung	admin	Project1	Workflow2	2	TOPHAT	2	distance	input	distance	integer	--distance		required		The  mean inner distance between first read and its mate pair (corresponds to -r/--mate-inner-dist argument to Tophat)				0
+syoung	admin	Project1	Workflow2	2	TOPHAT	2	hits	output	hits	file		Project1/%workflow/accepted_hits.sam	Discretion		A list of read alignments in SAM format. SAM is a compact short read alignment format that is increasingly being adopted.				0
+syoung	admin	Project1	Workflow2	2	TOPHAT	2	inputfiles	input	inputfiles	string	--inputfiles		required		Comma-separated *sequence.txt file names (e.g., s_1_1_sequence.txt,s_2_1_sequence.txt)				0
+syoung	admin	Project1	Workflow2	2	TOPHAT	2	jobs	input	jobs	integer	--jobs		optional		Max. number of concurrent cluster jobs (DEFAULT = 30)				0
+syoung	admin	Project1	Workflow2	2	TOPHAT	2	junctions	output	junctions	file		Project1/%workflow/junctions.bed	Discretion		A UCSC BED track of junctions reported by TopHat. Each junction consists of two connected BED blocks, where each block is as long as the maximal overhang of any read spanning the junction. The score is the number of alignments spanning the junction.				0
+syoung	admin	Project1	Workflow2	2	TOPHAT	2	keep	input	keep	flag	--keep		optional		Keep intermediate files				0
+syoung	admin	Project1	Workflow2	2	TOPHAT	2	label	input	label	string	--label		required		Name to used to submit jobs to cluster (e.g., tophat-sample1)				0
+syoung	admin	Project1	Workflow2	2	TOPHAT	2	matefiles	input	matefiles	string	--matefiles		optional		Comma-separated *sequence.txt mate file names (e.g., s_1_2_sequence.txt,s_2_2_sequence.txt) with locations as paths relative to the output directory				0
+syoung	admin	Project1	Workflow2	2	TOPHAT	2	outputdir	input	outputdir	directory	--outputdir		required		Create this directory and write output files to it				0
+syoung	admin	Project1	Workflow2	2	TOPHAT	2	params	input	params	string	--params		optional		Additional parameters to be passed to tophat (e.g., --solexa1.3-quals				0
+syoung	admin	Project1	Workflow2	2	TOPHAT	2	queue	input	queue	string	--queue		optional		Cluster queue options				0
+syoung	admin	Project1	Workflow2	2	TOPHAT	2	reference	input	reference	directory	--reference		required		Location of indexed reference file  (NB: Use file stub, e.g., /some/path/hg19)				0
+syoung	admin	Project1	Workflow2	2	ELAND	3	clean	input	clean	flag	--clean		optional		Clean run (remove old splitfile)				0
+syoung	admin	Project1	Workflow2	2	ELAND	3	inputfile	input	inputfiles	files	--inputfile	Project1/Workflow2/s_1_1_sequence.fastq	essential		Solexa FASTQ format sequence file				0
+syoung	admin	Project1	Workflow2	2	ELAND	3	inputtype	input	inputtype	string	--inputtype	fastq	required		Type of input sequence. Valid inputs: fastq, fasta, export or qseq				0
+syoung	admin	Project1	Workflow2	2	ELAND	3	outputdir	input	outputdir	directory	--outputdir	Project1/Workflow2	required		Print ELAND alignment files to this directory (will create the directory if it does not exist)				0
+syoung	admin	Project1	Workflow2	2	ELAND	3	pairedfile	input	pairedfile	file	--pairedfile		optional		Paired-end mate file (e.g., s_1_2_sequence.fastq)				0
+syoung	admin	Project1	Workflow2	2	ELAND	3	quality	input	quality	integer	--quality		optional		Quality value of all bases in fasta mode (Default: 30)				0
+syoung	admin	Project1	Workflow2	2	ELAND	3	reads	input	reads	integer	--reads		optional		Number of reads per sub-file				0
+syoung	admin	Project1	Workflow2	2	ELAND	3	referencedir	input	referencedir	directory	--referencedir	Project1/Workflow2	required		Directory containing squashed reference genome files				0
+syoung	admin	Project1	Workflow2	2	ELAND	3	seedlength	input	seedlength	integer	--seedlength		optional		Length of read used for ELAND alignment (Default: min. of seedlength and 32)				0
+syoung	admin	Project1	Workflow2	2	ELAND	3	splitfile	input	splitfile	file	--splitfile		optional						0
+syoung	admin	Project1	Workflow1	1	TOPHAT	1	species	input	species	string	--species	human	required	\N	\N	\N	\N	\N	0

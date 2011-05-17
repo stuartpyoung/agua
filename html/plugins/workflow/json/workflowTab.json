@@ -1,0 +1,38 @@
+{
+    data:
+    {
+        widgetType: "TabContainer",
+        params: {id: "rootWidget", title: "Workflow 1"},
+        style: "width: 95%; height: 400px;",
+        children:
+        [
+            {
+                widgetType: "SplitContainer",
+                params: {id: "paneContainer", orientation: "horizontal"},
+                style: "border: 3px solid grey; width: 95%; height: 400px;",
+                children:
+                [
+                    {
+                        widgetType: "ContentPane",
+                        params: {id: paneId + "leftPane", sizeShare:  10},
+                        style: "background: #EEEEFF;",
+                        innerHTML: ""
+                    },
+                    {
+                        widgetType: "ContentPane",
+                        params: {id: paneId + "middlePane", sizeShare:  10},
+                        style: "background: #EEEEFF;",
+                        innerHTML: ""
+                    },
+                    {
+                        widgetType: "ContentPane",
+                        params: {id: paneId + "rightPane", sizeShare:  80},
+                        style: "background: #EEEEFF;",
+                        innerHTML: ""
+
+                    }
+                ]
+            }
+        ]
+    }
+}
